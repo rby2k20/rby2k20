@@ -46,7 +46,7 @@
 
 #nav
 {
-    background-color: red !important;
+    background-color: crimson !important;
 }
 
 .navbar-light .navbar-toggler-icon 
@@ -69,7 +69,7 @@
 #navLogo
 {
     text-align: center;
-    background-color: red;
+    background-color: crimson;
 }
 
 #navLogo img
@@ -92,6 +92,5 @@
 
 .navbar-nav .nav-item .dropdown-menu
 {
-    background-color: red;
+    background-color: crimson;
 }
-
