@@ -17,6 +17,11 @@
     color: yellow;
 }
 
+#brand
+{
+    color: yellow;
+}
+
 .navbar-nav .nav-item .nav-link
 {
     color:white;
@@ -60,3 +65,33 @@
     outline: none;
     background-image: none;
 }
+
+#navLogo
+{
+    text-align: center;
+    background-color: red;
+}
+
+#navLogo img
+{
+    width: 14%;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item
+{
+    color: yellow;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover
+{
+    color: yellow;
+    background-color: darkred;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .dropdown-menu
+{
+    background-color: red;
+}
+
