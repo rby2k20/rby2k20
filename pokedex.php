@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RB2k20: Home</title>
-
+        <title>
+            RBY2k20: Pokedex
+        </title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,6 +13,68 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="css/nav.css">
+        <script src="js/tableMaker.js">
+        
+          //Rby pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv
+          //Rby moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv
+          //Violet pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=269848004&single=true&output=csv
+          //Violet moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=2873338&single=true&output=csv
+
+          var dex = document.getElementById("dex");
+
+          var Pokedata = <?php 
+          
+                $meta = $_GET['meta'];
+                $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv';
+                
+                if(strcmp($meta,'violet') == 0)
+                {
+                  $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=269848004&single=true&output=csv';
+                }
+
+                
+                if (($handle = fopen($url, "r")) !== FALSE) {
+                    $result="";
+                    while (($data = fgetcsv($handle, 100000, ",")) !== FALSE){
+                        $totalrows = count($data);
+                        for ($row=0; $row<=$totalrows; $row++){
+                            if ( (strlen($data[$row])>0)){
+                                $result.=$data[$row].'~';
+                            }
+                        }
+                    }
+                    fclose($handle);
+                }
+                echo json_encode($result, JSON_HEX_TAG);?>;
+
+        var Movedata = <?php 
+          
+          $meta = $_GET['meta'];
+          $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv';
+          
+          if(strcmp($meta,'violet') == 0)
+          {
+            $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=2873338&single=true&output=csv';
+          }
+
+          
+          if (($handle = fopen($url, "r")) !== FALSE) {
+              $result="";
+              while (($data = fgetcsv($handle, 100000, ",")) !== FALSE){
+                  $totalrows = count($data);
+                  for ($row=0; $row<=$totalrows; $row++){
+                      if ( (strlen($data[$row])>0)){
+                          $result.=$data[$row].'~';
+                      }
+                  }
+              }
+              fclose($handle);
+          }
+          echo json_encode($result, JSON_HEX_TAG);?>;
+
+          console.log(Pokedata);
+          console.log(Movedata);
+        </script>
 
     </head>
     <body>
@@ -72,11 +135,7 @@
         <!--NAVBAR-->
 
 
-        <!--Big Meme, don't use center-->
-        <center>
-            <img src="images/alphalogobig.png">
-            <h3 style="font-family: sans-serif;"><strong>Coming Soon!</strong></h3>
-        </center>
+        <dix id="dex"></dix>
 
 
  
