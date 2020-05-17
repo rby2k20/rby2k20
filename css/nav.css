@@ -39,6 +39,11 @@
     color:yellow;
 }
 
+.navbar-nav .nav-item .nav-link:focus
+{
+    color:yellow;
+}
+
 .navbar-nav .nav-item .nav-link:hover
 {
     color:yellow;

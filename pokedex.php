@@ -14,6 +14,9 @@
         
         <link rel="stylesheet" href="css/nav.css">
         <script src="js/tableMaker.js"></script>
+        <script src="js/sorttable.js"></script>
+        <link rel="stylesheet" href="css/dex_table.css">
+
         <script>
           //Rby pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv
           //Rby moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv
@@ -21,6 +24,7 @@
           //Violet moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=2873338&single=true&output=csv
 
           var dex = document.getElementById("dex");
+          var meta = "<?php echo $_GET['meta']; ?>";
 
           var Pokedata = <?php 
           
@@ -31,6 +35,10 @@
                 {
                   $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=269848004&single=true&output=csv';
                 }
+                if(strcmp($meta,'rby1u') == 0)
+                {
+                  $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=438832659&single=true&output=csv';
+                }
 
                 
                 if (($handle = fopen($url, "r")) !== FALSE) {
@@ -40,8 +48,9 @@
                         for ($row=0; $row<=$totalrows; $row++){
                             if ( (strlen($data[$row])>0)){
                                 $result.=$data[$row].'~';
-                            }
+                            }   
                         }
+                        $result .= '~';
                     }
                     fclose($handle);
                 }
@@ -67,13 +76,53 @@
                           $result.=$data[$row].'~';
                       }
                   }
+                  $result .= '~';
               }
               fclose($handle);
           }
           echo json_encode($result, JSON_HEX_TAG);?>;
 
-          console.log(Pokedata);
-          console.log(Movedata);
+          var Pokedata = new tableScanner(Pokedata, "~");
+          var Movedata = new tableScanner(Movedata, "~");
+
+          var pokeTable = new table(meta);
+          var moveTable = new table(meta);
+          var header = true;
+
+          while(Pokedata.hasNext())
+          {
+            var newRow = new row();
+            newRow.setHeader(header);
+            var rowData = Pokedata.next();
+            for (var i = 0; i < rowData.length; i++)
+            {
+              newRow.addCell(rowData[i]);
+            }
+            if(newRow.cells.length == 10)
+            {
+              newRow.addAtr(2, "colspan", 2)
+            }
+            newRow.addAtr(0, "style", "text-align: left;")
+            pokeTable.addRow(newRow);
+            header = (false);
+          }
+
+          header = true;
+
+          while(Movedata.hasNext())
+          {
+            var newRow = new row();
+            newRow.setHeader(header);
+            var rowData = Movedata.next();
+            for (var i = 0; i < rowData.length; i++)
+            {
+              newRow.addCell(rowData[i]);
+            }
+            moveTable.addRow(newRow);
+            header = (false);
+          }
+
+          
         </script>
 
     </head>
@@ -135,9 +184,11 @@
         <!--NAVBAR-->
 
 
-        <dix id="dex"></dix>
-
-
+        <dix id="dex">
+          <script>
+            document.getElementById("dex").innerHTML = pokeTable.print() + moveTable.print();
+          </script>
+        </div>
  
     </body>
 </html>

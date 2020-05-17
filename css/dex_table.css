@@ -1,0 +1,46 @@
+#dex
+{
+   padding: 32px;
+}
+
+#dex table
+{
+    border-collapse: collapse;
+    margin:auto;
+    margin-bottom: 32px;
+    font-size: 15px
+}
+
+#dex table td, #dex table, #dex table th
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#dex table th
+{
+    color: white;
+    padding: 5px 7px 5px 7px;
+}
+
+#dex table td
+{
+    padding: 4px 6px 4px 6px;
+    font-weight: bold;
+}
+
+#dex table th, #dex table td
+{
+    text-align: center;
+}
+
+#dex table.rby th, #dex .rby1u th
+{
+    background-color: crimson;
+}
+
+#dex table.violet th
+{
+    background-color: violet;
+}
