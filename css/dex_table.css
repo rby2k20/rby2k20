@@ -1,6 +1,19 @@
 #dex
 {
    padding: 32px;
+   text-align: center;
+}
+
+#search
+{
+    padding: 16px 0px 16px 0px;
+    margin: 0px;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
 #dex table
@@ -8,7 +21,8 @@
     border-collapse: collapse;
     margin:auto;
     margin-bottom: 32px;
-    font-size: 15px
+    font-size: 15px;
+    box-shadow: 12px 12px 7px #888888;
 }
 
 #dex table td, #dex table, #dex table th
@@ -28,6 +42,14 @@
 {
     padding: 4px 6px 4px 6px;
     font-weight: bold;
+    color: black;
+    max-width: 600px;
+}
+
+#dex table td a
+{
+    text-decoration: none;
+    color: black
 }
 
 #dex table th, #dex table td
@@ -44,3 +66,90 @@
 {
     background-color: violet;
 }
+
+td.Fire 
+{
+    background-color: #f08030;
+}
+
+td.Water 
+{
+    background-color: #6890f0;
+}
+
+td.Normal  
+{
+    background-color: #a8a878;
+}
+
+td.Flying  
+{
+    background-color: #a890f0;
+}
+
+td.Electric 
+{
+    background-color: #f8d030;
+}
+
+td.Ice 
+{
+    background-color: #98d8d8;
+}
+
+td.Poison 
+{
+    background-color: #a040a0;
+}
+
+td.Fighting 
+{
+    background-color: #c03028;
+}
+
+td.Bug 
+{
+    background-color: #78c850;
+}
+
+td.Psychic 
+{
+    background-color: #f85888;
+}
+
+td.Dark 
+{
+    background-color: #705848;
+}
+
+td.Grass
+{
+    background-color: #78c850;
+}
+
+td.Ghost 
+{
+    background-color: #705898;
+}
+
+td.Ground 
+{
+    background-color: #e0c068;
+}
+
+td.Rock
+{
+    background-color: #b8a038;
+}
+
+td.Steel 
+{
+    background-color: #b8b8d0;
+}
+
+td.Dragon 
+{
+    background-color: #7038f8;
+}
+
+

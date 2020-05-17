@@ -16,6 +16,12 @@
         <script src="js/tableMaker.js"></script>
         <script src="js/sorttable.js"></script>
         <link rel="stylesheet" href="css/dex_table.css">
+        <style>
+          #dex table:first-child tr td:first-child:hover
+            {
+                background-color: #ddd;
+            }
+        </style>
 
         <script>
           //Rby pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv
@@ -43,7 +49,7 @@
                 
                 if (($handle = fopen($url, "r")) !== FALSE) {
                     $result="";
-                    while (($data = fgetcsv($handle, 100000, ",")) !== FALSE){
+                    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
                         $totalrows = count($data);
                         for ($row=0; $row<=$totalrows; $row++){
                             if ( (strlen($data[$row])>0)){
@@ -69,7 +75,7 @@
           
           if (($handle = fopen($url, "r")) !== FALSE) {
               $result="";
-              while (($data = fgetcsv($handle, 100000, ",")) !== FALSE){
+              while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
                   $totalrows = count($data);
                   for ($row=0; $row<=$totalrows; $row++){
                       if ( (strlen($data[$row])>0)){
@@ -89,6 +95,59 @@
           var moveTable = new table(meta);
           var header = true;
 
+           statHeat = (length, idx) =>
+           {
+            if(length == 10)
+              idx = idx-1;
+            if(!header) 
+            {
+                    var num = (idx == 9 || (length == 10 && idx == 8)) ? parseInt(rowData[idx]/3) : parseInt(rowData[idx]);
+                    var red = 0;
+                    var green = 0;
+                    var blue = 0;
+
+                    if(num <=60){
+                        red = 230;
+                        green = 100 * ((num)/60.0);
+                    }
+                    else if(num <=80){
+                        num -= 15;
+                        red = 230;
+                        green = 100 + 155 * ((num)/30.0);
+                    }
+                    else if(num <= 100){
+                        num -= 30;
+                        red = 200 - (200 * ((30-num)/30.0));
+                        green = 200;
+                    }
+                    else if(num <= 120){
+                        num -= 40;
+                        red = 0;
+                        green = 150;
+                        blue = 200 + ((num)/30.0);
+                    }
+                    else if(num > 120){
+                        red = 100
+                        green = 200;
+                        blue = 250;
+                    }
+                    else{
+                      console.log("failed: " + length)
+                    }
+
+                    blue = Math.round(blue);
+                    red = Math.round(red);
+                    green = Math.round(green);
+                    blue1 = Math.round(blue*.75);
+                    red1 = Math.round(red*.75);
+                    green1 = Math.round(green*.75);
+                    if(length == 10)
+                      idx++;
+                    newRow.addAtr(idx-1, "style", "background: linear-gradient(to bottom right, rgb(" +red+","+green+","+blue+"), rgb(" +red1+","+green1+","+blue1+"))");
+                  }
+           }
+
+
           while(Pokedata.hasNext())
           {
             var newRow = new row();
@@ -96,13 +155,33 @@
             var rowData = Pokedata.next();
             for (var i = 0; i < rowData.length; i++)
             {
-              newRow.addCell(rowData[i]);
+              switch(i)
+              {
+                case 0: (!header)? newRow.addCell("<a href=\"poke.php?mon=" + rowData[i] + "\">" + rowData[i]+"</a>") : newRow.addCell(rowData[i]);
+                case 1: break;
+                case 3: if(rowData.length == 10){newRow.addCell("");  } newRow.addCell(rowData[i]); break;
+                case 4: 
+                case 5: 
+                case 6:
+                case 7:
+                case 8: 
+                case 9: statHeat(rowData.length, i); newRow.addCell(rowData[i]); break;
+                default: newRow.addCell(rowData[i]);
+              }
             }
-            if(newRow.cells.length == 10)
+
+            if(rowData.length == 10)
             {
-              newRow.addAtr(2, "colspan", 2)
+              newRow.addAtr(1, "colspan", 2);
+              newRow.addAtr(2, "style", "display:none");
             }
-            newRow.addAtr(0, "style", "text-align: left;")
+            else
+            {
+              newRow.addAtr(2, "class", newRow.cells[2]);
+            }
+
+            newRow.addAtr(0, "style", "text-align: left;");
+            newRow.addAtr(1, "class", newRow.cells[1]);
             pokeTable.addRow(newRow);
             header = (false);
           }
@@ -116,8 +195,13 @@
             var rowData = Movedata.next();
             for (var i = 0; i < rowData.length; i++)
             {
-              newRow.addCell(rowData[i]);
+              if(i != 1)
+              {
+                newRow.addCell(rowData[i]);
+              }
             }
+            newRow.addAtr(0, "style", "text-align: left;");
+            newRow.addAtr(1, "class", newRow.cells[1]);
             moveTable.addRow(newRow);
             header = (false);
           }
@@ -125,12 +209,35 @@
           
         </script>
 
+        <script>
+            $(document).ready(function(){
+              // Write on keyup event of keyword input element
+              $("#kwd_search").keyup(function(){
+                // When value of the input is not blank
+                    var term=$(this).val().toLowerCase();
+                if( term != "") {
+                  // Show only matching TR, hide rest of them
+                        console.log( $(this).val())
+                        $("table tbody>tr").hide();
+                        var term=
+                        $("td").filter(function(){
+                              return $(this).text().toLowerCase().indexOf(term ) >-1
+                        }).parent("tr").show();
+                } else {
+                  // When no input or clean again, show everything
+                  $("tbody>tr").show();
+                }
+              });
+            });
+
+        </script>
+
     </head>
     <body>
 
 
           <!--NAVBAR-->
-        <div id="navLogo">
+          <div id="navLogo">
             <img src="images/logo2.png">
         </div>
         
@@ -143,7 +250,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -160,10 +267,10 @@
                         Guides
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">RBY OU</a>
-                        <a class="dropdown-item" href="#">RBY 1U</a>
-                        <a class="dropdown-item" href="#">Violet</a>
-                        <a class="dropdown-item" href="#">All Tiers</a>
+                        <a class="dropdown-item" href="guides.php?tag=rby">RBY OU</a>
+                        <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
+                        <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+                        <a class="dropdown-item" href="guides.php">All Tiers</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -181,12 +288,16 @@
             </div>
           </nav>
 
+
         <!--NAVBAR-->
 
+        <div id="search">
+          <h3 style ="margin-left:1%">Search: <input height="32" width="128" type="text" id="kwd_search" placeholder=""></h3>
+        </div>
 
         <dix id="dex">
           <script>
-            document.getElementById("dex").innerHTML = pokeTable.print() + moveTable.print();
+            document.getElementById("dex").innerHTML += pokeTable.print() + moveTable.print();
           </script>
         </div>
  
