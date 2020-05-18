@@ -238,7 +238,7 @@
 
           <!--NAVBAR-->
           <div id="navLogo">
-            <img src="images/logo2.png">
+            <img src="images/FinalLogo.png">
         </div>
         
           <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
