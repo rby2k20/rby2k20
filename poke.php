@@ -187,7 +187,7 @@
                     <div class="row">
                         <div class="col-1"></div>
                         <div class="col-11 col-md-5 pokepanel text-center">
-                            <img class="sprite" src="images/sprites/<?php echo $_GET['mon'] ?>.png">
+                        <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
                             <table>
                                 <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr>
                                 <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
@@ -213,7 +213,7 @@
                     <div class="row">
                         <div class="col-1"></div>
                         <div class="col-11 col-md-5 pokepanel text-center">
-                            <img class="sprite" src="images/sprites/<?php echo $_GET['mon'] ?>.png">
+                        <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
                             <table>
                                 <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr>
                                 <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
@@ -239,7 +239,7 @@
                     <div class="row">
                         <div class="col-1"></div>
                         <div class="col-11 col-md-5 pokepanel text-center">
-                            <img class="sprite" src="images/sprites/<?php echo $_GET['mon'] ?>.png">
+                            <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
                             <table>
                                 <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr>
                                 <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
