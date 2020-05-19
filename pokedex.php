@@ -157,7 +157,7 @@
             {
               switch(i)
               {
-                case 0: (!header)? newRow.addCell("<a href=\"poke.php?mon=" + rowData[i] + "\">" + rowData[i]+"</a>") : newRow.addCell(rowData[i]);
+                case 0: (!header)? newRow.addCell("<a href=\"poke.php?meta="+ meta +"&mon=" + rowData[i] + "\">" + rowData[i]+"</a>") : newRow.addCell(rowData[i]);
                 case 1: break;
                 case 3: if(rowData.length == 10){newRow.addCell("");  } newRow.addCell(rowData[i]); break;
                 case 4: 
@@ -242,7 +242,7 @@
         </div>
         
           <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a id="brand" class="navbar-brand" href="#">RBY2K20</a>
+            <a id="brand" class="navbar-brand" href="index.html">RBY2K20</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>

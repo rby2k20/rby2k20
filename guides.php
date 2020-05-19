@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RB2k20: Home</title>
-
+    <title>
+            RBY2k20: Guides
+        </title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,13 +13,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="css/nav.css">
-
+        <script src="js/tableMaker.js"></script>
+        <script src="js/sorttable.js"></script>
+        <link rel="stylesheet" href="css/dex_table.css">
     </head>
     <body>
-
-
-          <!--NAVBAR-->
-        <div id="navLogo">
+                  <!--NAVBAR-->
+                  <div id="navLogo">
             <img src="images/FinalLogo.png">
         </div>
         
@@ -61,7 +62,7 @@
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="https://discord.gg/GYFJmfm">Discord</a>
                     <a class="dropdown-item" href="https://rby2k20.freeforums.net/">Forum</a>
-                    <a class="dropdown-item" href="#">Pokemon Showdown Sever</a>
+                    <a class="dropdown-item" href="http://pokemonperfect.psim.us/">Pokemon Showdown Sever</a>
                   </div>
                 </li>
                 
@@ -69,18 +70,7 @@
             </div>
           </nav>
 
+
         <!--NAVBAR-->
-
-
-        <!--Big Meme, don't use center-->
-        <center>
-            <img src="images/alphalogobig.png">
-            <h3 style="font-family: sans-serif;"><strong>Coming Soon!</strong></h3>
-        </center>
-
-
- 
     </body>
 </html>
-
-

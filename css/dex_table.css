@@ -2,6 +2,12 @@
 {
    padding: 32px;
    text-align: center;
+   overflow-x: scroll;
+   max-width: 100%;
+}
+
+body {
+    max-width: 100%;
 }
 
 #search
@@ -13,7 +19,7 @@
     text-align: center;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
+    top: -2px;
 }
 
 #dex table

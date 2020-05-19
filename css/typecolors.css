@@ -1,0 +1,93 @@
+span.Fire, span.Water, span.Normal, span.Flying, span.Electric, span.Ice, span.Fighting, span.Poison, span.Bug, span.Psychic, span.Dark, span.Grass, span.Ghost, span.Ground, span.Rock, span.Steel, span.Dragon 
+{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+span.Fire 
+{
+    background-color: #f08030;
+}
+
+span.Water 
+{
+    background-color: #6890f0;
+}
+
+span.Normal  
+{
+    background-color: #a8a878;
+}
+
+span.Flying  
+{
+    background-color: #a890f0;
+}
+
+span.Electric 
+{
+    background-color: #f8d030;
+}
+
+span.Ice 
+{
+    background-color: #98d8d8;
+}
+
+span.Poison 
+{
+    background-color: #a040a0;
+}
+
+span.Fighting 
+{
+    background-color: #c03028;
+}
+
+span.Bug 
+{
+    background-color: #78c850;
+}
+
+span.Psychic 
+{
+    background-color: #f85888;
+}
+
+span.Dark 
+{
+    background-color: #705848;
+}
+
+span.Grass
+{
+    background-color: #78c850;
+}
+
+span.Ghost 
+{
+    background-color: #705898;
+}
+
+span.Ground 
+{
+    background-color: #e0c068;
+}
+
+span.Rock
+{
+    background-color: #b8a038;
+}
+
+span.Steel 
+{
+    background-color: #b8b8d0;
+}
+
+span.Dragon 
+{
+    background-color: #7038f8;
+}
