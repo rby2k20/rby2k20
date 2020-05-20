@@ -89,6 +89,7 @@
             
             .sprite 
             {
+                image-rendering: crisp-edges;
                 border-style: solid;
                 border-color: black;
                 border-radius: 8px;
@@ -97,6 +98,7 @@
                 height: 192px;
                 margin: 16px;
                 background-color: #ddd;
+                
             }
 
             .pokepanel
