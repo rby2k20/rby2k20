@@ -93,10 +93,11 @@
                 border-color: black;
                 border-radius: 8px;
                 border-width: 4px;
-                width: 192px;
-                height: 192px;
+                width: 198px;
+                height: 198px;
                 margin: 16px;
                 background-color: #ddd;
+                image-rendering: crisp-edges;
             }
 
             .pokepanel
