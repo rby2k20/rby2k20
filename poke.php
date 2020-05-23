@@ -205,6 +205,9 @@
                         </div>
                         <div class="col-1"></div>
                     </div>
+                    <div class="analysis">
+                    
+                    </div>
                 </div>
             </div>
 
@@ -231,6 +234,9 @@
                         </div>
                         <div class="col-1"></div>
                     </div>
+                    <div class="analysis">
+                    
+                    </div>
                 </div>
             </div>
 
@@ -256,6 +262,9 @@
                             </table>
                         </div>
                         <div class="col-1"></div>
+                    </div>
+                    <div class="analysis">
+                    
                     </div>
                 </div>
             </div>
@@ -363,10 +372,22 @@
                 }
             }
 
+
+
             window.addEventListener('load', function () 
             {
                 openTab(this, meta);
-            })
+
+                fetch('Analyses/' + mon + ".html")
+                    .then(response => response.text())
+                    .then((data) => {
+                        document.getElementsByClassName("analysis")[0].innerHTML = data;
+                        document.getElementsByClassName("analysis")[1].innerHTML = data;
+                        document.getElementsByClassName("analysis")[2].innerHTML = data;
+                    });
+
+                
+            });
 
             
 
