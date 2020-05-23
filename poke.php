@@ -93,7 +93,7 @@
                 border-color: black;
                 border-radius: 8px;
                 border-width: 4px;
-                width: 198px;
+                min-width: 198px;
                 height: 198px;
                 margin: 16px;
                 background-color: #ddd;
@@ -281,12 +281,30 @@
                 catch (exception) { document.getElementById(tabName+"tab").className += " active"; }
             }
 
+            barcolor = (val) =>
+            {
+                if(val < 50)
+                    return "rgb(255,0,0);";
+                else if(val < 75)
+                    return "rgb(255,127,0);";
+                else if(val < 100)
+                    return "rgb(180,180,0);";
+                else if(val < 125)
+                    return "rgb(127,255,0);";
+                else
+                    return "rgb(0,180,0);";
+            }
+
+            colorbarString = (val) =>
+            {
+                return "&nbsp;&nbsp;&nbsp; <span style=\"display: inline-block; border-style: solid; border-width: 1px; border-color: black; height: 16px; background-color: " 
+                    + barcolor(val) + " width: " + (val*2) + "px;\"></span>";
+            }
+
             var meta = "<?php echo $_GET['meta']; ?>";
             var mon = "<?php echo $_GET['mon']; ?>";
 
-            window.addEventListener('load', function () {
-                openTab(this, meta);
-            })
+           
             
             var rbydata = <?php 
             $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv';
@@ -330,9 +348,27 @@
                     document.getElementsByClassName("atk")[1].innerHTML = rowData[5-offset]; 
                     document.getElementsByClassName("def")[1].innerHTML = rowData[6-offset]; 
                     document.getElementsByClassName("spc")[1].innerHTML = rowData[7-offset]; 
-                    document.getElementsByClassName("spe")[1].innerHTML = rowData[8-offset];  
+                    document.getElementsByClassName("spe")[1].innerHTML = rowData[8-offset]; 
+
+                    document.getElementsByClassName("hpb")[0].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[0].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[0].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[0].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[0].innerHTML = colorbarString(rowData[8-offset]);  
+                    document.getElementsByClassName("hpb")[1].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[1].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[1].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[1].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[1].innerHTML = colorbarString(rowData[8-offset]);  
                 }
             }
+
+            window.addEventListener('load', function () 
+            {
+                openTab(this, meta);
+            })
+
+            
 
         </script>
 
