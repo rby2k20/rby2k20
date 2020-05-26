@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/nav.css">
         <script src="js/tableMaker.js"></script>
         <script src="js/sorttable.js"></script>
+        <script src="js/includes.js"></script>
         <link rel="stylesheet" href="css/dex_table.css">
         <style>
           #dex table:first-child tr td:first-child:hover
@@ -236,60 +237,10 @@
     <body>
 
 
-          <!--NAVBAR-->
-          <div id="navLogo">
-            <img src="images/FinalLogo.png">
+        <div id="navcontainer">
+            <script>nav("navcontainer");</script>
         </div>
-        
-          <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a id="brand" class="navbar-brand" href="index.html">RBY2K20</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Pokedex
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="pokedex.php?meta=rby">RBY OU</a>
-                        <a class="dropdown-item" href="pokedex.php?meta=rby1u">RBY 1U</a>
-                        <a class="dropdown-item" href="pokedex.php?meta=violet">Violet</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Guides
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="guides.php?tag=rby">RBY OU</a>
-                        <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
-                        <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
-                        <a class="dropdown-item" href="guides.php">All Tiers</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Patricipate
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="https://discord.gg/GYFJmfm">Discord</a>
-                    <a class="dropdown-item" href="https://rby2k20.freeforums.net/">Forum</a>
-                    <a class="dropdown-item" href="#">Pokemon Showdown Sever</a>
-                  </div>
-                </li>
-                
-              </ul>
-            </div>
-          </nav>
 
-
-        <!--NAVBAR-->
 
         <div id="search">
           <h3 style ="margin-left:1%">Search: <input height="32" width="128" type="text" id="kwd_search" placeholder=""></h3>
