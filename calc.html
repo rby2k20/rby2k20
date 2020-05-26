@@ -40,7 +40,7 @@
     </div>
 
 
-        <iframe frameBorder="0" src="https://sulcata.github.io/sulcalc/"></iframe>
+        <iframe id="iframe" frameBorder="0" onload="rbyify()" src="https://sulcata.github.io/sulcalc/"></iframe>
 
         <script>
             
@@ -50,6 +50,15 @@
                 document.getElementsByTagName("iframe")[0].style.height = "-webkit-calc(100vh - "+ navHeight +"px)";
                 document.getElementsByTagName("iframe")[0].style.height = "calc(100vh - "+ navHeight +"px)";
              });
+
+
+             rbyify = () =>
+             {
+                var x = document.getElementById("iframe");
+                var y = (x.contentWindow || x.contentDocument);
+                if (y.document)y = y.document;
+                y.body.style.backgroundColor = "red";
+             }
         </script>
 
 
