@@ -9,11 +9,9 @@ nav = (id) =>
     });
     
     setTimeout(function(){
-        console.log(document.getElementById("navcontainer").offsetHeight);
         window.dispatchEvent(navEvent);
     }, 250);
-    
-    console.log("event called");
+
 }
 
 footer = (id) =>
