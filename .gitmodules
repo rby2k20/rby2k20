@@ -1,0 +1,4 @@
+[submodule "sulcalc"]
+	path = sulcalc
+	url = https://github.com/rby2k20/sulcalc.git
+	branch = gh-pages
