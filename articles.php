@@ -23,7 +23,7 @@
             <script>nav("navcontainer");</script>
         </div>
 
-        <div id="articles">
+        <div id="articles" class="container">
             
         </div>
 
@@ -45,19 +45,18 @@
 
                 setTimeout(function waiting() {
 
-                    
-
                     for(var i = 0; i < articles.length; i++)
-                    {
-                        this.output += mkBtstpDiv(articles[i].title, "");
-                        output += mkBtstpDiv(articles[i].author, "");
-                        output += mkBtstpDiv(articles[i].day + " " + articles[i].month + " " + articles[i].year,"");
-                        output += mkBtstpDiv(articles[i].tier, "");
+                    { 
+                        output += "<a href=\"read.php?article=" + articles[i].filename +"\"><div class=\"row\">" 
+                        output += mkBtstpDiv(articles[i].title, "col-12 col-md-5");
+                        output += mkBtstpDiv(articles[i].author, "col-12 col-md-2");
+                        output += mkBtstpDiv(articles[i].day + " " + articles[i].month + " " + articles[i].year + "  &nbsp;&nbsp;&nbsp;"+ articles[i].tier,"col-12 col-md-5")  ;
+                        output += "</div></a>";
                     }
 
                     console.log(output);
                     document.getElementById("articles").innerHTML = output;
-                }, 350);
+                }, 500);
 
                 
         </script>

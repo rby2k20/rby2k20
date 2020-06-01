@@ -1,0 +1,32 @@
+#articles
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: auto;
+    padding: 20px;
+    font-size: 16px;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+#articles .row
+{
+    background-color: crimson;
+    margin: 16px;
+    color: yellow;
+    font-weight: bold;
+    padding: 6px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#articles .row:hover
+{
+    background-color: darkred;
+    transition-duration: .33s;
+}

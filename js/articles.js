@@ -6,6 +6,7 @@ class article {
     month = "";
     year = "";
     tier = "";
+    filename = ""
     sticky = false;
 
     constructor(url)
@@ -17,6 +18,7 @@ class article {
         .then((data) => {
             try
             {
+                this.filename = url;
                 var doc = new DOMParser().parseFromString(data, "text/html");
                 this.title = doc.getElementsByTagName("title")[0].innerHTML;
                 this.author = doc.getElementsByTagName("author")[0].innerHTML;
