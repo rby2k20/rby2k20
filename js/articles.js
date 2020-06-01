@@ -1,6 +1,6 @@
 class article {
 
-    title = "";
+    title = "Failed to load. Please refresh.";
     author = "";
     day = "";
     month = "";

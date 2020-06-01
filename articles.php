@@ -43,8 +43,10 @@
                     articles.push(new article(files[i]));
                 }
 
-                setTimeout(function(){
-                
+                setTimeout(function waiting() {
+
+                    
+
                     for(var i = 0; i < articles.length; i++)
                     {
                         this.output += mkBtstpDiv(articles[i].title, "");
@@ -55,7 +57,7 @@
 
                     console.log(output);
                     document.getElementById("articles").innerHTML = output;
-                }, 250);
+                }, 350);
 
                 
         </script>

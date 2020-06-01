@@ -102,35 +102,56 @@
               idx = idx-1;
             if(!header) 
             {
-                    var num = (idx == 9 || (length == 10 && idx == 8)) ? parseInt(rowData[idx]/3) : parseInt(rowData[idx]);
+                    var num = (idx == 9 || (length == 10 && idx == 8)) ? parseInt(rowData[idx]/5) : parseInt(rowData[idx]);
                     var red = 0;
                     var green = 0;
                     var blue = 0;
 
-                    if(num <=60){
-                        red = 230;
-                        green = 100 * ((num)/60.0);
+                    if(num <=30){
+                        red = 180;
+                        green = 28;
+                        blue = 11;
                     }
-                    else if(num <=80){
-                        num -= 15;
-                        red = 230;
-                        green = 100 + 155 * ((num)/30.0);
+                    else if(num < 60){
+                        red = 180 + (16*num/15);
+                        green = 28 + (104*num/30);
+                        blue = 11 + (num/10);
                     }
-                    else if(num <= 100){
-                        num -= 30;
-                        red = 200 - (200 * ((30-num)/30.0));
-                        green = 200;
+                    else if(num == 60){
+                        red = 222;
+                        green = 132;
+                        blue = 14;
                     }
-                    else if(num <= 120){
-                        num -= 40;
-                        red = 0;
-                        green = 150;
-                        blue = 200 + ((num)/30.0);
+                    else if(num < 90){
+                        red = 222 + (14*num/15);
+                        green = 132 + (33*num/10);
+                        console.log("green: " + green + "  Num: " + num);
+                        blue = 14 + (num/5);
                     }
-                    else if(num > 120){
-                        red = 100
-                        green = 200;
-                        blue = 250;
+                    else if(num == 90){
+                        red = 250;
+                        green = 231;
+                        blue = 20;
+                    }
+                    else if(num < 120){
+                        red = 250 - (51*(num%30)/15);
+                        green = 231 + (4*num/5);
+                        blue = 20 + (num/5);
+                    }
+                    else if(num == 120){
+                        red = 148;
+                        green = 255;
+                        blue = 26;
+                    }
+                    else if(num <= 150){
+                        red = 148 - (num/2);
+                        green = 255 - (8*num/15);
+                        blue = 26 + (71*num/10);
+                    }
+                    else if(num > 150){
+                        red = 133;
+                        green = 239;
+                        blue = 239;
                     }
                     else{
                       console.log("failed: " + length)
@@ -139,9 +160,9 @@
                     blue = Math.round(blue);
                     red = Math.round(red);
                     green = Math.round(green);
-                    blue1 = Math.round(blue*.75);
-                    red1 = Math.round(red*.75);
-                    green1 = Math.round(green*.75);
+                    blue1 = Math.round(blue*.9);
+                    red1 = Math.round(red*.9);
+                    green1 = Math.round(green*.9);
                     if(length == 10)
                       idx++;
                     newRow.addAtr(idx-1, "style", "background: linear-gradient(to bottom right, rgb(" +red+","+green+","+blue+"), rgb(" +red1+","+green1+","+blue1+"))");
