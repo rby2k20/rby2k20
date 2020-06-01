@@ -52,6 +52,9 @@
 #nav
 {
     background-color: crimson !important;
+    /* position: -webkit-sticky; /* Safari */
+    /* position: sticky;*/
+    top: -1px; 
 }
 
 .navbar-light .navbar-toggler-icon 
@@ -74,7 +77,7 @@
 #navLogo
 {
     text-align: center;
-    background-color: crimson;
+    background-color: #f2738c ;
 }
 
 #navLogo img
