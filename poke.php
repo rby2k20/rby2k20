@@ -43,7 +43,7 @@
                 transition: 0.3s;
                 font-size: 17px;
                 color: yellow;
-                font-weight: bold;
+                /* font-weight: bold; */
             }
 
             /* Change background color of buttons on hover */

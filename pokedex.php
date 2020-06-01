@@ -113,9 +113,9 @@
                         blue = 11;
                     }
                     else if(num < 60){
-                        red = 180 + (16*num/15);
-                        green = 28 + (104*num/30);
-                        blue = 11 + (num/10);
+                        red = 180 + (16*(num % 30)/15);
+                        green = 28 + (104*(num % 30)/30);
+                        blue = 11 + ((num % 30)/10);
                     }
                     else if(num == 60){
                         red = 222;
@@ -123,10 +123,10 @@
                         blue = 14;
                     }
                     else if(num < 90){
-                        red = 222 + (14*num/15);
-                        green = 132 + (33*num/10);
+                        red = 222 + (14*(num % 30)/15);
+                        green = 132 + (33*(num % 30)/10);
                         console.log("green: " + green + "  Num: " + num);
-                        blue = 14 + (num/5);
+                        blue = 14 + ((num % 30)/5);
                     }
                     else if(num == 90){
                         red = 250;
@@ -134,19 +134,19 @@
                         blue = 20;
                     }
                     else if(num < 120){
-                        red = 250 - (51*(num%30)/15);
-                        green = 231 + (4*num/5);
-                        blue = 20 + (num/5);
+                        red = 250 - (51*(num % 30)/15);
+                        green = 231 + (4*(num % 30)/5);
+                        blue = 20 + ((num % 30)/5);
                     }
                     else if(num == 120){
                         red = 148;
                         green = 255;
                         blue = 26;
                     }
-                    else if(num <= 150){
-                        red = 148 - (num/2);
-                        green = 255 - (8*num/15);
-                        blue = 26 + (71*num/10);
+                    else if(num <= 200){
+                        red = 148 - (3*(num % 30)/16);
+                        green = 255 - ((num % 30)/15);
+                        blue = 26 + (213*(num % 30)/80);
                     }
                     else if(num > 150){
                         red = 133;
