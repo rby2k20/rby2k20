@@ -164,7 +164,8 @@
                             <a class="dropdown-item" href="https://discord.gg/GYFJmfm">Discord</a>
                             <a class="dropdown-item" href="https://rby2k20.freeforums.net/">Forum</a>
                             <a class="dropdown-item" href="http://pokemonperfect.psim.us/">Pokemon Showdown Sever</a>
-                          </div>
+                            <a class="dropdown-item" href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube</a>  
+                        </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
