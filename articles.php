@@ -20,7 +20,7 @@
     </head>
     <body>
                           <!--NAVBAR-->
-                          <div id="navLogo">
+                <div id="navLogo">
                     <img src="images/FinalLogo.png">
                 </div>
                 

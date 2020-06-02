@@ -77,13 +77,16 @@
 #navLogo
 {
     text-align: center;
-    background-color: #f2738c ;
+    background-color: crimson ;
+    padding: 20px;
 }
 
 #navLogo img
 {
     width: 10%;
+    background-image: radial-gradient( circle farthest-side at center, rgba(220,220,220,.8) 50.0%, rgba(220,20,60,1) 93.0% );
 }
+
 
 .navbar-nav .nav-item .dropdown-menu .dropdown-item
 {
