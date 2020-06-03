@@ -1,11 +1,9 @@
 #articles
 {
-    margin-left: 15%;
-    margin-right: 15%;
-    width: auto;
+    width: 100%;
     padding: 20px;
     font-size: 16px;
-    margin-top: 32px;
+    margin: auto;
 }
 
 #articles #header
@@ -22,6 +20,7 @@
     font-size: 16px;
     text-align: center;
     width: 100%;
+    margin: auto;
 }
 
 a:hover
