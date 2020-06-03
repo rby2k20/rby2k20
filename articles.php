@@ -93,7 +93,7 @@
         
 
         <div id="articles" class="container">
-            
+            <span id="loading">Loading Articles...</span>
         </div>
 
         <script>
@@ -105,21 +105,47 @@
                 echo json_encode($out); ?>;
 
                 var articles = [];
+                var unsortedArticles = [];
+                var stickyArticles = [];
                 var output = "";
 
                 for(var i = 0; i < files.length; i++)
                 {
-                    articles.push(new article(files[i]));
+                    unsortedArticles.push(new article(files[i]));
                 }
 
                 setTimeout(function waiting() {
 
+                    for(var i = 0; i < unsortedArticles.length; i++)
+                    {
+                        if(unsortedArticles[i].sticky)
+                          stickyArticles.push(unsortedArticles[i]);
+                        else
+                          articles.push(unsortedArticles[i]);
+                    }
+
+                    articles.sort(compareDates);
+                    stickyArticles.sort(compareDates);
+
+                    output += "<div id=\"header\" class=\"row\"><div class=\"col-4 col-md-3\">Publish Date</div><div class=\"col-8 col-md-5\">Title</div><div class=\"col-6 col-md-2 tier\">Tier</div><div class=\"col-6 col-md-2\">Author</div></div>"
+
+                    for(var i = 0; i < stickyArticles.length; i++)
+                    { 
+                        output += "<a href=\"read.php?article=" + stickyArticles[i].filename +"\"><div class=\"row\">" 
+                        output += mkBtstpDiv(frmtDate(stickyArticles[i].day, stickyArticles[i].month, stickyArticles[i].year),"col-4 col-md-3");
+                        output += mkBtstpDiv(stickyArticles[i].title, "col-8 col-md-5");
+                        output += mkBtstpDiv(stickyArticles[i].tier, "col-6 col-md-2 tier");
+                        output += mkBtstpDiv(stickyArticles[i].author, "col-6 col-md-2");
+                        output += "</div></a>";
+                    }
+
                     for(var i = 0; i < articles.length; i++)
                     { 
                         output += "<a href=\"read.php?article=" + articles[i].filename +"\"><div class=\"row\">" 
-                        output += mkBtstpDiv(articles[i].title, "col-12 col-md-5");
-                        output += mkBtstpDiv(articles[i].author, "col-12 col-md-2");
-                        output += mkBtstpDiv(articles[i].day + " " + articles[i].month + " " + articles[i].year + "  &nbsp;&nbsp;&nbsp;"+ articles[i].tier,"col-12 col-md-5")  ;
+                        output += mkBtstpDiv(frmtDate(articles[i].day, articles[i].month, articles[i].year),"col-4 col-md-3");
+                        output += mkBtstpDiv(articles[i].title, "col-8 col-md-5");
+                        output += mkBtstpDiv(articles[i].tier, "col-6 col-md-2 tier");
+                        output += mkBtstpDiv(articles[i].author, "col-6 col-md-2");
                         output += "</div></a>";
                     }
 

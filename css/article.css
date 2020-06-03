@@ -5,6 +5,23 @@
     width: auto;
     padding: 20px;
     font-size: 16px;
+    margin-top: 32px;
+}
+
+#articles #header
+{
+    color: yellow;
+    background-color: crimson;
+    text-align: center;
+}
+
+#loading
+{
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
 }
 
 a:hover
@@ -14,19 +31,24 @@ a:hover
 
 #articles .row
 {
-    background-color: crimson;
-    margin: 16px;
-    color: yellow;
+    margin: 0px;
+    color: black;
     font-weight: bold;
-    padding: 6px;
+    padding: 4px;
     border-color: black;
     border-style: solid;
     border-width: 1px;
-    border-radius: 4px;
+    margin-bottom: -1px;
 }
 
 #articles .row:hover
 {
-    background-color: darkred;
+    background-color: lightgray;
     transition-duration: .33s;
+    color: black;
+}
+
+.tier
+{
+    text-align: center;
 }
