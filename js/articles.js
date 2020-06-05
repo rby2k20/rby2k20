@@ -7,6 +7,7 @@ class article {
     year = "";
     tier = "";
     filename = ""
+    content = ""
     sticky = false;
 
     constructor(url)
@@ -27,6 +28,7 @@ class article {
                 this.year = doc.getElementsByTagName("pubyear")[0].innerHTML;
                 this.tier = doc.getElementsByTagName("tier")[0].innerHTML;
                 this.sticky = doc.getElementsByTagName("sticky")[0].innerHTML == 'true';
+                this.content = doc.getElementsByTagName("article")[0].innerHTML;
             }
             catch (Exception)
             {

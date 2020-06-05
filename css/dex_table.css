@@ -44,16 +44,22 @@ body {
 
 #dex table td
 {
-    padding: 4px 6px 4px 6px;
+    padding: 0px 6px 0px 6px;
     font-weight: bold;
     color: black;
     max-width: 600px;
+    height: 32px; 
+    max-height: 32px; 
+    vertical-align: center;
 }
 
 #dex table td a
 {
     text-decoration: none;
-    color: black
+    color: black;
+    max-height: 32px; 
+    min-height: 32px; 
+    vertical-align: middle;
 }
 
 #dex table th, #dex table td

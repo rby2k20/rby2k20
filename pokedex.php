@@ -169,7 +169,7 @@
                   }
            }
 
-
+          var n =0;
           while(Pokedata.hasNext())
           {
             var newRow = new row();
@@ -179,7 +179,7 @@
             {
               switch(i)
               {
-                case 0: (!header)? newRow.addCell("<a href=\"poke.php?meta="+ meta +"&mon=" + rowData[i] + "\">" + rowData[i]+"</a>") : newRow.addCell(rowData[i]);
+                case 0: (!header)? newRow.addCell("<img src=\"images/smallsprites/"+ ++n +".png\">" + "<a href=\"poke.php?meta="+ meta +"&mon=" + rowData[i] + "\"> &nbsp;" + rowData[i]+"</a>") : newRow.addCell(rowData[i]);
                 case 1: break;
                 case 3: if(rowData.length == 10){newRow.addCell("");  } newRow.addCell(rowData[i]); break;
                 case 4: 

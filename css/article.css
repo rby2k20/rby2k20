@@ -1,9 +1,11 @@
 #articles
 {
     width: 100%;
-    padding: 20px;
     font-size: 16px;
     margin: auto;
+    padding: 0;
+    margin-top: 32px;
+    box-shadow: 12px 12px 7px #888888;
 }
 
 #articles #header
