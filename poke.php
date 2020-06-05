@@ -394,25 +394,22 @@
             window.addEventListener('load', function () 
             {
                 openTab(this, meta);
-
+                console.log('Analyses/rbyou/' + mon + ".html");
                 fetch('Analyses/rbyou/' + mon + ".html")
-                    .then(response => response.text())
+                    .then(response => {if(response.ok) return response.text(); else return ""})
                     .then((data) => {
-                        if(response.ok)
                             document.getElementsByClassName("analysis")[0].innerHTML = data;
                     });
 
                 fetch('Analyses/rby1u/' + mon + ".html")
-                    .then(response => response.text())
+                    .then(response => {if(response.ok) return response.text(); else return ""})
                     .then((data) => {
-                        if(response.ok)
                             document.getElementsByClassName("analysis")[1].innerHTML = data;
                     });
 
                 fetch('Analyses/violet/' + mon + ".html")
-                    .then(response => response.text())
+                    .then(response => {if(response.ok) return response.text(); else return ""})
                     .then((data) => {
-                        if(response.ok)
                             document.getElementsByClassName("analysis")[2].innerHTML = data;
                     });
                 
