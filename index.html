@@ -94,33 +94,66 @@
 
 
         <!--Big Meme, don't use center-->
-        <center>
-            <img src="images/alphalogobig.png">
-            <p>Welcome to RBY2k20! We are a growing community of competitive RBY players. Get involved by joining our <a href="https://discord.gg/vdnqxUj">Discord</a>, battling on our PS Server, joining tournaments on our <a href="https://rby2k20.freeforums.net/">forum</a>, and watching content on our <a href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube channel!</a></p>
 
-            <p>We support <a href="https://www.smogon.com/rb/">RBY OU</a>, RBY 1U (where tradebacks are legal), and Violet Version, a modification of the game.</p>
+        <center>
+          <div>
+            <div>
+              <img src="images/alphalogobig.png">
+              <p>Welcome to RBY2k20! We are a growing community of competitive RBY players. Get involved by joining our <a href="https://discord.gg/vdnqxUj">Discord</a>, battling on our PS Server, joining tournaments on our <a href="https://rby2k20.freeforums.net/">forum</a>, and watching content on our <a href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube channel!</a></p>
+              <p>We support <a href="https://www.smogon.com/rb/">RBY OU</a>, RBY 1U (where tradebacks are legal), and Violet Version, a modification of the game.</p>
+            </div>
+          </div>
         </center>
 
         <style>
-          center img {
-            width: 400px;
-            margin-bottom: 50px;
-            margin-top: 16px;
-          }
+          html, body {height: 100%; overflow: hidden;}
 
           center {
+            position: relative;
             font-size: 1.1rem;
-            margin-left: 20%;
-            margin-right: 20%;
+            left:0px;
+            top:0px;
+            right:0px;
+            bottom:0px;
           }
 
-          center a{
+          center div div {
+            padding: 120px 64px;
+            margin: 0;
+            height: auto;
+            background-color: rgba(220, 225, 250,1);
+            border-style: solid;
+            border-width: 2px;
+            border-color: lightblue;
+            border-radius: 20px;
+            z-index: 1;
+          }
+
+          center div div img{
+            position: absolute;
+            top: 6vh;
+            left: 0;
+            right: 0;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.6;
+          }
+
+
+          center div {
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 6vh 0;
+          }
+
+          center div div p a{
             color: darkblue;
             font-weight: bold;
             text-decoration: none;
           }
 
-          center a:hover{
+          center div div p a:hover{
             color: darkblue;
             font-weight: bold;
             text-decoration: underline;
