@@ -612,6 +612,5 @@
             document.getElementsByClassName("learnset")[1].innerHTML = rby1utable.print();
             document.getElementsByClassName("learnset")[2].innerHTML = violettable.print();
         </script>
-
     </body>
 </html>
