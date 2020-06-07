@@ -14,108 +14,11 @@
         
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/typecolors.css">
+        <link rel="stylesheet" href="css/poke.css">
         <script src="js/tableMaker.js"></script>
         <script src="js/sorttable.js"></script>
         <script src="js/includes.js"></script>
-        <style>
-            body {
-                font-family: Arial;
-                background-color: #1464dc;
-            }
 
-            /* Style the tab */
-            .tab 
-            {
-                overflow: hidden;
-                background-color: crimson;
-                text-align: center;
-            }
-
-            /* Style the buttons inside the tab */
-            .tab button 
-            {
-                background-color: inherit;
-                float: center;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                padding: 14px 16px;
-                transition: 0.3s;
-                font-size: 17px;
-                color: yellow;
-                /* font-weight: bold; */
-            }
-
-            /* Change background color of buttons on hover */
-            .tab button:hover 
-            {
-                background-color: darkred;
-
-            }
-
-            /* Create an active/current tablink class */
-            .tab button.active 
-            {
-                background-color: #1464dc;
-                color: white;
-            }
-
-            /* Style the tab content */
-            .tabcontent 
-            {
-                display: none;
-                padding: 6px 12px;
-                border-top: none;
-                background-color: #1464dc;
-                color:white;
-                padding-top: 32px;
-            }
-
-            table 
-            {
-                display: inline-block;
-            }
-
-            td:first-child, .stats td:nth-child(2)
-            {
-                text-align: right;
-            }
-
-            td 
-            {
-                text-align: left;
-                font-weight: bold;
-                font-size: 18px;
-            }
-            
-            .sprite 
-            {
-                border-style: solid;
-                border-color: black;
-                border-radius: 8px;
-                border-width: 4px;
-                min-width: 198px;
-                height: 198px;
-                margin: 16px;
-                background-color: #ddd;
-                image-rendering: crisp-edges;
-            }
-
-            .pokepanel
-            {
-                display: flex;
-                align-items: center;
-            }
-            
-            #content {
-                text-align: center;
-                background-color: #1464dc;
-            }
-
-            h2 {
-                font-weight: bold;
-            }
-        </style>
     </head>
     <body>
 
@@ -194,11 +97,7 @@
 
 
         <div id="content">
-            <div class="tab">
-                <button class="tablinks" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</button>
-                <button class="tablinks" id="rby1utab" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
-                <button class="tablinks" id="violettab" onclick="openTab(event, 'violet')">Violet</button>
-            </div>
+            
             <div id="rby" class="tabcontent">
                 <h2><?php echo $_GET['mon'] ?></h2>
                 <div class="container">
@@ -221,6 +120,11 @@
                             </table>
                         </div>
                         <div class="col-1"></div>
+                    </div>
+                    <div class="tab btn-group">
+                        <button class="tablinks" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</button>
+                        <button class="tablinks" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
+                        <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
                     </div>
                     <div class="analysis">
                     
@@ -251,6 +155,11 @@
                         </div>
                         <div class="col-1"></div>
                     </div>
+                    <div class="tab btn-group">
+                        <button class="tablinks" id="" onclick="openTab(event, 'rby')">RBY OU</button>
+                        <button class="tablinks" id="rby1utab" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
+                        <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
+                    </div>
                     <div class="analysis">
                     
                     </div>
@@ -280,6 +189,11 @@
                         </div>
                         <div class="col-1"></div>
                     </div>
+                    <div class="tab btn-group">
+                        <button class="tablinks" id="" onclick="openTab(event, 'rby')">RBY OU</button>
+                        <button class="tablinks" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
+                        <button class="tablinks" id="violettab" onclick="openTab(event, 'violet')">Violet</button>
+                    </div>
                     <div class="analysis">
                     
                     </div>
@@ -303,7 +217,10 @@
                     tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
                 document.getElementById(tabName).style.display = "block";
-                try { evt.currentTarget.className += " active"; }
+                try 
+                { 
+                    document.getElementById(tabName+"tab").className += " active";
+                }
                 catch (exception) { document.getElementById(tabName+"tab").className += " active"; }
             }
 
@@ -323,8 +240,10 @@
 
             colorbarString = (val) =>
             {
-                return "&nbsp;&nbsp;&nbsp; <span style=\"display: inline-block; border-style: solid; border-width: 1px; border-color: black; height: 16px; background-color: " 
-                    + barcolor(val) + " width: " + (val*2) + "px;\"></span>";
+                var color = barcolor(val);
+                 // border-style: solid; border-width: 1px; border-color: black; 
+                return "&nbsp;&nbsp;&nbsp; <span style=\"max-width: 292px; display: inline-block;border-style: solid; border-radius:4px; border-width: 1px; border-color: "+color+";height: 16px; background-color: " 
+                    + color + " width: " + (val*2) + "px;\"></span>";
             }
 
             var meta = "<?php echo $_GET['meta']; ?>";
@@ -391,24 +310,82 @@
 
 
 
+
+
+
+            var violetdata = <?php 
+            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=269848004&single=true&output=csv';
+            
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var violetdata = new tableScanner(violetdata, "~");
+            var rbytable = new table(meta);
+            var found = false;
+            while(violetdata.hasNext())
+            {
+                var rowData = violetdata.next();
+                if(rowData[0] == mon)
+                {
+                    found = true;
+                    var offset = 0; 
+                    if(rowData.length == 10) { offset = 1 };
+                    document.getElementsByClassName("type")[2].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");
+                    document.getElementsByClassName("tier")[2].innerHTML = rowData[10-offset];
+
+                    document.getElementsByClassName("hp")[2].innerHTML = rowData[4-offset];
+                    document.getElementsByClassName("atk")[2].innerHTML = rowData[5-offset]; 
+                    document.getElementsByClassName("def")[2].innerHTML = rowData[6-offset]; 
+                    document.getElementsByClassName("spc")[2].innerHTML = rowData[7-offset]; 
+                    document.getElementsByClassName("spe")[2].innerHTML = rowData[8-offset];  
+
+                    document.getElementsByClassName("hpb")[2].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[2].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[2].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[2].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[2].innerHTML = colorbarString(rowData[8-offset]);  
+                }
+            }
+
+            if(!found)
+            {
+                tablinks = document.getElementsByClassName("tablinks");
+                tablinks[2].className += " hidden";
+                tablinks[5].className += " hidden";
+                tablinks[7].className += " hidden";
+            }
+
             window.addEventListener('load', function () 
             {
                 openTab(this, meta);
                 console.log('Analyses/rbyou/' + mon + ".html");
                 fetch('Analyses/rbyou/' + mon + ".html")
-                    .then(response => {if(response.ok) return response.text(); else return ""})
+                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head to the forum and write one? :)</p>"})
                     .then((data) => {
                             document.getElementsByClassName("analysis")[0].innerHTML = data;
                     });
 
                 fetch('Analyses/rby1u/' + mon + ".html")
-                    .then(response => {if(response.ok) return response.text(); else return ""})
+                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head to the forum and write one? :)</p>"})
                     .then((data) => {
                             document.getElementsByClassName("analysis")[1].innerHTML = data;
                     });
 
                 fetch('Analyses/violet/' + mon + ".html")
-                    .then(response => {if(response.ok) return response.text(); else return ""})
+                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head to the forum and write one? :)</p>"})
                     .then((data) => {
                             document.getElementsByClassName("analysis")[2].innerHTML = data;
                     });
