@@ -23,13 +23,13 @@
         
         <link rel="stylesheet" href="css/nav.css">
         <script src="js/includes.js"></script>
-        <script src="js/articles.js"></script>
+        <script src="js/guides.js"></script>
     </head>
     <body>
 
 
-                  <!--NAVBAR-->
-                  <div id="navLogo">
+ <!--NAVBAR-->
+ <div id="navLogo">
                     <img src="images/FinalLogo.png">
                 </div>
                 
@@ -56,13 +56,13 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Articles
+                                Guides
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="articles.php?tag=rbyou">RBY OU</a>
-                                <a class="dropdown-item" href="articles.php?tag=rby1u">RBY 1U</a>
-                                <a class="dropdown-item" href="articles.php?tag=violet">Violet</a>
-                                <a class="dropdown-item" href="articles.php">All Tiers</a>
+                                <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
+                                <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
+                                <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+                                <a class="dropdown-item" href="guides.php">All Tiers</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -74,7 +74,7 @@
                             <a class="dropdown-item" href="https://rby2k20.freeforums.net/">Forum</a>
                             <a class="dropdown-item" href="http://pokemonperfect.psim.us/">Pokemon Showdown Sever</a>
                             <a class="dropdown-item" href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube</a>
-                        </div>
+                          </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,7 +109,7 @@
 
         <script>
             console.log('<?php echo $_GET['article'] ?>');
-            var content = new article('<?php echo $_GET['article'] ?>');
+            var content = new guide('<?php echo $_GET['article'] ?>');
 
             setTimeout(function waiting() {    
                 document.title = "RBY2k20: " + content.title;

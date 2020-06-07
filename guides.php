@@ -25,7 +25,7 @@
         
         <link rel="stylesheet" href="css/nav.css">
         <script src="js/includes.js"></script>
-        <script src="js/articles.js"></script>
+        <script src="js/guides.js"></script>
         <script src="js/tools.js"></script>
         <link rel="stylesheet" href="css/article.css">
     </head>
@@ -58,13 +58,13 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Articles
+                                Guides
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="articles.php?tag=rbyou">RBY OU</a>
-                                <a class="dropdown-item" href="articles.php?tag=rby1u">RBY 1U</a>
-                                <a class="dropdown-item" href="articles.php?tag=violet">Violet</a>
-                                <a class="dropdown-item" href="articles.php">All Tiers</a>
+                                <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
+                                <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
+                                <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+                                <a class="dropdown-item" href="guides.php">All Tiers</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -104,13 +104,13 @@
         
 
         <div id="articles" class="container">
-            <span id="loading">Loading Articles...</span>
+            <span id="loading">Loading Guides...</span>
         </div>
 
         <script>
                 var tag = '<?php echo $_GET['tag'] ?>';
                 var files = <?php $out = array();
-                foreach (glob('articles/*.html') as $filename) {
+                foreach (glob('Guides/*.html') as $filename) {
                     $p = pathinfo($filename);
                     $out[] = $p['filename'];
                 }
@@ -123,7 +123,7 @@
 
                 for(var i = 0; i < files.length; i++)
                 {
-                    unsortedArticles.push(new article(files[i]));
+                    unsortedArticles.push(new guide(files[i]));
                 }
 
                 setTimeout(function waiting() {

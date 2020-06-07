@@ -1,4 +1,4 @@
-class article {
+class guide {
 
     title = "Failed to load. Please refresh.";
     author = "";
@@ -14,7 +14,7 @@ class article {
     {
         
         
-        fetch("articles/" + url + ".html")
+        fetch("Guides/" + url + ".html")
         .then(response => response.text())
         .then((data) => {
             try

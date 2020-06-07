@@ -34,8 +34,8 @@
     </head>
     <body>
 
-                          <!--NAVBAR-->
-                          <div id="navLogo">
+ <!--NAVBAR-->
+ <div id="navLogo">
                     <img src="images/FinalLogo.png">
                 </div>
                 
@@ -62,13 +62,13 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Articles
+                                Guides
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="articles.php?tag=rbyou">RBY OU</a>
-                                <a class="dropdown-item" href="articles.php?tag=rby1u">RBY 1U</a>
-                                <a class="dropdown-item" href="articles.php?tag=violet">Violet</a>
-                                <a class="dropdown-item" href="articles.php">All Tiers</a>
+                                <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
+                                <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
+                                <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+                                <a class="dropdown-item" href="guides.php">All Tiers</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -79,8 +79,8 @@
                             <a class="dropdown-item" href="https://discord.gg/GYFJmfm">Discord</a>
                             <a class="dropdown-item" href="https://rby2k20.freeforums.net/">Forum</a>
                             <a class="dropdown-item" href="http://pokemonperfect.psim.us/">Pokemon Showdown Sever</a>
-                            <a class="dropdown-item" href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube</a>  
-                        </div>
+                            <a class="dropdown-item" href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube</a>
+                          </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
