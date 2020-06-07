@@ -23,6 +23,7 @@ h2
     border-width: 1px;
     border-color: crimson;
     border-radius: 50px;
+    box-shadow: 12px 12px 7px #888888;
 }
 
 .tabfiller
@@ -132,6 +133,7 @@ h2
     max-width: 960px;
     text-align: left;
     margin: auto;
+    box-shadow: 12px 12px 7px #888888;
 }
 
 .analysis h1

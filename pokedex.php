@@ -336,7 +336,7 @@
           <h3 style ="margin-left:1%">Search: <input height="32" width="128" type="text" id="kwd_search" placeholder=""></h3>
         </div>
 
-        <dix id="dex">
+        <dix id="dex" class="dex">
           <script>
             document.getElementById("dex").innerHTML += pokeTable.print() + moveTable.print();
           </script>

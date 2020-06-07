@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/typecolors.css">
         <link rel="stylesheet" href="css/poke.css">
+        <link rel="stylesheet" href="css/dex_table.css">
         <script src="js/tableMaker.js"></script>
         <script src="js/sorttable.js"></script>
         <script src="js/includes.js"></script>
@@ -129,6 +130,9 @@
                     <div class="analysis">
                     
                     </div>
+                    <div class="learnset dex">
+                        
+                    </div>
                 </div>
             </div>
 
@@ -161,7 +165,10 @@
                         <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
                     </div>
                     <div class="analysis">
-                    
+                        
+                    </div>
+                    <div class="learnset dex">
+                        
                     </div>
                 </div>
             </div>
@@ -196,6 +203,9 @@
                     </div>
                     <div class="analysis">
                     
+                    </div>
+                    <div class="learnset dex">
+
                     </div>
                 </div>
             </div>
@@ -368,32 +378,239 @@
                 tablinks[7].className += " hidden";
             }
 
+
+
             window.addEventListener('load', function () 
             {
                 openTab(this, meta);
                 console.log('Analyses/rbyou/' + mon + ".html");
                 fetch('Analyses/rbyou/' + mon + ".html")
-                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head to the forum and write one? :)</p>"})
+                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head over to the forum and write one? :)</p>"})
                     .then((data) => {
                             document.getElementsByClassName("analysis")[0].innerHTML = data;
                     });
 
                 fetch('Analyses/rby1u/' + mon + ".html")
-                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head to the forum and write one? :)</p>"})
+                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head over to the forum and write one? :)</p>"})
                     .then((data) => {
                             document.getElementsByClassName("analysis")[1].innerHTML = data;
                     });
 
                 fetch('Analyses/violet/' + mon + ".html")
-                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head to the forum and write one? :)</p>"})
+                    .then(response => {if(response.ok) return response.text(); else return "<p>No analysis found! Maybe head over to the forum and write one? :)</p>"})
                     .then((data) => {
                             document.getElementsByClassName("analysis")[2].innerHTML = data;
                     });
                 
             });
 
-            
 
+            //////////////////////////POKEMON LEARNSETS//////////////////////////////////
+
+            var rby_ls = <?php 
+            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1849607014&single=true&output=csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+            
+            var rby1u_ls = <?php 
+            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=44344892&single=true&output=csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+            
+            var violet_ls = <?php 
+            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=617265908&single=true&output=csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+            
+            var rbymoves = <?php 
+            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+            
+            var violetmoves = <?php 
+            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=2873338&single=true&output=csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+
+             //////////////////////////POKEMON LEARNSETS//////////////////////////////////
+
+             //get learnsets;
+            var rby_ls = new tableScanner(rby_ls, "~");
+            var rbytable = new table("rby");
+            var rbylearnset = [];
+            while(rby_ls.hasNext())
+            {
+                var rowData = rby_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        rbylearnset.push(rowData[i]);
+                    }
+                }
+            }
+
+            var rby1u_ls = new tableScanner(rby1u_ls, "~");
+            var rby1utable = new table("rby1u");
+            var rby1ulearnset = [];
+            while(rby1u_ls.hasNext())
+            {
+                var rowData = rby1u_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        rby1ulearnset.push(rowData[i]);
+                    }
+                }
+            }
+
+            var violet_ls = new tableScanner(violet_ls, "~");
+            var violettable = new table("violet");
+            var violetlearnset = [];
+            while(violet_ls.hasNext())
+            {
+                var rowData = violet_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        violetlearnset.push(rowData[i]);
+                    }
+                }
+            }
+
+            var rbymoves = new tableScanner(rbymoves, "~");
+            header = true;
+
+            //Add moves to correct tables
+
+            while(rbymoves.hasNext())
+            {
+                var newRow = new row();
+                newRow.setHeader(header);
+                var rowData = rbymoves.next();
+                
+                if(rbylearnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    rbytable.addRow(newRow);;
+                }
+                newRow = new row();
+                newRow.setHeader(header);
+                if(rby1ulearnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    rby1utable.addRow(newRow);
+                }
+                header = (false);
+            }
+
+            var violetmoves = new tableScanner(violetmoves, "~");
+            header = true;
+
+            while(violetmoves.hasNext())
+            {
+                var newRow = new row();
+                newRow.setHeader(header);
+                var rowData = violetmoves.next();
+                if(violetlearnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    violettable.addRow(newRow);
+                }
+
+                header = (false);
+            }
+            
+            document.getElementsByClassName("learnset")[0].innerHTML = rbytable.print();
+            document.getElementsByClassName("learnset")[1].innerHTML = rby1utable.print();
+            document.getElementsByClassName("learnset")[2].innerHTML = violettable.print();
         </script>
 
     </body>

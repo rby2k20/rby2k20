@@ -1,4 +1,4 @@
-#dex
+.dex
 {
    padding: 32px;
    text-align: center;
@@ -20,7 +20,7 @@ body {
 
 }
 
-#dex table
+.dex table
 {
     border-collapse: collapse;
     margin:auto;
@@ -29,21 +29,21 @@ body {
     box-shadow: 12px 12px 7px #888888;
 }
 
-#dex table td, #dex table, #dex table th
+.dex table td, .dex table, .dex table th
 {
     border-style: solid;
     border-width: 1px;
     border-color: black;
 }
 
-#dex table th
+.dex table th
 {
     color: white;
     padding: 5px 7px 5px 7px;
     text-align: center;
 }
 
-#dex table td
+.dex table td
 {
     padding: 0px 6px 0px 6px;
     font-weight: bold;
@@ -52,9 +52,10 @@ body {
     height: 32px; 
     max-height: 32px; 
     vertical-align: center;
+    font-size: 15px;
 }
 
-#dex table td a
+.dex table td a
 {
     text-decoration: none;
     color: black;
@@ -63,17 +64,17 @@ body {
     vertical-align: middle;
 }
 
-#dex table th, #dex table td
+.dex table th, .dex table td
 {
     text-align: center;
 }
 
-#dex table.rby th, #dex .rby1u th
+.dex table.rby th, .dex .rby1u th
 {
     background-color: crimson;
 }
 
-#dex table.violet th
+.dex table.violet th
 {
     background-color: violet;
 }
