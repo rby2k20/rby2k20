@@ -88,7 +88,7 @@ td
 {
     text-align: left;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .sprite 
@@ -108,6 +108,7 @@ td
 {
     display: flex;
     align-items: center;
+    font-size: 16px;
 }
 
 #content

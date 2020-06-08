@@ -6,6 +6,7 @@
   header("Pragma: no-cache");
 ?>
 
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,77 +29,107 @@
     <body>
 
 
- <!--NAVBAR-->
- <div id="navLogo">
-                    <img src="images/FinalLogo.png">
-                </div>
-                
-                  <nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-                    <a id="brand" class="navbar-brand" href="index.html">RBY2K20</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Pokedex
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="pokedex.php?meta=rby">RBY OU</a>
-                                <a class="dropdown-item" href="pokedex.php?meta=rby1u">RBY 1U</a>
-                                <a class="dropdown-item" href="pokedex.php?meta=violet">Violet</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Guides
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
-                                <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
-                                <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
-                                <a class="dropdown-item" href="guides.php">All Tiers</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Participate
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://discord.gg/GYFJmfm">Discord</a>
-                            <a class="dropdown-item" href="https://rby2k20.freeforums.net/">Forum</a>
-                            <a class="dropdown-item" href="http://pokemonperfect.psim.us/">Pokemon Showdown Sever</a>
-                            <a class="dropdown-item" href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube</a>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Tools
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="calc.html">Calculator</a>
-                            </div>
-                        </li>
-                        <!--<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Tournament Results
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="tours.html?t=rbyou">Discord</a>
-                              <a class="dropdown-item" href="tours.html?t=rby1u">Forum</a>
-                              <a class="dropdown-item" href="tours.html?t=violet">Pokemon Showdown Sever</a>
-                            </div>
-                        </li>-->
-                      </ul>
-                    </div>
-                  </nav>
-        
-                <!--NAVBAR-->
+<!--NAVBAR-->
+<div id="navLogo">
+  <img src="images/FinalLogo.png">
+</div>
+
+<nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <a id="brand" class="navbar-brand" href="index.html">RBY2K20</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pokedex
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pokedex.php?meta=rby">RBY OU</a>
+              <a class="dropdown-item" href="pokedex.php?meta=rby1u">RBY 1U</a>
+              <a class="dropdown-item" href="pokedex.php?meta=violet">Violet</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Articles
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="articles.php">All Articles</a>
+            <a class="dropdown-item" href="articles.php?tag=news">News</a>
+            <a class="dropdown-item" href="articles.php?tag=interviews">Interviews</a>
+        </div>
+    </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Guides
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
+              <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
+              <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+              <a class="dropdown-item" href="guides.php">All Tiers</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Teams
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="teams.php?tag=rbyou">RBY OU</a>
+            <a class="dropdown-item" href="teams.php?tag=rby1u">RBY 1U</a>
+            <a class="dropdown-item" href="teams.php?tag=violet">Violet</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tournament Results
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="tours.php?tag=rbyou">RBY OU</a>
+            <a class="dropdown-item" href="tours.php?tag=rby1u">RBY 1U</a>
+            <a class="dropdown-item" href="tours.php?tag=violet">Violet</a>
+        </div>
+    </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Participate
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://discord.gg/GYFJmfm">Discord</a>
+          <a class="dropdown-item" href="https://rby2k20.freeforums.net/">Forum</a>
+          <a class="dropdown-item" href="http://pokemonperfect.psim.us/">Pokemon Showdown Sever</a>
+          <a class="dropdown-item" href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tools
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="calc.html">Calculator</a>
+          </div>
+      </li>
+      <!--<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tournament Results
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="tours.html?t=rbyou">Discord</a>
+            <a class="dropdown-item" href="tours.html?t=rby1u">Forum</a>
+            <a class="dropdown-item" href="tours.html?t=violet">Pokemon Showdown Sever</a>
+          </div>
+      </li>-->
+    </ul>
+  </div>
+</nav>
+
+<!--NAVBAR-->
         
 
 
