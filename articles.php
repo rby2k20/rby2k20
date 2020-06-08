@@ -144,7 +144,7 @@
         <script>
                 var tag = '<?php echo $_GET['tag'] ?>';
                 var files = <?php $out = array();
-                foreach (glob('Guides/*.html') as $filename) {
+                foreach (glob('articles/*.html') as $filename) {
                     $p = pathinfo($filename);
                     $out[] = $p['filename'];
                 }
@@ -157,7 +157,7 @@
 
                 for(var i = 0; i < files.length; i++)
                 {
-                    unsortedArticles.push(new guide("Guides/"+files[i]));
+                    unsortedArticles.push(new guide("articles/"+files[i]));
                 }
 
                 setTimeout(function waiting() {
@@ -173,7 +173,7 @@
                     articles.sort(compareDates);
                     stickyArticles.sort(compareDates);
 
-                    output += "<div id=\"header\" class=\"row\"><div class=\"col-4 col-md-3\">Publish Date</div><div class=\"col-8 col-md-5\">Title</div><div class=\"col-6 col-md-2 tier\">Tier</div><div class=\"col-6 col-md-2\">Author</div></div>"
+                    output += "<div id=\"header\" class=\"row\"><div class=\"col-4 col-md-3\">Publish Date</div><div class=\"col-8 col-md-5\">Title</div><div class=\"col-6 col-md-2 tier\">Category</div><div class=\"col-6 col-md-2\">Author</div></div>"
 
                     for(var i = 0; i < stickyArticles.length; i++)
                     { 

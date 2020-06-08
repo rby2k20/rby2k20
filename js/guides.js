@@ -5,7 +5,7 @@ class guide {
     day = "";
     month = "";
     year = "";
-    tier = "";
+    category = "";
     filename = ""
     content = ""
     sticky = false;
@@ -14,7 +14,7 @@ class guide {
     {
         
         
-        fetch("Guides/" + url + ".html")
+        fetch(url + ".html")
         .then(response => response.text())
         .then((data) => {
             try
@@ -26,7 +26,7 @@ class guide {
                 this.day = doc.getElementsByTagName("pubday")[0].innerHTML;
                 this.month = doc.getElementsByTagName("pubmonth")[0].innerHTML;
                 this.year = doc.getElementsByTagName("pubyear")[0].innerHTML;
-                this.tier = doc.getElementsByTagName("tier")[0].innerHTML;
+                this.category = doc.getElementsByTagName("category")[0].innerHTML;
                 this.sticky = doc.getElementsByTagName("sticky")[0].innerHTML == 'true';
                 this.content = doc.getElementsByTagName("article")[0].innerHTML;
             }
