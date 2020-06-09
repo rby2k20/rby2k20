@@ -55,6 +55,7 @@
     /* position: -webkit-sticky; /* Safari */
     /* position: sticky;*/
     top: -1px; 
+    font-family: "Arial", sans-serif
 }
 
 .navbar-light .navbar-toggler-icon 

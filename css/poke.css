@@ -84,11 +84,17 @@ td:first-child, .stats td:nth-child(2)
     text-align: right;
 }
 
-td 
+.pokepanel td 
 {
     text-align: left;
     font-weight: bold;
     font-size: 16px;
+    margin: 12px;
+}
+
+td .tier
+{
+    margin: 4px;
 }
 
 .sprite 

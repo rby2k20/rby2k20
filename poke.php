@@ -97,12 +97,10 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Tournament Results
+          Tournaments
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="tours.php?tag=rbyou">RBY OU</a>
-            <a class="dropdown-item" href="tours.php?tag=rby1u">RBY 1U</a>
-            <a class="dropdown-item" href="tours.php?tag=violet">Violet</a>
+            <a class="dropdown-item" href="https://rby2k20.freeforums.net/#category-4">Forum Tours</a>
         </div>
     </li>
       <li class="nav-item dropdown">
@@ -151,7 +149,7 @@
                         <div class="col-11 col-md-5 pokepanel text-center">
                         <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
                             <table>
-                                <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr>
+                                <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr><tr><td>&nbsp;</td></tr>
                                 <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
                             </table>
                         </div>
