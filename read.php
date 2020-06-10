@@ -23,11 +23,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/articlesandguides.css">
         <script src="js/includes.js"></script>
         <script src="js/guides.js"></script>
+        <script src="js/reader.js"></script>
     </head>
     <body>
-
 
 <!--NAVBAR-->
 <div id="navLogo">
@@ -60,12 +61,12 @@
             Articles
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="articles.php">All Articles</a>
+            <!--<a class="dropdown-item" href="articles.php">All Articles</a>-->
             <a class="dropdown-item" href="articles.php?tag=news">News</a>
-            <a class="dropdown-item" href="articles.php?tag=interviews">Interviews</a>
+            <!--<a class="dropdown-item" href="articles.php?tag=interviews">Interviews</a>-->
         </div>
     </li>
-      <li class="nav-item dropdown">
+      <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Guides
           </a>
@@ -75,8 +76,8 @@
               <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
               <a class="dropdown-item" href="guides.php">All Tiers</a>
           </div>
-      </li>
-      <li class="nav-item dropdown">
+      </li>-->
+      <!--<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Teams
         </a>
@@ -85,7 +86,7 @@
             <a class="dropdown-item" href="teams.php?tag=rby1u">RBY 1U</a>
             <a class="dropdown-item" href="teams.php?tag=violet">Violet</a>
         </div>
-      </li>
+      </li>-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tournaments
@@ -113,16 +114,6 @@
               <a class="dropdown-item" href="calc.html">Calculator</a>
           </div>
       </li>
-      <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Tournament Results
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="tours.html?t=rbyou">Discord</a>
-            <a class="dropdown-item" href="tours.html?t=rby1u">Forum</a>
-            <a class="dropdown-item" href="tours.html?t=violet">Pokemon Showdown Sever</a>
-          </div>
-      </li>-->
     </ul>
   </div>
 </nav>
@@ -142,8 +133,11 @@
 
             setTimeout(function waiting() {    
                 document.title = "RBY2k20: " + content.title;
+                
                 document.getElementById("main").innerHTML = content.content;
+                letsread();
             },500);
+      
         </script>
  
     </body>

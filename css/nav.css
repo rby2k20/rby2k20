@@ -36,12 +36,12 @@
 
 .navbar-nav .nav-item .nav-link:active
 {
-    color:yellow;
+    color:white;
 }
 
 .navbar-nav .nav-item .nav-link:focus
 {
-    color:yellow;
+    color:white;
 }
 
 .navbar-nav .nav-item .nav-link:hover
