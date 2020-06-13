@@ -62,7 +62,7 @@ function letsread()
         var imagediv = document.getElementById("teamsprites");
         for(var i =0; i < 6; i++)
         {
-            imagediv.innerHTML += "<img src=\"images/sprites/"+ content.Pokemon[i] +".png\">";
+            imagediv.innerHTML += "<img src=\"images/sprites/"+ content.Pokemon[i].toLowerCase() +".png\">";
         }
     }
     catch (Exception) {console.log(Exception);}
