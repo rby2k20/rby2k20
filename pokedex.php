@@ -50,7 +50,7 @@
           var Pokedata = <?php 
           
                 $meta = $_GET['meta'];
-                $url='data\RBY2k20 Data - RBYPokemon.csv';
+                $url='data\RBY2k20Data-RBYPokemon.csv';
                 
                 if(strcmp($meta,'violet') == 0)
                 {
