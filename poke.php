@@ -294,7 +294,7 @@
            
             
             var rbydata = <?php 
-            $url= 'data\RBY2k20Data-RBYPokemon.csv';
+            $url= 'data/RBY2k20Data-RBYPokemon.csv';
             
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
@@ -356,7 +356,7 @@
 
 
             var violetdata = <?php 
-            $url= 'data\RBY2k20Data-VioletPokemon.csv';
+            $url= 'data/RBY2k20Data-VioletPokemon.csv';
             
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
@@ -443,7 +443,7 @@
             //////////////////////////POKEMON LEARNSETS//////////////////////////////////
 
             var rby_ls = <?php 
-            $url= 'data\RBY2k20Data-RBYLearnsets.csv';
+            $url= 'data/RBY2k20Data-RBYLearnsets.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -460,7 +460,7 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
             
             var rby1u_ls = <?php 
-            $url= 'data\RBY2k20Data-TradebackLearnsets.csv';
+            $url= 'data/RBY2k20Data-TradebackLearnsets.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -477,7 +477,7 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
             
             var violet_ls = <?php 
-            $url= 'data\RBY2k20Data-VioletLearnsets.csv';
+            $url= 'data/RBY2k20Data-VioletLearnsets.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -494,7 +494,7 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
             
             var rbymoves = <?php 
-            $url= 'data\RBY2k20Data-RBYMoves.csv';
+            $url= 'data/RBY2k20Data-RBYMoves.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -511,7 +511,7 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
             
             var violetmoves = <?php 
-            $url= 'data\RBY2k20Data-VioletMoves.csv';
+            $url= 'data/RBY2k20Data-VioletMoves.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
