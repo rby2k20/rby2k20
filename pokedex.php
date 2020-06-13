@@ -76,6 +76,7 @@
                     fclose($handle);
                 }
                 echo json_encode($result, JSON_HEX_TAG);?>;
+          
 
         var Movedata = <?php 
           
@@ -110,78 +111,6 @@
           var moveTable = new table(meta);
           var header = true;
 
-           statHeat = (length, idx) =>
-           {
-            if(length == 10)
-              idx = idx-1;
-            if(!header) 
-            {
-                    var num = (idx == 9 || (length == 10 && idx == 8)) ? parseInt(rowData[idx]/5) : parseInt(rowData[idx]);
-                    var red = 0;
-                    var green = 0;
-                    var blue = 0;
-
-                    if(num <=30){
-                        red = 180;
-                        green = 28;
-                        blue = 11;
-                    }
-                    else if(num < 60){
-                        red = 180 + (16*(num % 30)/15);
-                        green = 28 + (104*(num % 30)/30);
-                        blue = 11 + ((num % 30)/10);
-                    }
-                    else if(num == 60){
-                        red = 222;
-                        green = 132;
-                        blue = 14;
-                    }
-                    else if(num < 90){
-                        red = 222 + (14*(num % 30)/15);
-                        green = 132 + (33*(num % 30)/10);
-                        console.log("green: " + green + "  Num: " + num);
-                        blue = 14 + ((num % 30)/5);
-                    }
-                    else if(num == 90){
-                        red = 250;
-                        green = 231;
-                        blue = 20;
-                    }
-                    else if(num < 120){
-                        red = 250 - (51*(num % 30)/15);
-                        green = 231 + (4*(num % 30)/5);
-                        blue = 20 + ((num % 30)/5);
-                    }
-                    else if(num == 120){
-                        red = 148;
-                        green = 255;
-                        blue = 26;
-                    }
-                    else if(num <= 200){
-                        red = 148 - (3*(num % 30)/16);
-                        green = 255 - ((num % 30)/15);
-                        blue = 26 + (213*(num % 30)/80);
-                    }
-                    else if(num > 150){
-                        red = 133;
-                        green = 239;
-                        blue = 239;
-                    }
-                    else{
-                      console.log("failed: " + length)
-                    }
-
-                    blue = Math.round(blue);
-                    red = Math.round(red);
-                    green = Math.round(green);
-                    blue1 = Math.round(blue*.9);
-                    red1 = Math.round(red*.9);
-                    green1 = Math.round(green*.9);
-                    if(length == 10)
-                      idx++;
-                    newRow.addAtr(idx-1, "style", "background: linear-gradient(to bottom right, rgb(" +red+","+green+","+blue+"), rgb(" +red1+","+green1+","+blue1+"))");
-                  }
-           }
 
           var n =0;
           while(Pokedata.hasNext())
@@ -242,7 +171,7 @@
             header = (false);
           }
 
-          
+
         </script>
 
         <script>
