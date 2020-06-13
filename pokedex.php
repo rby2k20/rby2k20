@@ -50,15 +50,15 @@
           var Pokedata = <?php 
           
                 $meta = $_GET['meta'];
-                $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv';
+                $url='data\RBY2k20 Data - RBYPokemon.csv';
                 
                 if(strcmp($meta,'violet') == 0)
                 {
-                  $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=269848004&single=true&output=csv';
+                  $url='data\RBY2k20 Data - VioletPokemon.csv';
                 }
                 if(strcmp($meta,'rby1u') == 0)
                 {
-                  $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=438832659&single=true&output=csv';
+                  $url='data\RBY2k20 Data - TradebackPokemon.csv';
                 }
 
                 
@@ -81,11 +81,11 @@
         var Movedata = <?php 
           
           $meta = $_GET['meta'];
-          $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv';
+          $url='data\RBY2k20 Data - RBYMoves.csv';
           
           if(strcmp($meta,'violet') == 0)
           {
-            $url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=2873338&single=true&output=csv';
+            $url='data\RBY2k20 Data - VioletMoves.csv';
           }
 
           

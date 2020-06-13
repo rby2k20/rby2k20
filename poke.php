@@ -294,7 +294,7 @@
            
             
             var rbydata = <?php 
-            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv';
+            $url= 'data\RBY2k20 Data - RBYPokemon.csv';
             
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
@@ -356,7 +356,7 @@
 
 
             var violetdata = <?php 
-            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=269848004&single=true&output=csv';
+            $url= 'data\RBY2k20 Data - VioletPokemon.csv';
             
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
@@ -443,7 +443,7 @@
             //////////////////////////POKEMON LEARNSETS//////////////////////////////////
 
             var rby_ls = <?php 
-            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1849607014&single=true&output=csv';
+            $url= 'data\RBY2k20 Data - RBYLearnsets.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -460,7 +460,7 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
             
             var rby1u_ls = <?php 
-            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=44344892&single=true&output=csv';
+            $url= 'data\RBY2k20 Data - TradebackLearnsets.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -477,7 +477,7 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
             
             var violet_ls = <?php 
-            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=617265908&single=true&output=csv';
+            $url= 'data\RBY2k20 Data - VioletLearnsets.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -494,7 +494,7 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
             
             var rbymoves = <?php 
-            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv';
+            $url= 'data\RBY2k20 Data - RBYMoves.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -511,7 +511,7 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
             
             var violetmoves = <?php 
-            $url= 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=2873338&single=true&output=csv';
+            $url= 'data\RBY2k20 Data - VioletMoves.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
