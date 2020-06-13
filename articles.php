@@ -70,7 +70,7 @@
             <!--<a class="dropdown-item" href="articles.php?tag=interviews">Interviews</a>-->
         </div>
     </li>
-      <!--<li class="nav-item dropdown">
+      <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Guides
           </a>
@@ -80,8 +80,8 @@
               <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
               <a class="dropdown-item" href="guides.php">All Tiers</a>
           </div>
-      </li>-->
-      <!--<li class="nav-item dropdown">
+      </li>
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Teams
         </a>
@@ -89,8 +89,9 @@
             <a class="dropdown-item" href="teams.php?tag=rbyou">RBY OU</a>
             <a class="dropdown-item" href="teams.php?tag=rby1u">RBY 1U</a>
             <a class="dropdown-item" href="teams.php?tag=violet">Violet</a>
+            <a class="dropdown-item" href="teams.php">All Tiers</a>
         </div>
-      </li>-->
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tournaments

@@ -6,16 +6,11 @@
   header("Pragma: no-cache");
 ?>
 
-<meta http-equiv=“Pragma” content=”no-cache”>
-<meta http-equiv=“Expires” content=”-1″>
-<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
 
 <!DOCTYPE html>
 <html>
     <head>
-    <title>
-            RBY2k20: Guides
-        </title>
+        <title>RB2k20: </title>
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -28,13 +23,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/articlesandguides.css">
+        <link rel="stylesheet" href="css/team.css">
         <script src="js/includes.js"></script>
-        <script src="js/guides.js"></script>
-        <script src="js/tools.js"></script>
-        <link rel="stylesheet" href="css/article.css">
+        <script src="js/teams.js"></script>
+        <script src="js/reader.js"></script>
     </head>
     <body>
-      
+
 <!--NAVBAR-->
 <div id="navLogo">
   <img src="images/FinalLogo.png">
@@ -127,75 +123,34 @@
 <!--NAVBAR-->
         
 
-        <div id="articles" class="container">
-            <span id="loading">Loading Guides...</span>
-        </div>
+
+
+        <article id="main">
+            Loading
+        </article>
 
         <script>
-                var tag = '<?php echo $_GET['tag'] ?>';
-                var files = <?php $out = array();
-                foreach (glob('Guides/*.html') as $filename) {
-                    $p = pathinfo($filename);
-                    $out[] = $p['filename'];
-                }
-                echo json_encode($out); ?>;
-
-                var articles = [];
-                var unsortedArticles = [];
-                var stickyArticles = [];
-                var output = "";
-
-                for(var i = 0; i < files.length; i++)
-                {
-                  pushArticle("Guides/"+files[i]);
-                }
-
-                setTimeout(function waiting() {
-
-                    for(var i = 0; i < unsortedArticles.length; i++)
-                    {
-                        if(unsortedArticles[i].sticky)
-                          stickyArticles.push(unsortedArticles[i]);
-                        else
-                          articles.push(unsortedArticles[i]);
-                    }
-
-                    articles.sort(compareDates);
-                    stickyArticles.sort(compareDates);
-
-                    output += "<div id=\"header\" class=\"row\"><div class=\"col-4 col-md-3\">Publish Date</div><div class=\"col-8 col-md-5\">Title</div><div class=\"col-6 col-md-2 tier\">Tier</div><div class=\"col-6 col-md-2\">Author</div></div>"
-
-                    for(var i = 0; i < stickyArticles.length; i++)
-                    { 
-                        if(stickyArticles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == "")
-                        {
-                          output += "<a href=\"read.php?article=" + stickyArticles[i].filename +"\"><div class=\"row\">" 
-                          output += mkBtstpDiv(frmtDate(stickyArticles[i].day, stickyArticles[i].month, stickyArticles[i].year),"col-4 col-md-3");
-                          output += mkBtstpDiv(stickyArticles[i].title, "col-8 col-md-5");
-                          output += mkBtstpDiv(stickyArticles[i].category, "col-6 col-md-2 tier");
-                          output += mkBtstpDiv(stickyArticles[i].author, "col-6 col-md-2");
-                          output += "</div></a>";
-                        }
-                    }
-
-                    for(var i = 0; i < articles.length; i++)
-                    { 
-                      if(articles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == "")
-                      {
-                        output += "<a href=\"read.php?article=" + articles[i].filename +"\"><div class=\"row\">" 
-                        output += mkBtstpDiv(frmtDate(articles[i].day, articles[i].month, articles[i].year),"col-4 col-md-3");
-                        output += mkBtstpDiv(articles[i].title, "col-8 col-md-5");
-                        output += mkBtstpDiv(articles[i].category, "col-6 col-md-2 tier");
-                        output += mkBtstpDiv(articles[i].author, "col-6 col-md-2");
-                        output += "</div></a>";
-                      }
-                    }
-
-                    console.log(output);
-                    document.getElementById("articles").innerHTML = output;
-                }, 500);
-
+            var content;
+            getTeam('<?php echo $_GET['article'] ?>');
+            
+            setTimeout(function waiting() {    
+                document.title = "RBY2k20: " + content.title;
                 
+                document.getElementById("main").innerHTML = content.content;
+                console.log(content.Pokemon);
+                letsread();
+            },500);
+
+            function toggleimportable()
+            {
+                console.log(document.getElementById("importable").style.display)
+                document.getElementById("importable").style.display =
+                (document.getElementById("importable").style.display == "")?  "block" : "";
+            }
+      
         </script>
+ 
     </body>
 </html>
+
+

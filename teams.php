@@ -29,7 +29,7 @@
         
         <link rel="stylesheet" href="css/nav.css">
         <script src="js/includes.js"></script>
-        <script src="js/guides.js"></script>
+        <script src="js/teams.js"></script>
         <script src="js/tools.js"></script>
         <link rel="stylesheet" href="css/article.css">
     </head>
@@ -127,6 +127,18 @@
 <!--NAVBAR-->
         
 
+        <style>
+            #articles
+            {
+                text-align: center;
+            }
+            #articles div
+            {
+                vertical-align: text-bottom;
+                padding-top: 4px;
+            }
+        </style>
+
         <div id="articles" class="container">
             <span id="loading">Loading Guides...</span>
         </div>
@@ -134,7 +146,7 @@
         <script>
                 var tag = '<?php echo $_GET['tag'] ?>';
                 var files = <?php $out = array();
-                foreach (glob('Guides/*.html') as $filename) {
+                foreach (glob('teams/*.html') as $filename) {
                     $p = pathinfo($filename);
                     $out[] = $p['filename'];
                 }
@@ -147,7 +159,7 @@
 
                 for(var i = 0; i < files.length; i++)
                 {
-                  pushArticle("Guides/"+files[i]);
+                  pushTeam("teams/"+files[i]);
                 }
 
                 setTimeout(function waiting() {
@@ -163,16 +175,29 @@
                     articles.sort(compareDates);
                     stickyArticles.sort(compareDates);
 
-                    output += "<div id=\"header\" class=\"row\"><div class=\"col-4 col-md-3\">Publish Date</div><div class=\"col-8 col-md-5\">Title</div><div class=\"col-6 col-md-2 tier\">Tier</div><div class=\"col-6 col-md-2\">Author</div></div>"
+                    output += "<div id=\"header\" class=\"row\"><div class=\"col-6 col-md-3\">Publish Date</div><div class=\"col-6 col-md-1 tier\">Tier</div><div class=\"col-12 col-md-3\">Title</div><div class=\"col-6 col-md-3\">Pokemon</div><div class=\"col-6 col-md-2\">Builder</div></div>"
+
+                    function images(content)
+                    {
+                        var str = ""
+
+                        for(var n = 0; n < 6; n++)
+                        {
+                            str += "<img style=\"display: inline-block;\" src=\"images/smallsprites/"+ content.Pokemon[n] +".png\">";
+                        }
+
+                        return str
+                    }
 
                     for(var i = 0; i < stickyArticles.length; i++)
                     { 
                         if(stickyArticles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == "")
                         {
-                          output += "<a href=\"read.php?article=" + stickyArticles[i].filename +"\"><div class=\"row\">" 
-                          output += mkBtstpDiv(frmtDate(stickyArticles[i].day, stickyArticles[i].month, stickyArticles[i].year),"col-4 col-md-3");
-                          output += mkBtstpDiv(stickyArticles[i].title, "col-8 col-md-5");
-                          output += mkBtstpDiv(stickyArticles[i].category, "col-6 col-md-2 tier");
+                          output += "<a href=\"team.php?article=" + stickyArticles[i].filename +"\"><div class=\"row\">" 
+                          output += mkBtstpDiv(frmtDate(stickyArticles[i].day, stickyArticles[i].month, stickyArticles[i].year),"col-6 col-md-3");
+                          output += mkBtstpDiv(stickyArticles[i].category, "col-6 col-md-1 tier");
+                          output += mkBtstpDiv(stickyArticles[i].title, "col-12 col-md-3");
+                          output += mkBtstpDiv(images(stickyArticles[i]), "col-6 col-md-3");
                           output += mkBtstpDiv(stickyArticles[i].author, "col-6 col-md-2");
                           output += "</div></a>";
                         }
@@ -182,10 +207,11 @@
                     { 
                       if(articles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == "")
                       {
-                        output += "<a href=\"read.php?article=" + articles[i].filename +"\"><div class=\"row\">" 
-                        output += mkBtstpDiv(frmtDate(articles[i].day, articles[i].month, articles[i].year),"col-4 col-md-3");
-                        output += mkBtstpDiv(articles[i].title, "col-8 col-md-5");
-                        output += mkBtstpDiv(articles[i].category, "col-6 col-md-2 tier");
+                        output += "<a href=\"team.php?article=" + articles[i].filename +"\"><div class=\"row\">" 
+                        output += mkBtstpDiv(frmtDate(articles[i].day, articles[i].month, articles[i].year),"col-6 col-md-3");
+                        output += mkBtstpDiv(articles[i].category, "col-6 col-md-1 tier");
+                        output += mkBtstpDiv(articles[i].title, "col-12 col-md-3");
+                        output += mkBtstpDiv(images(articles[i]), "col-6 col-md-3");
                         output += mkBtstpDiv(articles[i].author, "col-6 col-md-2");
                         output += "</div></a>";
                       }

@@ -11,7 +11,7 @@ function letsread()
     //Back to top
     try
     {
-        var elements = document.getElementsByClassName("returntop")
+        var elements = document.getElementsByClassName("returntop");
         for(var i =0; i < elements.length;i++)
         {
             elements[i].innerHTML = "<a href=\"#top\">Return to top</a>";
@@ -19,7 +19,7 @@ function letsread()
         document.getElementById("main").innerHTML = 
             "<div id=\"top;\"></div>" + document.getElementById("main").innerHTML 
     }
-    catch (Exception) {}
+    catch (Exception) {Exception;}
 
     try
     {
@@ -48,6 +48,25 @@ function letsread()
         }
     }
     catch (Exception) {Exception;}
+
+    try
+    {
+        document.getElementById("author").innerHTML = content.author;
+    }
+    catch (Exception) {Exception;}
+
+    try
+    {
+        console.log(content);
+        console.log(content.Pokemon);
+        var imagediv = document.getElementById("teamsprites");
+        for(var i =0; i < 6; i++)
+        {
+            imagediv.innerHTML += "<img src=\"images/sprites/"+ content.Pokemon[i] +".png\">";
+        }
+    }
+    catch (Exception) {console.log(Exception);}
+
 }
 
 
