@@ -54,11 +54,11 @@
                 
                 if(strcmp($meta,'violet') == 0)
                 {
-                  $url='data\RBY2k20 Data - VioletPokemon.csv';
+                  $url='data\RBY2k20Data-VioletPokemon.csv';
                 }
                 if(strcmp($meta,'rby1u') == 0)
                 {
-                  $url='data\RBY2k20 Data - TradebackPokemon.csv';
+                  $url='data\RBY2k20Data-TradebackPokemon.csv';
                 }
 
                 
@@ -81,11 +81,11 @@
         var Movedata = <?php 
           
           $meta = $_GET['meta'];
-          $url='data\RBY2k20 Data - RBYMoves.csv';
+          $url='data\RBY2k20Data-RBYMoves.csv';
           
           if(strcmp($meta,'violet') == 0)
           {
-            $url='data\RBY2k20 Data - VioletMoves.csv';
+            $url='data\RBY2k20Data-VioletMoves.csv';
           }
 
           
