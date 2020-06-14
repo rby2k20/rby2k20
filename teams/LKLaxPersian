@@ -1,0 +1,69 @@
+<title>Lead LK Lax + Persian</title>
+<author>Ceatano93</author>
+<pubday>14</pubday>
+<pubmonth>6</pubmonth> <!--Use a number (example 4 for april)-->
+<pubyear>2020</pubyear>
+<category>RBY 1U</category>
+<sticky>false</sticky> <!-- Use 'true' without quotes for sticky article-->
+
+<pokemon>Snorlax</pokemon> <!--Use a capital letter to begin pokemonname-->
+<pokemon>Hypno</pokemon>
+<pokemon>Chansey</pokemon>
+<pokemon>Tauros</pokemon>
+<pokemon>Starmie</pokemon>
+<pokemon>Persian</pokemon>
+
+<article>
+	<h1>Lead LK Lax + Persian</h1>
+	
+    <div id="teamsprites"></div>
+    
+	<div onclick="toggleimportable()" class="button">Show Importable</div>
+	
+	<div id="importable">
+Snorlax  <br>
+- Lovely Kiss <br>  
+- Body Slam  <br>
+- Earthquake  <br>
+- Self-Destruct  <br>
+<br>
+Hypno  <br>
+- Amnesia  <br>
+- Psychic  <br>
+- Ice Punch  <br>
+- Rest  <br>
+<br>
+Chansey (F) <br> 
+- Thunder Wave  <br>
+- Soft-Boiled  <br>
+- Reflect  <br>
+- Seismic Toss <br> 
+<br>
+Tauros (M)  <br>
+- Body Slam  <br>
+- Hyper Beam  <br>
+- Earthquake  <br>
+- Surf  <br>
+<br>
+Starmie  <br>
+- Thunder Wave <br> 
+- Recover  <br>
+- Surf  <br>
+- Thunderbolt <br>  
+<br>
+Persian  <br>
+- Hypnosis  <br>
+- Slash  <br>
+- Thunderbolt <br>  
+- Amnesia  <br>
+    </div> <!--Remember to use <br> for new lines-->
+    
+    <br>
+	<p>
+Lead Snorlax is one of the most threatening Pokémon in RBY 1U as it steals the game momentum from turn one. In addition to having a sleep move, it hits hard against all relevant Pokémon in the metagame and has the ability to commit suicide and take out almost any opposing Pokémon with Selfdestruct. Hypno is using Ice Punch to be the main answer to opposing Reflect Hypno, and is an awesome wincon. Chansey is using Reflect as it is a great Snorlax answer for the team. Tauros is using Surf over Blizzard to give better support when facing Rhydon teams. Starmie runs Thunderbolt to hit Water-type opponents (mainly opposing Starmie, Slowbro, and Vaporeon), and Surf to have another tool to check Hypno (as two critical hits with the move will kill). In the last slot Persian is used, to be a secondary sleeper and a cleaner. By using five other Pokémon that deal with Rock types, Persian can afford to drop BubbleBeam in favour of Amnesia, as it gives a better match-up against Gengar and Starmie.
+    </p>
+
+	<p><span class="italics"> Team built by <span id="author"></span></span></p>
+	<p><span class="italics"> Grammar checked by Eseque </span></p>
+    
+</article>
