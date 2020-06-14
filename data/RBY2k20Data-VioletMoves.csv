@@ -1,0 +1,166 @@
+Move,Generation,Typing,Category,BP,Accuracy,Base PP,PP,Description
+Absorb,violet,Grass,Special,20,100,25,40,User recovers half the HP inflicted on opponent.
+Acid,violet,Poison,Physical,70,100,15,24,Lowers target's defense by one stage
+Acid Armor,violet,Poison,Status,—,—,20,32,Sharply raises user's Defense.
+Agility,violet,Psychic,Status,—,—,30,48,Sharply raises user's Speed.
+Amnesia,violet,Psychic,Status,—,—,20,32,Sharply raises user's Special
+Aurora Beam,violet,Ice,Special,65,100,20,32,33% chance to lower the target's attack by 1.
+Barrage,violet,Normal,Physical,15,85,20,32,Hits 2-5 times in one turn.
+Barrier,violet,Psychic,Status,—,—,20,32,Sharply raises user's Defense.
+Bide,violet,Normal,Status,—,—,10,16,Waits 2-3 turns; deals double the damage taken.
+Bind,violet,Bug,Physical,40,75,5,8,Prevents the target from moving for 2-3 turns.
+Bite,violet,Normal,Physical,60,100,25,40,10% chance to flinch the target.
+Blizzard,violet,Ice,Special,120,90,5,8,10% chance to freeze the target.
+Body Slam,violet,Normal,Physical,85,100,15,24,30% chance to paralyze the target.
+Bone Club,violet,Ground,Physical,65,85,20,32,10% chance to flinch the target.
+Bonemerang,violet,Ground,Physical,50,90,10,16,Hits twice in one turn.
+Bubble,violet,Water,Special,40,100,30,48,33% chance to lower the target's Speed by 1.
+Bubble Beam,violet,Water,Special,65,100,20,32,33% chance to lower the target's Speed by 1.
+Clamp,violet,Water,Special,70,85,5,8,Prevents the target from moving for 2-3 turns.
+Comet Punch,violet,Normal,Physical,18,85,15,24,Hits 2-5 times in one turn.
+Confuse Ray,violet,Ghost,Status,—,100,10,16,Confuses opponent.
+Confusion,violet,Psychic,Special,50,100,25,40,10% chance to confuse the target.
+Constrict,violet,Normal,Physical,10,100,35,56,33% chance to lower the target's Speed by 1.
+Conversion,violet,Normal,Status,—,—,10,16,User recovers half its max HP. User becomes the same type as the target.
+Counter,violet,Fighting,Physical,—,100,20,32,"When hit by a Physical Attack, user strikes back with 2x power."
+Crabhammer,violet,Water,Special,90,85,10,16,High critical hit ratio.
+Cut,violet,Normal,Physical,50,95,30,48,
+Defense Curl,violet,Normal,Status,—,—,40,64,Raises user's Defense.
+Dig,violet,Ground,Physical,100,100,10,16,"Digs underground on first turn, attacks on second. Can also escape from caves."
+Disable,violet,Normal,Status,—,100,5,8,"Disables one of the target's moves at random. The move remains Disabled even if the target switches out. Only one move on the opponent's team may be disabled at once. If Disable is used again, it will succeed, but the previously Disabled move will no longer be Disabled."
+Dizzy Punch,violet,Normal,Physical,70,100,10,16,
+Double Kick,violet,Fighting,Physical,30,100,30,48,Hits twice in one turn.
+Double Slap,violet,Normal,Physical,15,85,10,16,Hits 2-5 times in one turn.
+Double Team,violet,Normal,Status,—,—,15,24,Raises user's Evasiveness.
+Double-Edge,violet,Normal,Physical,100,100,15,24,User receives recoil damage.
+Dragon Rage,violet,Dragon,Special,—,100,10,16,Always deals 40 HP of damage to the target.
+Dream Eater,violet,Ghost,Physical,200,100,15,24,"Attack only works against sleeping, poisoned, or badly poisoned targets, and heals 100% of damage dealt."
+Drill Peck,violet,Flying,Physical,80,100,20,32,
+Earthquake,violet,Ground,Physical,100,100,10,16,
+Egg Bomb,violet,Normal,Physical,100,75,10,16,
+Ember,violet,Fire,Special,40,100,25,40,10% chance to burn the target.
+Explosion,violet,Normal,Physical,170,100,5,8,User faints.
+Fire Blast,violet,Fire,Special,120,85,5,8,30% chance to burn the target.
+Fire Punch,violet,Fire,Special,75,100,15,24,10% chance to burn the target.
+Fire Spin,violet,Fire,Special,30,70,5,8,Prevents the target from moving for 2-3 turns.
+Fissure,violet,Ground,Status,—,30,5,8,Deals 65535 damage. Fails if the target is faster.
+Flamethrower,violet,Fire,Special,95,100,15,24,10% chance to burn the target.
+Flash,violet,Normal,Status,—,70,20,32,Lowers opponent's Accuracy.
+Fly,violet,Flying,Physical,70,95,15,24,"Flies up on first turn, attacks on second turn."
+Focus Energy,violet,Normal,Status,—,—,30,48,Quarter's the user's chance for a critical hit.
+Fury Attack,violet,Normal,Physical,15,85,20,32,Hits 2-5 times in one turn.
+Fury Swipes,violet,Normal,Physical,18,80,15,24,Hits 2-5 times in one turn.
+Glare,violet,Normal,Status,—,100,30,48,Paralyzes opponent.
+Growl,violet,Normal,Status,—,100,40,64,Lowers opponent's Attack.
+Growth,violet,Normal,Status,—,—,40,64,Raises user's Special
+Guillotine,violet,Normal,Status,—,—,5,8,Deals 65535 damage. Fails if the target is faster.
+Gust,violet,Flying,Physical,80,100,15,24,Lowers the opponent's attack by one stage.
+Harden,violet,Normal,Status,—,—,30,48,Raises user's Defense.
+Haze,violet,Ice,Status,—,—,15,24,Resets all stat changes. Removes any status affects from the user. Recovers 33% of max HP to both the user and the opponent.
+Headbutt,violet,Normal,Physical,70,100,15,24,30% chance to flinch the target.
+High Jump Kick,violet,Fighting,Physical,85,90,10,16,User takes 1HP of damage if it misses.
+Horn Attack,violet,Normal,Physical,65,100,25,40,
+Horn Drill,violet,Normal,Status,—,—,5,8,Deals 65535 damage. Fails if the target is faster.
+Hydro Pump,violet,Water,Special,120,80,5,8,
+Hyper Beam,violet,Normal,Physical,150,90,5,8,Can't move next turn if target or sub is not KOed.
+Hyper Fang,violet,Normal,Physical,80,90,15,24,10% chance to flinch the target.
+Hypnosis,violet,Psychic,Status,—,60,20,32,Puts opponent to sleep.
+Ice Beam,violet,Ice,Special,95,100,10,16,10% chance to freeze opponent.
+Ice Punch,violet,Ice,Special,75,100,15,24,10% chance to freeze opponent.
+Jump Kick,violet,Fighting,Physical,70,95,10,16,User takes 1HP of damage if it misses.
+Karate Chop,violet,Fighting,Physical,50,100,25,40,High critical hit ratio.
+Kinesis,violet,Psychic,Status,—,80,15,24,Lowers opponent's Accuracy.
+Leech Life,violet,Bug,Physical,60,100,10,16,Heals 100% of damage dealt.
+Leech Seed,violet,Grass,Status,—,90,10,16,1/16 of target's HP is restored to user every turn.
+Leer,violet,Normal,Status,—,100,30,48,Lowers opponent's Defense.
+Lick,violet,Ghost,Physical,20,100,30,48,30% chance to paralyze the opponent.
+Light Screen,violet,Psychic,Status,—,—,30,48,"While active, user's Special is 2x when damaged."
+Lovely Kiss,violet,Normal,Status,—,75,10,16,Puts opponent to sleep.
+Low Kick,violet,Fighting,Physical,50,90,20,32,30% chance to flinch the target.
+Meditate,violet,Psychic,Status,—,—,10,16,"User sleeps for 1 turn, but user is fully healed."
+Mega Drain,violet,Grass,Special,40,100,15,24,Heals 100% of damage dealt.
+Mega Kick,violet,Normal,Physical,120,75,5,8,
+Mega Punch,violet,Normal,Physical,80,85,20,32,
+Metronome,violet,Normal,Status,—,—,10,16,User performs almost any move in the game at random.
+Mimic,violet,Normal,Status,—,—,10,16,Random move known by the target replaces this. Mimicked move remains on the user's moveset even if the user switches out. Moves that are already known by the user of Mimic will not be Mimicked.
+Minimize,violet,Normal,Status,—,—,10,16,Raises user's Evasiveness.
+Mirror Move,violet,Flying,Status,—,—,20,32,User performs the opponent's last move. This applies even if the opponent did not use a move last turn.
+Mist,violet,Ice,Status,—,—,30,48,"While active, user is protected from stat drops."
+Night Shade,violet,Ghost,Status,—,100,15,24,Inflicts damage equal to user's level. Can hit Normal-types.
+Pay Day,violet,Normal,Physical,40,100,20,32,A small amount of money is gained after the battle resolves.
+Peck,violet,Flying,Physical,35,100,35,56,
+Petal Dance,violet,Grass,Special,120,100,10,16,User attacks for 3-4 turns but then becomes confused.
+Pin Missile,violet,Bug,Physical,14,85,20,32,Hits 2-5 times in one turn.
+Poison Gas,violet,Poison,Status,—,55,40,64,Poisons opponent.
+Poison Powder,violet,Poison,Status,—,75,35,56,Poisons opponent.
+Poison Sting,violet,Poison,Physical,95,100,15,24,30% chance to poison the target.
+Pound,violet,Normal,Physical,40,100,35,56,
+Psybeam,violet,Psychic,Special,65,100,20,32,10% chance to confuse the target.
+Psychic,violet,Psychic,Special,90,100,10,16,33% chance to lower the target's Special by 1.
+Psywave,violet,Psychic,Status,—,80,15,24,Random damage from 1 to (user's level * 1.5 - 1)
+Quick Attack,violet,Normal,Physical,40,100,30,48,User attacks first.
+Rage,violet,Normal,Physical,20,100,20,32,Lasts forever. Raises user's Attack when hit.
+Razor Leaf,violet,Grass,Special,55,95,25,40,High critical hit ratio.
+Razor Wind,violet,Normal,Physical,80,75,10,16,Charges turn 1. Hits turn 2.
+Recover,violet,Normal,Status,—,—,10,16,User recovers half its max HP.
+Reflect,violet,Psychic,Status,—,—,20,32,"While active, the user's defense is doubled."
+Rest,violet,Psychic,Status,—,—,10,16,"User sleeps for 2 turns, but user is fully healed."
+Roar,violet,Normal,Status,—,—,20,32,No competitive use.
+Rock Slide,violet,Rock,Physical,85,90,10,16,
+Rock Throw,violet,Rock,Physical,50,65,15,24,
+Rolling Kick,violet,Fighting,Physical,60,85,15,24,30% chance to flinch the target.
+Sand Attack,violet,Normal,Status,—,100,15,24,Lowers opponent's Accuracy.
+Scratch,violet,Normal,Physical,40,100,35,56,
+Screech,violet,Normal,Status,—,85,40,64,Sharply lowers opponent's Defense.
+Seismic Toss,violet,Fighting,Status,—,100,20,32,Inflicts damage equal to user's level. Can hit Ghost-types.
+Self-Destruct,violet,Normal,Physical,130,100,5,8,User faints.
+Sharpen,violet,Normal,Status,—,—,30,48,Raises user's Attack.
+Sing,violet,Normal,Status,—,55,15,24,Puts opponent to sleep.
+Skull Bash,violet,Normal,Physical,100,100,10,16,"Charges on first turn, attacks on second."
+Sky Attack,violet,Flying,Physical,140,90,5,8,"Raises defense on first turn, attacks on second."
+Slam,violet,Normal,Physical,80,75,20,32,
+Slash,violet,Normal,Physical,70,100,20,32,High critical hit ratio.
+Sleep Powder,violet,Grass,Status,—,75,15,24,Puts opponent to sleep.
+Sludge,violet,Poison,Physical,65,100,20,32,40% chance to poison the target.
+Smog,violet,Poison,Physical,20,70,20,32,40% chance to poison the target.
+Smokescreen,violet,Normal,Status,—,100,20,32,Lowers opponent's Accuracy.
+Soft-Boiled,violet,Normal,Status,—,—,10,16,User recovers half its max HP.
+Solar Beam,violet,Grass,Special,100,100,10,16,"Raises special on first turn, attacks on second."
+Sonic Boom,violet,Normal,Physical,—,90,20,32,Always inflicts 20 HP.
+Spike Cannon,violet,Normal,Physical,20,100,15,24,Hits 2-5 times in one turn.
+Splash,violet,Normal,Status,—,—,40,64,Doesn't do ANYTHING.
+Spore,violet,Grass,Status,—,100,15,24,Puts opponent to sleep.
+Stomp,violet,Normal,Physical,65,100,20,32,30% chance to flinch the target
+Strength,violet,Normal,Physical,80,100,15,24,
+String Shot,violet,Bug,Status,—,95,40,64,Sharply lowers opponent's Speed.
+Struggle,violet,Normal,Physical,50,100,—,—,Only usable when all PP are gone. Hurts the user.
+Stun Spore,violet,Grass,Status,—,75,30,48,Paralyzes opponent.
+Submission,violet,Fighting,Physical,100,100,20,32,Has 1/4 recoil.
+Substitute,violet,Normal,Status,—,—,10,16,Uses HP to creates a decoy that takes hits.
+Super Fang,violet,Normal,Physical,—,90,10,16,Always takes off half of the opponent's HP.
+Supersonic,violet,Normal,Status,—,55,20,32,Confuses opponent.
+Surf,violet,Water,Special,95,100,15,24,
+Swift,violet,Normal,Physical,60,∞,20,32,"Never misses, even against dig or fly."
+Swords Dance,violet,Normal,Status,—,—,20,32,Sharply raises user's Attack.
+Tackle,violet,Normal,Physical,35,100,35,56,
+Tail Whip,violet,Normal,Status,—,100,30,48,Lowers opponent's Defense.
+Take Down,violet,Normal,Physical,90,85,20,32,Has 1/4 recoil.
+Teleport,violet,Psychic,Status,—,—,20,32,Allows user to flee wild battles; also warps player to last PokéCenter.
+Thrash,violet,Dragon,Special,90,100,10,16,User attacks for 2-3 turns but then becomes confused.
+Thunder,violet,Electric,Special,120,70,10,16,10% chance to paralyze the target.
+Thunder Punch,violet,Electric,Special,75,100,15,24,10% chance to paralyze the target.
+Thunder Shock,violet,Electric,Special,40,100,30,48,10% chance to paralyze the target.
+Thunder Wave,violet,Electric,Status,—,90,20,32,Paralyzes opponent.
+Thunderbolt,violet,Electric,Special,95,100,15,24,10% chance to paralyze the target.
+Toxic,violet,Poison,Status,—,100,10,16,Badly poisons opponent.
+Transform,violet,Normal,Status,—,—,10,16,"Copies target's stats, moves, types, and species."
+Tri Attack,violet,Ghost,Physical,80,100,10,16,
+Twineedle,violet,Bug,Physical,40,100,20,32,Hits 2 times. 20% to poison per hit.
+Vine Whip,violet,Grass,Special,35,100,25,40,
+Vice Grip,violet,Bug,Physical,55,100,30,48,High critical hit ratio.
+Water Gun,violet,Water,Special,40,100,25,40,
+Waterfall,violet,Water,Special,80,100,15,24,
+Whirlwind,violet,Flying,Physical,50,100,5,8,-1 move priority. Switches the target out.
+Wing Attack,violet,Flying,Physical,35,100,35,56,
+Withdraw,violet,Water,Status,—,—,40,64,Raises user's Defense.
+Wrap,violet,Normal,Physical,40,90,5,8,Prevents the target from moving for 2-5 turns.
