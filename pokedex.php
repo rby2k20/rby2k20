@@ -27,6 +27,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/select.css">
         <script src="js/tableMaker.js"></script>
         <script src="js/sorttable.js"></script>
         <script src="js/includes.js"></script>
@@ -38,141 +39,7 @@
             }
         </style>
 
-        <script>
-          //Rby pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv
-          //Rby moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv
-          //Violet pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=269848004&single=true&output=csv
-          //Violet moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=2873338&single=true&output=csv
 
-          var dex = document.getElementById("dex");
-          var meta = "<?php echo $_GET['meta']; ?>";
-
-          var Pokedata = <?php 
-          
-                $meta = $_GET['meta'];
-                $url='data/RBY2k20Data-RBYPokemon.csv';
-                
-                if(strcmp($meta,'violet') == 0)
-                {
-                  $url='data/RBY2k20Data-VioletPokemon.csv';
-                }
-                if(strcmp($meta,'rby1u') == 0)
-                {
-                  $url='data/RBY2k20Data-TradebackPokemon.csv';
-                }
-
-                
-                if (($handle = fopen($url, "r")) !== FALSE) {
-                    $result="";
-                    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
-                        $totalrows = count($data);
-                        for ($row=0; $row<=$totalrows; $row++){
-                            if ( (strlen($data[$row])>0)){
-                                $result.=$data[$row].'~';
-                            }   
-                        }
-                        $result .= '~';
-                    }
-                    fclose($handle);
-                }
-                echo json_encode($result, JSON_HEX_TAG);?>;
-          
-
-        var Movedata = <?php 
-          
-          $meta = $_GET['meta'];
-          $url='data/RBY2k20Data-RBYMoves.csv';
-          
-          if(strcmp($meta,'violet') == 0)
-          {
-            $url='data/RBY2k20Data-VioletMoves.csv';
-          }
-
-          
-          if (($handle = fopen($url, "r")) !== FALSE) {
-              $result="";
-              while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
-                  $totalrows = count($data);
-                  for ($row=0; $row<=$totalrows; $row++){
-                      if ( (strlen($data[$row])>0)){
-                          $result.=$data[$row].'~';
-                      }
-                  }
-                  $result .= '~';
-              }
-              fclose($handle);
-          }
-          echo json_encode($result, JSON_HEX_TAG);?>;
-
-          var Pokedata = new tableScanner(Pokedata, "~");
-          var Movedata = new tableScanner(Movedata, "~");
-
-          var pokeTable = new table(meta);
-          var moveTable = new table(meta);
-          var header = true;
-
-
-          var n =0;
-          while(Pokedata.hasNext())
-          {
-            var newRow = new row();
-            newRow.setHeader(header);
-            var rowData = Pokedata.next();
-            for (var i = 0; i < rowData.length; i++)
-            {
-              switch(i)
-              {
-                case 0: (!header)? newRow.addCell("<img src=\"images/smallsprites/"+ rowData[i] +".png\">" + "<a href=\"poke.php?meta="+ meta +"&mon=" + rowData[i] + "\"> &nbsp;" + rowData[i]+"</a>") : newRow.addCell(rowData[i]);
-                case 1: break;
-                case 3: if(rowData.length == 10){newRow.addCell("");  } newRow.addCell(rowData[i]); break;
-                case 4: 
-                case 5: 
-                case 6:
-                case 7:
-                case 8: 
-                case 9: statHeat(rowData.length, i); newRow.addCell(rowData[i]); break;
-                default: newRow.addCell(rowData[i]);
-              }
-            }
-
-            if(rowData.length == 10)
-            {
-              newRow.addAtr(1, "colspan", 2);
-              newRow.addAtr(2, "style", "display:none");
-            }
-            else
-            {
-              newRow.addAtr(2, "class", newRow.cells[2]);
-            }
-
-            newRow.addAtr(0, "style", "text-align: left;");
-            newRow.addAtr(1, "class", newRow.cells[1]);
-            pokeTable.addRow(newRow);
-            header = (false);
-          }
-
-          header = true;
-
-          while(Movedata.hasNext())
-          {
-            var newRow = new row();
-            newRow.setHeader(header);
-            var rowData = Movedata.next();
-            for (var i = 0; i < rowData.length; i++)
-            {
-              if(i != 1)
-              {
-                newRow.addCell(rowData[i]);
-              }
-            }
-            newRow.addAtr(0, "style", "text-align: left;");
-            newRow.addAtr(1, "class", newRow.cells[1]);
-            moveTable.addRow(newRow);
-            header = (false);
-          }
-
-
-        </script>
 
         <script>
             $(document).ready(function(){
@@ -294,15 +161,236 @@
 
 
         <div id="search">
-          <h3 style ="margin-left:1%">Search: <input height="32" width="128" type="text" id="kwd_search" placeholder=""></h3>
+            <select onchange="changeTable()" id="showmons" style="display: inline-block;">
+              <option>All Pokemon</option>
+            </select>
+          <h3 style ="margin-left:1% width: 60%; display: inline-block;">Search: <input height="32" width="128" type="text" id="kwd_search" placeholder=""></h3>
         </div>
 
         <dix id="dex" class="dex">
-          <script>
-            document.getElementById("dex").innerHTML += pokeTable.print() + moveTable.print();
-          </script>
+
         </div>
  
+
+
+
+        <script>
+          //Rby pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv
+          //Rby moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv
+          //Violet pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=269848004&single=true&output=csv
+          //Violet moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=2873338&single=true&output=csv
+
+          var dex = document.getElementById("dex");
+          var meta = "<?php echo $_GET['meta']; ?>";
+
+          var viability =<?php 
+                $meta = $_GET['meta'];
+                $url='data/RBY2k20Data-ShownMonsSt.csv';
+                
+                if(strcmp($meta,'violet') == 0)
+                {
+                  $url='data/RBY2k20Data-ShownMonsVV.csv';
+                }
+                if(strcmp($meta,'rby1u') == 0)
+                {
+                  $url='data/RBY2k20Data-ShownMonsTB.csv';
+                }   
+
+                if (($handle = fopen($url, "r")) !== FALSE) {
+                  $result="";
+                  while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                      $totalrows = count($data);
+                      for ($row=0; $row<=$totalrows; $row++){
+                          if ( (strlen($data[$row])>0)){
+                              $result.=$data[$row].'~';
+                          }   
+                      }
+                      $result .= '~';
+                  }
+                  fclose($handle);
+              }
+              echo json_encode($result, JSON_HEX_TAG);?>;
+
+          console.log(viability);
+
+          var Pokedata = <?php 
+          
+                $meta = $_GET['meta'];
+                $url='data/RBY2k20Data-RBYPokemon.csv';
+                
+                if(strcmp($meta,'violet') == 0)
+                {
+                  $url='data/RBY2k20Data-VioletPokemon.csv';
+                }
+                if(strcmp($meta,'rby1u') == 0)
+                {
+                  $url='data/RBY2k20Data-TradebackPokemon.csv';
+                }
+
+                
+                if (($handle = fopen($url, "r")) !== FALSE) {
+                    $result="";
+                    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                        $totalrows = count($data);
+                        for ($row=0; $row<=$totalrows; $row++){
+                            if ( (strlen($data[$row])>0)){
+                                $result.=$data[$row].'~';
+                            }   
+                        }
+                        $result .= '~';
+                    }
+                    fclose($handle);
+                }
+                echo json_encode($result, JSON_HEX_TAG);?>;
+          
+
+        var Movedata = <?php 
+          
+          $meta = $_GET['meta'];
+          $url='data/RBY2k20Data-RBYMoves.csv';
+          
+          if(strcmp($meta,'violet') == 0)
+          {
+            $url='data/RBY2k20Data-VioletMoves.csv';
+          }
+
+          
+          if (($handle = fopen($url, "r")) !== FALSE) {
+              $result="";
+              while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                  $totalrows = count($data);
+                  for ($row=0; $row<=$totalrows; $row++){
+                      if ( (strlen($data[$row])>0)){
+                          $result.=$data[$row].'~';
+                      }
+                  }
+                  $result .= '~';
+              }
+              fclose($handle);
+          }
+          echo json_encode($result, JSON_HEX_TAG);?>;
+
+          var Pokedata = new tableScanner(Pokedata, "~");
+          var Movedata = new tableScanner(Movedata, "~");
+          var viability = new tableScanner(viability, "~");
+
+          var tiers = viability.next();
+          var viabilityTables = [];
+
+          for(var i = 0; i < tiers.length; i++)
+          {
+            document.getElementById("showmons").innerHTML += "<option value=\"2\">" +tiers[i]+ " Viable</option>";
+            viabilityTables.push(new table(meta));
+          }
+
+          var viabilityData = [];
+
+          while(viability.hasNext())
+          {
+            viabilityData.push(viability.next());
+          }
+
+          console.log("VDVD: " + viabilityData);
+
+          var pokeTable = new table(meta);
+          var moveTable = new table(meta);
+          var header = true;
+
+
+          var n =0;
+          while(Pokedata.hasNext())
+          {
+            var newRow = new row();
+            newRow.setHeader(header);
+            var rowData = Pokedata.next();
+            for (var i = 0; i < rowData.length; i++)
+            {
+              switch(i)
+              {
+                case 0: (!header)? newRow.addCell("<img src=\"images/smallsprites/"+ rowData[i] +".png\">" + "<a href=\"poke.php?meta="+ meta +"&mon=" + rowData[i] + "\"> &nbsp;" + rowData[i]+"</a>") : newRow.addCell(rowData[i]);
+                case 1: break;
+                case 3: if(rowData.length == 10){newRow.addCell("");  } newRow.addCell(rowData[i]); break;
+                case 4: 
+                case 5: 
+                case 6:
+                case 7:
+                case 8: 
+                case 9: statHeat(rowData.length, i); newRow.addCell(rowData[i]); break;
+                default: newRow.addCell(rowData[i]);
+              }
+            }
+
+            if(rowData.length == 10)
+            {
+              newRow.addAtr(1, "colspan", 2);
+              newRow.addAtr(2, "style", "display:none");
+            }
+            else
+            {
+              newRow.addAtr(2, "class", newRow.cells[2]);
+            }
+
+            newRow.addAtr(0, "style", "text-align: left;");
+            newRow.addAtr(1, "class", newRow.cells[1]);
+
+            
+            for(var j = 0; j < tiers.length; j++)
+            {
+                console.log(newRow.cells[0] + "viability" + viabilityData[n]);
+                if(n > 0 && viabilityData[n-1][j+1] == 'Y')
+                  viabilityTables[j].addRow(newRow);
+                else if(n ==0 )
+                {
+                  viabilityTables[j].addRow(newRow);
+                }
+            }
+
+            n++;
+            pokeTable.addRow(newRow);
+            header = (false);
+          }
+
+          header = true;
+
+          while(Movedata.hasNext())
+          {
+            var newRow = new row();
+            newRow.setHeader(header);
+            var rowData = Movedata.next();
+            for (var i = 0; i < rowData.length; i++)
+            {
+              if(i != 1)
+              {
+                newRow.addCell(rowData[i]);
+              }
+            }
+            newRow.addAtr(0, "style", "text-align: left;");
+            newRow.addAtr(1, "class", newRow.cells[1]);
+            moveTable.addRow(newRow);
+            header = (false);
+          }
+
+          document.getElementById("dex").innerHTML += pokeTable.print() + moveTable.print();
+
+          function changeTable()
+          {
+              var i = document.getElementById("showmons").selectedIndex;
+              console.log("asd" + i);
+              var table;
+              if(i == 0)
+                table = pokeTable;
+              else
+                table = viabilityTables[i-1];
+
+              document.getElementById("dex").innerHTML = table.print() + moveTable.print();
+              console.log("asd"+table.print());
+
+              sorttable.makeSortable(document.getElementById("dex").getElementsByTagName("table")[0]);
+              sorttable.makeSortable(document.getElementById("dex").getElementsByTagName("table")[1]);
+          }
+          
+        </script>
+
     </body>
 </html>
 

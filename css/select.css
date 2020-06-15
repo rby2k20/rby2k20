@@ -1,0 +1,39 @@
+#showmons
+{
+    height: 39px;
+    width: 220px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    margin-right: 10px;
+    background-color: crimson;
+    color: yellow;
+    font-size: 24;
+    text-align: center;
+    vertical-align: middle;
+    outline:none
+}
+
+#showmons option
+{
+    width: 200px;
+    height: 39px;
+    color: white;
+}
+
+#showmons option:hover
+{
+    border: none;
+    background-color: darkred;
+}
+
+#showmons option:active
+{
+    border: none;
+    background-color: darkred;
+}
+
+#showmons option:selected
+{
+    border: none;
+    background-color: darkred;
+}
