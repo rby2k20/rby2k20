@@ -123,15 +123,17 @@
 <!--NAVBAR-->
         
 
-
+        <span style="display: none;" id="buffer"><?php echo file_get_contents($_GET['article'] . ".html"); ?></span>
 
         <article id="main">
             Loading
         </article>
 
         <script>
-            var content;
-            getTeam('<?php echo $_GET['article'] ?>');
+            var data = document.getElementById("buffer").innerHTML;
+            document.getElementById("buffer").innerHTML = "";
+
+            var content = new team(data, '<?php echo $_GET['article']; ?>');
             
             setTimeout(function waiting() {    
                 document.title = "RBY2k20: " + content.title;
@@ -139,7 +141,7 @@
                 document.getElementById("main").innerHTML = content.content;
                 console.log(content.Pokemon);
                 letsread();
-            },500);
+            },10);
 
             function toggleimportable()
             {

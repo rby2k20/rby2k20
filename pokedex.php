@@ -211,7 +211,35 @@
               }
               echo json_encode($result, JSON_HEX_TAG);?>;
 
-          console.log(viability);
+                var legality =<?php 
+                $meta = $_GET['meta'];
+                $url='data/RBY2k20Data-LegalMonsSt.csv';
+                
+                if(strcmp($meta,'violet') == 0)
+                {
+                  $url='data/RBY2k20Data-LegalMonsVV.csv';
+                }
+                if(strcmp($meta,'rby1u') == 0)
+                {
+                  $url='data/RBY2k20Data-LegalMonsTB.csv';
+                }   
+
+                if (($handle = fopen($url, "r")) !== FALSE) {
+                  $result="";
+                  while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                      $totalrows = count($data);
+                      for ($row=0; $row<=$totalrows; $row++){
+                          if ( (strlen($data[$row])>0)){
+                              $result.=$data[$row].'~';
+                          }   
+                      }
+                      $result .= '~';
+                  }
+                  fclose($handle);
+              }
+              echo json_encode($result, JSON_HEX_TAG);?>;
+
+
 
           var Pokedata = <?php 
           
@@ -273,6 +301,7 @@
           var Pokedata = new tableScanner(Pokedata, "~");
           var Movedata = new tableScanner(Movedata, "~");
           var viability = new tableScanner(viability, "~");
+          var legality = new tableScanner(legality, "~");
 
           var tiers = viability.next();
           var viabilityTables = [];
@@ -290,7 +319,24 @@
             viabilityData.push(viability.next());
           }
 
-          console.log("VDVD: " + viabilityData);
+          /////////////
+
+          var tiers2 = legality.next();
+          var legalityTables = [];
+
+          for(var i = 0; i < tiers2.length; i++)
+          {
+            document.getElementById("showmons").innerHTML += "<option value=\"2\">" +tiers2[i]+ " Legal</option>";
+            legalityTables.push(new table(meta));
+          }
+
+          var legalityData = [];
+
+          while(legality.hasNext())
+          {
+            legalityData.push(legality.next());
+          }
+
 
           var pokeTable = new table(meta);
           var moveTable = new table(meta);
@@ -336,12 +382,21 @@
             
             for(var j = 0; j < tiers.length; j++)
             {
-                console.log(newRow.cells[0] + "viability" + viabilityData[n]);
                 if(n > 0 && viabilityData[n-1][j+1] == 'Y')
                   viabilityTables[j].addRow(newRow);
                 else if(n ==0 )
                 {
                   viabilityTables[j].addRow(newRow);
+                }
+            }
+
+            for(var j = 0; j < tiers2.length; j++)
+            {
+                if(n > 0 && legalityData[n-1][j+1] == 'Y')
+                  legalityTables[j].addRow(newRow);
+                else if(n ==0 )
+                {
+                  legalityTables[j].addRow(newRow);
                 }
             }
 
@@ -372,18 +427,19 @@
 
           document.getElementById("dex").innerHTML += pokeTable.print() + moveTable.print();
 
+          var tables = viabilityTables.concat(legalityTables);
+
+
           function changeTable()
           {
               var i = document.getElementById("showmons").selectedIndex;
-              console.log("asd" + i);
               var table;
               if(i == 0)
                 table = pokeTable;
               else
-                table = viabilityTables[i-1];
+                table = tables[i-1];
 
               document.getElementById("dex").innerHTML = table.print() + moveTable.print();
-              console.log("asd"+table.print());
 
               sorttable.makeSortable(document.getElementById("dex").getElementsByTagName("table")[0]);
               sorttable.makeSortable(document.getElementById("dex").getElementsByTagName("table")[1]);

@@ -161,7 +161,7 @@
                         <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
                     </div>
                     <div class="analysis">
-                    
+                    <?php echo file_get_contents("Analyses/rbyou/" . $_GET['mon'] . ".html"); ?>
                     </div>
                     <div class="learnset dex">
                         
@@ -198,7 +198,7 @@
                         <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
                     </div>
                     <div class="analysis">
-                        
+                        <?php echo file_get_contents("Analyses/rby1u/" . $_GET['mon'] . ".html"); ?>
                     </div>
                     <div class="learnset dex">
                         
@@ -235,7 +235,7 @@
                         <button class="tablinks" id="violettab" onclick="openTab(event, 'violet')">Violet</button>
                     </div>
                     <div class="analysis">
-                    
+                        <?php echo file_get_contents("Analyses/violet/" . $_GET['mon'] . ".html"); ?>
                     </div>
                     <div class="learnset dex">
 
@@ -416,27 +416,21 @@
             window.addEventListener('load', function () 
             {
                 openTab(this, meta);
-                jQuery.get( 'Analyses/rbyou/' + mon +".html", function( data ) 
+
+                if (!document.getElementsByClassName("analysis")[0].innerHTML.replace(/\s/g, '').length)
                 {
-                    console.log(data);
-                    document.getElementsByClassName("analysis")[0].innerHTML = data;
-                }).fail(function(){ 
                     document.getElementsByClassName("analysis")[0].innerHTML = "No analysis found! Maybe head over to the forum and write one? :)";
-                });
+                } 
 
-                jQuery.get( 'Analyses/rby1u/' + mon +".html", function( data ) 
+                if (!document.getElementsByClassName("analysis")[1].innerHTML.replace(/\s/g, '').length)
                 {
-                    document.getElementsByClassName("analysis")[1].innerHTML = data;
-                }).fail(function(){ 
                     document.getElementsByClassName("analysis")[1].innerHTML = "No analysis found! Maybe head over to the forum and write one? :)";
-                });
+                } 
 
-                jQuery.get( 'Analyses/violet/' + mon +".html", function( data ) 
+                if (!document.getElementsByClassName("analysis")[2].innerHTML.replace(/\s/g, '').length)
                 {
-                    document.getElementsByClassName("analysis")[2].innerHTML = data;
-                }).fail(function(){ 
                     document.getElementsByClassName("analysis")[2].innerHTML = "No analysis found! Maybe head over to the forum and write one? :)";
-                });
+                } 
                 
             });
 

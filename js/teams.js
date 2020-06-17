@@ -30,14 +30,6 @@ function team(data, url) {
 }
 
 
-function getTeam(url)
-{
-    jQuery.get( url+".html", function( data ) 
-    {
-        content = new team(data, url);
-    });
-}
-
 function pushTeam(url)
 {
     jQuery.get( url+".html", function( data ) 

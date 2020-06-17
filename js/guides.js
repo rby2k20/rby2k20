@@ -23,14 +23,6 @@ function guide(data, url) {
 }
 
 
-function getArticle(url)
-{
-    jQuery.get( url+".html", function( data ) 
-    {
-        content = new guide(data, url);
-    });
-}
-
 function pushArticle(url)
 {
     jQuery.get( url+".html", function( data ) 
