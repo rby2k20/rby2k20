@@ -10,7 +10,7 @@ Barrier,violet,Psychic,Status,—,—,20,32,Sharply raises user's Defense.
 Bide,violet,Normal,Status,—,—,10,16,Waits 2-3 turns; deals double the damage taken.
 Bind,violet,Bug,Physical,40,75,5,8,Prevents the target from moving for 2-3 turns.
 Bite,violet,Normal,Physical,60,100,25,40,10% chance to flinch the target.
-Blizzard,violet,Ice,Special,120,90,5,8,10% chance to freeze the target.
+Blizzard,violet,Ice,Special,120,90,5,8,10% chance to freeze the target. Cannot freeze Ice types.
 Body Slam,violet,Normal,Physical,85,100,15,24,30% chance to paralyze the target.
 Bone Club,violet,Ground,Physical,65,85,20,32,10% chance to flinch the target.
 Bonemerang,violet,Ground,Physical,50,90,10,16,Hits twice in one turn.
@@ -38,13 +38,13 @@ Dream Eater,violet,Ghost,Physical,200,100,15,24,"Attack only works against sleep
 Drill Peck,violet,Flying,Physical,80,100,20,32,
 Earthquake,violet,Ground,Physical,100,100,10,16,
 Egg Bomb,violet,Normal,Physical,100,75,10,16,
-Ember,violet,Fire,Special,40,100,25,40,10% chance to burn the target.
-Explosion,violet,Normal,Physical,170,100,5,8,User faints.
-Fire Blast,violet,Fire,Special,120,85,5,8,30% chance to burn the target.
-Fire Punch,violet,Fire,Special,75,100,15,24,10% chance to burn the target.
+Ember,violet,Fire,Special,40,100,25,40,10% chance to burn the target. Cannot burn Fire types. 
+Explosion,violet,Normal,Physical,170,100,5,8,User faints. Calculates damage with only half of the target's Defense.
+Fire Blast,violet,Fire,Special,120,85,5,8,30% chance to burn the target. Cannot burn Fire types. 
+Fire Punch,violet,Fire,Special,75,100,15,24,10% chance to burn the target. Cannot burn Fire types. 
 Fire Spin,violet,Fire,Special,30,70,5,8,Prevents the target from moving for 2-3 turns.
 Fissure,violet,Ground,Status,—,30,5,8,Deals 65535 damage. Fails if the target is faster.
-Flamethrower,violet,Fire,Special,95,100,15,24,10% chance to burn the target.
+Flamethrower,violet,Fire,Special,95,100,15,24,10% chance to burn the target. Cannot burn Fire types. 
 Flash,violet,Normal,Status,—,70,20,32,Lowers opponent's Accuracy.
 Fly,violet,Flying,Physical,70,95,15,24,"Flies up on first turn, attacks on second turn."
 Focus Energy,violet,Normal,Status,—,—,30,48,Quarter's the user's chance for a critical hit.
@@ -65,8 +65,8 @@ Hydro Pump,violet,Water,Special,120,80,5,8,
 Hyper Beam,violet,Normal,Physical,150,90,5,8,Can't move next turn if target or sub is not KOed.
 Hyper Fang,violet,Normal,Physical,80,90,15,24,10% chance to flinch the target.
 Hypnosis,violet,Psychic,Status,—,60,20,32,Puts opponent to sleep.
-Ice Beam,violet,Ice,Special,95,100,10,16,10% chance to freeze opponent.
-Ice Punch,violet,Ice,Special,75,100,15,24,10% chance to freeze opponent.
+Ice Beam,violet,Ice,Special,95,100,10,16,10% chance to freeze opponent. Cannot freeze Ice types.
+Ice Punch,violet,Ice,Special,75,100,15,24,10% chance to freeze opponent. Cannot freeze Ice types.
 Jump Kick,violet,Fighting,Physical,70,95,10,16,User takes 1HP of damage if it misses.
 Karate Chop,violet,Fighting,Physical,50,100,25,40,High critical hit ratio.
 Kinesis,violet,Psychic,Status,—,80,15,24,Lowers opponent's Accuracy.
@@ -113,7 +113,7 @@ Sand Attack,violet,Normal,Status,—,100,15,24,Lowers opponent's Accuracy.
 Scratch,violet,Normal,Physical,40,100,35,56,
 Screech,violet,Normal,Status,—,85,40,64,Sharply lowers opponent's Defense.
 Seismic Toss,violet,Fighting,Status,—,100,20,32,Inflicts damage equal to user's level. Can hit Ghost-types.
-Self-Destruct,violet,Normal,Physical,130,100,5,8,User faints.
+Self-Destruct,violet,Normal,Physical,130,100,5,8,User faints. Calculates damage with only half of the target's Defense.
 Sharpen,violet,Normal,Status,—,—,30,48,Raises user's Attack.
 Sing,violet,Normal,Status,—,55,15,24,Puts opponent to sleep.
 Skull Bash,violet,Normal,Physical,100,100,10,16,"Charges on first turn, attacks on second."
@@ -155,7 +155,7 @@ Thunderbolt,violet,Electric,Special,95,100,15,24,10% chance to paralyze the targ
 Toxic,violet,Poison,Status,—,100,10,16,Badly poisons opponent.
 Transform,violet,Normal,Status,—,—,10,16,"Copies target's stats, moves, types, and species."
 Tri Attack,violet,Ghost,Physical,80,100,10,16,
-Twineedle,violet,Bug,Physical,40,100,20,32,Hits 2 times. 20% to poison per hit.
+Twineedle,violet,Bug,Physical,40,100,20,32,Hits 2 times. 20% to poison per hit. Cannot poison Poison types.
 Vine Whip,violet,Grass,Special,35,100,25,40,
 Vice Grip,violet,Bug,Physical,55,100,30,48,High critical hit ratio.
 Water Gun,violet,Water,Special,40,100,25,40,
