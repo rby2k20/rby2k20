@@ -74,6 +74,7 @@
               <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
               <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
               <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+              <a class="dropdown-item" href="guides.php?tag=other">Other Formats</a>
               <a class="dropdown-item" href="guides.php">All Tiers</a>
           </div>
       </li>
@@ -123,10 +124,12 @@
         
 
         <span style="display: none;" id="buffer"><?php echo file_get_contents($_GET['article'] . ".html"); ?></span>
-
+        <div id="flags"></div>
         <article id="main">
           Loading...
         </article>
+
+       
 
         <script>
 
@@ -135,13 +138,45 @@
 
             var content = new guide(data, '<?php echo $_GET['article']; ?>'); 
 
+
+
+
+              if(content.content.length > 1)
+              {
+                for(var i = 0; i < content.content.length; i++)
+                {
+                  document.getElementById("flags").innerHTML +=  "<img src=\"images/flags/" + content.content[i].id + ".png\">";
+                }
+                for(var i = 0; i < content.content.length; i++)
+                {
+                  document.getElementById("flags").children[i].flagnum = i;
+                  document.getElementById("flags").children[i].addEventListener("click", function(evt){ loadarticle(evt.currentTarget.flagnum); });
+                  console.log(document.getElementById("flags").children[i]);
+                  document.getElementById("flags").children[0].click();
+                }
+              }
             
-            setTimeout(function waiting() {    
+              loadarticle(0);
+            
+
+            function loadarticle(i) 
+            {   
+              console.log("loading" + i);
                 document.title = "RBY2k20: " + content.title;
                 
-                document.getElementById("main").innerHTML = content.content;
+                document.getElementById("main").innerHTML = content.content[i].innerHTML;
                 letsread();
-            },10);
+            }
+
+            
+
+
+
+
+            
+
+
+
       
         </script>
  

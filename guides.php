@@ -79,6 +79,7 @@
               <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
               <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
               <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+              <a class="dropdown-item" href="guides.php?tag=other">Other Formats</a>
               <a class="dropdown-item" href="guides.php">All Tiers</a>
           </div>
       </li>
@@ -180,6 +181,8 @@
 
                     for(var i = 0; i < articles.length; i++)
                     { 
+                      console.log(tag);
+                      console.log(articles[i].category.replace(/\s/g, '').toLowerCase());
                       if(articles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == "")
                       {
                         output += "<a href=\"read.php?article=" + articles[i].filename +"\"><div class=\"row\">" 

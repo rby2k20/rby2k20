@@ -65,7 +65,7 @@ function letsread()
             imagediv.innerHTML += "<img src=\"images/sprites/"+ content.Pokemon[i].toLowerCase() +".png\">";
         }
     }
-    catch (Exception) {console.log(Exception);}
+    catch (Exception) {/*console.log(Exception);*/}
 
 }
 

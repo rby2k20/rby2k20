@@ -1,6 +1,7 @@
 #main {
     margin: 15%;
     margin-top: 2%;
+    font-weight: normal;
 }
 
 #main .title
@@ -101,4 +102,20 @@
 .underline
 {
     text-decoration: underline;
+}
+
+#flags
+{
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#flags img
+{
+    width: 80px;
+    margin: 6px;
+    image-rendering: crisp-edges;
+    background-color: #f8f8f8;
+    padding: 0px 8px 0px 8px;
 }

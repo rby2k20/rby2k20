@@ -79,6 +79,7 @@
               <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
               <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
               <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+              <a class="dropdown-item" href="guides.php?tag=other">Other Formats</a>
               <a class="dropdown-item" href="guides.php">All Tiers</a>
           </div>
       </li>

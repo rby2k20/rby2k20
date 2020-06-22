@@ -111,6 +111,7 @@
               <a class="dropdown-item" href="guides.php?tag=rbyou">RBY OU</a>
               <a class="dropdown-item" href="guides.php?tag=rby1u">RBY 1U</a>
               <a class="dropdown-item" href="guides.php?tag=violet">Violet</a>
+              <a class="dropdown-item" href="guides.php?tag=other">Other Formats</a>
               <a class="dropdown-item" href="guides.php">All Tiers</a>
           </div>
       </li>
@@ -132,7 +133,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="https://rby2k20.freeforums.net/#category-4">Forum Tours</a>
         </div>
-    </li>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Participate
@@ -158,8 +159,6 @@
 
 <!--NAVBAR-->
         
-
-
         <div id="search">
             <select onchange="changeTable()" id="showmons" style="display: inline-block;">
               <option>All Pokemon</option>
@@ -171,9 +170,6 @@
 
         </div>
  
-
-
-
         <script>
           //Rby pokemon https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1378406483&single=true&output=csv
           //Rby moves https://docs.google.com/spreadsheets/d/e/2PACX-1vQnysmRk4eyn-zfjjQtPuNMuewVweWAoqxyUXOFJEx2dcBiMrvFmjiw5xpgDBQetnwyITzDIKRV2yj_/pub?gid=1181236501&single=true&output=csv
@@ -239,8 +235,6 @@
               }
               echo json_encode($result, JSON_HEX_TAG);?>;
 
-
-
           var Pokedata = <?php 
           
                 $meta = $_GET['meta'];
@@ -271,7 +265,6 @@
                 }
                 echo json_encode($result, JSON_HEX_TAG);?>;
           
-
         var Movedata = <?php 
           
           $meta = $_GET['meta'];
@@ -281,7 +274,6 @@
           {
             $url='data/RBY2k20Data-VioletMoves.csv';
           }
-
           
           if (($handle = fopen($url, "r")) !== FALSE) {
               $result="";
@@ -337,11 +329,9 @@
             legalityData.push(legality.next());
           }
 
-
           var pokeTable = new table(meta);
           var moveTable = new table(meta);
           var header = true;
-
 
           var n =0;
           while(Pokedata.hasNext())
@@ -378,7 +368,6 @@
 
             newRow.addAtr(0, "style", "text-align: left;");
             newRow.addAtr(1, "class", newRow.cells[1]);
-
             
             for(var j = 0; j < tiers.length; j++)
             {
@@ -428,7 +417,6 @@
           document.getElementById("dex").innerHTML += pokeTable.print() + moveTable.print();
 
           var tables = viabilityTables.concat(legalityTables);
-
 
           function changeTable()
           {

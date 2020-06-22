@@ -3,6 +3,7 @@ function guide(data, url) {
     try
     {
         this.filename = url;
+        this.content = [];
         var doc = new DOMParser().parseFromString(data, "text/html");
         this.title = doc.getElementsByTagName("title")[0].innerHTML;
         this.author = doc.getElementsByTagName("author")[0].innerHTML;
@@ -11,7 +12,10 @@ function guide(data, url) {
         this.year = doc.getElementsByTagName("pubyear")[0].innerHTML;
         this.category = doc.getElementsByTagName("category")[0].innerHTML;
         this.sticky = doc.getElementsByTagName("sticky")[0].innerHTML == 'true';
-        this.content = doc.getElementsByTagName("article")[0].innerHTML; 
+        for(var i = 0; i <  doc.getElementsByTagName("article").length; i++)
+        {
+            this.content.push(doc.getElementsByTagName("article")[i]); 
+        }        
     }
     catch (Exception)
     {
