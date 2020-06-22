@@ -155,7 +155,7 @@ Thunderbolt,rby,Electric,Special,95,100,15,24,10% chance to paralyze the target.
 Toxic,rby,Poison,Status,—,90,10,16,Badly poisons opponent.
 Transform,rby,Normal,Status,—,—,10,16,"Copies target's stats, moves, types, and species."
 Tri Attack,rby,Normal,Physical,80,100,10,16,-
-Twineedle,rby,Bug,Physical,25,100,20,32,Hits 2 times. Last hit has a 20% chance to poison opponent. Can poison Poison types. Cannot poison Bug Types
+Twineedle,rby,Bug,Physical,25,100,20,32,Hits 2 times. Last hit has a 20% chance to poison opponent. Cannot poison Poison types.
 Vine Whip,rby,Grass,Special,35,100,25,40,-
 Vice Grip,rby,Normal,Physical,55,100,30,48,-
 Water Gun,rby,Water,Special,40,100,25,40,-
