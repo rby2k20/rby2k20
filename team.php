@@ -63,7 +63,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <!--<a class="dropdown-item" href="articles.php">All Articles</a>-->
-            <a class="dropdown-item" href="articles.php?tag=Survey">Surveys</a>
+            <a class="dropdown-item" href="articles.php?tag=survey">Surveys</a>
             <!--<a class="dropdown-item" href="articles.php?tag=interviews">Interviews</a>-->
         </div>
     </li>
