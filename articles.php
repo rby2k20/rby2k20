@@ -66,7 +66,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <!--<a class="dropdown-item" href="articles.php">All Articles</a>-->
-            <a class="dropdown-item" href="articles.php?tag=news">News</a>
+            <a class="dropdown-item" href="articles.php?tag=Survey">Surveys</a>
             <!--<a class="dropdown-item" href="articles.php?tag=interviews">Interviews</a>-->
         </div>
     </li>
@@ -125,7 +125,6 @@
 </nav>
 
 <!--NAVBAR-->
-        
 
         <div id="articles" class="container">
             <span id="loading">Loading Guides...</span>

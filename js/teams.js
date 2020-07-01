@@ -4,6 +4,7 @@ function team(data, url) {
     {
         this.filename = url;
         this.Pokemon = []
+        this.content = [];
         var doc = new DOMParser().parseFromString(data, "text/html");
         this.title = doc.getElementsByTagName("title")[0].innerHTML;
         this.author = doc.getElementsByTagName("author")[0].innerHTML;
@@ -12,7 +13,10 @@ function team(data, url) {
         this.year = doc.getElementsByTagName("pubyear")[0].innerHTML;
         this.category = doc.getElementsByTagName("category")[0].innerHTML;
         this.sticky = doc.getElementsByTagName("sticky")[0].innerHTML == 'true';
-        this.content = doc.getElementsByTagName("article")[0].innerHTML; 
+        for(var i = 0; i <  doc.getElementsByTagName("article").length; i++)
+        {
+            this.content.push(doc.getElementsByTagName("article")[i]); 
+        }  
         this.Pokemon.push(doc.getElementsByTagName("pokemon")[0].innerHTML); 
         this.Pokemon.push(doc.getElementsByTagName("pokemon")[1].innerHTML); 
         this.Pokemon.push(doc.getElementsByTagName("pokemon")[2].innerHTML); 

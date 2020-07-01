@@ -99,7 +99,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <!--<a class="dropdown-item" href="articles.php">All Articles</a>-->
-            <a class="dropdown-item" href="articles.php?tag=news">News</a>
+            <a class="dropdown-item" href="articles.php?tag=Survey">Surveys</a>
             <!--<a class="dropdown-item" href="articles.php?tag=interviews">Interviews</a>-->
         </div>
     </li>
@@ -133,7 +133,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="https://rby2k20.freeforums.net/#category-4">Forum Tours</a>
         </div>
-      </li>
+    </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Participate

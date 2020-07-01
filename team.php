@@ -63,7 +63,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <!--<a class="dropdown-item" href="articles.php">All Articles</a>-->
-            <a class="dropdown-item" href="articles.php?tag=news">News</a>
+            <a class="dropdown-item" href="articles.php?tag=Survey">Surveys</a>
             <!--<a class="dropdown-item" href="articles.php?tag=interviews">Interviews</a>-->
         </div>
     </li>
@@ -126,6 +126,7 @@
 
         <span style="display: none;" id="buffer"><?php echo file_get_contents($_GET['article'] . ".html"); ?></span>
 
+        <div id="flags"></div>
         <article id="main">
             Loading
         </article>
@@ -136,19 +137,36 @@
 
             var content = new team(data, '<?php echo $_GET['article']; ?>');
             
-            setTimeout(function waiting() {    
-                document.title = "RBY2k20: " + content.title;
-                
-                document.getElementById("main").innerHTML = content.content;
-                console.log(content.Pokemon);
-                letsread();
-            },10);
+            if(content.content.length > 1)
+              {
+                for(var i = 0; i < content.content.length; i++)
+                {
+                  document.getElementById("flags").innerHTML +=  "<img src=\"images/flags/" + content.content[i].id + ".png\">";
+                }
+                for(var i = 0; i < content.content.length; i++)
+                {
+                  document.getElementById("flags").children[i].flagnum = i;
+                  document.getElementById("flags").children[i].addEventListener("click", function(evt){ loadarticle(evt.currentTarget.flagnum); });
+                  console.log(document.getElementById("flags").children[i]);
+                  document.getElementById("flags").children[0].click();
+                }
+              }
 
             function toggleimportable()
             {
                 console.log(document.getElementById("importable").style.display)
                 document.getElementById("importable").style.display =
                 (document.getElementById("importable").style.display == "")?  "block" : "";
+            }
+
+            
+            function loadarticle(i) 
+            {   
+              console.log("loading" + i);
+                document.title = "RBY2k20: " + content.title;
+                
+                document.getElementById("main").innerHTML = content.content[i].innerHTML;
+                letsread();
             }
       
         </script>
