@@ -155,6 +155,7 @@
                   document.getElementById("flags").children[0].click();
                 }
               }
+              
             
               loadarticle(0);
             

@@ -6,7 +6,7 @@ function team(data, url) {
         this.Pokemon = []
         this.content = [];
         var doc = new DOMParser().parseFromString(data, "text/html");
-        this.title = doc.getElementsByTagName("title")[0].innerHTML;
+        this.title = doc.getElementsByTagName("title")[0].innerHTML; 
         this.author = doc.getElementsByTagName("author")[0].innerHTML;
         this.day = doc.getElementsByTagName("pubday")[0].innerHTML;
         this.month = doc.getElementsByTagName("pubmonth")[0].innerHTML;

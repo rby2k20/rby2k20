@@ -124,7 +124,7 @@
 <!--NAVBAR-->
         
 
-        <span style="display: none;" id="buffer"><?php echo file_get_contents($_GET['article'] . ".html"); ?></span>
+        <span style="display: none;" id="buffer"><?php   echo file_get_contents($_GET['article'] . ".html"); ?></span>
 
         <div id="flags"></div>
         <article id="main">
@@ -151,6 +151,7 @@
                   document.getElementById("flags").children[0].click();
                 }
               }
+              loadarticle(0);
 
             function toggleimportable()
             {
