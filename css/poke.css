@@ -176,3 +176,32 @@ h2
 {
     display: none;
 }
+
+#om .analysis
+{
+    background-color: white;
+    border-style: none;
+    max-width: 960px;
+    text-align: left;
+    margin: auto;
+    box-shadow: none;
+}
+
+#om .analysis .om
+{
+    background-color: rgb(250, 235, 239);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 20px;
+    padding: 24px;
+    max-width: 960px;
+    text-align: left;
+    margin: 24px auto 24px auto;
+    box-shadow: 12px 12px 7px #888888;
+}
+
+.container 
+{
+    text-align: center;
+}

@@ -159,6 +159,7 @@
                         <button class="tablinks" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</button>
                         <button class="tablinks" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
                         <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
+                        <button class="tablinks" id="omtab" onclick="openTab(event, 'om')">Other Formats</button>
                     </div>
                     <div class="analysis">
                     <?php echo file_get_contents("Analyses/rbyou/" . $_GET['mon'] . ".html"); ?>
@@ -196,6 +197,7 @@
                         <button class="tablinks" id="" onclick="openTab(event, 'rby')">RBY OU</button>
                         <button class="tablinks" id="rby1utab" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
                         <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
+                        <button class="tablinks" id="omtab" onclick="openTab(event, 'om')">Other Formats</button>
                     </div>
                     <div class="analysis">
                         <?php echo file_get_contents("Analyses/rby1u/" . $_GET['mon'] . ".html"); ?>
@@ -233,9 +235,49 @@
                         <button class="tablinks" id="" onclick="openTab(event, 'rby')">RBY OU</button>
                         <button class="tablinks" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
                         <button class="tablinks" id="violettab" onclick="openTab(event, 'violet')">Violet</button>
+                        <button class="tablinks" id="omtab" onclick="openTab(event, 'om')">Other Formats</button>
                     </div>
                     <div class="analysis">
                         <?php echo file_get_contents("Analyses/violet/" . $_GET['mon'] . ".html"); ?>
+                    </div>
+                    <div class="learnset dex">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="om" class="tabcontent">
+            <h2><?php echo $_GET['mon'] ?></h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
+                            <table>
+                                <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr><tr><td>&nbsp;</td></tr>
+                                <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
+                            </table>
+                        </div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <table class="stats">
+                                <tr><td>HP:&nbsp;&nbsp;&nbsp;</td><td class="hp"></td><td class="hpb"></td></tr>
+                                <tr><td>Attack:&nbsp;&nbsp;&nbsp;</td><td class="atk"></td><td class="atkb"></td></tr>
+                                <tr><td>Defense:&nbsp;&nbsp;&nbsp;</td><td class="def"></td><td class="defb"></td></tr>
+                                <tr><td>Special:&nbsp;&nbsp;&nbsp;</td><td class="spc"></td><td class="spcb"></td></tr>
+                                <tr><td>Speed:&nbsp;&nbsp;&nbsp;</td><td class="spe"></td><td class="speb"></td></tr>
+                            </table>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="tab btn-group">
+                        <button class="tablinks" id="" onclick="openTab(event, 'rby')">RBY OU</button>
+                        <button class="tablinks" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
+                        <button class="tablinks" id="violettab" onclick="openTab(event, 'violet')">Violet</button>
+                        <button class="tablinks" id="omtab" onclick="openTab(event, 'om')">Other Formats</button>
+                    </div>
+                    <div class="analysis">
+                        <?php echo file_get_contents("Analyses/om/" . $_GET['mon'] . ".html"); ?>
                     </div>
                     <div class="learnset dex">
 
@@ -326,7 +368,11 @@
                                                                                 + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");
                     document.getElementsByClassName("tier")[0].innerHTML = rowData[10-offset];
                     document.getElementsByClassName("type")[1].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
-                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");                    document.getElementsByClassName("tier")[1].innerHTML = rowData[10-offset];
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");                    
+                    document.getElementsByClassName("tier")[1].innerHTML = rowData[10-offset];
+                    document.getElementsByClassName("type")[3].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");                    
+                    document.getElementsByClassName("tier")[3].innerHTML = rowData[10-offset];
                     document.getElementsByClassName("hp")[0].innerHTML = rowData[4-offset];
                     document.getElementsByClassName("atk")[0].innerHTML = rowData[5-offset]; 
                     document.getElementsByClassName("def")[0].innerHTML = rowData[6-offset]; 
@@ -337,6 +383,11 @@
                     document.getElementsByClassName("def")[1].innerHTML = rowData[6-offset]; 
                     document.getElementsByClassName("spc")[1].innerHTML = rowData[7-offset]; 
                     document.getElementsByClassName("spe")[1].innerHTML = rowData[8-offset]; 
+                    document.getElementsByClassName("hp")[3].innerHTML = rowData[4-offset];
+                    document.getElementsByClassName("atk")[3].innerHTML = rowData[5-offset]; 
+                    document.getElementsByClassName("def")[3].innerHTML = rowData[6-offset]; 
+                    document.getElementsByClassName("spc")[3].innerHTML = rowData[7-offset]; 
+                    document.getElementsByClassName("spe")[3].innerHTML = rowData[8-offset]; 
 
                     document.getElementsByClassName("hpb")[0].innerHTML = colorbarString(rowData[4-offset]);
                     document.getElementsByClassName("atkb")[0].innerHTML = colorbarString(rowData[5-offset]); 
@@ -348,6 +399,11 @@
                     document.getElementsByClassName("defb")[1].innerHTML = colorbarString(rowData[6-offset]); 
                     document.getElementsByClassName("spcb")[1].innerHTML = colorbarString(rowData[7-offset]); 
                     document.getElementsByClassName("speb")[1].innerHTML = colorbarString(rowData[8-offset]);  
+                    document.getElementsByClassName("hpb")[3].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[3].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[3].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[3].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[3].innerHTML = colorbarString(rowData[8-offset]);  
                 }
             }
 
@@ -641,6 +697,7 @@
             document.getElementsByClassName("learnset")[0].innerHTML = rbytable.print();
             document.getElementsByClassName("learnset")[1].innerHTML = rby1utable.print();
             document.getElementsByClassName("learnset")[2].innerHTML = violettable.print();
+            document.getElementsByClassName("learnset")[3].innerHTML = rby1utable.print();
         </script>
     </body>
 </html>
