@@ -409,6 +409,7 @@
               }
             }
             newRow.addAtr(0, "style", "text-align: left;");
+            newRow.addAtr(0, "onclick", "moveDisplay("+ newRow.cells[0] +")");
             newRow.addAtr(1, "class", newRow.cells[1]);
             moveTable.addRow(newRow);
             header = (false);
@@ -426,7 +427,6 @@
                 table = pokeTable;
               else
                 table = tables[i-1];
-
               document.getElementById("dex").innerHTML = table.print() + moveTable.print();
 
               sorttable.makeSortable(document.getElementById("dex").getElementsByTagName("table")[0]);
