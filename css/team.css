@@ -28,8 +28,10 @@
 {
     color: yellow;
     background-color: crimson;
+    font-weight: bold;
     padding: 12px 12px;
     border: none;
+    border-radius: 50px;
     text-decoration: none;
     width: 150px;
 }
