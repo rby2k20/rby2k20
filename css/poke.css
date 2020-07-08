@@ -35,6 +35,7 @@ h2
 .tab button 
 {
     font-size: 1.4 rem;
+    font-weight: bold;
     background-color: inherit;
     float: center;
     border: none;
