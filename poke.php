@@ -471,7 +471,7 @@
 
 
             window.addEventListener('load', function () 
-            {
+            { //TODO: Throw this trash in a loop
                 openTab(this, meta);
 
                 if (!document.getElementsByClassName("analysis")[0].innerHTML.replace(/\s/g, '').length)
@@ -489,6 +489,10 @@
                     document.getElementsByClassName("analysis")[2].innerHTML = "No analysis found! Maybe head over to the forum and write one? :)";
                 } 
                 
+                if (!document.getElementsByClassName("analysis")[3].innerHTML.replace(/\s/g, '').length)
+                {
+                    document.getElementsByClassName("analysis")[3].innerHTML = "<span class=\"om\"> No analysis found! Maybe head over to the forum and write one? :)</span>";
+                } 
             });
 
 
