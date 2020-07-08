@@ -463,8 +463,9 @@
             {
                 tablinks = document.getElementsByClassName("tablinks");
                 tablinks[2].className += " hidden";
-                tablinks[5].className += " hidden";
-                tablinks[7].className += " hidden";
+                tablinks[6].className += " hidden";
+                tablinks[9].className += " hidden";
+                tablinks[14].className += " hidden";
             }
 
 

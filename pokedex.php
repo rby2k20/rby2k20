@@ -409,8 +409,8 @@
               }
             }
             newRow.addAtr(0, "style", "text-align: left;");
-            newRow.addAtr(0, "onclick", "moveDisplay("+ newRow.cells[0] +")");
-            newRow.addAtr(1, "class", newRow.cells[1]);
+            newRow.addAtr(0, "onclick", "moveDisplay(\'"+ newRow.cells[0] +"\')");
+            newRow.addAtr(1, "class",newRow.cells[1]);
             moveTable.addRow(newRow);
             header = (false);
           }
@@ -432,7 +432,11 @@
               sorttable.makeSortable(document.getElementById("dex").getElementsByTagName("table")[0]);
               sorttable.makeSortable(document.getElementById("dex").getElementsByTagName("table")[1]);
           }
-          
+
+          function moveDisplay(move)
+          {
+            window.location.href = ('move.php?move=' + move + "&meta=" + meta);
+          }
         </script>
 
     </body>
