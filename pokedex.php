@@ -190,11 +190,11 @@
                 {
                   $url='data/RBY2k20Data-ShownMonsVV.csv';
                 }
-                if(strcmp($meta,'rby1u') == 0)
+                elseif(strcmp($meta,'rby1u') == 0)
                 {
                   $url='data/RBY2k20Data-ShownMonsTB.csv';
                 }
-                if(strcmp($meta,'rby') == 0)
+                elseif(strcmp($meta,'rby') == 0)
                 {
                   $url='data/RBY2k20Data-ShownMonsSt.csv';
                 }  
@@ -221,11 +221,11 @@
                 {
                   $url='data/RBY2k20Data-LegalMonsSt.csv';
                 }
-                if(strcmp($meta,'violet') == 0)
+                elseif(strcmp($meta,'violet') == 0)
                 {
                   $url='data/RBY2k20Data-LegalMonsVV.csv';
                 }
-                if(strcmp($meta,'rby1u') == 0)
+                elseif(strcmp($meta,'rby1u') == 0)
                 {
                   $url='data/RBY2k20Data-LegalMonsTB.csv';
                 }   
@@ -254,27 +254,27 @@
                 {
                   $url='data/RBY2k20Data-VioletPokemon.csv';
                 }
-                if(strcmp($meta,'rby1u') == 0)
+                elseif(strcmp($meta,'rby1u') == 0)
                 {
                   $url='data/RBY2k20Data-TradebackPokemon.csv';
                 }
-                if(strcmp($meta,'nc97') == 0)
+                elseif(strcmp($meta,'nc97') == 0)
                 {
                   $url='data\RBY2k20Data-NC97Pokemon.csv';
                 }
-                if(strcmp($meta,'nc98') == 0)
+                elseif(strcmp($meta,'nc98') == 0)
                 {
                   $url='data\RBY2k20Data-NC98Pokemon.csv';
                 }
-                if(strcmp($meta,'nc99') == 0)
+                elseif(strcmp($meta,'nc99') == 0)
                 {
                   $url='data\RBY2k20Data-NC99Pokemon.csv';
                 }   
-                if(strcmp($meta,'petit') == 0)
+                elseif(strcmp($meta,'petit') == 0)
                 {
                   $url='data\RBY2k20Data-PetitPokemon.csv';
                 }
-                if(strcmp($meta,'pika') == 0)
+                elseif(strcmp($meta,'pika') == 0)
                 {
                   $url='data\RBY2k20Data-PikaPokemon.csv';
                 }
@@ -305,23 +305,23 @@
           {
             $url='data/RBY2k20Data-VioletMoves.csv';
           }
-          if(strcmp($meta,'nc97') == 0)
+          elseif(strcmp($meta,'nc97') == 0)
           {
             $url='data/RBY2k20Data-RGBYMoves.csv';
           }
-          if(strcmp($meta,'nc98') == 0)
+          elseif(strcmp($meta,'nc98') == 0)
           {
             $url='data/RBY2k20Data-Stad0Moves.csv';
           }
-          if(strcmp($meta,'nc99') == 0)
+          elseif(strcmp($meta,'nc99') == 0)
           {
             $url='data/RBY2k20Data-StadMoves.csv';
           }   
-          if(strcmp($meta,'petit') == 0)
+          elseif(strcmp($meta,'petit') == 0)
           {
             $url='data/RBY2k20Data-StadMoves.csv';
           }
-          if(strcmp($meta,'pika') == 0)
+          elseif(strcmp($meta,'pika') == 0)
           {
             $url='data/RBY2k20Data-StadMoves.csv';
           }
