@@ -54,6 +54,11 @@
               <a class="dropdown-item" href="pokedex.php?meta=rby">RBY OU</a>
               <a class="dropdown-item" href="pokedex.php?meta=rby1u">RBY 1U</a>
               <a class="dropdown-item" href="pokedex.php?meta=violet">Violet</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc97">Nintendo Cup 97</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc98">Nintendo Cup 98</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc99">Nintendo Cup 99</a>
+              <a class="dropdown-item" href="pokedex.php?meta=petit">Petit Cup</a>
+              <a class="dropdown-item" href="pokedex.php?meta=pika">Pika Cup</a>
           </div>
       </li>
       <li class="nav-item dropdown">
@@ -122,6 +127,7 @@
 
 <!--NAVBAR-->
         
+        
 
         <span style="display: none;" id="buffer"><?php echo file_get_contents($_GET['article'] . ".html"); ?></span>
         <div id="flags"></div>
@@ -155,7 +161,7 @@
                   document.getElementById("flags").children[0].click();
                 }
               }
-              
+
             
               loadarticle(0);
             

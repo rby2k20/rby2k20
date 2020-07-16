@@ -58,7 +58,7 @@ row.prototype.print = function()
         {
             if(this.ats[j].id == i)
             {
-                console.log(this.ats[j].val);
+                //console.log(this.ats[j].val);
                 tagOpen = tagOpen.replace(">", " " + this.ats[j].val + ">")
             }
         }
@@ -85,7 +85,7 @@ tableScanner.prototype.next = function()
 
 tableScanner.prototype.hasNext = function()
 { 
-    console.log(this.data)
+    //console.log(this.data)
     return this.data.length > 0;
 }
 
@@ -126,7 +126,7 @@ addSpan = (html, className) =>
            else if(num < 90){
                red = 222 + (14*(num % 30)/15);
                green = 132 + (33*(num % 30)/10);
-               console.log("green: " + green + "  Num: " + num);
+               //console.log("green: " + green + "  Num: " + num);
                blue = 14 + ((num % 30)/5);
            }
            else if(num == 90){

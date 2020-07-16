@@ -59,6 +59,11 @@
               <a class="dropdown-item" href="pokedex.php?meta=rby">RBY OU</a>
               <a class="dropdown-item" href="pokedex.php?meta=rby1u">RBY 1U</a>
               <a class="dropdown-item" href="pokedex.php?meta=violet">Violet</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc97">Nintendo Cup 97</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc98">Nintendo Cup 98</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc99">Nintendo Cup 99</a>
+              <a class="dropdown-item" href="pokedex.php?meta=petit">Petit Cup</a>
+              <a class="dropdown-item" href="pokedex.php?meta=pika">Pika Cup</a>
           </div>
       </li>
       <li class="nav-item dropdown">
@@ -127,6 +132,7 @@
 
 <!--NAVBAR-->
         
+        
 
         <div id="articles" class="container">
             <span id="loading">Loading Guides...</span>
@@ -168,7 +174,7 @@
 
                     for(var i = 0; i < stickyArticles.length; i++)
                     { 
-                        if(stickyArticles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == "")
+                        if(stickyArticles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == ""  || articles[i].category.replace(/\s/g, '').toLowerCase() == 'all')
                         {
                           output += "<a href=\"read.php?article=" + stickyArticles[i].filename +"\"><div class=\"row\">" 
                           output += mkBtstpDiv(frmtDate(stickyArticles[i].day, stickyArticles[i].month, stickyArticles[i].year),"col-4 col-md-3");
@@ -183,7 +189,7 @@
                     { 
                       console.log(tag);
                       console.log(articles[i].category.replace(/\s/g, '').toLowerCase());
-                      if(articles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == "")
+                      if(articles[i].category.replace(/\s/g, '').toLowerCase() == tag || tag == "" || articles[i].category.replace(/\s/g, '').toLowerCase() == 'all')
                       {
                         output += "<a href=\"read.php?article=" + articles[i].filename +"\"><div class=\"row\">" 
                         output += mkBtstpDiv(frmtDate(articles[i].day, articles[i].month, articles[i].year),"col-4 col-md-3");
@@ -195,6 +201,8 @@
                     }
 
                     console.log(output);
+
+
                     document.getElementById("articles").innerHTML = output;
                 }, 500);
 

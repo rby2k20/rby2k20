@@ -39,8 +39,6 @@
             }
         </style>
 
-
-
         <script>
             $(document).ready(function(){
               // Write on keyup event of keyword input element
@@ -91,6 +89,11 @@
               <a class="dropdown-item" href="pokedex.php?meta=rby">RBY OU</a>
               <a class="dropdown-item" href="pokedex.php?meta=rby1u">RBY 1U</a>
               <a class="dropdown-item" href="pokedex.php?meta=violet">Violet</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc97">Nintendo Cup 97</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc98">Nintendo Cup 98</a>
+              <a class="dropdown-item" href="pokedex.php?meta=nc99">Nintendo Cup 99</a>
+              <a class="dropdown-item" href="pokedex.php?meta=petit">Petit Cup</a>
+              <a class="dropdown-item" href="pokedex.php?meta=pika">Pika Cup</a>
           </div>
       </li>
       <li class="nav-item dropdown">
@@ -181,7 +184,7 @@
 
           var viability =<?php 
                 $meta = $_GET['meta'];
-                $url='data/RBY2k20Data-ShownMonsSt.csv';
+                $url='data/empty.csv';
                 
                 if(strcmp($meta,'violet') == 0)
                 {
@@ -190,8 +193,11 @@
                 if(strcmp($meta,'rby1u') == 0)
                 {
                   $url='data/RBY2k20Data-ShownMonsTB.csv';
-                }   
-
+                }
+                if(strcmp($meta,'rby') == 0)
+                {
+                  $url='data/RBY2k20Data-ShownMonsSt.csv';
+                }  
                 if (($handle = fopen($url, "r")) !== FALSE) {
                   $result="";
                   while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -209,8 +215,12 @@
 
                 var legality =<?php 
                 $meta = $_GET['meta'];
-                $url='data/RBY2k20Data-LegalMonsSt.csv';
+                $url='data/empty.csv';
                 
+                if(strcmp($meta,'rby') == 0)
+                {
+                  $url='data/RBY2k20Data-LegalMonsSt.csv';
+                }
                 if(strcmp($meta,'violet') == 0)
                 {
                   $url='data/RBY2k20Data-LegalMonsVV.csv';
@@ -248,7 +258,28 @@
                 {
                   $url='data/RBY2k20Data-TradebackPokemon.csv';
                 }
+                if(strcmp($meta,'nc97') == 0)
+                {
+                  $url='data\RBY2k20Data-NC97Pokemon.csv';
+                }
+                if(strcmp($meta,'nc98') == 0)
+                {
+                  $url='data\RBY2k20Data-NC98Pokemon.csv';
+                }
+                if(strcmp($meta,'nc99') == 0)
+                {
+                  $url='data\RBY2k20Data-NC99Pokemon.csv';
+                }   
+                if(strcmp($meta,'petit') == 0)
+                {
+                  $url='data\RBY2k20Data-PetitPokemon.csv';
+                }
+                if(strcmp($meta,'pika') == 0)
+                {
+                  $url='data\RBY2k20Data-PikaPokemon.csv';
+                }
 
+                
                 
                 if (($handle = fopen($url, "r")) !== FALSE) {
                     $result="";
@@ -274,6 +305,27 @@
           {
             $url='data/RBY2k20Data-VioletMoves.csv';
           }
+          if(strcmp($meta,'nc97') == 0)
+          {
+            $url='data/RBY2k20Data-RGBYMoves.csv';
+          }
+          if(strcmp($meta,'nc98') == 0)
+          {
+            $url='data/RBY2k20Data-Stad0Moves.csv';
+          }
+          if(strcmp($meta,'nc99') == 0)
+          {
+            $url='data/RBY2k20Data-StadMoves.csv';
+          }   
+          if(strcmp($meta,'petit') == 0)
+          {
+            $url='data/RBY2k20Data-StadMoves.csv';
+          }
+          if(strcmp($meta,'pika') == 0)
+          {
+            $url='data/RBY2k20Data-StadMoves.csv';
+          }
+
           
           if (($handle = fopen($url, "r")) !== FALSE) {
               $result="";
@@ -296,11 +348,15 @@
           var legality = new tableScanner(legality, "~");
 
           var tiers = viability.next();
+          if(meta != 'rby' && meta != 'rby1u' && meta != 'violet')
+          {
+            tiers = [];
+          }
           var viabilityTables = [];
 
           for(var i = 0; i < tiers.length; i++)
           {
-            document.getElementById("showmons").innerHTML += "<option value=\"2\">" +tiers[i]+ " Viable</option>";
+            document.getElementById("showmons").innerHTML += "<option value=\"2\">" +tiers[i].replace("Legal","")+ " Viable</option>";
             viabilityTables.push(new table(meta));
           }
 
@@ -314,6 +370,10 @@
           /////////////
 
           var tiers2 = legality.next();
+          if(meta != 'rby' && meta != 'rby1u' && meta != 'violet')
+          {
+            tiers2 = [];
+          }
           var legalityTables = [];
 
           for(var i = 0; i < tiers2.length; i++)
@@ -437,6 +497,16 @@
           {
             window.location.href = ('move.php?move=' + move + "&meta=" + meta);
           }
+
+
+          $('table:first tr').each(function() {
+            var lasttd = $(this).find(':last')
+            if(lasttd.html().includes("NA"))
+            {
+              lasttd.hide();
+            }
+          });
+
         </script>
 
     </body>

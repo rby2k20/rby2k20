@@ -69,6 +69,11 @@ body {
     text-align: center;
 }
 
+.dex th
+{
+    background-color: crimson;
+}
+
 .dex table.rby th, .dex .rby1u th
 {
     background-color: crimson;
