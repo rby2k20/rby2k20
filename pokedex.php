@@ -260,23 +260,23 @@
                 }
                 elseif(strcmp($meta,'nc97') == 0)
                 {
-                  $url='data\RBY2k20Data-NC97Pokemon.csv';
+                  $url='data/RBY2k20Data-NC97Pokemon.csv';
                 }
                 elseif(strcmp($meta,'nc98') == 0)
                 {
-                  $url='data\RBY2k20Data-NC98Pokemon.csv';
+                  $url='data/RBY2k20Data-NC98Pokemon.csv';
                 }
                 elseif(strcmp($meta,'nc99') == 0)
                 {
-                  $url='data\RBY2k20Data-NC99Pokemon.csv';
+                  $url='data/RBY2k20Data-NC99Pokemon.csv';
                 }   
                 elseif(strcmp($meta,'petit') == 0)
                 {
-                  $url='data\RBY2k20Data-PetitPokemon.csv';
+                  $url='data/RBY2k20Data-PetitPokemon.csv';
                 }
                 elseif(strcmp($meta,'pika') == 0)
                 {
-                  $url='data\RBY2k20Data-PikaPokemon.csv';
+                  $url='data/RBY2k20Data-PikaPokemon.csv';
                 }
 
                 
