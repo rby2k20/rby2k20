@@ -16,14 +16,7 @@ h2
     text-align: center;
     width: 100%;
     max-width: 960px;
-    margin-top: 24px;
-    margin-bottom: 20px;
     background-color: crimson;
-    border-style: solid;
-    border-width: 1px;
-    border-color: crimson;
-    border-radius: 50px;
-    box-shadow: 12px 12px 7px #888888;
 }
 
 .tabfiller
@@ -201,10 +194,44 @@ h2
     width: 100%;
     text-align: left;
     margin: 24px auto 24px auto;
-    box-shadow: 12px 12px 7px #888888;
+    box-shadow: 6px 6px 3px #444444;
 }
 
 .container 
 {
     text-align: center;
+}
+
+.btn-group .dropdown .dropdown-toggle
+{
+    color: white;
+    background-color: crimson;
+    margin: 24px;
+    font-size: 1.1rem;
+}
+
+.btn-group .dropdown .dropdown-toggle:hover
+{
+    color: yellow;
+    background-color: darkred;
+    margin: 24px;
+    font-size: 1.1rem;
+}
+
+.btn-group .dropdown .dropdown-menu .dropdown-item
+{
+    padding: 6px;
+    color: white;
+}
+
+.btn-group .dropdown .dropdown-menu .dropdown-item:hover
+{
+    padding: 6px;
+    background-color: darkred;
+}
+
+.btn-group .dropdown .dropdown-menu
+{
+    border-radius: 6px;
+    border-color: black;
 }

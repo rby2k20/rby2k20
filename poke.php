@@ -138,7 +138,7 @@
         <div id="content">
             
             <div id="rby" class="tabcontent">
-                <h2><?php echo $_GET['mon'] ?></h2>
+                <h2><?php echo $_GET['mon'] ?> - RBY OU</h2>
                 <div class="container">
                     <div class="row">
                         <div class="col-1"></div>
@@ -160,12 +160,43 @@
                         </div>
                         <div class="col-1"></div>
                     </div>
-                    <div class="tab btn-group">
-                        <button class="tablinks" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</button>
-                        <button class="tablinks" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
-                        <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
-                        <button class="tablinks" id="omtab" onclick="openTab(event, 'om')">Other Formats</button>
+
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                            </div>
+                        </div>
+
                     </div>
+
                     <div class="analysis">
                     <?php echo file_get_contents("Analyses/rbyou/" . $_GET['mon'] . ".html"); ?>
                     </div>
@@ -176,7 +207,7 @@
             </div>
 
             <div id="rby1u" class="tabcontent">
-            <h2><?php echo $_GET['mon'] ?></h2>
+            <h2><?php echo $_GET['mon'] ?> - RBY 1U</h2>
                 <div class="container">
                     <div class="row">
                         <div class="col-1"></div>
@@ -198,11 +229,40 @@
                         </div>
                         <div class="col-1"></div>
                     </div>
-                    <div class="tab btn-group">
-                        <button class="tablinks" id="" onclick="openTab(event, 'rby')">RBY OU</button>
-                        <button class="tablinks" id="rby1utab" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
-                        <button class="tablinks" id="" onclick="openTab(event, 'violet')">Violet</button>
-                        <button class="tablinks" id="omtab" onclick="openTab(event, 'om')">Other Formats</button>
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="analysis">
                         <?php echo file_get_contents("Analyses/rby1u/" . $_GET['mon'] . ".html"); ?>
@@ -214,7 +274,7 @@
             </div>
 
             <div id="violet" class="tabcontent">
-            <h2><?php echo $_GET['mon'] ?></h2>
+            <h2><?php echo $_GET['mon'] ?> - Violet</h2>
                 <div class="container">
                     <div class="row">
                         <div class="col-1"></div>
@@ -236,11 +296,40 @@
                         </div>
                         <div class="col-1"></div>
                     </div>
-                    <div class="tab btn-group">
-                        <button class="tablinks" id="" onclick="openTab(event, 'rby')">RBY OU</button>
-                        <button class="tablinks" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
-                        <button class="tablinks" id="violettab" onclick="openTab(event, 'violet')">Violet</button>
-                        <button class="tablinks" id="omtab" onclick="openTab(event, 'om')">Other Formats</button>
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="analysis">
                         <?php echo file_get_contents("Analyses/violet/" . $_GET['mon'] . ".html"); ?>
@@ -250,10 +339,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
 
-        <div id="om" class="tabcontent">
-            <h2><?php echo $_GET['mon'] ?></h2>
+        <div id="nc97" class="tabcontent">
+                <h2><?php echo $_GET['mon'] ?> - NC97</h2>
                 <div class="container">
                     <div class="row">
                         <div class="col-1"></div>
@@ -275,14 +364,313 @@
                         </div>
                         <div class="col-1"></div>
                     </div>
-                    <div class="tab btn-group">
-                        <button class="tablinks" id="" onclick="openTab(event, 'rby')">RBY OU</button>
-                        <button class="tablinks" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</button>
-                        <button class="tablinks" id="violettab" onclick="openTab(event, 'violet')">Violet</button>
-                        <button class="tablinks" id="omtab" onclick="openTab(event, 'om')">Other Formats</button>
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="analysis">
-                        <?php echo file_get_contents("Analyses/om/" . $_GET['mon'] . ".html"); ?>
+                        <?php echo file_get_contents("Analyses/nc97/" . $_GET['mon'] . ".html"); ?>
+                    </div>
+                    <div class="learnset dex">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="nc98" class="tabcontent">
+                <h2><?php echo $_GET['mon'] ?> - NC98</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
+                            <table>
+                                <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr><tr><td>&nbsp;</td></tr>
+                                <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
+                            </table>
+                        </div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <table class="stats">
+                                <tr><td>HP:&nbsp;&nbsp;&nbsp;</td><td class="hp"></td><td class="hpb"></td></tr>
+                                <tr><td>Attack:&nbsp;&nbsp;&nbsp;</td><td class="atk"></td><td class="atkb"></td></tr>
+                                <tr><td>Defense:&nbsp;&nbsp;&nbsp;</td><td class="def"></td><td class="defb"></td></tr>
+                                <tr><td>Special:&nbsp;&nbsp;&nbsp;</td><td class="spc"></td><td class="spcb"></td></tr>
+                                <tr><td>Speed:&nbsp;&nbsp;&nbsp;</td><td class="spe"></td><td class="speb"></td></tr>
+                            </table>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="analysis">
+                        <?php echo file_get_contents("Analyses/nc98/" . $_GET['mon'] . ".html"); ?>
+                    </div>
+                    <div class="learnset dex">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="nc99" class="tabcontent">
+                <h2><?php echo $_GET['mon'] ?> - NC99</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
+                            <table>
+                                <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr><tr><td>&nbsp;</td></tr>
+                                <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
+                            </table>
+                        </div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <table class="stats">
+                                <tr><td>HP:&nbsp;&nbsp;&nbsp;</td><td class="hp"></td><td class="hpb"></td></tr>
+                                <tr><td>Attack:&nbsp;&nbsp;&nbsp;</td><td class="atk"></td><td class="atkb"></td></tr>
+                                <tr><td>Defense:&nbsp;&nbsp;&nbsp;</td><td class="def"></td><td class="defb"></td></tr>
+                                <tr><td>Special:&nbsp;&nbsp;&nbsp;</td><td class="spc"></td><td class="spcb"></td></tr>
+                                <tr><td>Speed:&nbsp;&nbsp;&nbsp;</td><td class="spe"></td><td class="speb"></td></tr>
+                            </table>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="analysis">
+                        <?php echo file_get_contents("Analyses/nc99/" . $_GET['mon'] . ".html"); ?>
+                    </div>
+                    <div class="learnset dex">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="petit" class="tabcontent">
+                <h2><?php echo $_GET['mon'] ?> - Petit Cup</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
+                            <table>
+                                <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr><tr><td>&nbsp;</td></tr>
+                                <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
+                            </table>
+                        </div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <table class="stats">
+                                <tr><td>HP:&nbsp;&nbsp;&nbsp;</td><td class="hp"></td><td class="hpb"></td></tr>
+                                <tr><td>Attack:&nbsp;&nbsp;&nbsp;</td><td class="atk"></td><td class="atkb"></td></tr>
+                                <tr><td>Defense:&nbsp;&nbsp;&nbsp;</td><td class="def"></td><td class="defb"></td></tr>
+                                <tr><td>Special:&nbsp;&nbsp;&nbsp;</td><td class="spc"></td><td class="spcb"></td></tr>
+                                <tr><td>Speed:&nbsp;&nbsp;&nbsp;</td><td class="spe"></td><td class="speb"></td></tr>
+                            </table>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="analysis">
+                        <?php echo file_get_contents("Analyses/petit/" . $_GET['mon'] . ".html"); ?>
+                    </div>
+                    <div class="learnset dex">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="pika" class="tabcontent">
+                <h2><?php echo $_GET['mon'] ?> - Pika Cup</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
+                            <table>
+                                <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr><tr><td>&nbsp;</td></tr>
+                                <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
+                            </table>
+                        </div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <table class="stats">
+                                <tr><td>HP:&nbsp;&nbsp;&nbsp;</td><td class="hp"></td><td class="hpb"></td></tr>
+                                <tr><td>Attack:&nbsp;&nbsp;&nbsp;</td><td class="atk"></td><td class="atkb"></td></tr>
+                                <tr><td>Defense:&nbsp;&nbsp;&nbsp;</td><td class="def"></td><td class="defb"></td></tr>
+                                <tr><td>Special:&nbsp;&nbsp;&nbsp;</td><td class="spc"></td><td class="spcb"></td></tr>
+                                <tr><td>Speed:&nbsp;&nbsp;&nbsp;</td><td class="spe"></td><td class="speb"></td></tr>
+                            </table>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="analysis">
+                        <?php echo file_get_contents("Analyses/pika/" . $_GET['mon'] . ".html"); ?>
                     </div>
                     <div class="learnset dex">
 
@@ -295,6 +683,7 @@
         <script>
             function openTab(evt, tabName) 
             {
+                console.log(tabName);
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
                 for (i = 0; i < tabcontent.length; i++) 
@@ -304,14 +693,15 @@
                 tablinks = document.getElementsByClassName("tablinks");
                 for (i = 0; i < tablinks.length; i++) 
                 {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    //tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
                 document.getElementById(tabName).style.display = "block";
+                console.log(document.getElementById(tabName).innerHTML);
                 try 
                 { 
-                    document.getElementById(tabName+"tab").className += " active";
+                    //document.getElementById(tabName+"tab").className += " active";
                 }
-                catch (exception) { document.getElementById(tabName+"tab").className += " active"; }
+                catch (exception) { /*document.getElementById(tabName+"tab").className += " active";*/ }
             }
 
             barcolor = (val) =>
@@ -375,9 +765,7 @@
                     document.getElementsByClassName("type")[1].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
                                                                                 + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");                    
                     document.getElementsByClassName("tier")[1].innerHTML = rowData[10-offset];
-                    document.getElementsByClassName("type")[3].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
-                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");                    
-                    document.getElementsByClassName("tier")[3].innerHTML = rowData[10-offset];
+
                     document.getElementsByClassName("hp")[0].innerHTML = rowData[4-offset];
                     document.getElementsByClassName("atk")[0].innerHTML = rowData[5-offset]; 
                     document.getElementsByClassName("def")[0].innerHTML = rowData[6-offset]; 
@@ -388,11 +776,7 @@
                     document.getElementsByClassName("def")[1].innerHTML = rowData[6-offset]; 
                     document.getElementsByClassName("spc")[1].innerHTML = rowData[7-offset]; 
                     document.getElementsByClassName("spe")[1].innerHTML = rowData[8-offset]; 
-                    document.getElementsByClassName("hp")[3].innerHTML = rowData[4-offset];
-                    document.getElementsByClassName("atk")[3].innerHTML = rowData[5-offset]; 
-                    document.getElementsByClassName("def")[3].innerHTML = rowData[6-offset]; 
-                    document.getElementsByClassName("spc")[3].innerHTML = rowData[7-offset]; 
-                    document.getElementsByClassName("spe")[3].innerHTML = rowData[8-offset]; 
+
 
                     document.getElementsByClassName("hpb")[0].innerHTML = colorbarString(rowData[4-offset]);
                     document.getElementsByClassName("atkb")[0].innerHTML = colorbarString(rowData[5-offset]); 
@@ -404,11 +788,6 @@
                     document.getElementsByClassName("defb")[1].innerHTML = colorbarString(rowData[6-offset]); 
                     document.getElementsByClassName("spcb")[1].innerHTML = colorbarString(rowData[7-offset]); 
                     document.getElementsByClassName("speb")[1].innerHTML = colorbarString(rowData[8-offset]);  
-                    document.getElementsByClassName("hpb")[3].innerHTML = colorbarString(rowData[4-offset]);
-                    document.getElementsByClassName("atkb")[3].innerHTML = colorbarString(rowData[5-offset]); 
-                    document.getElementsByClassName("defb")[3].innerHTML = colorbarString(rowData[6-offset]); 
-                    document.getElementsByClassName("spcb")[3].innerHTML = colorbarString(rowData[7-offset]); 
-                    document.getElementsByClassName("speb")[3].innerHTML = colorbarString(rowData[8-offset]);  
                 }
             }
 
@@ -467,37 +846,334 @@
             if(!found)
             {
                 tablinks = document.getElementsByClassName("tablinks");
-                tablinks[2].className += " hidden";
-                tablinks[6].className += " hidden";
-                tablinks[9].className += " hidden";
-                tablinks[14].className += " hidden";
+                for(var i = 0; i < tablinks.length; i++)
+                {
+                    if(tablinks[i].innerHTML == 'Violet')
+                    {
+                        tablinks[i].className += " hidden";
+                    }
+                }
             }
 
 
+            //nc97
+
+            var nc97data = <?php 
+            $url= 'data/RBY2k20Data-NC97Pokemon.csv';
+            
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var nc97data = new tableScanner(nc97data, "~");
+            var rbytable = new table(meta);
+            var found = false;
+            while(nc97data.hasNext())
+            {
+                var rowData = nc97data.next();
+                if(rowData[0] == mon)
+                {
+                    found = true;
+                    var offset = 0; 
+                    if(rowData.length == 10) { offset = 1 };
+                    document.getElementsByClassName("type")[3].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");
+                    document.getElementsByClassName("tier")[3].innerHTML = rowData[10-offset];
+
+                    document.getElementsByClassName("hp")[3].innerHTML = rowData[4-offset];
+                    document.getElementsByClassName("atk")[3].innerHTML = rowData[5-offset]; 
+                    document.getElementsByClassName("def")[3].innerHTML = rowData[6-offset]; 
+                    document.getElementsByClassName("spc")[3].innerHTML = rowData[7-offset]; 
+                    document.getElementsByClassName("spe")[3].innerHTML = rowData[8-offset];  
+
+                    document.getElementsByClassName("hpb")[3].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[3].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[3].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[3].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[3].innerHTML = colorbarString(rowData[8-offset]);  
+                }
+            }
+
+            if(!found)
+            {
+                tablinks = document.getElementsByClassName("tablinks");
+                for(var i = 0; i < tablinks.length; i++)
+                {
+                    if(tablinks[i].innerHTML == 'Nintendo Cup 97')
+                    {
+                        tablinks[i].className += " hidden";
+                    }
+                }
+            }
+
+            //nc98
+
+            var nc98data = <?php 
+            $url= 'data/RBY2k20Data-NC98Pokemon.csv';
+            
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var nc98data = new tableScanner(nc98data, "~");
+            var rbytable = new table(meta);
+            var found = false;
+            while(nc98data.hasNext())
+            {
+                var rowData = nc98data.next();
+                if(rowData[0] == mon)
+                {
+                    found = true;
+                    var offset = 0; 
+                    if(rowData.length == 10) { offset = 1 };
+                    document.getElementsByClassName("type")[4].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");
+                    document.getElementsByClassName("tier")[4].innerHTML = rowData[10-offset];
+
+                    document.getElementsByClassName("hp")[4].innerHTML = rowData[4-offset];
+                    document.getElementsByClassName("atk")[4].innerHTML = rowData[5-offset]; 
+                    document.getElementsByClassName("def")[4].innerHTML = rowData[6-offset]; 
+                    document.getElementsByClassName("spc")[4].innerHTML = rowData[7-offset]; 
+                    document.getElementsByClassName("spe")[4].innerHTML = rowData[8-offset];  
+
+                    document.getElementsByClassName("hpb")[4].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[4].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[4].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[4].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[4].innerHTML = colorbarString(rowData[8-offset]);  
+                }
+            }
+
+            //nc99
+            if(!found)
+            {
+                tablinks = document.getElementsByClassName("tablinks");
+                for(var i = 0; i < tablinks.length; i++)
+                {
+                    if(tablinks[i].innerHTML == 'Nintendo Cup 98')
+                    {
+                        tablinks[i].className += " hidden";
+                    }
+                }
+            }
+
+            var nc99data = <?php 
+            $url= 'data/RBY2k20Data-NC99Pokemon.csv';
+            
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var nc99data = new tableScanner(nc99data, "~");
+            var rbytable = new table(meta);
+            var found = false;
+            while(nc99data.hasNext())
+            {
+                var rowData = nc99data.next();
+                if(rowData[0] == mon)
+                {
+                    found = true;
+                    var offset = 0; 
+                    if(rowData.length == 10) { offset = 1 };
+                    document.getElementsByClassName("type")[5].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");
+                    document.getElementsByClassName("tier")[5].innerHTML = rowData[10-offset];
+
+                    document.getElementsByClassName("hp")[5].innerHTML = rowData[4-offset];
+                    document.getElementsByClassName("atk")[5].innerHTML = rowData[5-offset]; 
+                    document.getElementsByClassName("def")[5].innerHTML = rowData[6-offset]; 
+                    document.getElementsByClassName("spc")[5].innerHTML = rowData[7-offset]; 
+                    document.getElementsByClassName("spe")[5].innerHTML = rowData[8-offset];  
+
+                    document.getElementsByClassName("hpb")[5].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[5].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[5].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[5].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[5].innerHTML = colorbarString(rowData[8-offset]);  
+                }
+            }
+
+            
+            if(!found)
+            {
+                tablinks = document.getElementsByClassName("tablinks");
+                for(var i = 0; i < tablinks.length; i++)
+                {
+                    if(tablinks[i].innerHTML == 'Nintendo Cup 99')
+                    {
+                        tablinks[i].className += " hidden";
+                    }
+                }
+            }
+
+//petit
+
+            var petitdata = <?php 
+            $url= 'data/RBY2k20Data-PetitPokemon.csv';
+            
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var petitdata = new tableScanner(petitdata, "~");
+            var rbytable = new table(meta);
+            var found = false;
+            while(petitdata.hasNext())
+            {
+                var rowData = petitdata.next();
+                if(rowData[0] == mon)
+                {
+                    found = true;
+                    var offset = 0; 
+                    if(rowData.length == 10) { offset = 1 };
+                    document.getElementsByClassName("type")[6].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");
+                    document.getElementsByClassName("tier")[6].innerHTML = rowData[10-offset];
+
+                    document.getElementsByClassName("hp")[6].innerHTML = rowData[4-offset];
+                    document.getElementsByClassName("atk")[6].innerHTML = rowData[5-offset]; 
+                    document.getElementsByClassName("def")[6].innerHTML = rowData[6-offset]; 
+                    document.getElementsByClassName("spc")[6].innerHTML = rowData[7-offset]; 
+                    document.getElementsByClassName("spe")[6].innerHTML = rowData[8-offset];  
+
+                    document.getElementsByClassName("hpb")[6].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[6].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[6].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[6].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[6].innerHTML = colorbarString(rowData[8-offset]);  
+                }
+            }
+
+            if(!found)
+            {
+                tablinks = document.getElementsByClassName("tablinks");
+                for(var i = 0; i < tablinks.length; i++)
+                {
+                    if(tablinks[i].innerHTML == 'Petit Cup')
+                    {
+                        tablinks[i].className += " hidden";
+                    }
+                }
+            }
+
+            //pika
+
+            var pikadata = <?php 
+            $url= 'data/RBY2k20Data-PikaPokemon.csv';
+            
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var pikadata = new tableScanner(pikadata, "~");
+            var rbytable = new table(meta);
+            var found = false;
+            while(pikadata.hasNext())
+            {
+                var rowData = pikadata.next();
+                if(rowData[0] == mon)
+                {
+                    found = true;
+                    var offset = 0; 
+                    if(rowData.length == 10) { offset = 1 };
+                    document.getElementsByClassName("type")[7].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");
+                    document.getElementsByClassName("tier")[7].innerHTML = rowData[10-offset];
+
+                    document.getElementsByClassName("hp")[7].innerHTML = rowData[4-offset];
+                    document.getElementsByClassName("atk")[7].innerHTML = rowData[5-offset]; 
+                    document.getElementsByClassName("def")[7].innerHTML = rowData[6-offset]; 
+                    document.getElementsByClassName("spc")[7].innerHTML = rowData[7-offset]; 
+                    document.getElementsByClassName("spe")[7].innerHTML = rowData[8-offset];  
+
+                    document.getElementsByClassName("hpb")[7].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[7].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[7].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[7].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[7].innerHTML = colorbarString(rowData[8-offset]);  
+                }
+            }
+
+            if(!found)
+            {
+                tablinks = document.getElementsByClassName("tablinks");
+                for(var i = 0; i < tablinks.length; i++)
+                {
+                    if(tablinks[i].innerHTML == 'Pika Cup')
+                    {
+                        tablinks[i].className += " hidden";
+                    }
+                }
+            }
+
+           
 
             window.addEventListener('load', function () 
             { //TODO: Throw this trash in a loop
                 openTab(this, meta);
 
-                if (!document.getElementsByClassName("analysis")[0].innerHTML.replace(/\s/g, '').length)
+                for(var i = 0; i < document.getElementsByClassName("analysis").length; i++)
                 {
-                    document.getElementsByClassName("analysis")[0].innerHTML = "No analysis found! Maybe head over to the forum and write one? :)";
-                } 
-
-                if (!document.getElementsByClassName("analysis")[1].innerHTML.replace(/\s/g, '').length)
-                {
-                    document.getElementsByClassName("analysis")[1].innerHTML = "No analysis found! Maybe head over to the forum and write one? :)";
-                } 
-
-                if (!document.getElementsByClassName("analysis")[2].innerHTML.replace(/\s/g, '').length)
-                {
-                    document.getElementsByClassName("analysis")[2].innerHTML = "No analysis found! Maybe head over to the forum and write one? :)";
-                } 
-                
-                if (!document.getElementsByClassName("analysis")[3].innerHTML.replace(/\s/g, '').length)
-                {
-                    document.getElementsByClassName("analysis")[3].innerHTML = "<span class=\"om\"> No analysis found! Maybe head over to the forum and write one? :)</span>";
-                } 
+                    if (!document.getElementsByClassName("analysis")[i].innerHTML.replace(/\s/g, '').length)
+                    {
+                        document.getElementsByClassName("analysis")[i].innerHTML = "No analysis found! Maybe head over to the forum and write one? :)";
+                    } 
+                }
             });
 
 
@@ -554,6 +1230,98 @@
             }
             echo json_encode($result, JSON_HEX_TAG);?>;
             
+            var nc97_ls = <?php 
+            $url= 'data/RBY2k20Data-NC97Learnsets.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var nc98_ls = <?php 
+            $url= 'data/RBY2k20Data-NC98Learnsets.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+
+            var nc99_ls = <?php 
+            $url= 'data/RBY2k20Data-NC99Learnsets.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+        var petit_ls = <?php 
+            $url= 'data/RBY2k20Data-PetitLearnsets.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+
+        var pika_ls = <?php 
+            $url= 'data/RBY2k20Data-PikaLearnsets.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+
+
+
+
+
             var rbymoves = <?php 
             $url= 'data/RBY2k20Data-RBYMoves.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
@@ -573,6 +1341,57 @@
             
             var violetmoves = <?php 
             $url= 'data/RBY2k20Data-VioletMoves.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var rgbymoves = <?php 
+            $url= 'data/RBY2k20Data-RGBYMoves.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var stad0moves = <?php 
+            $url= 'data/RBY2k20Data-Stad0Moves.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var stadmoves = <?php 
+            $url= 'data/RBY2k20Data-StadMoves.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -636,6 +1455,83 @@
                     }
                 }
             }
+
+            var nc97_ls = new tableScanner(nc97_ls, "~");
+            var nc97table = new table("nc97");
+            var nc97learnset = [];
+            while(nc97_ls.hasNext())
+            {
+                var rowData = nc97_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        nc97learnset.push(rowData[i]);
+                    }
+                }
+            }
+
+            var nc98_ls = new tableScanner(nc98_ls, "~");
+            var nc98table = new table("nc98");
+            var nc98learnset = [];
+            while(nc98_ls.hasNext())
+            {
+                var rowData = nc98_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        nc98learnset.push(rowData[i]);
+                    }
+                }
+            }
+
+            var nc99_ls = new tableScanner(nc99_ls, "~");
+            var nc99table = new table("nc99");
+            var nc99learnset = [];
+            while(nc99_ls.hasNext())
+            {
+                var rowData = nc99_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        nc99learnset.push(rowData[i]);
+                    }
+                }
+            }
+
+            var petit_ls = new tableScanner(petit_ls, "~");
+            var petittable = new table("petit");
+            var petitlearnset = [];
+            while(petit_ls.hasNext())
+            {
+                var rowData = petit_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        petitlearnset.push(rowData[i]);
+                    }
+                }
+            }
+
+            var pika_ls = new tableScanner(pika_ls, "~");
+            var pikatable = new table("pika");
+            var pikalearnset = [];
+            while(pika_ls.hasNext())
+            {
+                var rowData = pika_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        pikalearnset.push(rowData[i]);
+                    }
+                }
+            }
+
+
 
             var rbymoves = new tableScanner(rbymoves, "~");
             header = true;
@@ -703,11 +1599,141 @@
 
                 header = (false);
             }
+
+            var nc97moves = new tableScanner(rgbymoves, "~");
+            header = true;
+
+            while(nc97moves.hasNext())
+            {
+                var newRow = new row();
+                newRow.setHeader(header);
+                var rowData = nc97moves.next();
+                if(nc97learnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    nc97table.addRow(newRow);
+                }
+
+                header = (false);
+            }
+
+            var nc98moves = new tableScanner(stad0moves, "~");
+            header = true;
+
+            while(nc98moves.hasNext())
+            {
+                var newRow = new row();
+                newRow.setHeader(header);
+                var rowData = nc98moves.next();
+                if(nc98learnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    nc98table.addRow(newRow);
+                }
+
+                header = (false);
+            }
+
+            
+            var nc99moves = new tableScanner(stadmoves, "~");
+            header = true;
+
+            while(nc99moves.hasNext())
+            {
+                var newRow = new row();
+                newRow.setHeader(header);
+                var rowData = nc99moves.next();
+                if(nc99learnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    nc99table.addRow(newRow);
+                }
+
+                header = (false);
+            }
+
+            var petitmoves = new tableScanner(stadmoves, "~");
+            header = true;
+
+            while(petitmoves.hasNext())
+            {
+                var newRow = new row();
+                newRow.setHeader(header);
+                var rowData = petitmoves.next();
+                if(petitlearnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    petittable.addRow(newRow);
+                }
+
+                header = (false);
+            }
+
+            var pikamoves = new tableScanner(stadmoves, "~");
+            header = true;
+
+            while(pikamoves.hasNext())
+            {
+                var newRow = new row();
+                newRow.setHeader(header);
+                var rowData = pikamoves.next();
+                if(pikalearnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    pikatable.addRow(newRow);
+                }
+
+                header = (false);
+            }
             
             document.getElementsByClassName("learnset")[0].innerHTML = rbytable.print();
             document.getElementsByClassName("learnset")[1].innerHTML = rby1utable.print();
             document.getElementsByClassName("learnset")[2].innerHTML = violettable.print();
-            document.getElementsByClassName("learnset")[3].innerHTML = rby1utable.print();
+            document.getElementsByClassName("learnset")[3].innerHTML = nc97table.print();
+            document.getElementsByClassName("learnset")[4].innerHTML = nc98table.print();
+            document.getElementsByClassName("learnset")[5].innerHTML = nc99table.print();
+            document.getElementsByClassName("learnset")[6].innerHTML = petittable.print();
+            document.getElementsByClassName("learnset")[7].innerHTML = pikatable.print();
         </script>
     </body>
 </html>
