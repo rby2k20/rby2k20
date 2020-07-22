@@ -1,0 +1,70 @@
+<title>An Introduction to Pokémon Stadium Zero and Nintendo Cup '98</title>
+ 
+<author>Plague von Karma</author>
+ 
+<pubday>22</pubday>
+ 
+<pubmonth>07</pubmonth>
+ 
+<pubyear>2020</pubyear>
+ 
+<category>Other</category>
+ 
+<sticky>false</sticky>
+ 
+ 
+<article>
+ 
+<div id="toc"></div>
+ 
+<h1 class="title">An Introduction to Pokémon Stadium JP and Nintendo Cup '98</h1>
+ 
+<h1 id="intro">Introduction</h1>
+<p>Did you know that there were three Pokémon Stadium games? No? I don't blame you. Anyway, there was actually a Pokémon Stadium game that came out before the one we got, which goes by either Pokémon Stadium JP or Pokémon Stadium Zero over here in the West. This game was technically the first to pull a "dexit", having only 42 Pokémon. This included many of the meta-relevant Pokémon at the time, including Tauros, Exeggutor and Alakazam.</p>
+ 
+<p>Pokémon Stadium JP was intended to be compatible with the failed N64 Disk Drive to add the rest of the Pocket Monsters, but it never came to fruition due to heavy delays. Instead, the assets would be used to make a sequel in Pokémon Stadium "2", or as we call it, Pokémon Stadium. The functionality for the N64 DD remains, as well as unfinished data for the 109 unused Pokémon. However, it's basically unusable due to the unreleased disk. The unfinished Pokémon vary drastically in how finished they actually are, and the disk would likely have contained the data to "complete" them. The disk was actually shown at Spaceworld 1997, where a Nintendo Cup '97 tournament was held!</p>
+ 
+<p>This game was actually a big deal in Japan, as it was intended for use in the Nintendo Cup series of tournaments, but more on that later. The original top players of the Nintendo Cup '97 era were featured in the game as opponents—teams and all—and were entirely accurate. You could fight them in a random order in the respective Nintendo Cup '97 mode, and there were no continues either. This game essentially immortalized the players and their teams.</p>
+ 
+<p>This would also be the first game to make changes to how RBY was played, so it has a combination of the game mechanics seen on cartridge and in Stadium. So, let's put this under the microscope and have a look.</p>
+ 
+<h1 id="stad0">Pokémon Stadium JP</h1>
+<p>So, Pokémon Stadium JP made various mechanical changes to RBY that would later be seen in the next game in the series. Many of these were quality of life changes, such as the removal of rollovers through having boosting moves fail if their stats would go over 999. However, some of these were also meta-shifting.</p>
+ 
+<p>Here is a comprehensive list of differences, courtesy of <a href=http://pokemon.s20.xrea.com/1st/enviroment.html>Pokémon Battle Historia.</a> Outside of these changes, it is generally the same as RBY.</p>
+<ul>
+<li>Stat modifications are not ignored when a boosting move is used. For example, if you use Agility after being paralyzed, the paralysis Speed drop will still be considered.</li>
+<li>Sleep was nerfed to only last up to three turns after being slept.</li>
+ 
+<li>If thawed, the move selected that turn would be used, instead of the move of the previous turn.</li>
+ 
+<li>If the player switches during partial trapping and is the trapper, the opponent's turn will end there and then.</li>
+ 
+<li>Pokémon now KO themselves if using Self-Destruct or Explosion against a Substitute. This also happens when the player misses.</li>
+ 
+<li>Blizzard now has a 10% Freeze chance.</li>
+ 
+<li>Pokémon no longer suffer recoil when KOing a Pokémon with a recoil move (eg. Double-Edge).</li>
+ 
+</ul>
+ 
+<h1 id="nc98">Nintendo Cup '98</h1>
+<p>I mentioned that Pokémon Stadium JP was used for the Nintendo Cup series of tournaments, so let's pick up on that. To promote the game, Nintendo Cup '98 was born. This format would exclusively be played on Pokémon Stadium JP, and thus would be limited to the Pokémon available in the format, and even then only those available at up to L30. A separate rule would also directly ban Mew. As a result, only 33 Pokémon were usable. It also bought along the Sleep Clause and Freeze Clause from the previous competition. In addition, due to Nintendo Cup '98 being held before Pokémon Yellow's release, content from that game was also unusable. This didn't affect many Pokémon, only really taking minor options from the Nidos and Eeveelutions. You can view my <a href="https://rby2k20.com/read.php?article=Guides/YellowMoveGuide">Post-'97 Move Change Article</a>for further information.</p>
+ 
+<div style="text-align: center; margin: 0px auto 0px auto;"><p>So, what Pokémon were allowed? Let's see . . . </p>
+ 
+<img src="images/articles/NC98MonList.png"></div>
+ 
+<p>A few RBY staples are unavailable here. With only 33 usable Pokémon, being forced to play at L30, and a "bring 6 pick 3" setup, the format changed a lot. Victreebel, Persian, Zapdos, and Rhydon are notable examples of this. As a result, many Pokémon find themselves rising in usage due to these threats not being around to beat them. Golem is a good example here, without Articuno and Victreebel around to counter it. However, due to the removal of the latter, Starmie and Lapras became staples, dominating the metagame. Electrode and Jolteon are extremely popular threats due to this, aiming to threaten the bulky Water-types and spread paralysis. Exeggutor also rose to form a core with the bulky Water-types, completely walling out Jolteon due to the removal of Pin Missile. The removal of Articuno also made it much safer to use. Chansey also rose further, profiting from Stadium JP's Blizzard nerf, preventing it from being complete Freeze bait.</p>
+ 
+<p>This meta is extremely unique, with strange mechanics and a depleted roster shaping how the game is played. It's an anomaly in the world of Pokémon, but a good one.</p>
+ 
+<p>
+ 
+<span style="font-style: italic;">Written by Plague von Karma</span><br>
+ 
+<span class="italics">Grammar checked by Eseque</span>
+ 
+</p>
+ 
+</article>
