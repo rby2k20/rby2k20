@@ -144,18 +144,18 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="https://discord.gg/GYFJmfm">Discord</a>
           <a class="dropdown-item" href="https://rby2k20.freeforums.net/">Forum</a>
-          <a class="dropdown-item" href="http://pokemonperfect.psim.us/">Pokemon Showdown Sever</a>
+          <a class="dropdown-item" href="http://rby.psim.us/">Pokemon Showdown Sever</a>
           <a class="dropdown-item" href="https://www.youtube.com/channel/UC2On9uqPj8rcUVoaeyhn0LA">Youtube</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+  <!--    <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Tools
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="calc.html">Calculator</a>
           </div>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>
