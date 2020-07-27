@@ -42,7 +42,7 @@ Ember,rby,Fire,Special,40,100,25,40,100% chance to burn the target.
 Explosion,rby,Normal,Physical,170,100,5,8,User faints. Calculates damage using half of the target's Defense.
 Fire Blast,rby,Fire,Special,120,85,5,8,30% chance to burn the target. Cannot burn Fire Types.
 Fire Punch,rby,Fire,Special,120,100,15,24,10% chance to burn the target. Cannot burn Fire Types. 1/4 recoil.
-Fire Spin,rby,Fire,Special,35,85,5,8,Prevents the target from moving for 2-5 turns.
+Fire Spin,rby,Fire,Special,35,85,5,8,Prevents the target from moving for 2-3 turns.
 Fissure,rby,Ground,Status,—,30,5,8,Deals 65535 damage. Fails if the target is faster.
 Flamethrower,rby,Fire,Special,95,100,15,24,10% chance to burn the target. Cannot burn Fire Types.
 Flash,rby,Normal,Status,—,70,20,32,Lowers opponent's Accuracy.
