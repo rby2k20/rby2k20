@@ -747,7 +747,7 @@
 
                     </div>
                     <div class="analysis">
-                        <?php echo file_get_contents("Analyses/pika/" . $_GET['mon'] . ".html"); ?>
+                        <?php echo file_get_contents("Analyses/rrib/" . $_GET['mon'] . ".html"); ?>
                     </div>
                     <div class="learnset dex">
 
