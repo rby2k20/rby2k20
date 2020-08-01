@@ -63,6 +63,7 @@
               <a class="dropdown-item" href="pokedex.php?meta=nc99">Nintendo Cup 99</a>
               <a class="dropdown-item" href="pokedex.php?meta=petit">Petit Cup</a>
               <a class="dropdown-item" href="pokedex.php?meta=pika">Pika Cup</a>
+              <a class="dropdown-item" href="pokedex.php?meta=rrib">RRIB</a>
           </div>
       </li>
       <li class="nav-item dropdown">

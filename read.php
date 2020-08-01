@@ -29,7 +29,6 @@
         <script src="js/reader.js"></script>
     </head>
     <body>
-
 <!--NAVBAR-->
 <div id="navLogo">
   <img src="images/FinalLogo.png">
@@ -59,6 +58,7 @@
               <a class="dropdown-item" href="pokedex.php?meta=nc99">Nintendo Cup 99</a>
               <a class="dropdown-item" href="pokedex.php?meta=petit">Petit Cup</a>
               <a class="dropdown-item" href="pokedex.php?meta=pika">Pika Cup</a>
+              <a class="dropdown-item" href="pokedex.php?meta=rrib">RRIB</a>
           </div>
       </li>
       <li class="nav-item dropdown">
@@ -126,7 +126,6 @@
 </nav>
 
 <!--NAVBAR-->
-        
         
 
         <span style="display: none;" id="buffer"><?php echo file_get_contents($_GET['article'] . ".html"); ?></span>

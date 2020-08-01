@@ -94,6 +94,7 @@
               <a class="dropdown-item" href="pokedex.php?meta=nc99">Nintendo Cup 99</a>
               <a class="dropdown-item" href="pokedex.php?meta=petit">Petit Cup</a>
               <a class="dropdown-item" href="pokedex.php?meta=pika">Pika Cup</a>
+              <a class="dropdown-item" href="pokedex.php?meta=rrib">RRIB</a>
           </div>
       </li>
       <li class="nav-item dropdown">
@@ -161,7 +162,6 @@
 </nav>
 
 <!--NAVBAR-->
-        
         <div id="search">
             <select onchange="changeTable()" id="showmons" style="display: inline-block;">
               <option>All Pokemon</option>
@@ -198,6 +198,10 @@
                 {
                   $url='data/RBY2k20Data-ShownMonsSt.csv';
                 }  
+                elseif(strcmp($meta,'rrib') == 0)
+                {
+                  $url='data/RBY2k20Data-ShownMonsRRIB.csv';
+                }  
                 if (($handle = fopen($url, "r")) !== FALSE) {
                   $result="";
                   while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -229,6 +233,10 @@
                 {
                   $url='data/RBY2k20Data-LegalMonsTB.csv';
                 }   
+                elseif(strcmp($meta,'rrib') == 0)
+                {
+                  $url='data/RBY2k20Data-LegalMonsRRIB.csv';
+                }  
 
                 if (($handle = fopen($url, "r")) !== FALSE) {
                   $result="";
@@ -278,6 +286,10 @@
                 {
                   $url='data/RBY2k20Data-PikaPokemon.csv';
                 }
+                elseif(strcmp($meta,'rrib') == 0)
+                {
+                  $url='data/RBY2k20Data-RRIBPokemon.csv';
+                }
 
                 
                 
@@ -325,6 +337,10 @@
           {
             $url='data/RBY2k20Data-StadMoves.csv';
           }
+          elseif(strcmp($meta,'rrib') == 0)
+          {
+            $url='data/RBY2k20Data-RRIBMoves.csv';
+          }
 
           
           if (($handle = fopen($url, "r")) !== FALSE) {
@@ -348,7 +364,7 @@
           var legality = new tableScanner(legality, "~");
 
           var tiers = viability.next();
-          if(meta != 'rby' && meta != 'rby1u' && meta != 'violet')
+          if(meta != 'rby' && meta != 'rby1u' && meta != 'violet' && meta != 'rrib')
           {
             tiers = [];
           }
@@ -370,7 +386,7 @@
           /////////////
 
           var tiers2 = legality.next();
-          if(meta != 'rby' && meta != 'rby1u' && meta != 'violet')
+          if(meta != 'rby' && meta != 'rby1u' && meta != 'violet' && meta != 'rrib')
           {
             tiers2 = [];
           }

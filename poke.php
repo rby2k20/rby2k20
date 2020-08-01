@@ -66,6 +66,7 @@
               <a class="dropdown-item" href="pokedex.php?meta=nc99">Nintendo Cup 99</a>
               <a class="dropdown-item" href="pokedex.php?meta=petit">Petit Cup</a>
               <a class="dropdown-item" href="pokedex.php?meta=pika">Pika Cup</a>
+              <a class="dropdown-item" href="pokedex.php?meta=rrib">RRIB</a>
           </div>
       </li>
       <li class="nav-item dropdown">
@@ -133,7 +134,6 @@
 </nav>
 
 <!--NAVBAR-->
-        
 
         <div id="content">
             
@@ -192,6 +192,7 @@
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
                             </div>
                         </div>
 
@@ -260,6 +261,7 @@
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
                             </div>
                         </div>
 
@@ -327,6 +329,7 @@
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
                             </div>
                         </div>
 
@@ -395,6 +398,7 @@
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
                             </div>
                         </div>
 
@@ -462,6 +466,7 @@
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
                             </div>
                         </div>
 
@@ -529,6 +534,7 @@
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
                             </div>
                         </div>
 
@@ -597,6 +603,7 @@
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
                             </div>
                         </div>
 
@@ -665,6 +672,76 @@
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
                                 <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="analysis">
+                        <?php echo file_get_contents("Analyses/pika/" . $_GET['mon'] . ".html"); ?>
+                    </div>
+                    <div class="learnset dex">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="rrib" class="tabcontent">
+                <h2><?php echo $_GET['mon'] ?> - RRIB</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <img class="sprite" src="images/sprites/<?php echo strtolower($_GET['mon']); ?>.png">
+                            <table>
+                                <tr><td>Type:&nbsp;&nbsp;&nbsp;</td><td class="type">Normal</td></tr><tr><td>&nbsp;</td></tr>
+                                <tr><td>Tier:&nbsp;&nbsp;&nbsp;</td><td class="tier">OU</td></tr>
+                            </table>
+                        </div>
+                        <div class="col-11 col-md-5 pokepanel text-center">
+                            <table class="stats">
+                                <tr><td>HP:&nbsp;&nbsp;&nbsp;</td><td class="hp"></td><td class="hpb"></td></tr>
+                                <tr><td>Attack:&nbsp;&nbsp;&nbsp;</td><td class="atk"></td><td class="atkb"></td></tr>
+                                <tr><td>Defense:&nbsp;&nbsp;&nbsp;</td><td class="def"></td><td class="defb"></td></tr>
+                                <tr><td>Special:&nbsp;&nbsp;&nbsp;</td><td class="spc"></td><td class="spcb"></td></tr>
+                                <tr><td>Speed:&nbsp;&nbsp;&nbsp;</td><td class="spe"></td><td class="speb"></td></tr>
+                            </table>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="btn-group">
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                RBY2k20 Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rby1u')">RBY Tradebacks (1U)</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'violet')">Violet</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Smogon Tiers
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="rbytab" onclick="openTab(event, 'rby')">RBY OU</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Formats
+                            </a>
+                            <div class="tab dropdown-menu">
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc97')">Nintendo Cup 97</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc98')">Nintendo Cup 98</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'nc99')">Nintendo Cup 99</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'petit')">Petit Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'pika')">Pika Cup</a>
+                                <a class="tablinks dropdown-item" id="" onclick="openTab(event, 'rrib')">RRIB</a>
                             </div>
                         </div>
 
@@ -1161,6 +1238,67 @@
                 }
             }
 
+            //RRIB
+
+            var rribdata = <?php 
+            $url= 'data/RBY2k20Data-RRIBPokemon.csv';
+            
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var rribdata = new tableScanner(rribdata, "~");
+            var rbytable = new table(meta);
+            var found = false;
+            while(rribdata.hasNext())
+            {
+                var rowData = rribdata.next();
+                if(rowData[0] == mon)
+                {
+                    found = true;
+                    var offset = 0; 
+                    if(rowData.length == 10) { offset = 1 };
+                    document.getElementsByClassName("type")[8].innerHTML =  "<span class=\""+ rowData[2] + "\">"+ rowData[2] + "</span>"
+                                                                                + ((rowData.length == 10)? " " :  " <span class=\""+ rowData[3] + "\">"+ rowData[3] + "</span>");
+                    document.getElementsByClassName("tier")[8].innerHTML = rowData[10-offset];
+
+                    document.getElementsByClassName("hp")[8].innerHTML = rowData[4-offset];
+                    document.getElementsByClassName("atk")[8].innerHTML = rowData[5-offset]; 
+                    document.getElementsByClassName("def")[8].innerHTML = rowData[6-offset]; 
+                    document.getElementsByClassName("spc")[8].innerHTML = rowData[7-offset]; 
+                    document.getElementsByClassName("spe")[8].innerHTML = rowData[8-offset];  
+
+                    document.getElementsByClassName("hpb")[8].innerHTML = colorbarString(rowData[4-offset]);
+                    document.getElementsByClassName("atkb")[8].innerHTML = colorbarString(rowData[5-offset]); 
+                    document.getElementsByClassName("defb")[8].innerHTML = colorbarString(rowData[6-offset]); 
+                    document.getElementsByClassName("spcb")[8].innerHTML = colorbarString(rowData[7-offset]); 
+                    document.getElementsByClassName("speb")[8].innerHTML = colorbarString(rowData[8-offset]);  
+                }
+            }
+
+            if(!found)
+            {
+                tablinks = document.getElementsByClassName("tablinks");
+                for(var i = 0; i < tablinks.length; i++)
+                {
+                    if(tablinks[i].innerHTML == 'RRIB Cup')
+                    {
+                        tablinks[i].className += " hidden";
+                    }
+                }
+            }
+
            
 
             window.addEventListener('load', function () 
@@ -1318,6 +1456,23 @@
             echo json_encode($result, JSON_HEX_TAG);?>;
 
 
+        var rrib_ls = <?php 
+            $url= 'data/RBY2k20Data-RRIBLearnsets.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
 
 
 
@@ -1392,6 +1547,23 @@
 
             var stadmoves = <?php 
             $url= 'data/RBY2k20Data-StadMoves.csv';
+            if (($handle = fopen($url, "r")) !== FALSE) {
+                $result="";
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
+                    $totalrows = count($data);
+                    for ($row=0; $row<=$totalrows; $row++){
+                        if ((strlen($data[$row])>0)) {
+                            $result.=$data[$row].'~';
+                        }
+                    }
+                    $result .= '~';
+                }
+                fclose($handle);
+            }
+            echo json_encode($result, JSON_HEX_TAG);?>;
+
+            var rribmoves = <?php 
+            $url= 'data/RBY2k20Data-RRIBMoves.csv';
             if (($handle = fopen($url, "r")) !== FALSE) {
                 $result="";
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE){
@@ -1527,6 +1699,21 @@
                     for(var i = 1; i < rowData.length; i++)
                     {
                         pikalearnset.push(rowData[i]);
+                    }
+                }
+            }
+
+            var rrib_ls = new tableScanner(rrib_ls, "~");
+            var rribtable = new table("rrib");
+            var rriblearnset = [];
+            while(rrib_ls.hasNext())
+            {
+                var rowData = rrib_ls.next();
+                if(rowData[0] == mon)
+                {
+                    for(var i = 1; i < rowData.length; i++)
+                    {
+                        rriblearnset.push(rowData[i]);
                     }
                 }
             }
@@ -1725,6 +1912,31 @@
 
                 header = (false);
             }
+
+            var rribmoves = new tableScanner(rribmoves, "~");
+            header = true;
+
+            while(rribmoves.hasNext())
+            {
+                var newRow = new row();
+                newRow.setHeader(header);
+                var rowData = rribmoves.next();
+                if(rriblearnset.includes(rowData[0]) || header)
+                {
+                    for (var i = 0; i < rowData.length; i++)
+                    {
+                        if(i != 1 && i != 6)
+                        {
+                            newRow.addCell(rowData[i]);
+                        }
+                    }
+                    newRow.addAtr(0, "style", "text-align: left;");
+                    newRow.addAtr(1, "class", newRow.cells[1]);
+                    rribtable.addRow(newRow);
+                }
+
+                header = (false);
+            }
             
             document.getElementsByClassName("learnset")[0].innerHTML = rbytable.print();
             document.getElementsByClassName("learnset")[1].innerHTML = rby1utable.print();
@@ -1734,6 +1946,7 @@
             document.getElementsByClassName("learnset")[5].innerHTML = nc99table.print();
             document.getElementsByClassName("learnset")[6].innerHTML = petittable.print();
             document.getElementsByClassName("learnset")[7].innerHTML = pikatable.print();
+            document.getElementsByClassName("learnset")[8].innerHTML = rribtable.print();
         </script>
     </body>
 </html>
