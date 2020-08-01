@@ -163,4 +163,4 @@ Waterfall,rby,Water,Special,80,100,15,24,-
 Whirlwind,rby,Flying,Physical,110,85,5,8,-
 Wing Attack,rby,Flying,Physical,80,100,35,56,-
 Withdraw,rby,Water,Status,—,—,40,64,Raises user's Defense.
-Wrap,rby,Normal,Physical,35,85,20,32,Prevents the target from moving for 2-3 turns.
+Wrap,rby,Normal,Physical,35,85,5,8,Prevents the target from moving for 2-3 turns.
