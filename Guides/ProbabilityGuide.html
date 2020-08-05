@@ -1,0 +1,70 @@
+<title>Probability In Pokémon</title>
+<author>Disaster Area</author>
+<pubday>5</pubday>
+<pubmonth>8</pubmonth> <!--Use a number (example 4 for april)-->
+<pubyear>2020</pubyear>
+<category>All</category>
+<sticky>false</sticky> <!-- Use 'true' without quotes for sticky article-->
+
+<article id="English">
+
+<h1 class="title">Probability In Pokémon</h1>
+<div id="toc"></div>
+<h1 id="intro">Introduction</h1>
+
+<p>
+  In Pokémon, probabilities are everywhere - move accuracies, secondary effects, paralysis chances, and so on. Every Pokémon player should know how to calculate probabilities in simple circumstances, finding the chance for the best possible outcome. In this guide, I'll look at a few different examples and explain how to calculate the probabilities, teaching a few simple techniques to help you play in a more optimal fashion. I have generally kept the numbers used simple, ignoring the small chance for all attacks to miss in RBY, and rounding effect and critical hit chances.
+</p>
+
+<h1 id="SingleTurn">Independent Probabilities In A Single Turn</h1>
+
+<p>
+  Often the simplest thing to look at is what can happen in a single turn, from a single Pokémon's attack. Let's look at Tauros using Body Slam on an incoming Pokémon for example. If that Pokémon is not Normal-type, there is a 30% chance of paralysis, and a 21.5% chance of a critical hit. These probabilities are independent, which means that the probability of one thing happening doesn't affect the probability of the other. For comparison, an example of two probabilities not being independent is the probability of whether a Pokémon slower than a Tauros that isn't paralyzed but is about to take a Body Slam will fully paralyze or not. Since Tauros needs to land paralysis, the probability of fully paralyzing depends on whether or not Body Slam paralyzes, and so the probability of full paralysis is not independent of the probability of a body slam paralysis.
+</p>
+<p>
+ A good, but simple, question to ask is "what is the probability that a Pokémon switches into Tauros Body Slam, and isn't critical hit or paralyzed?" Because being paralyzed and being critically hit are independent, to calculate this, you need to calculate the probability that the Pokémon isn't critical hit, and multiply it by the probability that the Pokémon isn't paralyzed. This is illustrated by the table below:
+ </p>
+ <table>
+<thead>
+  <tr>
+    <th></th>
+    <th>Body Slam Critical Hits (21.5%)</th>
+    <th>Body Slam doesn't Critical Hit (78.5%)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Body Slam Paralyzes (30%)</td>
+    <td>6.5% (0.3 x 0.215)</td>
+    <td>23.5% (0.3 x 0.785)</td>
+  </tr>
+  <tr>
+    <td>Body Slam doesn't Paralyze (70%)</td>
+    <td>15% (0.7 x 0.215)</td>
+    <td>55% (0.7 x 0.785)</td>
+  </tr>
+</tbody>
+</table>
+<p>
+There are some things to note. Firstly, note that the probably of something not happening is 100% minus the probability that it does happen. Secondly, when you add up the probabilities along the row or the column, you get the original probability back, e.g. 6.5% + 23.5% = 30%, the chance of getting a Body Slam paralysis. Using this table, we can answer the question "what is the probability that a Pokémon switches into Tauros Body Slam and isn't critical hit or paralyzed?", seeing that it is 55%. We also answer the opposite question, "what is the probability that a Pokémon switches into Tauros Body Slam and is critical hit or paralyzed?". There are two ways you can calculate it from the table: either add up all the different probabilities where the Pokémon is critical hit or paralyzed, OR take 100% minus the probability that a Pokémon isn't critical hit or paralyzed. From the first method, we get 6.5% + 23.5% + 15% = 45%, and from the second method we get 100% - 55% = 45%. Both give us the right answer, but the second one is an easier calculation.
+</p>
+
+<h1 id="MultipleTurns">Independent Probabilities Over Multiple Turns</h1>
+<p>
+  In gen 1, it's not too rare to find situations where you need to find the probability of one thing happening over multiple turns - Chansey freezing an Ice Beam, critical hitting a Slowbro with Thunderbolt, getting a critical hit with Snorlax, and so on. Generally speaking, these probabilities can usually be treated as independent (for example, whether Starmie critical hits a Snorlax with Surf on one turn doesn't affect whether the next one will be a critical hit too), and that makes calculating these probabilities over multiple turns straightforward.
+</p>
+<p>
+  As an example, suppose that at the end of an RBY OU game, you and your opponent each just have Chansey left. Yours is paralyzed and has Ice Beam with 8 PP remaining, and your opponent has a Reflect Chansey with a lot more PP than your Chansey has. You win the game if you get the freeze, and you lose if you don't. Each Ice Beam you throw out has an independent chance to freeze (ignoring the fact that you can't freeze an already frozen Pokémon). You only lose if every Ice Beam you use fails to freeze, and this number is easy to calculate. Ice Beam has a 10% chance to freeze, and so it has a 90% chance that it doesn't freeze. If Ice Beam doesn't freeze when used 8 times, then the 90% chance came up 8 times in a row - so the chance that Ice Beam doesn't freeze is 90% x 90% x ... x 90% 8 times, written 0.9<sup>8</sup>. Plugging this into a calculator, and you see that in this situation, you have a 43% chance to <i>not</i> get a freeze with any of your Ice Beams, and so there's a 57% chance you do freeze and win the game!
+</p>
+
+<h1 id="Conclusion">Final Thoughts</h1>
+
+<p>
+  I hope that this guide helped you out if you're trying to get into the higher levels of competitive Pokémon. A basic grasp of probability in Pokémon is a staple skill that every aspiring player should have, and be looking to develop further. The examples presented here are quite simple, so see if you can find a real game you played or watched where you can calculate the probability of something important happening to practice your skills!
+</p>
+
+<p>
+   <i>Written by Disaster Area</i>
+</p>
+<div class="returntop"></div>
+</article>
