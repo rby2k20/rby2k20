@@ -1,0 +1,461 @@
+<title>RBY Mechanics Guide</title>
+<author>Disaster Area</author>
+<pubday>6</pubday>
+<pubmonth>8</pubmonth> <!--Use a number (example 4 for april)-->
+<pubyear>2020</pubyear>
+<category>All</category>
+<sticky>true</sticky> <!-- Use 'true' without quotes for sticky article-->
+
+<article id="English">
+
+<img src="images/articles/rbymechanicsbanner03.jpg">
+<p>
+<i>Artwork by Undecided Days.</i>
+</p>
+
+<div id="toc"></div>
+<h1 id="intro">Introduction</h1>
+<p>
+  This mechanics guide applies to any tier that emulates Pokémon Yellow's link battle mechanics, such as RBY OU and RBY 1U. This guide is for two groups of players: players who have some competitive Pokémon experience in other generations and want to learn RBY, and experienced players of the game who want an all-encompassing and easy to reference source on the game's mechanics.
+</p>
+<p>
+  This guide is based on <a href="https://www.Pokémonperfect.com/forums/index.php?threads/the-complete-rby-mechanical-differences-guide.3371/">the guide that I wrote in 2015 on Pokémon Perfect</a>.
+</p>
+
+<h1 id="BeforeTheBattle">Before The Battles Commence</h1>
+
+<h2 id="Special">The Special Stat</h2>
+
+<p>
+  In the first generation, unlike all later generations, there is no Special Attack or Special Defense stat. Rather, damage from special attacks is calculated using the Special stat of each of the Pokémon in the damage calculation.
+</p>
+
+<h2 id="DVs">EVs and DVs</h2>
+
+<p>
+  EVs, or effort values, are values obtained by defeating opposing Pokémon on cartridge, and are used to determine how high a Pokémon's stats are. DVs, or Determinant Values, are values that determine a Pokémon's stats and which are unchangeable once a Pokémon is obtained.
+</p>
+
+<p>
+  In both the first and second generation, there is no restriction on how EVs are distributed. This means that, from a competitive standpoint, all Pokémon can maximise their EVs. Things are more complicated in the rare instances where Pokémon do not want a maximised stat, due to limitations in EV training meaning you may not be able to maximise all of your other stats while only hitting a certain number in Attack or Special for instance.
+</p>
+
+<p>
+    For DVs, the story is a little more complicated. All Pokémon can be obtained with maximum DVs <i>if</i> tradebacks are enabled. If they aren't, for some Pokémon perfect DVs are unattainable. Further information on possible DV spreads when tradebacks aren't permissible can be found in <a href="https://www.smogon.com/forums/threads/15-15-15-15-dvs-are-impossible-in-most-cases.3573219/page-2#post-6915001">this post on Smogon</a>.
+</p>
+
+<h2 id="AbilitiesAndItems">No Abilities, No Items</h2>
+
+<p>
+  In the first generation, there are no abilities or items. Items are introduced in generation two, and abilities in generation 3. This means that, outside of the rare instances where you may want to customise your DVs, EVs, or Level, teambuilding consists only of selecting 6 Pokémon with 4 moves each.
+</p>
+
+<h2 id="SpecialSplit">The Physical / Special Split</h2>
+
+<p>
+  Whether a move is a Physical or Special Attack is (up to and including generation 3) decided upon by the type of move it is. In RBY this means that moves which are Normal-, Fighting-, Poison-, Ground-, Flying-, Bug-, Rock-, Ghost-type are Physical, and Fire-, Water-, Grass-, Electric-, Ice-, Psychic-, Dragon-type attacks are Special. An easy way to remember this is that all the types for which there exists an Eeveelution, plus Dragon, are Special, and all those for which one does not exist are physical.
+</p>
+
+<h2 id="TypeChart">Type Chart Changes</h2>
+
+<p>
+  In RBY, the types Steel, Dark, and Fairy don't exist. Steel and Dark were introduced in the next generation, while Fairy was introduced in generation 6. Bite, which is re-typed to be a Dark-type attack in generation 2 is Normal-type in generation 1, and Magnemite and Magneton are purely Electric-type in generation 1, gaining their secondary Steel typing in generation 2.
+</p>
+
+<p>
+  Beyond that, there are the following changes to the type chart in generation 1 compared with later generations:
+<ul>
+<li> Ice attacks are neutral to Fire instead of not very effective. </li>
+<li> Poison attacks are super effective against Bug instead of neutral. </li>
+<li> Bug attacks are super effective against Poison instead of not very effective. </li>
+<li> Ghost attacks will NOT work on Psychics instead of being super effective.</li>
+</ul>
+</p>
+
+<h1 id="Status">Status Conditions</h1>
+
+<h2 id="Freeze">Freeze</h2>
+
+<p>
+  The only way for a frozen Pokémon to be thawed is if it is hit by a move with a <span class="tooltp">burn chance<span class="tooltptext">Fire Blast, Flamethrower, and Ember are the only moves in normal RBY with a burn chance.</span></span> or Haze. In practice, this means that frozen Pokémon are useful for little more than fodder, and its potency is why most RBY metagames include a Freeze Clause, disallowing a second freeze while one is already active.
+</p>
+
+<h2 id="Sleep">Sleep</h2>
+
+<p>
+When put to sleep, Pokémon never wake up and attack on the same turn. Pokémon take a turn to wake up and are only allowed to attack again the turn after that. This allows a faster Pokémon to put a slower Pokémon back to sleep without fear of being hit while the slow Pokémon wakes up. It should be noted that the application of this mechanic does not mean a Pokémon will sleep an extra turn in RBY when using Rest, however. Sleep lasts between 0-6 turns, each length of sleep being equally probable - i.e. there's a 1 in 7 chance that you sleep for 6 turns and then spend a turn waking up, just as there's a 1 in 7 chance of spending no turns whatsoever asleep, rather just waking up upon the next move.
+</p>
+
+<h2 id="Poison">Poison & Bad Poison</h2>
+
+<p>
+  If a Pokemon which is badly poisoned switches out, when it switches back in its poison status will become regular poison. Regular poison only deals 6.25% of a Pokemon's max HP as damage per turn. Bad poison's counter is not reset by using Rest, so if a resting Pokemon is badly poisoned again after waking up, it will deal a lot of damage straight away.
+</p>
+
+<h2 id="Burn">Burns</h2>
+
+<p>
+  Burns deal 6.25% of a Pokemon's max HP in damage.
+</p>
+
+<h2 id="Paralysis">Paralysis</h2>
+
+<p>
+  Paralysis drops a Pokemon's speed by one quarter.
+</p>
+
+<h2 id="LeechSeed">Leech Seed</h2>
+
+<p>
+  If a Pokemon is badly poisoned, and seeded by leech seed, then leech seed's damage will increment along with the poison damage, so that as the poison damage increments, so does the leech seed damage. Also, if a Pokemon knocked out by Leech Seed had less HP remaining than the damage Leech Seed would deal, the Pokemon which drains HP from the opponent will nonetheless heal as if the full amount of possible damage had been dealt.
+</p>
+
+<h2 id="Timing">Damage Timing</h2>
+
+<p>
+  Damage dealt by status conditions and leech seed is dealt at the end of the turn.
+</p>
+
+<h1 id="Crits">Critical Hits</h1>
+
+<h2 id="CritRate">Critical Hit Mechanics</h2>
+
+<p>
+In RBY the critical hit ratio is based on base Speed, rather than being a set rate as in later generations. This means that faster Pokémon will critical hit more often than slower ones. Since the critical hit ratio is based on base speed, and not the speed that a Pokémon is at in battle, a Pokémon's critical hit rate will not change if the Pokémon is paralyzed or suffers a Speed drop.
+</p>
+
+<p>
+The formula to calculate a Pokémon's critical hit ratio at level 100 is:
+</p> 
+
+<p style="text-align:center">
+Critical Hit % = Base Speed * 100 / 512.
+</p>
+
+<p>
+In addition, when moves critical hit, they will ignore any stat changes the attacking and defending Pokémon have, beneficial or otherwise. For example, if the attacker uses Amnesia 3 times to maximize its Special stat and then scores a critical hit, it will actually do less damage than if it didn't critical hit, only doing twice the damage of a normal attack without the boosts. Critical hits also ignore Reflect and Light Screen.
+</p>
+
+<h2 id="HighCritRate">High Critical Hit Rate Moves</h2>
+
+<p>
+  <span class="tooltp">A few moves<span class="tooltptext">Crabhammer, Karate Chop, Razor Leaf, and Slash in regular RBY</span></span> have a high critical hit ratio. On Pokémon with base speed above 64, these moves have an <span class="tooltp">almost certain chance<span class="tooltptext">A move's critical hit rate is capped at 255/256</span></span> of critical hitting.
+</p>
+
+<p>
+The formula to calculate a Pokémon's critical hit ratio at level 100, with a high critical hit ratio move is:
+</p> 
+
+<p style="text-align:center">
+Critical Hit % = Base Speed * 100 / 64.
+</p>
+
+<h1 id="MajorGlitches">Major Glitches</h1>
+
+<h2 id="BodySlam">Body Slam Can't Paralyze Normal-Types</h2>
+
+<p>
+  Pokémon cannot be burned, frozen, or paralyzed by attacks of the same type. This means that, for example, Fire-types cannot be burned by Fire Blast, and Normal-types cannot be paralyzed by Body Slam. Moves which are not damage-dealing, such as Stun Spore, can paralyze or sleep Pokémon of the same type - so, for example, Raichu is not immune to Thunder Wave.
+</p>
+
+<p>
+  Stunningly, this game mechanic was only discovered at the end of 2014 by Crystal_ - 18 years after the game's release! That is also the case for the next two major glitches on this list:
+</p>
+
+<h2 id="StatDropStacking">Stat Drop Stacking</h2>
+
+<p>
+  If a Pokémon is burned or paralyzed, and either has its stats lowered by a <span class="tooltp">stat-lowering move<span class="tooltptext">such as Psychic or Growl</span></span>, or the opponent successfully <span class="tooltp">boosts their stats<span class="tooltptext">such as Amnesia or Swords Dance</span></span> with a move other than Reflect or Light Screen, then the attack or speed drop from the status condition is reapplied.
+</p>
+
+<h2 id="HyperBeamSleep">Hyper Beam + Sleep Moves</h2>
+
+<p>
+If a Pokémon that used Hyper Beam and not yet recharged  is targeted with a sleep inducing move will be put to sleep. The sleep inducing move can't miss, and <span class="tooltp">any status condition is ignored<span class="tooltptext">i.e. if it is burned, paralyzed, frozen, poisoned, or badly poisoned, that status condition will be overriden by sleep</span></span>.
+</p>
+
+<h2 id="StatDropRemoval">Stat Drop Removal</h2>
+
+<p>
+  If a burned Pokémon <span class="tooltp">boosts its attack<span class="tooltptext">for example, with Swords Dance</span></span>, or a paralyzed Pokémon <span class="tooltp">boosts its speed<span class="tooltptext">for example, with Agility</span></span>, then the stat drop from the burn or paralysis is ignored, unless it is reapplied using the Stat Drop Stacking glitch.
+</p>
+
+<h2 id="StatOverflow">Mewtwo Stat Overflow</h2>
+
+<p>
+  Due to the way stats are calculated, if a fully EV'd, level 100 Mewtwo boosts its Special as high as possible with Amnesia, and then takes a special drop from a Psychic, its Special stat will be significantly <i>lower</i> than if it was unboosted. There are no other Pokémon this normally affects at level 100 in competitive play. For further details on the game mechanics in general, <a href="https://youtu.be/y2AOm7r39Jg">see Crystal_'s video</a>, and see <span class="tooltp">Enigami's posts (linked in the tooltip)<span class="tooltptext">(<a href="https://www.smogon.com/forums/threads/rby-ubers-analysis-thoughts-on-the-metagame.3667314/#post-8536755">1</a>, <a ref="https://www.smogon.com/forums/threads/rby-ubers-analysis-thoughts-on-the-metagame.3667314/#post-8545883">2</a>)</span></span> for how it affects mewtwo.
+</p>
+
+<h1 id="MinorGlitches">Minor Glitches</h1>
+
+<h2 id="BadlyBurned">Badly Burned</h2>
+
+<p>
+  When Pokémon are put to sleep, it does not reset the "badly poisoned" counter, and so if a Pokémon is badly poisoned, <span class="tooltp">rests<span class="tooltptext">or is put to sleep via the Hyper Beam + Sleep move glitch detailed above</span></span>, and then is poisoned again, it will be badly poisoned and the damage will increment as if it had not rested. The badly burned glitch is that, if at the end of this process, the Pokémon is burned rather than poisoned, the burn damage will increment as if it were poison damage.
+</p>
+
+<h2 id="SubSelfDamage">Substitute + Self-Damage Glitch</h2>
+
+<p>
+  If a Pokémon behind a Substitute <span class="tooltp">hurts itself<span class="tooltptext">this can be achieved through confusion or the damage dealt by missing Jump Kick or Hi Jump Kick</span></span> through anything other than recoil damage, then the damage will be dealt to the opponent's Substitute (if they have a substitute up), or else not at all.
+</p>
+
+<h2 id="HazeGlitch">Haze Glitch</h2>
+
+<p>
+ If a Pokémon that was frozen or put to sleep with either Rage, Charging, Bide, or Thrashing About status active is cured Sleep or Freeze by Haze, that Pokémon will be unable to select and use a move for as long as it stays on the field. This applies to Hyper Beam too but only if the status is freeze.
+</p>
+
+<p>
+  <i>This is a quote from <a href="https://www.smogon.com/forums/threads/past-gens-research-thread.3506992/page-2#post-5949606">a post by Crystal_'</a>.</i>
+</p>
+
+<h2 id="BadlyBurned">Rage and Thrash/Petal Dance Accuracy</h2>
+
+<p>
+  <i>The following is (also) a quote from <a href="https://www.smogon.com/forums/threads/gen-1-and-tradebacks-dev-post-bugs-here.3524844/page-9#post-6416886">a post by Crystal_'</a>.</i>
+</p>
+
+<p>
+  When a Pokémon is successfully locked into Rage or a move with Thrashing About effect (Thrash or Petal Dance), the accuracy of said move will be overwritten with the scaled accuracy (i.e. with the corresponding evasion and accuracy modifiers applied) during each turn. This occurs because being locked into one of these moves is treated as a special condition causing certain parts of the move executing routines to be skipped, including the part where the move's original data is reloaded into RAM. While the move's original data is also reloaded during move selection (i.e. move selection menu for player side), this part is also skipped when the user is locked into either of these effects. As a result of the game overwritting the move's accuracy address with the scaled value when it goes through the accuracy checks, this new value will be carried over for the next turn as if the scaled accuracy was the move's actual accuracy.
+</p>
+
+<p>
+Since all of these moves have maximum 255 accuracy, their accuracy cannot be increased unless it has been lowered before. On the other hand, it can be progressively decreased with the use of moves such as Sand Attack or Double Team. Let's see an example. If the target has +1 Evasion after the move's first use, its accuracy will drop from 255 to 168. (255 * 100 / 150 = 168) (i.e. 168/255 or 66%). If in the next turn its evasion has become +2, its accuracy (now 168) will become 84 ( 168 * 100 / 200 = 84); if its evasion had remained at +1, the accuracy would've dropped from 168 to 112 ( 168 * 100 / 150 = 112). The accuracy can eventually go down to just 1 this way, as the game makes sure it never drops to 0.
+</p>
+
+<p>
+  Rage's been believed to turn into 1/256 accuracy for this reason, but it will usually take a long time before its accuracy becomes as low as 1. In fact, if Rage only misses due to the well known 255/256 accuracy bug without any evasion or accuracy modifiers in play (or cancelling each other), its accuracy is unaffected. 
+</p>
+
+<h1 id="Desyncs">Desyncs</h1>
+
+<p>
+  A desync is a situation where something occurs on one player's cartridge but not the other's during a link battle. There are a number of ways to cause desyncs in RBY. The following is a list of all known possible causes:
+</p>
+
+<h2 id="Bide">Bide</h2>
+
+<p>
+  If a Pokémon is using Bide, and the opponent faints due to burn or poison, this causes a desync. For more information, see <a href="https://www.youtube.com/watch?v=IVxHGyNDW4g">this video by Crystal_</a>.
+</p>
+
+<h2 id="CounterDesync">Counter</h2>
+
+<p>
+  Using Counter against a paralyzed opponent who has selected a Normal- or Fighting-type attack, but whose last move was not a Normal- or Fighting-type attack, or vice versa, and is then fully paralyzed, causes a desync. For further details, see <a href="https://www.smogon.com/forums/threads/past-gens-research-thread.3506992/page-8#post-8342135">this post by Enigami</a>.
+</p>
+
+<h2 id="MirrorMove">Mirror Move</h2>
+
+<p>
+  Using Mirror Move when the opposing has started a partial trapping sequence causes a desync.
+</p>
+
+<h2 id="Psywave">Psywave</h2>
+
+<p>
+  At level 100, there is 1 in 151 chance of causing a desync, which is caused by rolling a 0 damage roll.
+</p>
+
+<h2 id="Thawing">Thawing</h2>
+
+<p>
+  If a Pokémon is frozen, does not switch out, and is thawed out by a faster Pokémon, this causes a desync. Any move that burns and Haze can thaw a Pokémon, and only Ice Beam, Blizzard and Ice Punch can freeze a Pokémon. For more information, see <a href="https://www.youtube.com/watch?v=iSSf4XaqGAU">this video by Crystal_</a>.
+</p>
+
+<h1 id="intro">Move Mechanics, Glitches & Differences</h1>
+
+<h2 id="255s">Move Accuracy & 1 in 256 Uncertainty</h2>
+
+<p>
+  With <span class="tooltp">few exceptions<span class="tooltptext">the exceptions are Swift and sleep moves when used in conjunction with the Hyper Beam + Sleep Move glitch listed above</span></span>, 100% accurate moves actually have a 1 in 256 chance of missing.
+</p>
+
+<h2 id="ExactAccuracy">Exact move accuracies</h2>
+
+<p>
+  The accuracies presented in most places are rounded to the nearest 5%. Exact move accuracy can be found <a href="https://web.archive.org/web/20130121225517/http://upokecenter.dreamhosters.com/games/rby/guides/attacks.php">here</a>.
+</p>
+
+<h2 id="OHKO">OHKO Moves</h2>
+
+<p>
+  <span class="tooltp">OHKO moves<span class="tooltptext">Fissure, Guillotine, and Horn Drill</span></span> fail if the user is slower than, or loses a speed tie to the opponent.
+</p>
+
+<p>
+  These moves are banned in competitive play outside of Nintendo formats.
+</p>
+
+<h2 id="Wrap">Partial Trapping Moves</h2>
+
+<p>
+  <span class="tooltp">Partial trapping moves<span class="tooltptext">Bind, Clamp, Fire Spin, and Wrap</span></span> prevent your opponent from attacking while trapped, but do not prevent the opponent from switching, even if the opponent is immune to the move. When the opponent switches, another PP is used, accuracy is checked (the move can miss), and the partial trapping sequence is restarted. If the opponent switches while the move's PP is at 0, the move's PP rolls over to 63. Partial trapping sequences last for <span class="tooltp">2-5 turns<span class="tooltptext">There is a 3 in 8 chance the sequence lasts 2 or 3 turns, and 1 in 8 chance it lasts 4 or 5 turns, respectively.</span></span>. <span class="tooltp">The damage dealt by the first attack in the sequence will be dealt by all other attacks in the sequence.<span class="tooltptext">This means only the first move in the sequence can have a critical hit, but if it does, then all of the moves in the sequence critical hit and do the same amount of damage</span></span> If a partial trapping sequence is active, and would not have ended if the player were to stay in on the next turn, then the user can switch and the opponent will remain unable to attack on that turn.
+</p>
+
+<p>
+  If a partial trapping move is used after the opponent uses Hyper Beam and has not yet recharged, and the partial trapping move misses, then the opponent will not have to recharge. If a partial trapping move is used a turn after the opponent has used Hyper Beam, goes before the opponent, and misses, then the opponent will automatically use Hyper Beam again. If they had 0 Hyper Beam PP remaining, the move's PP will roll over to 63. 
+</p>
+
+<p>
+  Pokémon Showdown implementation of the move differs slightly from cartridge. On PS, at the end of a turn if the partial trapping sequence is over, then both players are notified of this in the battle chat. However, on cartridge each player would have to choose between fighting and switching before finding out if the partial trapping sequence has concluded. If they select Fight and the sequence is not over, then the player using the partial trapping move would continue to use the move, and the player not using the move would continue to be immobilised.
+</p>
+
+<h2 id="Recovery">Recovery Move Failure</h2>
+
+<p>
+  When a Pokémon's HP is 255 or 511 below its max HP, recovery moves like Rest, Recover, and Softboiled will fail. For instance, if Chansey is at 192 HP, which is 703 - 511, Softboiled fails.
+</p>
+
+<h2 id="DigFly">Dig, Fly, and the Invulnerability Glitch</h2>
+
+<p>
+  When using Dig or Fly and underground or in the air, the Pokémon is completely invulnerable - Earthquake cannot hit a Pokémon underground and Thunder and Gust cannot hit a Pokémon up in the air. The only move which can hit them is Swift.
+</p>
+
+<p>
+  If a Pokémon is fully paralyzed or hits itself in confusion while underground or in the air from using Dig or Fly, it remain there until it either switches out or uses Dig/Fly again, maintaining invulnerability. Any move other than the move which made the user invulnerable, Swift, Bide, or Transform can be used without losing invulnerability.
+</p>  
+  
+<p>
+  These moves are banned in competitive play outside of Nintendo formats.
+</p>
+
+<h2 id="Counter">Counter</h2>
+
+<p>
+  Due to the fact that Counter can cause a desync on cartridge, note that the mechanics described here apply to what happens on PS but may not necessary apply exactly to what would happen on cartridge.
+</p>
+
+<p>
+  If the opponent's last used move was a Normal- or Fighting-type <span class="tooltp">attack<span class="tooltptext">i.e. a damage-dealing move</span></span> other than Counter, then it will deal damage equal to double the damage on the damage address. Note that:
+  <ul>
+  <li>The damage address is the last amount of damage dealt. Some status moves set the damage address to zero, other moves don't affect it. Switching, and spending turns frozen, asleep, or fully paralyzed do not update the damage address.</li>
+  <li>Damage done to substitutes does go on the damage address.</li>
+  <li>For multi-hit moves such as Fury Swipes, only the damage dealt from the last hit is stored on the damage address.</li>
+  <li>The damage dealt by using Counter goes on the damage address. A consequence of this is that if you successfully get off a Counter against a sleeping or frozen Pokemon, you can use Counter again safely on the next turn and "counter your own counter", doubling the damage dealt by the previous counter.</li>
+  </ul>
+</p>
+
+<p>
+  Counter does affect Ghost-types. Counter can critical hit, but it does not affect the damage dealt, and it does have the same miss chance as any other "100% accurate" move - if it misses, the move will say on PS that it failed.
+</p>
+
+<h2 id="BideGlitch">Bide Damage Glitch</h2>
+
+<p>
+  Bide accumulates damage from the damage address, rather than from attacks taken. For further details, see <a href="https://www.smogon.com/forums/threads/past-gens-research-thread.3506992/page-4#post-6038253">this post by Crystal_</a>.
+</p>
+
+<h2 id="Rest">Rest</h2>
+
+<p>
+  While using Rest removes status conditions such as paralysis and burn, the speed or attack drop from the moves is not removed. If the user was badly poisoned, the user's badly poisoned counter is also not reset by resting. The user of Rest will wake up and not attack during the second turn of rest-induced sleep.
+</p>
+
+<h2 id="Sub">Substitute</h2>
+
+<p>
+  Substitute does not prevent status conditions induced by <span class="tooltp">status moves<span class="tooltptext">i.e. moves which do not deal damage</span></span> other than <span class="tooltp">Toxic and Confuse Ray<span class="tooltptext">Thunder Wave and Leech Seed can bypass Substitute, for example</span></span>. However, it prevents the user from being statused by the <span class="tooltp">secondary effect of attacks<span class="tooltptext">unless the status condition is confusion</span></span>. <span class="tooltp">HP draining moves<span class="tooltptext">such as Mega Drain</span></span> will not regain HP when used on a substitute. If Explosion or Self-Destruct are used against and break a Substitute, the user will not faint. If Hyper Beam is used against and breaks a Substitute, the user will not have to recharge. Using Substitute at exactly 1/4 of the user's max HP will cause the user to faint.
+</p>
+
+<h2 id="Haze">Haze</h2>
+
+<p>
+  Haze has multiple effects. It resets the stat levels of both Pokemon to 0, and resets the stats of both Pokemon to their original values. It clears Disable and <span class="tooltp">sa number of volatile statuses<span class="tooltptext">Bad Poison, Confused, Focus Energy, Leech Seed, Light Screen, Mist, Reflect</span></span> from both players. It clears <span class="tooltp">the status<span class="tooltptext">All of Burn, Freeze, Paralysis, Poison, and Sleep</span></span> of the opposing Pokemon. If freeze or sleep was cleared, that Pokemon will not use an attack on this turn. If a Pokemon that is charging, using Bide, Rage, or Thrash is frozen or asleep has its status cleared by Haze, it will be unable to select a move for as long as it remains on the field. This also applies to Hyper Beam, but only if the Pokemon was frozen.
+</p>
+
+<h2 id="OtherMoveDiffs">Other Major Move Differences</h2>
+
+<p>
+  Some important moves have quite simple changes in comparison to later generations.
+<ul>
+<li>Blizzard has 90% accuracy. In the Japanese release of generation 1, Blizzard has a 30% freeze chance.</li>
+<li>Double-Edge's base power is 100, down from 120, and has a recoil of 1/4 of the damage dealt.</li>
+<li>Explosion's base power is 170, down from 250, and Self-Destruct's base power is 130, down from 200.</li>
+<li>Fire Blast has a 30% chance to burn the opponent.</li>
+<li>Glare can paralyze Ghost-types.</li>
+<li>Hyper Beam does not require a recharge turn if the opposing Pokémon faints as a result of the attack, the Hyper Beam breaks a Substitute, or the Hyper Beam misses.</li>
+<li>Night Shade and Seismic Toss can hit Pokémon that would be immune to them based on their type if they were regular attacks.</li>
+<li>Psychic has a 30% chance of dropping the opponent's Special by one stage, up from 10%.</li>
+<li>Roar and Whirlwind have no effect in battle during link battles in gen 1.</li>
+<li>Reflect and Light Screen double the user's Defense instead of halving the opponent's Attack. Both moves are permanent until switching out. They can only be cleared using Haze, but they are bypassed by critical hits.</li>
+<li>Rock Slide does not flinch.</li>
+<li>Sky Attack does not have a high critical hit ratio.</li>
+<li>Struggle is a Normal-type attack, not typeless. Recoil is 50% of the damage dealt.</li>
+<li>Thunder has a 10% chance to paralyze, rather than the 30% chance to paralyze it has in later generations.</li>
+<li>Bad poison, which is induced only by Toxic, will revert to regular poison status once the afflicted Pokémon is switched out.</li>
+<li>Transform doesn't fail versus any opponent. Doesn't change the user's status condition. If Transform is used while Reflect or Light Screen is active, their boosts will be applied to the user's new stats.</li>
+</ul>
+</p>
+
+<h2 id="OtherMinorMoveDiffs">Other Minor Move Differences</h2>
+
+<p>
+  Some moves that aren't very competitively relevant also have some changes in comparison to later generations, and these changes are listed here:  
+<ul>
+<li>There is a <span class="tooltp">roughly 1 in 3 chance<span class="tooltptext">85/255, which is about 33.2%</span></span> of the secondary effects of Acid, Aurora Beam, Bubble, Bubblebeam, and Constrict occuring.</li>
+<li>Bite only has a 10% flinch chance (and is a Normal-type move).</li>
+<li>Conversion changes the user's type to the opponent's type.</li>
+<li>Disable randomly disables one of the opponent's four attacks rather than the attack used last. It also lasts from 0 to 6 turns and causes Rage to build.</li>
+<li>Dizzy Punch has no confusion chance.</li>
+<li>Focus Energy reduces the user's critical hit ratio, dividing it by 4.</li>
+<li>Gust is a Normal-type attack.</li>
+<li>Hi Jump Kick and Jump Kick always deal 1 HP in recoil if they miss.</li>
+<li>Karate Chop is a Normal-type attack with a high critical hit ratio.</li>
+<li>Damage dealt with Low Kick does not change depending on your opponent's weight. It has a base power of 50, accuracy of 90%, and it has a 30% Flinch chance.</li>
+<li>Metronome can call any move besides Metronome and Struggle.</li>
+<li>Mimic mimics one of the four attacks of the opponent randomly. <span class="tooltp">Mimic can mimic a move already on the user's moveset<span class="tooltptext">On the old simulator NetBattle Supremacy, Mimic wouldn't be able to mimic a move already on the user's moveset. This was a bug.</span></span>. The mimicked move will  have the same current and max PP as Mimic.</li>
+<li>Poison Sting poisons 20% of the time, down from 30%.</li>
+<li>Damage from Rage will increase one level as the raging Pokémon takes hits. As soon as Rage hits, however, the raging Pokémon will stop obeying. It will not be able to use any other attack or switch out, and it will also not lose any PP after the initial Rage hit</li>
+<li>Razor Wind is 75% accurate, down from 100%.</li>
+<li>Rock Throw is 65% accurate, down from 90%.</li>
+<li>Skull Bash does not raise the user's Defense.</li>
+<li>Stomp does not do double damage on Pokémon that have used Minimize.</li>
+<li>Thrash lasts for 3-4 turns, up from 2-3 turns.</li>
+<li>Tri Attack has no side effects.</li>
+<li>Wing Attack's Base Power is 35, down from 60.</li>
+</ul>
+</p>
+
+<h1 id="PSbugs">Pokemon Showdown Bugs</h1>
+
+<p>
+  Pokemon Showdown is the premier choice of battling simulator for RBY battles. However, it's implementation of the game mechanics is not perfect, and this section will document known bugs.
+</p>
+
+<h2 id="HazeBugs">Haze</h2>
+
+<p>
+<ul>
+  <li>On PS, Haze resets the charging status of moves such as Sky Attack. Haze should not interrupt Pokemon using charging moves.</li>
+  <li>On PS, Haze does not clear Mist.</li>
+  <li>Haze does not clear the user's badly poisoned status on PS, replacing it with regular poison, but merely resets the badly poisoned counter.</li>
+  <li>Using Haze against a sleeping Pokemon using Rage on PS incorrectly clears their rage status and allows them to select another move.</li>
+  <li>When statuses are cleared, it does not appear to have cleared in the user interface.</li>
+  <li>There are non user-friendly messages in a number of instances, such as when focus energy or the speed drop caused by paralysis are cleared. In addition, the snapped out of confusion and no longer disabled messages appear twice.</li>
+  <li>When Reflect or Light Screen are cleared by Haze, the message reads "[TEAM]'s Reflect".</li>
+</ul>
+</p>
+
+<h2 id="OtherPSBugs">Others</h2>
+
+<p>
+<ul>
+  <li>As referred to in the description of the mechanics for Partial Trapping Moves, partial trapping implementation is incorrect when it comes to how partial trapping sequences conclude.</li>
+  <li>The mechanics described in the Mewtwo Stat Overflow section are not implemented.</li>
+  <li>On PS, the user of Transform keeps all of its stats. It should only keep its HP stat.</li>
+  <li>If Hyper Beam is used against a Substitute and does not break the Substitute, on PS the user of Hyper Beam does not have to recharge.</li>
+  <li>The Hyper Beam PP rollover interaction with partial trapping is not implemented.</li>
+  <li>There is no level validation implemented currently, when it comes to whether a Pokemon can legally be brought to a battle or not.</li>
+  <li>The user interface shows incorrect values for the amount of damage Pokemon will take from being badly poisoned.</li>
+  <li>The badly poisoned counter only increments on PS while a Pokemon is badly poisoned or leech seeded. It should continue to increment after a Pokemon is badly poisoned even when a Pokemon has cleared its status condition using Rest.</li>
+</ul>
+</p>
+
+<p>
+   <i>Written by Disaster Area</i>
+</p>
+<div class="returntop"></div>
+</article>
