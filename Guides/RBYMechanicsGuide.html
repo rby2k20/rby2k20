@@ -89,25 +89,25 @@ When put to sleep, Pokémon never wake up and attack on the same turn. Pokémon 
 <h2 id="Poison">Poison & Bad Poison</h2>
 
 <p>
-  If a Pokemon which is badly poisoned switches out, when it switches back in its poison status will become regular poison. Regular poison only deals 6.25% of a Pokemon's max HP as damage per turn. Bad poison's counter is not reset by using Rest, so if a resting Pokemon is badly poisoned again after waking up, it will deal a lot of damage straight away.
+  If a Pokémon which is badly poisoned switches out, when it switches back in its poison status will become regular poison. Regular poison only deals 6.25% of a Pokémon's max HP as damage per turn. Bad poison's counter is not reset by using Rest, so if a resting Pokémon is badly poisoned again after waking up, it will deal a lot of damage straight away.
 </p>
 
 <h2 id="Burn">Burns</h2>
 
 <p style="text-align:center">
-  Burns deal 6.25% of a Pokemon's max HP in damage.
+  Burns deal 6.25% of a Pokémon's max HP in damage.
 </p>
 
 <h2 id="Paralysis">Paralysis</h2>
 
 <p style="text-align:center">
-  Paralysis drops a Pokemon's speed by one quarter.
+  Paralysis drops a Pokémon's speed by one quarter.
 </p>
 
 <h2 id="LeechSeed">Leech Seed</h2>
 
 <p>
-  If a Pokemon is badly poisoned, and seeded by leech seed, then leech seed's damage will increment along with the poison damage, so that as the poison damage increments, so does the leech seed damage. Also, if a Pokemon knocked out by Leech Seed had less HP remaining than the damage Leech Seed would deal, the Pokemon which drains HP from the opponent will nonetheless heal as if the full amount of possible damage had been dealt.
+  If a Pokémon is badly poisoned, and seeded by leech seed, then leech seed's damage will increment along with the poison damage, so that as the poison damage increments, so does the leech seed damage. Also, if a Pokémon knocked out by Leech Seed had less HP remaining than the damage Leech Seed would deal, the Pokémon which drains HP from the opponent will nonetheless heal as if the full amount of possible damage had been dealt.
 </p>
 
 <h2 id="Timing">Damage Timing</h2>
@@ -342,7 +342,7 @@ Since all of these moves have maximum 255 accuracy, their accuracy cannot be inc
   <li>The damage address is the last amount of damage dealt. Some status moves set the damage address to zero, other moves don't affect it. Switching, and spending turns frozen, asleep, or fully paralyzed do not update the damage address.</li>
   <li>Damage done to substitutes does go on the damage address.</li>
   <li>For multi-hit moves such as Fury Swipes, only the damage dealt from the last hit is stored on the damage address.</li>
-  <li>The damage dealt by using Counter goes on the damage address. A consequence of this is that if you successfully get off a Counter against a sleeping or frozen Pokemon, you can use Counter again safely on the next turn and "counter your own counter", doubling the damage dealt by the previous counter.</li>
+  <li>The damage dealt by using Counter goes on the damage address. A consequence of this is that if you successfully get off a Counter against a sleeping or frozen Pokémon, you can use Counter again safely on the next turn and "counter your own counter", doubling the damage dealt by the previous counter.</li>
   </ul>
 </p>
 
@@ -371,7 +371,7 @@ Since all of these moves have maximum 255 accuracy, their accuracy cannot be inc
 <h2 id="Haze">Haze</h2>
 
 <p>
-  Haze has multiple effects. It resets the stat levels of both Pokemon to 0, and resets the stats of both Pokemon to their original values. It clears Disable and <span class="tooltp">sa number of volatile statuses<span class="tooltptext">Bad Poison, Confused, Focus Energy, Leech Seed, Light Screen, Mist, Reflect</span></span> from both players. It clears <span class="tooltp">the status<span class="tooltptext">All of Burn, Freeze, Paralysis, Poison, and Sleep</span></span> of the opposing Pokemon. If freeze or sleep was cleared, that Pokemon will not use an attack on this turn. If a Pokemon that is charging, using Bide, Rage, or Thrash is frozen or asleep has its status cleared by Haze, it will be unable to select a move for as long as it remains on the field. This also applies to Hyper Beam, but only if the Pokemon was frozen.
+  Haze has multiple effects. It resets the stat levels of both Pokémon to 0, and resets the stats of both Pokémon to their original values. It clears Disable and <span class="tooltp">sa number of volatile statuses<span class="tooltptext">Bad Poison, Confused, Focus Energy, Leech Seed, Light Screen, Mist, Reflect</span></span> from both players. It clears <span class="tooltp">the status<span class="tooltptext">All of Burn, Freeze, Paralysis, Poison, and Sleep</span></span> of the opposing Pokémon. If freeze or sleep was cleared, that Pokémon will not use an attack on this turn. If a Pokémon that is charging, using Bide, Rage, or Thrash is frozen or asleep has its status cleared by Haze, it will be unable to select a move for as long as it remains on the field. This also applies to Hyper Beam, but only if the Pokémon was frozen.
 </p>
 
 <h2 id="OtherMoveDiffs">Other Major Move Differences</h2>
@@ -427,20 +427,20 @@ Since all of these moves have maximum 255 accuracy, their accuracy cannot be inc
 </ul>
 </p>
 
-<h1 id="PSbugs">Pokemon Showdown Bugs</h1>
+<h1 id="PSbugs">Pokémon Showdown Bugs</h1>
 
 <p>
-  Pokemon Showdown is the premier choice of battling simulator for RBY battles. However, it's implementation of the game mechanics is not perfect, and this section documents known bugs.
+  Pokémon Showdown is the premier choice of battling simulator for RBY battles. However, it's implementation of the game mechanics is not perfect, and this section documents known bugs.
 </p>
 
 <h2 id="HazeBugs">Haze</h2>
 
 <p>
 <ul>
-  <li>On PS, Haze resets the charging status of moves such as Sky Attack. Haze should not interrupt Pokemon using charging moves.</li>
+  <li>On PS, Haze resets the charging status of moves such as Sky Attack. Haze should not interrupt Pokémon using charging moves.</li>
   <li>On PS, Haze does not clear Mist.</li>
   <li>Haze does not clear the user's badly poisoned status on PS, replacing it with regular poison, but merely resets the badly poisoned counter.</li>
-  <li>Using Haze against a sleeping Pokemon using Rage on PS incorrectly clears their rage status and allows them to select another move.</li>
+  <li>Using Haze against a sleeping Pokémon using Rage on PS incorrectly clears their rage status and allows them to select another move.</li>
   <li>When statuses are cleared, it does not appear to have cleared in the user interface.</li>
   <li>There are non user-friendly messages in a number of instances, such as when focus energy or the speed drop caused by paralysis are cleared. In addition, the snapped out of confusion and no longer disabled messages appear twice.</li>
   <li>When Reflect or Light Screen are cleared by Haze, the message reads "[TEAM]'s Reflect".</li>
@@ -456,9 +456,9 @@ Since all of these moves have maximum 255 accuracy, their accuracy cannot be inc
   <li>On PS, the user of Transform keeps all of its stats. It should only keep its HP stat.</li>
   <li>If Hyper Beam is used against a Substitute and does not break the Substitute, on PS the user of Hyper Beam does not have to recharge.</li>
   <li>The Hyper Beam PP rollover interaction with partial trapping is not implemented.</li>
-  <li>There is no level validation implemented currently, when it comes to whether a Pokemon can legally be brought to a battle or not.</li>
-  <li>The user interface shows incorrect values for the amount of damage Pokemon will take from being badly poisoned.</li>
-  <li>The badly poisoned counter only increments on PS while a Pokemon is badly poisoned or leech seeded. It should continue to increment after a Pokemon is badly poisoned even when a Pokemon has cleared its status condition using Rest.</li>
+  <li>There is no level validation implemented currently, when it comes to whether a Pokémon can legally be brought to a battle or not.</li>
+  <li>The user interface shows incorrect values for the amount of damage Pokémon will take from being badly poisoned.</li>
+  <li>The badly poisoned counter only increments on PS while a Pokémon is badly poisoned or leech seeded. It should continue to increment after a Pokémon is badly poisoned even when a Pokémon has cleared its status condition using Rest.</li>
 </ul>
 </p>
 
