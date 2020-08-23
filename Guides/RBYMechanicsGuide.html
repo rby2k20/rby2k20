@@ -9,7 +9,7 @@
 <article id="English">
 
 <img src="images/articles/rbymechanicsbanner03.jpg">
-<p>
+<p style="text-align:center">
 <i>Artwork by Undecided Days.</i>
 </p>
 
@@ -94,13 +94,13 @@ When put to sleep, Pokémon never wake up and attack on the same turn. Pokémon 
 
 <h2 id="Burn">Burns</h2>
 
-<p>
+<p style="text-align:center">
   Burns deal 6.25% of a Pokemon's max HP in damage.
 </p>
 
 <h2 id="Paralysis">Paralysis</h2>
 
-<p>
+<p style="text-align:center">
   Paralysis drops a Pokemon's speed by one quarter.
 </p>
 
@@ -112,7 +112,7 @@ When put to sleep, Pokémon never wake up and attack on the same turn. Pokémon 
 
 <h2 id="Timing">Damage Timing</h2>
 
-<p>
+<p style="text-align:center">
   Damage dealt by status conditions and leech seed is dealt at the end of the turn.
 </p>
 
@@ -203,29 +203,37 @@ If a Pokémon that used Hyper Beam and not yet recharged  is targeted with a sle
 <h2 id="HazeGlitch">Haze Glitch</h2>
 
 <p>
+  <i>
  If a Pokémon that was frozen or put to sleep with either Rage, Charging, Bide, or Thrashing About status active is cured Sleep or Freeze by Haze, that Pokémon will be unable to select and use a move for as long as it stays on the field. This applies to Hyper Beam too but only if the status is freeze.
+  </i>
 </p>
 
 <p>
-  <i>This is a quote from <a href="https://www.smogon.com/forums/threads/past-gens-research-thread.3506992/page-2#post-5949606">a post by Crystal_'</a>.</i>
+  his is a quote from <a href="https://www.smogon.com/forums/threads/past-gens-research-thread.3506992/page-2#post-5949606">a post by Crystal_</a>.
 </p>
 
 <h2 id="BadlyBurned">Rage and Thrash/Petal Dance Accuracy</h2>
 
 <p>
-  <i>The following is (also) a quote from <a href="https://www.smogon.com/forums/threads/gen-1-and-tradebacks-dev-post-bugs-here.3524844/page-9#post-6416886">a post by Crystal_'</a>.</i>
+  The following is (also) a quote from <a href="https://www.smogon.com/forums/threads/gen-1-and-tradebacks-dev-post-bugs-here.3524844/page-9#post-6416886">a post by Crystal_</a>:
 </p>
 
 <p>
+  <i>
   When a Pokémon is successfully locked into Rage or a move with Thrashing About effect (Thrash or Petal Dance), the accuracy of said move will be overwritten with the scaled accuracy (i.e. with the corresponding evasion and accuracy modifiers applied) during each turn. This occurs because being locked into one of these moves is treated as a special condition causing certain parts of the move executing routines to be skipped, including the part where the move's original data is reloaded into RAM. While the move's original data is also reloaded during move selection (i.e. move selection menu for player side), this part is also skipped when the user is locked into either of these effects. As a result of the game overwritting the move's accuracy address with the scaled value when it goes through the accuracy checks, this new value will be carried over for the next turn as if the scaled accuracy was the move's actual accuracy.
+  </i>
 </p>
 
 <p>
+  <i>
 Since all of these moves have maximum 255 accuracy, their accuracy cannot be increased unless it has been lowered before. On the other hand, it can be progressively decreased with the use of moves such as Sand Attack or Double Team. Let's see an example. If the target has +1 Evasion after the move's first use, its accuracy will drop from 255 to 168. (255 * 100 / 150 = 168) (i.e. 168/255 or 66%). If in the next turn its evasion has become +2, its accuracy (now 168) will become 84 ( 168 * 100 / 200 = 84); if its evasion had remained at +1, the accuracy would've dropped from 168 to 112 ( 168 * 100 / 150 = 112). The accuracy can eventually go down to just 1 this way, as the game makes sure it never drops to 0.
+  </i>
 </p>
 
 <p>
+  <i>
   Rage's been believed to turn into 1/256 accuracy for this reason, but it will usually take a long time before its accuracy becomes as low as 1. In fact, if Rage only misses due to the well known 255/256 accuracy bug without any evasion or accuracy modifiers in play (or cancelling each other), its accuracy is unaffected. 
+  </i>
 </p>
 
 <h1 id="Desyncs">Desyncs</h1>
@@ -268,7 +276,7 @@ Since all of these moves have maximum 255 accuracy, their accuracy cannot be inc
 
 <h2 id="255s">Move Accuracy & 1 in 256 Uncertainty</h2>
 
-<p>
+<p style="text-align:center">
   With <span class="tooltp">few exceptions<span class="tooltptext">the exceptions are Swift and sleep moves when used in conjunction with the Hyper Beam + Sleep Move glitch listed above</span></span>, 100% accurate moves actually have a 1 in 256 chance of missing.
 </p>
 
@@ -280,11 +288,11 @@ Since all of these moves have maximum 255 accuracy, their accuracy cannot be inc
 
 <h2 id="OHKO">OHKO Moves</h2>
 
-<p>
+<p style="text-align:center">
   <span class="tooltp">OHKO moves<span class="tooltptext">Fissure, Guillotine, and Horn Drill</span></span> fail if the user is slower than, or loses a speed tie to the opponent.
 </p>
 
-<p>
+<p style="text-align:center">
   These moves are banned in competitive play outside of Nintendo formats.
 </p>
 
@@ -422,7 +430,7 @@ Since all of these moves have maximum 255 accuracy, their accuracy cannot be inc
 <h1 id="PSbugs">Pokemon Showdown Bugs</h1>
 
 <p>
-  Pokemon Showdown is the premier choice of battling simulator for RBY battles. However, it's implementation of the game mechanics is not perfect, and this section will document known bugs.
+  Pokemon Showdown is the premier choice of battling simulator for RBY battles. However, it's implementation of the game mechanics is not perfect, and this section documents known bugs.
 </p>
 
 <h2 id="HazeBugs">Haze</h2>
