@@ -1,0 +1,1769 @@
+<title>An Introduction to Teambuilding in RBY OU</title>
+<author>Shellnuts</author>
+<pubday>25</pubday>
+<pubmonth>6</pubmonth> <!--Use a number (example 4 for april)-->
+<pubyear>2020</pubyear>
+<category>RBY OU</category>
+<sticky>false</sticky> <!-- Use 'true' without quotes for sticky article-->
+
+<article id="English">
+
+
+<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-8531735" data-lb-caption-desc="Shellnuts · Jul 9, 2020 at 12:47 AM">
+
+							
+								
+
+	
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div style="text-align: center"><br>
+<span style="font-size: 26px"><b>An Introduction to Teambuilding in RBY OU</b></span><br>
+
+<br>
+Thanks to FNH, Assessessment, Sevi 7, Lutra, mmf, and anyone else who gave feedback on this while I was writing it.​</div><br>
+<h1 id="intro">The basis</h1>
+<i>This article is intended for newer players to RBY OU who have a very basic understanding of the metagame but are looking to build their own teams. However, I hope that more experienced players can get something out of this as well.</i><br>
+<br>
+To an outsider looking in, RBY seems like an incredibly small metagame of the same handful of Pokemon running the same sets being played in the same ways in every game, and while it may appear that way on the surface, when you dive deeper you see a remarkable plurality of gameplay styles and nuanced play in an environment where power creep hasn’t taken off as much as in later gens. However, to truly experience this variance in the subtleties of play, in my opinion, one first needs to know how to build their own teams. If you use sample teams when learning the basics that is fine but if you just ride the coattails of another’s successes, you limit how far you can explore the tier, and consequently see less of the nuance and variety in the tier which shapes its identity in a unique way. The issue for many newcomers into RBY is that knowing how to build a unique team is much harder than it looks at first glance, and many of these players don’t truly understand why their teams end up failing. The purpose of this guide is to help remedy that. Its goal is to go through the building process with some very standard teams to show how to go about the process of constructing a competitively viable RBY team. There are many different strategies that can form the basis for a team and likely many which haven’t been discovered yet, but in general, there are a few key roles that your team needs to have to work in the current RBY OU metagame, these are as follows.<br>
+<br>
+<ul>
+<li data-xf-list-type="ul">A revenge killer (As I will iterate on later, Tauros is by far the best at this role and is thus practically mandatory on any competitive team)</li>
+<li data-xf-list-type="ul">At least 2 Pokemon at or above base 100 speed</li>
+<li data-xf-list-type="ul">A sleeper</li>
+<li data-xf-list-type="ul">A Pokemon which can take sleep for its more important teammates</li>
+<li data-xf-list-type="ul">At least one Pokemon which can repeatedly absorb STAB Psychic’s</li>
+<li data-xf-list-type="ul">At least one Pokemon which can repeatedly absorb STAB Thunderbolt’s</li>
+<li data-xf-list-type="ul">At least one Pokemon which can repeatedly absorb STAB Blizzard’s</li>
+<li data-xf-list-type="ul">A status absorber</li>
+<li data-xf-list-type="ul">At least one physically bulky mon</li>
+<li data-xf-list-type="ul">At least 1 Thunder Wave user.</li>
+<li data-xf-list-type="ul">A mon which deals with Chansey</li>
+<li data-xf-list-type="ul">A lead</li>
+</ul><br>
+Now, these may seem like a lot of roles which your team needs to fill, however, the reason that some Pokemon are so incredibly common in the tier is that they fill multiple roles at once or are the best in the game in their role while also offering additional utility, as an example, Chansey tanks STAB Blizzards, STAB Thunderbolts, STAB Psychics, as well as healing itself, and it can absorb paralysis and keep it from spreading through your team, and it has Thunder Wave, it fills 5 out of the 12 roles on that list and can fill even more with different sets such as spreading sleep with Sing or acting as a physically bulky Pokemon with Reflect, and offering some Offensive utility with its attacking moves. There are other Pokemon like this but these are the main reasons you see some Pokemon very frequently—mainly Tauros, Snorlax, and Chansey—but as long as you fill these roles, your team has a solid basis for you to customize it to enable different strategies and movesets by balancing weaknesses, building synergy, and maximizing the value of each member of the team, and there is where the variety of RBY OU is really demonstrated. In my opinion, the simplest way to divide nearly all RBY teams is into 2 main categories, teams with Exeggutor, which I will refer to as Big 4 teams which are generally more reactive, and teams without Exeggutor, which I will refer to as Eggyless teams which are generally more proactive, both of which will be covered in that order (for those who were wondering why I decided to divide it based on whether a team runs Exeggutor rather than another more accurate topic such as openings or playstyles, since those require more metagame knowledge, it would be more confusing to the primary target audience of this guide than necessary, however, once you do learn the tier more, thinking of teams in those terms is usually better for building.)<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-1-1596318842" data-lb-id="_xfUid-1-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-1-1596318842" data-src="//lh5.googleusercontent.com/yanI9DGHnn3vJpPLykd1BwrHK5t3gejLbv0zQ4qJrex7TyRir1waMcO3jaBEdStWT8Spj5wWcA7NjZN-fRzm6vh6a8DHUk-BMiHCjMGdexu9GeLj6ShTl4I9tAMTCGr22DSrIFQp" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/yanI9DGHnn3vJpPLykd1BwrHK5t3gejLbv0zQ4qJrex7TyRir1waMcO3jaBEdStWT8Spj5wWcA7NjZN-fRzm6vh6a8DHUk-BMiHCjMGdexu9GeLj6ShTl4I9tAMTCGr22DSrIFQp" data-url="https://lh5.googleusercontent.com/yanI9DGHnn3vJpPLykd1BwrHK5t3gejLbv0zQ4qJrex7TyRir1waMcO3jaBEdStWT8Spj5wWcA7NjZN-fRzm6vh6a8DHUk-BMiHCjMGdexu9GeLj6ShTl4I9tAMTCGr22DSrIFQp" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<h1 id="last_mon">The Rock-Paper-Scissors of last Pokemon:</h1>
+
+
+When considering your last Pokemon, of the three common choices—Electrics, Rhydon, and Waters—a matchup triad forms whereby Electrics beat Waters, Rhydon beats Electrics, and Waters beat Rhydon. This matchup triad affects the sets of your other Pokemon as they need to compensate for these weaknesses, this affects Eggyless teams to a lesser extent as the slot which is freed up can be used to help mitigate those matchup weaknesses—an example we will get into later which demonstrates this is Jolteon and Cloyster as Cloyster helps cover the Snorlax matchup and to a lesser extent the Rhydon matchup while Jolteon covers against Electric-types which give Cloyster trouble—however when building a Big 4 team, in my opinion, it is often a good idea to choose your last Pokemon early in the teambuilding process as it can make choosing leads and sets on some Pokemon much easier (though this can cause confusion with the naming since you are choosing your last Pokemon as one of the first ones on the team).
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-2-1596318842" data-lb-id="_xfUid-2-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-2-1596318842" data-src="//lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" data-url="https://lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<h1 id="openings">A Note on Openings:</h1>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">I would like to briefly touch on the subject of openings in RBY OU. Now this guide will assume the reader knows what the standard openings are, if not look to this guide by Amaranth on the subject: <a href="https://www.smogon.com/forums/threads/a-guide-on-rby-openings.3666467/" class="link link--internal">https://www.smogon.com/forums/threads/a-guide-on-rby-openings.3666467/</a>. Since all of the openings will be one of the standard openings in the aforementioned guide, I will be only discussing them briefly in the case of the straightforward openings of Jynx and Sing Chansey, and barely at all in the case of Exeggutor openings due to it mostly coming down to experience to navigate those openings. In case you want to learn more about openings when building your own teams or want to run a nonstandard opening, I recommend learning the tier a bit more before trying those openings out.</div>
+		</div>
+	</div>
+</div><br>
+<h1 id="big4"><b>Big 4 Teams</b></h1>
+
+<h2 id="drain_egg">Team 1: Drain Exeggutor + Starmie + Rhydon + 3 Normals</h2>
+
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-3-1596318842" data-lb-id="_xfUid-3-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-3-1596318842" data-src="//lh5.googleusercontent.com/zxOZVw0xPPcOjlpcSob5tmHIg4R7XC4hAoSWfQR-ZfY_rTFGBcdaWYzuCfQCIYTo-2CS_8uHS7OIYX6t9b7oXoyyeQXNqATKvuqinYXW25WQlK3fozuY_5Y80r2TCLZac7O5kA2c" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/zxOZVw0xPPcOjlpcSob5tmHIg4R7XC4hAoSWfQR-ZfY_rTFGBcdaWYzuCfQCIYTo-2CS_8uHS7OIYX6t9b7oXoyyeQXNqATKvuqinYXW25WQlK3fozuY_5Y80r2TCLZac7O5kA2c" data-url="https://lh5.googleusercontent.com/zxOZVw0xPPcOjlpcSob5tmHIg4R7XC4hAoSWfQR-ZfY_rTFGBcdaWYzuCfQCIYTo-2CS_8uHS7OIYX6t9b7oXoyyeQXNqATKvuqinYXW25WQlK3fozuY_5Y80r2TCLZac7O5kA2c" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Earthquake<br>
+- Rest<br>
+
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-4-1596318842" data-lb-id="_xfUid-4-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-4-1596318842" data-src="//lh5.googleusercontent.com/yanI9DGHnn3vJpPLykd1BwrHK5t3gejLbv0zQ4qJrex7TyRir1waMcO3jaBEdStWT8Spj5wWcA7NjZN-fRzm6vh6a8DHUk-BMiHCjMGdexu9GeLj6ShTl4I9tAMTCGr22DSrIFQp" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/yanI9DGHnn3vJpPLykd1BwrHK5t3gejLbv0zQ4qJrex7TyRir1waMcO3jaBEdStWT8Spj5wWcA7NjZN-fRzm6vh6a8DHUk-BMiHCjMGdexu9GeLj6ShTl4I9tAMTCGr22DSrIFQp" data-url="https://lh5.googleusercontent.com/yanI9DGHnn3vJpPLykd1BwrHK5t3gejLbv0zQ4qJrex7TyRir1waMcO3jaBEdStWT8Spj5wWcA7NjZN-fRzm6vh6a8DHUk-BMiHCjMGdexu9GeLj6ShTl4I9tAMTCGr22DSrIFQp" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Rhydon<br>
+- Earthquake<br>
+- Rock Slide<br>
+- Substitute<br>
+- Body Slam<br>
+<br>
+Every team you build needs to start with an idea, whether it be an uncommon Pokemon, a Snorlax set you would like to try out again, a specific move on a metagame staple, or even just something more standard, it needs to start somewhere. For this team, the main idea will be something simple, bringing in Rhydon and Snorlax on paralyzed Pokemon forced into recovery moves and predictable switches. Rhydon’s set is going to be the standard set it practically always uses, Earthquake and Rockslide for STAB, Body Slam to paralyze opposing Pokemon who are not Normal-Types, and Substitute because Rhydon’s health allows it to create Substitutes which live a Seismic Toss from Chansey which can be the deciding factor between a win and a loss. In addition, Rhydon’s ability to frequently come in on the Electric’s gives it many opportunities to come in and break down the opposing team. Snorlax on this team will also be running a fairly standard set, Body Slam for its paralysis chance coming off of a meaty 110 attack and STAB to boot making it one of the hardest attacks to switch into in RBY. Rest and Reflect gives Snorlax the ability to take on the other powerful physical attackers of the tier quite well while also allowing it to heal off damage and remain a threat for the entire game. The last slot is a bit more contentious, while Hyper Beam and Ice Beam are both good choices for this team, the lack of immediate power from Ice Beam and being permanently walled by Gengar with Hyper Beam makes these choices less desirable than Earthquake for this team as it allows Snorlax to retain momentum better and ensure that nothing coming in will enjoy taking the hit, while also being safe from Zapdos potentially causing havoc due to you also running a Rhydon. Overall, this is a solid foundation to build a team from.<br>
+
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-5-1596318842" data-lb-id="_xfUid-5-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-5-1596318842" data-src="//lh4.googleusercontent.com/t9NyDfFEAg2W76HeIQ2IsZRGQllOc8Jyqpld5t53xnRatAA9-MYj3eHI4DNdbz3m8WoxDuoBdNnu3KqoFYyBJCBqu41RtGJSP304610KVmmp3OckoNiMQbB4VXK_Kwj9QFmxqBO-" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/t9NyDfFEAg2W76HeIQ2IsZRGQllOc8Jyqpld5t53xnRatAA9-MYj3eHI4DNdbz3m8WoxDuoBdNnu3KqoFYyBJCBqu41RtGJSP304610KVmmp3OckoNiMQbB4VXK_Kwj9QFmxqBO-" data-url="https://lh4.googleusercontent.com/t9NyDfFEAg2W76HeIQ2IsZRGQllOc8Jyqpld5t53xnRatAA9-MYj3eHI4DNdbz3m8WoxDuoBdNnu3KqoFYyBJCBqu41RtGJSP304610KVmmp3OckoNiMQbB4VXK_Kwj9QFmxqBO-" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Mega Drain<br>
+<br>
+When looking at our team currently we have some very powerful physical attackers, but we need a reliable way to pressure the opposing team using sleep, therefore for this team we will be using Exeggutor, with the first three moves of Psychic, Sleep Powder, and Explosion already filled out there are many options for our last moveslot, and while you could very easily run Stun Spore in this slot, for this team we will be using Mega Drain in Exeggutor’s fourth moveslot. At first glance, Mega Drain does not seem all too useful, with low base power and even damage to opposing Exeggutor, Jynx, Alakazam, and Chansey, it seems like this move would be a non-option for this slow of a team when moves like Double-Edge or Stun Spore could be used instead, however, after glancing at the damage calculator we see that it is Exeggutor’s best option in its movepool against one of it’s most common answers, Starmie. Against other Exeggutor variants, Starmie is a common and safe answer to absorb sleep and burn turns against a less threatening Pokemon (especially if Exeggutor is running Stun Spore), or just force it out with blizzard while taking pitiful damage in response and recovering the chip away, Mega Drain changes that and forces out Starmie, giving this team a very beneficial positive matchup against opposing Starmie and forcing switches into desirable targets who we would like paralyzed so our Snorlax and Rhydon can begin slamming the opposing team with STAB Body Slams and Earthquakes.<br>
+
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-6-1596318842" data-lb-id="_xfUid-6-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-6-1596318842" data-src="//lh3.googleusercontent.com/GQAkWNdhwGAhpEQZqYbz9SydORw9fQOh04dWQaQEPgjrC0QHMJpGLcoAkVoK6Ejw0Rj5-6BZ2Q1x20EZJGnzCtJ-J7FJIRYQ9hkH_82OkfAHsFESaRKLl-UEiJejP5LNzaiex0kg" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/GQAkWNdhwGAhpEQZqYbz9SydORw9fQOh04dWQaQEPgjrC0QHMJpGLcoAkVoK6Ejw0Rj5-6BZ2Q1x20EZJGnzCtJ-J7FJIRYQ9hkH_82OkfAHsFESaRKLl-UEiJejP5LNzaiex0kg" data-url="https://lh3.googleusercontent.com/GQAkWNdhwGAhpEQZqYbz9SydORw9fQOh04dWQaQEPgjrC0QHMJpGLcoAkVoK6Ejw0Rj5-6BZ2Q1x20EZJGnzCtJ-J7FJIRYQ9hkH_82OkfAHsFESaRKLl-UEiJejP5LNzaiex0kg" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Starmie<br>
+- Thunder Wave<br>
+- Psychic<br>
+- Blizzard<br>
+- Recover<br>
+<br>
+From here the next slot on our team we should decide on our lead, and in this case, Starmie is the obvious choice for a few main reasons. First of all, the pairing of Starmie and Rhydon is a popular RBY pairing, with Rhydon covering the Electric-types which cause Starmie troubles and Starmie answering most variants of Exeggutor barring the relatively uncommon Mega Drain variants who cause Rhydon trouble. In addition, Starmie spreads paralysis through the enemy team which facilitates the time tested strategy of sweeping a Paralyzed team with your own Rhydon or Tauros. Secondly, Starmie is one of the best leads in the metagame, absorbing sleep well while either trading paralysis in kind or damage depending on who your opponent leads with. Third, and last of all, it has a phenomenal type and movepool with access to reliable healing with Recover, the ability to spread paralysis with Thunder Wave, and access to Blizzard, Thunderbolt, and Psychic, some of the best special attacks in the game, all in all, Starmie is an obvious choice of lead for this team with Recover and Thunder Wave for longevity and the ability to spread paralysis, as well as Blizzard and Psychic to hit Exeggutor, opposing Rhydon, Victreebel, Dragonite, and Zapdos (on the switch, you should never be staying in on Zapdos in a million years) for super-effective damage and the chance to score a freeze, while Psychic gives Starmie an edge over Gengar and is it’s best move against opposing Normal-types with a base 90 STAB off of 100 base special and the chance to score special drops. On this team Starmie is ok with trading paralysis against opposing leads—though it would prefer to avoid it—because a paralyzed enemy Starmie lead gets bullied by Mega Drain Exeggutor and all other enemy leads—in addition to a Chansey switching in on the turn one Thunder Wave, get abused by Snorlax and Rhydon as long as you bring them in safely such as on a healing move, like as Soft-Boiled, Recover, or Rest, on Chansey, Alakazam, and Jynx respectively—or an immunity—specifically Rhydon’s immunity to Thunderbolts from both Chansey and Gengar as well as Thunder Waves from Chansey—which can be either predicted or forced and allow this team to really start putting in work and it outspeeding and paralyzing or straight up OHKO’ing enemy sleep leads enables it to ensure it can always choose an option which your team can benefit from. If unstatused, Starmie also brings a very fast Pokemon which can be very beneficial to win games due to it outspeeding Tauros which can be key in a lot of situations—especially in the late-game—so keeping Starmie unstatused by switching to your own Chansey turn one against paralysis-inducing leads can be a good way to preserve its speed tier for later.<br>
+
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-7-1596318842" data-lb-id="_xfUid-7-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-7-1596318842" data-src="//lh4.googleusercontent.com/4tcy_TQtCIkdXJSM5BSKgfWrDv-bZWaZVhqHutRGf7AQfXnHeknk9mouWeSLgK8Ji3pupKQZtUq85kGBs3Tt8qunhmIS8PkD7JbApqG5qWERd8s_hqqYZquz1m32M1yPPsVhfavr" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/4tcy_TQtCIkdXJSM5BSKgfWrDv-bZWaZVhqHutRGf7AQfXnHeknk9mouWeSLgK8Ji3pupKQZtUq85kGBs3Tt8qunhmIS8PkD7JbApqG5qWERd8s_hqqYZquz1m32M1yPPsVhfavr" data-url="https://lh4.googleusercontent.com/4tcy_TQtCIkdXJSM5BSKgfWrDv-bZWaZVhqHutRGf7AQfXnHeknk9mouWeSLgK8Ji3pupKQZtUq85kGBs3Tt8qunhmIS8PkD7JbApqG5qWERd8s_hqqYZquz1m32M1yPPsVhfavr" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Chansey<br>
+- Thunder Wave<br>
+- Ice Beam<br>
+- Thunderbolt<br>
+- Soft-Boiled<br>
+<br>
+While Starmie is certainly a good special wall, healing off damage and spreading paralysis, it is our default sleep absorber, so it may or may not be around to deal with the other powerful special attackers of the tier, and while Exeggutor can be a stopgap, every point of damage it takes brings it closer to being forced to explode, so we need another sturdy special wall to keep the team from crumbling in the face of enemy Alakazam and Starmie. This makes Chansey, the best special wall in RBY, an obvious choice for the team. It’s first two moveslots are going to go to Thunder Wave and Soft-Boiled, giving it the same combination of a reliable healing move and reliable paralysis that Starmie has, but on this team in particular, we need a better matchup against opposing Starmie and Lapras because as it stands, our team is going to have a rough time against those two, we also want it to be offensive and forcing recovery moves so we can capitalize on it with our slow physical attackers, so this makes BoltBeam the obvious choice for the final two moves on Chansey giving it perfect coverage, threatening all water-types, Zapdos, Exeggutor, and enemy Rhydon with super-effective damage and freezes to boot. With Chansey and Starmie, we can keep status conditions from spreading throughout our team and spread it throughout the opposing team in response, slowing down the opposing team and creating the ideal conditions for our physical attackers to thrive.<br>
+
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-8-1596318842" data-lb-id="_xfUid-8-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-8-1596318842" data-src="//lh4.googleusercontent.com/rrM3pCWGjvtdQrCaBIo_mhP_Lzcjuv-P7UKeoQFzhL5bQmvP_9Kf03hKYODR6lmtcYzJupQDjyNms1G_Y-fmYlHtGBmn0FYvz7GOEuLksFyWMtYY_0wIudqFyJ41QWdeKP0e_F8n" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/rrM3pCWGjvtdQrCaBIo_mhP_Lzcjuv-P7UKeoQFzhL5bQmvP_9Kf03hKYODR6lmtcYzJupQDjyNms1G_Y-fmYlHtGBmn0FYvz7GOEuLksFyWMtYY_0wIudqFyJ41QWdeKP0e_F8n" data-url="https://lh4.googleusercontent.com/rrM3pCWGjvtdQrCaBIo_mhP_Lzcjuv-P7UKeoQFzhL5bQmvP_9Kf03hKYODR6lmtcYzJupQDjyNms1G_Y-fmYlHtGBmn0FYvz7GOEuLksFyWMtYY_0wIudqFyJ41QWdeKP0e_F8n" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Last but certainly not least, one of the kings of RBY, the universal revenge killer with blazing fast speed, incredible coverage, and outstanding power, we have Tauros. Tauros is a simple Pokemon, it outspeeds and punishes most of the tier with paralysis and crit chances off of its mighty STAB Body Slam, while our team can hit very hard with Snorlax and Rhydon, they are very slow and are not fast enough to be able to confirm KO’s that easily, Tauros has no such issue, and gives the ability to close out a game that any RBY team needs. It fills the role of a revenge killer—which as I mentioned before is mandatory on any RBY team—so much better than anything else that it becomes practically mandatory, finishing off our team.<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Starmie<br>
+- Recover<br>
+- Thunder Wave<br>
+- Psychic<br>
+- Blizzard<br>
+<br>
+Chansey<br>
+- Thunder Wave<br>
+- Ice Beam<br>
+- Thunderbolt<br>
+- Soft-Boiled<br>
+<br>
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Earthquake<br>
+- Rest<br>
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Mega Drain<br>
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Earthquake<br>
+- Blizzard<br>
+<br>
+Rhydon<br>
+- Substitute<br>
+- Body Slam<br>
+- Earthquake<br>
+- Rock Slide</div>
+		</div>
+	</div>
+</div><br>
+As a side note: Normally I would elect to use a more standard move in Exeggutor’s last slot such as Stun Spore, however, while deciding on which team should be the first example presented, I stumbled upon an analysis by Ortheore of his second game against ErPeris in the first round of the Pokemon Perfect RBY World Championships which used this exact team, therefore I felt that even though it is a slightly less standard team, the analysis by Ortheore showing how the team works in practice and how to utilize the team is overall more valuable for new players looking to learn to teambuild in RBY.<br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content"><div class="bbMediaWrapper">
+	<div class="bbMediaWrapper-inner">
+		<iframe src="https://www.youtube.com/embed/H9EV5Irwc40?wmode=opaque&amp;start=0" width="560" height="315" frameborder="0" allowfullscreen="true"></iframe>
+	</div>
+</div></div>
+		</div>
+	</div>
+</div><br>
+<b>Team 2: Standard Starmie + Alakazam + Big 4</b><br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-9-1596318842" data-lb-id="_xfUid-9-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-9-1596318842" data-src="//lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" data-url="https://lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Starmie<br>
+- Recover<br>
+- Thunder Wave<br>
+- Surf<br>
+- Thunderbolt<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-10-1596318842" data-lb-id="_xfUid-10-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-10-1596318842" data-src="//lh3.googleusercontent.com/pZ8ii9dc1Gq8c9w5YiigqhXZz1Q7Ai0rl459IrUikK1fUHCSvYjZ1X0DbSnhyNVlGAutbieo7On7K13DaYmq-OZPLc6HSU8kam-f5fCVrjVONcSLtrlLTzzbRXaaldXn4uCb0OrL" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/pZ8ii9dc1Gq8c9w5YiigqhXZz1Q7Ai0rl459IrUikK1fUHCSvYjZ1X0DbSnhyNVlGAutbieo7On7K13DaYmq-OZPLc6HSU8kam-f5fCVrjVONcSLtrlLTzzbRXaaldXn4uCb0OrL" data-url="https://lh3.googleusercontent.com/pZ8ii9dc1Gq8c9w5YiigqhXZz1Q7Ai0rl459IrUikK1fUHCSvYjZ1X0DbSnhyNVlGAutbieo7On7K13DaYmq-OZPLc6HSU8kam-f5fCVrjVONcSLtrlLTzzbRXaaldXn4uCb0OrL" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Alakazam<br>
+- Recover<br>
+- Thunder Wave<br>
+- Psychic<br>
+- Seismic Toss<br>
+<br>
+Now that we have built a more physically biased offensive team, let’s look at the other end of the spectrum and try building a team which is based around special attackers, specifically Alakazam and Starmie. Both share very fast speed tiers, Thunder Wave, Recover, and STAB Psychic’s, with Alakazam having a higher special stat and higher speed in exchange for a smaller movepool and incredible frailty, these two in combination are both OU staples and work well together for a fast specially offensive team. For this team, we will be leading Starmie because Alakazam’s frailty makes one or two full paralyzes a near-death sentence for it bar it switch out in such a predictable opening sequence you can literally make a flowchart of it, unlike Starmie who has the bulk to not be immediately screwed if it fully paralyzes in most situations. Starmie is going to be running Recover and Thunder Wave as its first two moves because it gives reliable healing and the ability to spread paralysis. For Starmie’s attacking moves, Surf and Thunderbolt gives it a good matchup against opposing paralysis leads because it allows you to attack on the first turn to cover an enemy Chansey switching in to take a Thunder Wave, keeping the option to sleep it open, Thunderbolt is nice against opposing Starmie leads while Surf allows it to force opposing lead Alakazam to Recover more frequently which can be capitalized on in addition to doing the most damage against lead Jynx, assuming they fully paralyze or that Lovely Kiss misses, while keeping Starmie in to absorb sleep. Alakazam on the other hand—in addition to also running Recover and Thunder Wave—will be using Psychic and Seismic Toss as its last two moves, allowing it to use a 135 base power move—after STAB—off of its base 135 special stat, with Seismic Toss giving it a positive matchup against opposing Starmie and Alakazam not running Seismic Toss and doing more damage against opposing Psychic resists your opponent may send in to reset Psychic’s special drops on their Chansey, helping start this specially offensive team.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-11-1596318842" data-lb-id="_xfUid-11-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-11-1596318842" data-src="//lh5.googleusercontent.com/fGSAyOvL89xjSUL9TBRVMhpL8cqyuK9zliecvIZtSa5uZik6iHdD9NVOTTwwi5Y24G07Gi9jMq9AYPDMBjNcbTOf4mjdELdS-Ppef4AM0V4jQtJZKXiALODfb8la4vZl_MlMfTvQ" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/fGSAyOvL89xjSUL9TBRVMhpL8cqyuK9zliecvIZtSa5uZik6iHdD9NVOTTwwi5Y24G07Gi9jMq9AYPDMBjNcbTOf4mjdELdS-Ppef4AM0V4jQtJZKXiALODfb8la4vZl_MlMfTvQ" data-url="https://lh5.googleusercontent.com/fGSAyOvL89xjSUL9TBRVMhpL8cqyuK9zliecvIZtSa5uZik6iHdD9NVOTTwwi5Y24G07Gi9jMq9AYPDMBjNcbTOf4mjdELdS-Ppef4AM0V4jQtJZKXiALODfb8la4vZl_MlMfTvQ" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Stun Spore<br>
+<br>
+Next on our team, we need a sleeper, and just like the previous team, Exeggutor fills this slot nicely, with Sleep Powder, Explosion, Psychic, and Stun Spore, this gives us a third Psychic-type with the ability to spread paralysis (which allows Starmie and Alakazam to outspeed more targets and helps them in the matchup against Chansey if they need to force it out) and pressure the opponent. The handy threats of sleep and Explosion allow it to sleep the opposing sleep absorber—who is near always a Psychic-type with a high special stat—and blow up an opposing Chansey or Starmie, tearing off the insulating layers keeping your opponent protected from your special attackers and allowing them to dismantle your opposing team much easier.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-12-1596318842" data-lb-id="_xfUid-12-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-12-1596318842" data-src="//lh3.googleusercontent.com/t77DAmpofKaFO1DwncCPuldgfgJ2MYAZddB8JikN7cgLMcCMhxadnrd1fb7L9Iaez2hSP6hVzWkEB4f_wJR7xo696ZU1R3nLXTlFhu6pJ7xQNdMNATeuK_1nS8G8wpBASmW0JNN6" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/t77DAmpofKaFO1DwncCPuldgfgJ2MYAZddB8JikN7cgLMcCMhxadnrd1fb7L9Iaez2hSP6hVzWkEB4f_wJR7xo696ZU1R3nLXTlFhu6pJ7xQNdMNATeuK_1nS8G8wpBASmW0JNN6" data-url="https://lh3.googleusercontent.com/t77DAmpofKaFO1DwncCPuldgfgJ2MYAZddB8JikN7cgLMcCMhxadnrd1fb7L9Iaez2hSP6hVzWkEB4f_wJR7xo696ZU1R3nLXTlFhu6pJ7xQNdMNATeuK_1nS8G8wpBASmW0JNN6" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Chansey<br>
+- Thunder Wave<br>
+- Ice Beam<br>
+- Thunderbolt<br>
+- Soft-Boiled<br>
+<br>
+By this point our team is able to spread paralysis well and has a sturdy backbone against special attackers, however, Starmie is likely to take sleep, Exeggutor wants to explode, and Alakazam has defences made of tissue paper, so our team could still use one more, and what better special wall is there to choose from than the annoying pink blob herself, Chansey. With even more reliable recovery in Soft-Boiled and doling out even more paralysis with Thunder Wave, we have ourselves an incredibly sturdy team which any Psychic-type is going to have trouble getting through, so we can use a more offensive Chansey running Thunderbolt and Ice Beam in her last slots to help deal with annoying Psychic walls like Exeggutor and Starmie, and threatening freeze on opposing Chansey. If your Chansey is paralyzed while theirs is not, then you have another way to answer an opposing Chansey because, if it is a Reflect variant and is not paralyzed then you have another means of forcing it out in addition to Psychic dropping its special and sleeping it with Exeggutor because a paralyzed chansey with Ice Beam beats a non-paralyzed Chansey 81.46% of the time with freeze—though the latter two rely on it being unstatused which your lead Starmie can avoid and the former all but ensures your Alakazam and Exeggutor will be paralyzed which can be a problem, in general it is a good idea to scout opposing Chansey’s sets before you status it because if they reveal Reflect after eating paralysis then you either have to trade your Snorlax with Body Slam into Self Destruct (if your Snorlax is running those two moves which, spoiler alert, ours will be running) being the only reliable way of getting it low enough to force it out with Tauros, or letting it paralyze your Alakazam in exchange for using Psychic dropping its special to force it out, neither of which are great options. Against non-Reflect variants, however, in addition to the other methods mentioned of dealing with Reflect sets which I already went over, you can now paralyze it and deal with it with your Snorlax assuming they don’t have Counter (which you can scout for) and if they already slept something with Sing, though you should make sure to get off sleep beforehand otherwise their Chansey can just wall your Exeggutor and deny it from sleeping anything. Your Chansey also helps contain paralysis in conjunction with your Starmie which can make for a resilient way to prevent your opponent from sleeping something if they get greedy with spamming paralysis before something was put to sleep, on top of that, a healthy Starmie—if not sleeping or paralyzed—provides a handy Tauros check which Chansey appreciates—though your own Snorlax is generally better at this role.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-13-1596318842" data-lb-id="_xfUid-13-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-13-1596318842" data-src="//lh4.googleusercontent.com/xKH49wOh7X3EY8BGgcCQJOtQfs004h5gr3YRKK9F8jr-_fTBmc4QffUi24AlSS_K-zAwxlNv9D_GcFxAv5H_bWjaIYQI_ZbanSHDrojGaxBE4SxdGRTv8GC3vg8znojb290GfXUY" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/xKH49wOh7X3EY8BGgcCQJOtQfs004h5gr3YRKK9F8jr-_fTBmc4QffUi24AlSS_K-zAwxlNv9D_GcFxAv5H_bWjaIYQI_ZbanSHDrojGaxBE4SxdGRTv8GC3vg8znojb290GfXUY" data-url="https://lh4.googleusercontent.com/xKH49wOh7X3EY8BGgcCQJOtQfs004h5gr3YRKK9F8jr-_fTBmc4QffUi24AlSS_K-zAwxlNv9D_GcFxAv5H_bWjaIYQI_ZbanSHDrojGaxBE4SxdGRTv8GC3vg8znojb290GfXUY" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Self Destruct<br>
+- Rest<br>
+<br>
+If we look back at our team, it looks a bit one-sided and feels a bit frail to physical attackers outside of Starmie, we need to be able to trade a few hits at the very least, making Snorlax the ideal defensive pivot for the team while simultaneously providing a brutally powerful way to punish any paralyzed Pokemon foolish enough to step into the ring with the big man himself with its STAB 110 attack Body Slams, and to make it an even stronger physically defensive pivot we can utilize Rest and Reflect which allows it to carry the physical bulk of the team and brings an even more reliable answer to Tauros than Starmie who can actually switch in as long as it is not sleeping and at high health, while the special bulk your own team is packing with Chansey, Starmie, and Alakazam, offers it shelter against the special attackers used to punish a Rest. The final move, however, is a bit harder to decide, we are fine giving up Earthquake because we have enough Psychic-types to force it out, Ice Beam—while nice against opposing Snorlax is not required for our team because we can force it to Rest before punishing with Exeggutor, Starmie, and Alakazam with powerful special attacks and—in the case of Exeggutor—force something to take sleep. This leaves Hyper Beam and Self Destruct as potential candidates, and while Hyper Beam is an incredibly powerful move in its own right, it does not offer the same ability to wall-break a paralyzed Reflect Chansey—the greatest special wall in the tier which is the main obstacle to your Alakazam and Starmie winning with special attacks—as Self Destruct does. For reference, ignoring critical hits and misses, the odds that a unparalyzed Snorlax can KO a paralyzed Reflect Chansey by it fully paralyzing three times and eating three body slams before taking a Hyper beam are approximately 0.72% which is the same as playing odds of 3 to 416, and if Snorlax is Paralyzed then the odds of this happening go even lower to approximately 0.057% which is like playing odds of 3 to 5000, and even with critical hits the odds are still incredibly low, so in nearly every game you will ever play, your Snorlax with Hyper Beam will never be able to break a paralyzed Reflect Chansey, so the best move in this case is Self Destruct because if a paralyzed Reflect Chansey eats a Body Slam and does not heal it off the next turn, Self Destruct brings it into Tauros Hyper Beam range even through Reflect, and if Chansey just clicks Soft-Boiled and heals off every Body Slam from Snorlax then you will be able to force it to run out of Soft-Boiled PP because Body Slam has 24 PP while Soft-Boiled only has 16. And while Alakazam or Exeggutor may be able to force it out with Psychic special drops, in return they will be taking paralysis which—in the case of Alakazam—leaves your team incredibly slow and full paralysis can kick in at inopportune moments preventing you from netting key KO’s, and your opponent still has a Chansey alive which can find an opportunity to set up Reflect and burn even more Psychic PP while waiting for special drops to force out Chansey with a move that has a very limited 16 PP in the first place. Therefore, Self Destruct is the best fourth move on Snorlax on this team, as it allows Snorlax to wall-break through a paralyzed Reflect Chansey, and gives it an emergency tool against opposing Slowbro stacking Amnesia boosts, helping your team break the biggest wall to its success.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-14-1596318842" data-lb-id="_xfUid-14-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-14-1596318842" data-src="//lh4.googleusercontent.com/XYpy0mM84lAi8LfM4ko1R3-yUQxK1iuoMYWtbjiE95EeltgBeInXRsjOqJCfww---HppAhL-wNRPeAPHXRgLsgBB_pkbm_2XYf9cKRXMn4tLpaYlQe49OEDtKlwVXPSCRlOWS1Is" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/XYpy0mM84lAi8LfM4ko1R3-yUQxK1iuoMYWtbjiE95EeltgBeInXRsjOqJCfww---HppAhL-wNRPeAPHXRgLsgBB_pkbm_2XYf9cKRXMn4tLpaYlQe49OEDtKlwVXPSCRlOWS1Is" data-url="https://lh4.googleusercontent.com/XYpy0mM84lAi8LfM4ko1R3-yUQxK1iuoMYWtbjiE95EeltgBeInXRsjOqJCfww---HppAhL-wNRPeAPHXRgLsgBB_pkbm_2XYf9cKRXMn4tLpaYlQe49OEDtKlwVXPSCRlOWS1Is" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Now, who should the final Pokemon on this team be, well, if we look back at it, we see that—similar to the previous team—it can have difficulty confirming KO’s if any special checks such as Chansey are still around, and just like the previous team, the bull himself is coming in to fill out the final slot of the team. I already explained why Tauros is good in the previous team: it’s fast, it hits hard, and it has the coverage to make it a universal revenge killer and an endgame win condition, especially with the massive amount of paralysis spread by Chansey, Starmie, Exeggutor, and Alakazam, while also retaining its role as a mid-game damage dealer to help break through those special walls which impede your special attackers from making progress, it will always be required on any serious RBY team—along with Snorlax in my opinion—and completes this specially sided offence team.<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Starmie<br>
+- Thunder Wave<br>
+- Thunderbolt<br>
+- Surf<br>
+- Recover<br>
+<br>
+Alakazam<br>
+- Thunder Wave<br>
+- Psychic<br>
+- Seismic Toss<br>
+- Recover<br>
+<br>
+Chansey<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+- Thunderbolt<br>
+- Ice Beam<br>
+<br>
+Snorlax<br>
+- Body Slam<br>
+- Reflect<br>
+- Rest<br>
+- Self-Destruct<br>
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Stun Spore<br>
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Earthquake<br>
+- Blizzard</div>
+		</div>
+	</div>
+</div><br>
+<b>Team 3: Alakazam + Zapdos + Big 4</b><br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-15-1596318842" data-lb-id="_xfUid-15-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-15-1596318842" data-src="//lh5.googleusercontent.com/RjvnuCooxcL7XAaQr_kl2Mw3AZZsoJMfdG1bf3eGwIjJQN8fhM4UzlkWAzrcq0TohGXIpWf7CFFWbKbeGuDo0tqahFoEo3TU83-NjxkKOB6fS8E606d2RqdR8riYpN4NRJUIjo1R" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/RjvnuCooxcL7XAaQr_kl2Mw3AZZsoJMfdG1bf3eGwIjJQN8fhM4UzlkWAzrcq0TohGXIpWf7CFFWbKbeGuDo0tqahFoEo3TU83-NjxkKOB6fS8E606d2RqdR8riYpN4NRJUIjo1R" data-url="https://lh5.googleusercontent.com/RjvnuCooxcL7XAaQr_kl2Mw3AZZsoJMfdG1bf3eGwIjJQN8fhM4UzlkWAzrcq0TohGXIpWf7CFFWbKbeGuDo0tqahFoEo3TU83-NjxkKOB6fS8E606d2RqdR8riYpN4NRJUIjo1R" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Zapdos<br>
+- Thunderbolt<br>
+- Drill Peck<br>
+- Thunder Wave<br>
+- Agility<br>
+<br>
+For this third team, rather than lean towards a special or physical attacker, let’s base it around the premiere mixed attacker of RBY, Zapdos. Thunderbolt and Drill Peck are obvious choices giving it powerful STAB on both the physical and special sides, Thunder Wave is also an obvious choice because spreading paralysis is very beneficial to Zapdos since the speed advantage is very valuable and full paralysis can kick in to prevent a healing move which can be key for netting KO’s. The final move might seem a bit odd unless you are well versed in RBY mechanics. Agility seems like it would only be useful for sweeps which it is mainly used for, however whenever you click Agility after being paralyzed and your opponent does not click a status boosting move after you then not only do you move twice as fast, but you also ignore the speed from paralysis in the first place letting you outspeed every unboosted Pokemon in the game. This is very useful as shaking off paralysis speed drops can allow the sweep to continue without taking unnecessary damage while doing so. While we do struggle with ground-types heavily, we can fill out our team around dealing with them without many issues.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-16-1596318842" data-lb-id="_xfUid-16-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-16-1596318842" data-src="//lh3.googleusercontent.com/RQHNannVVsuU602BexIWC39-oAzh7kI5JNvqczms3lpjVtzBGjr2H6VMs8Oo9r3l98Ci208AxunQIo9vymiMe4g2YkjfClRyrOlOIEhO_GFO-Ww5B4S7cuC76Hkndp8n0fP4QuRd" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/RQHNannVVsuU602BexIWC39-oAzh7kI5JNvqczms3lpjVtzBGjr2H6VMs8Oo9r3l98Ci208AxunQIo9vymiMe4g2YkjfClRyrOlOIEhO_GFO-Ww5B4S7cuC76Hkndp8n0fP4QuRd" data-url="https://lh3.googleusercontent.com/RQHNannVVsuU602BexIWC39-oAzh7kI5JNvqczms3lpjVtzBGjr2H6VMs8Oo9r3l98Ci208AxunQIo9vymiMe4g2YkjfClRyrOlOIEhO_GFO-Ww5B4S7cuC76Hkndp8n0fP4QuRd" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Next on our list, we should add in at least one other Pokemon who can abuse paralysis, and it is also a good idea to add on another potential win condition for our team, and since it's practically mandatory anyways, let’s throw on Tauros quickly before we continue filling out the team. I have already spoken at length as to why Tauros is so good, it's a powerful wall-breaker, it abuses paralysis and sleep heavily, it's very fast, it's a universal revenge killer, at this rate I don’t think I need to explain why Tauros is good for this team because not running it is just shooting yourself in the foot.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-17-1596318842" data-lb-id="_xfUid-17-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-17-1596318842" data-src="//lh4.googleusercontent.com/wdjZe4DOplBO-Ki63pCRRFK_8YhpBgIsUEX6z4uk4F93cI1y-fYF5VFn9ytwR69ezguo7eSL1itPSnNiBYBMBdYO5xHeczPXDojjjf3C0Asdo8C4yZqmv5evSG9hMHJHYI69-9gh" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/wdjZe4DOplBO-Ki63pCRRFK_8YhpBgIsUEX6z4uk4F93cI1y-fYF5VFn9ytwR69ezguo7eSL1itPSnNiBYBMBdYO5xHeczPXDojjjf3C0Asdo8C4yZqmv5evSG9hMHJHYI69-9gh" data-url="https://lh4.googleusercontent.com/wdjZe4DOplBO-Ki63pCRRFK_8YhpBgIsUEX6z4uk4F93cI1y-fYF5VFn9ytwR69ezguo7eSL1itPSnNiBYBMBdYO5xHeczPXDojjjf3C0Asdo8C4yZqmv5evSG9hMHJHYI69-9gh" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Hyper Beam<br>
+<br>
+Next on our list, we need a sleeper, and to avoid wasting your time, Exeggutor should just fill in this slot by default. Outside of providing a Psychic resistance, sleep, and Explosion, he also adds on the best Rhydon and Golem check in the game, which Zapdos benefits from significantly, and while Mega Drain would be nice for doing extra damage to both of them, we already have Psychic to deal with them and would prefer an answer to another common Exeggutor answer which Zapdos also does not enjoy, Chansey. While yes, Explosion can deal with it, it can be very easily baited out and throwing away a healthy Exeggutor just to try and deal with Chansey feels like a recipe for disaster to me, so Hyper Beam will fill in Exeggutor’s fourth slot instead to snipe Chansey’s at 40-48% without giving up your best answer to Rhydon just walling your Zapdos to the ends of the earth.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-18-1596318842" data-lb-id="_xfUid-18-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-18-1596318842" data-src="//lh3.googleusercontent.com/wMzs-ZA8Wm4w-mR_VWDLIolLREu2v_zoVkVyZLjlZg5TzWdzibT_tZhuzYnkfeNHSlbU5q5Bzolzgk7RFwHUqm4Zwi9StJj8pfh3SvK-O94vBN4502BSlSZj-odDZl6oVw5DmFNG" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/wMzs-ZA8Wm4w-mR_VWDLIolLREu2v_zoVkVyZLjlZg5TzWdzibT_tZhuzYnkfeNHSlbU5q5Bzolzgk7RFwHUqm4Zwi9StJj8pfh3SvK-O94vBN4502BSlSZj-odDZl6oVw5DmFNG" data-url="https://lh3.googleusercontent.com/wMzs-ZA8Wm4w-mR_VWDLIolLREu2v_zoVkVyZLjlZg5TzWdzibT_tZhuzYnkfeNHSlbU5q5Bzolzgk7RFwHUqm4Zwi9StJj8pfh3SvK-O94vBN4502BSlSZj-odDZl6oVw5DmFNG" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Chansey<br>
+- Reflect<br>
+- Seismic Toss<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+<br>
+So far, our team is coming along nicely, but we need more bulk on the special side. Even though it can shake off the paralysis speed drop, Zapdos does not enjoy eating a Thunder Wave from opposing Alakazam, and likewise, Exeggutor does not enjoy absorbing paralysis as it significantly impedes how effectively it answers Rhydon and Golem and forces it to explode much earlier, so adding on Chansey provides a remedy to this issue. Soft-Boiled is an immediate addition with Thunder Wave just behind, however since our team does not enjoy Status at all and would like our paralysis absorber to have a bit more backbone, Reflect is filling in our third slot with Seismic Toss finishing the set. This allows Chansey to come in on Snorlax Body Slams if unparalyzed, set up Reflect, and heal off all the damage, and when it is Paralyzed then it can be even better at just robbing any and all momentum your opponent has by paralysis blocking other statuses such as sleep, forcing them to lose most of their momentum and either send in Chansey which can be easily punished and does not really net them anything in the first place, send in a Psychic-type to force it out with special drops which all but ensures that it will be paralyzed and that Zapdos will completely dominate it, send in exploders to try and force it out which is a net positive trade in a lot of scenarios, send in Snorlax and pray it gets lucky, and that's about it. It just causes so many issues with the opponent generating momentum and with the reliable 100 damage from Seismic Toss you can force Snorlax into a very predictable Rest which Zapdos can punish very easily, and the reliable chip it offers helps you wear down the opponent or force a recovery move for Zapdos to punish and sweep. It is an incredible early to mid-game pivot and sets the pace for nearly every game it is in, making it an easy choice for this team; note that Reflect Chansey isn’t the best answer to Zapdos, however, when combined with your own Zapdos, it does give your team enough insulation against opposing Zapdos that you don’t instantly lose to it.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-19-1596318842" data-lb-id="_xfUid-19-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-19-1596318842" data-src="//lh5.googleusercontent.com/Fbp2rWH4o7CivdO50EpA3KrSW4axzyRe41ObIuWFDFvVy4r6RFAw9Hk8x8FHEScHMIdOdRUqljPlVbiqCAQlXySr9i_oNotyrGmEZyQijjn7Ag9ltRjEbzJlqimVBW11pNA_4B6j" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/Fbp2rWH4o7CivdO50EpA3KrSW4axzyRe41ObIuWFDFvVy4r6RFAw9Hk8x8FHEScHMIdOdRUqljPlVbiqCAQlXySr9i_oNotyrGmEZyQijjn7Ag9ltRjEbzJlqimVBW11pNA_4B6j" data-url="https://lh5.googleusercontent.com/Fbp2rWH4o7CivdO50EpA3KrSW4axzyRe41ObIuWFDFvVy4r6RFAw9Hk8x8FHEScHMIdOdRUqljPlVbiqCAQlXySr9i_oNotyrGmEZyQijjn7Ag9ltRjEbzJlqimVBW11pNA_4B6j" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Alakazam<br>
+- Recover<br>
+- Thunder Wave<br>
+- Psychic<br>
+- Seismic Toss<br>
+<br>
+Our team is shaping up fairly well, but what it lacks so far is a lead, and while Starmie is usually very good, its weakness to Jolteon who outspeeds it and threatens it—as well as our Zapdos—with paralysis and STAB Thunderbolts which makes me lean towards the other fast Psychic-type lead, Alakazam. Psychic, Recover, and Thunder Wave are automatic choices, I explained why they are good already with the Psychic STAB, healing, and spreading of paralysis for Zapdos to take advantage of. The only uncertainty with Alakazam is whether to run Reflect or Seismic Toss in its last moveslot and due to the improved matchups against opposing leads including doing more damage to Jynx and Exeggutor before being put to sleep, Seismic Toss fills in this slot. It’s quite a simple Pokemon at its core, however, while it may be simple, it is still a solid choice for the lead.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-20-1596318842" data-lb-id="_xfUid-20-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-20-1596318842" data-src="//lh6.googleusercontent.com/w9xzbfS6huEgbCsQg6HHOgIADN6zEAcBblDFCb1rMxyy2IrGbdPAG8b8hsN4-d7fsblmv4WdF6Sy4W9s-kxrjSnyJJn2awTvtVc9ldg7V-8vmYR7hkZxUYRUEhrPQ-vDGy28p6F_" aria-label="Zoom"></div>
+		
+		<img src="//lh6.googleusercontent.com/w9xzbfS6huEgbCsQg6HHOgIADN6zEAcBblDFCb1rMxyy2IrGbdPAG8b8hsN4-d7fsblmv4WdF6Sy4W9s-kxrjSnyJJn2awTvtVc9ldg7V-8vmYR7hkZxUYRUEhrPQ-vDGy28p6F_" data-url="https://lh6.googleusercontent.com/w9xzbfS6huEgbCsQg6HHOgIADN6zEAcBblDFCb1rMxyy2IrGbdPAG8b8hsN4-d7fsblmv4WdF6Sy4W9s-kxrjSnyJJn2awTvtVc9ldg7V-8vmYR7hkZxUYRUEhrPQ-vDGy28p6F_" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Snorlax<br>
+- Body Slam<br>
+- Reflect<br>
+- Rest<br>
+- Hyper Beam<br>
+<br>
+Finally, last but not least, the final of the big three Normal-types of RBY, Snorlax. It helps fill in any holes in physical bulk we may have left over with Reflect Chansey, Body Slam helps spread paralysis, does massive damage, and forces recovery moves which can be capitalized on. Reflect and Rest allow it to function as a Tauros check when healthy and allow it to eventually win the 1v1 with Rhydon most of the time which is appreciated, and gives this team another answer to opposing Snorlax if Chansey is unavailable or you need to preserve its health for another threat, and to help it wall-break without sacrificing itself, Hyper Beam fills in the last slot because while Self Destruct is useful for dealing with opposing walls such as Chansey, Snorlax is too important of a defensive piece for this team to lose as dropping it leaves the team with no good means of absorbing pressure from enemy Tauros and Snorlax, since Chansey is likely to be paralyzed which prevents it from switching into either.<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Alakazam<br>
+- Psychic<br>
+- Recover<br>
+- Thunder Wave<br>
+- Seismic Toss<br>
+<br>
+Chansey<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+- Seismic Toss<br>
+- Reflect<br>
+<br>
+Snorlax<br>
+- Reflect<br>
+- Rest<br>
+- Body Slam<br>
+- Hyper Beam<br>
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Hyper Beam<br>
+<br>
+Zapdos<br>
+- Thunderbolt<br>
+- Drill Peck<br>
+- Thunder Wave<br>
+- Agility</div>
+		</div>
+	</div>
+</div><br>
+<b>Team 4: Alakazam + Lapras + Big 4</b><br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-21-1596318842" data-lb-id="_xfUid-21-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-21-1596318842" data-src="//lh5.googleusercontent.com/7KvwYis_lTX6ox5Or_-Q5c4PgcFltm4CKKnGktXDMHGpycF7zK4fupuSFCOSbUwU5IH-uUBjomJ79qwa0bQCpLf3Rs5BNYRP0fzh6lLFidYrFp6bo0fxZ461DmEvwv8vuznBLr9v" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/7KvwYis_lTX6ox5Or_-Q5c4PgcFltm4CKKnGktXDMHGpycF7zK4fupuSFCOSbUwU5IH-uUBjomJ79qwa0bQCpLf3Rs5BNYRP0fzh6lLFidYrFp6bo0fxZ461DmEvwv8vuznBLr9v" data-url="https://lh5.googleusercontent.com/7KvwYis_lTX6ox5Or_-Q5c4PgcFltm4CKKnGktXDMHGpycF7zK4fupuSFCOSbUwU5IH-uUBjomJ79qwa0bQCpLf3Rs5BNYRP0fzh6lLFidYrFp6bo0fxZ461DmEvwv8vuznBLr9v" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Lapras<br>
+- Blizzard<br>
+- Thunderbolt<br>
+- Hyper Beam<br>
+- Sing<br>
+<br>
+For our fourth and final team of the paralysis lead + Big 4 + last archetype, let’s try using a less common Pokemon as our starting point: Lapras. Lapras has seen better days but it is still a viable Pokemon in the OU metagame due to the unique qualities it offers as a sleeper, its positive matchup against Tauros and Snorlax, its BlizzBolt coverage for water-types, and its fair amount of bulk. Its main issues come from being walled completely by a Paralyzed Chansey however Hyper Beam can help remedy this and pick off tough matchups for it like Chansey and Alakazam, giving us a solid foundation for this team to build off of.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-22-1596318842" data-lb-id="_xfUid-22-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-22-1596318842" data-src="//lh3.googleusercontent.com/I2mmvZvLBU6q9GwnRIRigmiZ3PlyS-8582tCVt0SKMMmVaichX1aWlzdfGYfAmAWDFsxhT_pWwf71Ef0Btoo7cMAbnaPnR1MpvnXuWiU9kegevo0AtdBX_XaJL8qywv0WM3LPuwf" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/I2mmvZvLBU6q9GwnRIRigmiZ3PlyS-8582tCVt0SKMMmVaichX1aWlzdfGYfAmAWDFsxhT_pWwf71Ef0Btoo7cMAbnaPnR1MpvnXuWiU9kegevo0AtdBX_XaJL8qywv0WM3LPuwf" data-url="https://lh3.googleusercontent.com/I2mmvZvLBU6q9GwnRIRigmiZ3PlyS-8582tCVt0SKMMmVaichX1aWlzdfGYfAmAWDFsxhT_pWwf71Ef0Btoo7cMAbnaPnR1MpvnXuWiU9kegevo0AtdBX_XaJL8qywv0WM3LPuwf" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Next on our team, we can very quickly throw on Tauros, if I need to explain why Tauros is good at this point you haven't read any of the above teams. It fits on any competitive RBY OU team because it fills a niche that no other Pokemon can fill, all around it is one of the best 'mons in the tier.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-23-1596318842" data-lb-id="_xfUid-23-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-23-1596318842" data-src="//lh6.googleusercontent.com/ss2JbqqwFLBod735Hyyt5ccsDqSlj8Ist3hrLlDzVG8JLnmCTk62ybdXGXxKurAP4Lnne8UlB-4z6ui11evWgi87hUMgBg3xzHephB2Hzio3oHCi0PpQkSdGHf6h6HJVeSk3Uv1L" aria-label="Zoom"></div>
+		
+		<img src="//lh6.googleusercontent.com/ss2JbqqwFLBod735Hyyt5ccsDqSlj8Ist3hrLlDzVG8JLnmCTk62ybdXGXxKurAP4Lnne8UlB-4z6ui11evWgi87hUMgBg3xzHephB2Hzio3oHCi0PpQkSdGHf6h6HJVeSk3Uv1L" data-url="https://lh6.googleusercontent.com/ss2JbqqwFLBod735Hyyt5ccsDqSlj8Ist3hrLlDzVG8JLnmCTk62ybdXGXxKurAP4Lnne8UlB-4z6ui11evWgi87hUMgBg3xzHephB2Hzio3oHCi0PpQkSdGHf6h6HJVeSk3Uv1L" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Double-Edge<br>
+<br>
+For the next slot on our team, we see that, while Lapras does bring sleep to the table, it is not a reliable means of sleep, and we need a more reliable primary sleeper for this team, and due to the utility it brings helping cover the Jolteon matchup for Lapras, Psychic resistance, and its ability to remove enemy Chansey with Explosion,  our primary sleeper for this team will be Exeggutor. For the fourth move, however, it would be wise to bring a move which can benefit this team against some opponents Lapras does not like such as Alakazam, which Lapras can beat if it is paralyzed but at the cost of its defensive value which is needed for other Pokemon such as Tauros and Snorlax and keeping it healthy for those two would be wise, so the final slot goes to Double-Edge as a reliable way to chip down paralyzed Alakazam and forcing out paralyzed Jynx as a means of getting off your own sleep without being as risky as Hyper Beam.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-24-1596318842" data-lb-id="_xfUid-24-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-24-1596318842" data-src="//lh5.googleusercontent.com/nSKsbwQ0kQNjoZMf1bVDJP49gy5BfWaOa8Z1jU_eR3j_ev1e6JqjD2bNtcJomKfGRUMi_dhC3M07fXrWmHTIOUlI11pJ7rI5QKXzuURrku3OEQDT5klKDvnLWd7RFdZD6vBBMdfv" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/nSKsbwQ0kQNjoZMf1bVDJP49gy5BfWaOa8Z1jU_eR3j_ev1e6JqjD2bNtcJomKfGRUMi_dhC3M07fXrWmHTIOUlI11pJ7rI5QKXzuURrku3OEQDT5klKDvnLWd7RFdZD6vBBMdfv" data-url="https://lh5.googleusercontent.com/nSKsbwQ0kQNjoZMf1bVDJP49gy5BfWaOa8Z1jU_eR3j_ev1e6JqjD2bNtcJomKfGRUMi_dhC3M07fXrWmHTIOUlI11pJ7rI5QKXzuURrku3OEQDT5klKDvnLWd7RFdZD6vBBMdfv" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Chansey<br>
+- Reflect<br>
+- Seismic Toss<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+<br>
+Now that half our team is filled, we can next fill in another of the Big 4 members of our team, Chansey. We automatically decide on Soft-Boiled, and because we have 2 sleepers already, Thunder Wave seems like a solid choice, to finish off this set to help spread paralysis which teammates like Lapras benefit from when facing off against opposing Starmie and Alakazam. We also know we want a way to answer Starmie, as our lead is likely to be our sleep taker, so purely running Ice Beam as our sole attacking move is off the table, and since we want some answer to Zapdos because it currently just runs over our team, a Reflect variant helps cover that weakness which makes running Seismic Toss as our attacking move our only good option as running only Ice Beam—as I already explained—is not an option due to it being walled by Starmie, who can only be threatened if it is unparalyzed so you can potentially freeze it but that defeats the purpose of running Thunder Wave to help Lapras in that matchup, and running only Thunderbolt means we are completely walled by Rhydon and are forced to switch out.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-25-1596318842" data-lb-id="_xfUid-25-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-25-1596318842" data-src="//lh5.googleusercontent.com/lNbyFsW_H2Crx8MycR-X5tn4raSyuRlZvCQA0ytjwFZiupdM56nmXqdbfnYC9e-5huSHkFceBSvZ76ONDv_VimP17QIJCAWxOeuTGmuFi0z_okjxzpitN9Ll37zvBcIf--eBBF0c" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/lNbyFsW_H2Crx8MycR-X5tn4raSyuRlZvCQA0ytjwFZiupdM56nmXqdbfnYC9e-5huSHkFceBSvZ76ONDv_VimP17QIJCAWxOeuTGmuFi0z_okjxzpitN9Ll37zvBcIf--eBBF0c" data-url="https://lh5.googleusercontent.com/lNbyFsW_H2Crx8MycR-X5tn4raSyuRlZvCQA0ytjwFZiupdM56nmXqdbfnYC9e-5huSHkFceBSvZ76ONDv_VimP17QIJCAWxOeuTGmuFi0z_okjxzpitN9Ll37zvBcIf--eBBF0c" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Snorlax<br>
+- Body Slam<br>
+- Reflect<br>
+- Rest<br>
+- Hyper Beam<br>
+<br>
+As it stands, Chansey causes our team a lot of issues, and since we have one more member of the Big 4 who has not been added yet and has a positive matchup vs Chansey, our next slot goes to Snorlax. Body Slam is a given for our team, and while we could run a 4 attack Physical Attacking set since we have Reflect on Chansey already, Chansey needs to be kept healthy to check opposing Zapdos, so a Reflect and Rest set seems to be the better option for this team, and since we need to break through opposing Chansey for our Lapras to do well but also need to keep Snorlax healthy, Hyper Beam is our best option for the fourth moveslot.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-26-1596318842" data-lb-id="_xfUid-26-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-26-1596318842" data-src="//lh4.googleusercontent.com/gTd2nO6C0KdDOVrfP-KdxTY5ZF5gn7623I9e27pLfsqzrUGuAAD2OyG9SG8H58U0AmcfqAlmixTpKwpBvF75deTWPn6Ge8bEJXmwNSa5MpxVFSTT__O_gjonKVn_HjM5XbZ6DNNJ" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/gTd2nO6C0KdDOVrfP-KdxTY5ZF5gn7623I9e27pLfsqzrUGuAAD2OyG9SG8H58U0AmcfqAlmixTpKwpBvF75deTWPn6Ge8bEJXmwNSa5MpxVFSTT__O_gjonKVn_HjM5XbZ6DNNJ" data-url="https://lh4.googleusercontent.com/gTd2nO6C0KdDOVrfP-KdxTY5ZF5gn7623I9e27pLfsqzrUGuAAD2OyG9SG8H58U0AmcfqAlmixTpKwpBvF75deTWPn6Ge8bEJXmwNSa5MpxVFSTT__O_gjonKVn_HjM5XbZ6DNNJ" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Alakazam<br>
+- Recover<br>
+- Thunder Wave<br>
+- Psychic<br>
+- Seismic Toss<br>
+<br>
+Last but not least, we need to choose a lead for this team, and while Starmie is certainly a good lead, our issues with Zapdos become even more pronounced, so this last team is better off running Alakazam as our lead running a standard set of Psychic, Thunder Wave, Recover, and Seismic Toss, making this team less matchup dependent and helping round out this team.<br>
+<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Alakazam<br>
+- Psychic<br>
+- Recover<br>
+- Thunder Wave<br>
+- Seismic Toss<br>
+<br>
+Chansey<br>
+- Reflect<br>
+- Seismic Toss<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+<br>
+Snorlax<br>
+- Body Slam<br>
+- Reflect<br>
+- Rest<br>
+- Hyper Beam<br>
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Lapras<br>
+- Blizzard<br>
+- Thunderbolt<br>
+- Hyper Beam<br>
+- Sing<br>
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Double-Edge</div>
+		</div>
+	</div>
+</div><b>Team 5: Jynx + Starmie + Big 4</b><br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-27-1596318842" data-lb-id="_xfUid-27-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-27-1596318842" data-src="//lh4.googleusercontent.com/7hyDlR-o1_YcTrpkocJEe_Z34zTJLJg9aW4BENbWbaTVcKWPUwrU10JdjHik67MSlNycwce4dwxPT33k_T3M-hnaOKbZag7cWc-yVdn19Hq5znvyRQ8S-0s2ggqT2NIyoWIncsAS" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/7hyDlR-o1_YcTrpkocJEe_Z34zTJLJg9aW4BENbWbaTVcKWPUwrU10JdjHik67MSlNycwce4dwxPT33k_T3M-hnaOKbZag7cWc-yVdn19Hq5znvyRQ8S-0s2ggqT2NIyoWIncsAS" data-url="https://lh4.googleusercontent.com/7hyDlR-o1_YcTrpkocJEe_Z34zTJLJg9aW4BENbWbaTVcKWPUwrU10JdjHik67MSlNycwce4dwxPT33k_T3M-hnaOKbZag7cWc-yVdn19Hq5znvyRQ8S-0s2ggqT2NIyoWIncsAS" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Jynx<br>
+- Blizzard<br>
+- Lovely Kiss<br>
+- Psychic<br>
+- Rest<br>
+<br>
+Up until now, all of our leads have been paralysis leads, so to buck that trend, we are going to be running a sleep lead to try and sleep something first, beginning the game with momentum. Of the sleep leads in OU we have Gengar, Jynx, and Exeggutor, of which the most consistent by far is Jynx. Jynx’s set is quite simple really, Lovely Kiss to spread sleep, Psychic and Blizzard to hit hard with its STABS and fish for a lucky special drop or a freeze—Blizzard over Ice Beam because Jynx needs the increased base power and the increased PP allowing you to fish for more freezes is less important to it—and Rest to keep it healthy as an answer to Exeggutor by burning sleep turns on resisted attacks. The main thing with running lead Jynx—in my opinion—is that you need to play a bit more proactively to take advantage of your early advantage by sleeping something early, which can be a bit more challenging for players getting into the tier as it requires a better understanding of the metagame to utilize, which is why I decided to discuss this team later in this guide, but without further delay, let us begin building this team.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-28-1596318842" data-lb-id="_xfUid-28-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-28-1596318842" data-src="//lh3.googleusercontent.com/dcy3g38bHAJqQL5zT8Te6AbD0vftp4H2AXIOEpDmduw0eHhkpNjtyvgNK-LnyFWb00-zjn7i75yPaoCIG1Hx1CqSjtnqkWvuUxbiNgX1rTMxUbAkO2VLpCz-OVm5V6ChNAMLBx5X" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/dcy3g38bHAJqQL5zT8Te6AbD0vftp4H2AXIOEpDmduw0eHhkpNjtyvgNK-LnyFWb00-zjn7i75yPaoCIG1Hx1CqSjtnqkWvuUxbiNgX1rTMxUbAkO2VLpCz-OVm5V6ChNAMLBx5X" data-url="https://lh3.googleusercontent.com/dcy3g38bHAJqQL5zT8Te6AbD0vftp4H2AXIOEpDmduw0eHhkpNjtyvgNK-LnyFWb00-zjn7i75yPaoCIG1Hx1CqSjtnqkWvuUxbiNgX1rTMxUbAkO2VLpCz-OVm5V6ChNAMLBx5X" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Hyper Beam<br>
+<br>
+Jynx is a good start to this team, however, it does have some bad matchups against specifically opposing lead Gengar and enemy Exeggutor openings, so for this team, a second sleeper would be a good idea, and while Gengar can work for this type of team as a secondary sleeper, the mid-game value Exeggutor brings to the table is very valuable while also being easier to use (and also checking enemy Exeggutor), and while we could run 3 sleepers, that is a waste of team slots and moves in my opinion and is a bit overkill in terms of getting off sleep. Now for Exeggutor’s fourth move we have a few choices—namely Hyper Beam, Double-Edge, and Stun Spore—all of which are definitely solid options, but in this case, I feel that Hyper Beam is just a tad more practical than the others because the paralyzed Alakazam lead you usually target with Double-Edge is going to be asleep from Jynx and being able to pick off opposing Chansey’s is useful, the other options do work in this slot but for this team, we are going to stick with Hyper Beam.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-29-1596318842" data-lb-id="_xfUid-29-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-29-1596318842" data-src="//lh5.googleusercontent.com/0IQlOd0Rv70ehOOgOoIdolh8Upgo_heh8dtkI8SZMTc5cDqFI2bzKCR_hjdFfvezkTQeZ0aAz2WN5Np9nzQAcpBJ4U1dFA-xT_1wwGeZpiCg0cXzeP1kk5TnD80PdfFWW1ZMPfVD" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/0IQlOd0Rv70ehOOgOoIdolh8Upgo_heh8dtkI8SZMTc5cDqFI2bzKCR_hjdFfvezkTQeZ0aAz2WN5Np9nzQAcpBJ4U1dFA-xT_1wwGeZpiCg0cXzeP1kk5TnD80PdfFWW1ZMPfVD" data-url="https://lh5.googleusercontent.com/0IQlOd0Rv70ehOOgOoIdolh8Upgo_heh8dtkI8SZMTc5cDqFI2bzKCR_hjdFfvezkTQeZ0aAz2WN5Np9nzQAcpBJ4U1dFA-xT_1wwGeZpiCg0cXzeP1kk5TnD80PdfFWW1ZMPfVD" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Next on our list, let’s just throw on Tauros since we know we will be using him anyway just because of how good he is at providing the role of a mid-game wall-breaker, universal revenge killer, and an endgame win condition, I have already explained why Tauros is good, note that since many players burn one sleep turn after Jynx sleeps their lead, one of the better ways to punish that is to go Tauros while they try to burn a sleep turn and use Body Slam on the switch, however in most cases Snorlax is the superior punish due to it being safer than Tauros and, since the sleep absorber is usually faster than Tauros, the extra turn of sleep will be burned regardless, but against leads which are slower than Tauros it can be a good punish, risking wakeups as it comes in or switchbacks to something else in exchange for much lower odds the opponent’s pokemon wakes up if it comes in on a slower target, and offers chances of Body Slam paralyzing or a 21.48% chance to crit something.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-30-1596318842" data-lb-id="_xfUid-30-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-30-1596318842" data-src="//lh3.googleusercontent.com/HY_v7TQIvS4-8kUNEv4pJ-7xDc4ldfdyUNlKaoD1abhdAoJU4FpMb-wGu38y-SuplEyb8BMnTRCH1B7Og1c44C0x52UHENx8bXNV6okU0au5DbOxnLA-SMBQ_EVZ1hHIP8sG9-CF" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/HY_v7TQIvS4-8kUNEv4pJ-7xDc4ldfdyUNlKaoD1abhdAoJU4FpMb-wGu38y-SuplEyb8BMnTRCH1B7Og1c44C0x52UHENx8bXNV6okU0au5DbOxnLA-SMBQ_EVZ1hHIP8sG9-CF" data-url="https://lh3.googleusercontent.com/HY_v7TQIvS4-8kUNEv4pJ-7xDc4ldfdyUNlKaoD1abhdAoJU4FpMb-wGu38y-SuplEyb8BMnTRCH1B7Og1c44C0x52UHENx8bXNV6okU0au5DbOxnLA-SMBQ_EVZ1hHIP8sG9-CF" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Starmie<br>
+- Thunder Wave<br>
+- Thunderbolt<br>
+- Blizzard<br>
+- Recover<br>
+<br>
+Next on our team we will be choosing Starmie, now a Starmie in the back is similar to lead Starmie in its moves, Recover and Thunder Wave are given moves, so the only questions are in the attacks we choose, and in general it is hard to go wrong with Blizzard and Thunderbolt giving the same coverage as the legendary BoltBeam, and while Psychic is a good option, hitting enemy Water-types super-effectively is worth dropping it for Thunderbolt.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-31-1596318842" data-lb-id="_xfUid-31-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-31-1596318842" data-src="//lh4.googleusercontent.com/WWObNrruN1bIXPVOpyC66u-bL86MUDdeVeLKfIxOyXINYvo0JsIxYmrUCKVxPoneuSjaQaR3MFQz1XvnW7dTe0eenCYRhptcJEUtRykHpDbiqLZ109O4J3GBP-qAMJYcqYu1u1KL" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/WWObNrruN1bIXPVOpyC66u-bL86MUDdeVeLKfIxOyXINYvo0JsIxYmrUCKVxPoneuSjaQaR3MFQz1XvnW7dTe0eenCYRhptcJEUtRykHpDbiqLZ109O4J3GBP-qAMJYcqYu1u1KL" data-url="https://lh4.googleusercontent.com/WWObNrruN1bIXPVOpyC66u-bL86MUDdeVeLKfIxOyXINYvo0JsIxYmrUCKVxPoneuSjaQaR3MFQz1XvnW7dTe0eenCYRhptcJEUtRykHpDbiqLZ109O4J3GBP-qAMJYcqYu1u1KL" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Chansey<br>
+- Reflect<br>
+- Seismic Toss<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+<br>
+Once again our team finds itself with a Zapdos weakness, and similar to the previous team we built, we will be filling the role of a Zapdos check with a Reflect Chansey variant, and while we do have Thunderbolt on Starmie to deal with opposing Starmie, we would like to keep it healthy for some other matchups like enemy Tauros and so it can more reliably spread paralysis for Pokemon like our Tauros to capitalize on, so the reliable chip brought by Seismic Toss is the better option in this case.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-32-1596318842" data-lb-id="_xfUid-32-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-32-1596318842" data-src="//lh4.googleusercontent.com/WaHVjLU8ANSjPYrAWfA8VbF6xJ-93Pj7zN_QT3bPKToy4TkHq0CFqaJnkMC5jWBCPEq9pFNBJMRc25bfO1oC8fQxMZz5cx5W8ajNqdc6u0cZyGkUva_oEty2hmJn6HKo4GC7C1n-" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/WaHVjLU8ANSjPYrAWfA8VbF6xJ-93Pj7zN_QT3bPKToy4TkHq0CFqaJnkMC5jWBCPEq9pFNBJMRc25bfO1oC8fQxMZz5cx5W8ajNqdc6u0cZyGkUva_oEty2hmJn6HKo4GC7C1n-" data-url="https://lh4.googleusercontent.com/WaHVjLU8ANSjPYrAWfA8VbF6xJ-93Pj7zN_QT3bPKToy4TkHq0CFqaJnkMC5jWBCPEq9pFNBJMRc25bfO1oC8fQxMZz5cx5W8ajNqdc6u0cZyGkUva_oEty2hmJn6HKo4GC7C1n-" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Self Destruct<br>
+- Rest<br>
+<br>
+Once again, our team has one Pokemon to choose and one of the 3 Normal-types which rule RBY OU has not been picked, Snorlax. Body Slam is a given because Chansey causes some problems for this team, Reflect and Rest give it bulk and longevity against opposing Snorlax and Tauros, and since Chansey causes this team many problems similar to the Starmie + Alakazam + Big 4 team we made earlier, our Snorlax will be running Self Destruct once again as a means of wall-breaking enemy Chansey without requiring the incredible luck detailed in the Starmie + Alakazam + Big 4 team, and the additional defences brought by Reflect Chansey and Starmie make this a bit less risky, another thing, as mentioned before when discussing Tauros, is that a lot of people tend to burn a sleep turn after their lead gets slept by Lovely Kiss, so going Snorlax is a very reliable punish with very low risk if they don’t burn the sleep turn and just switch out.<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Jynx<br>
+- Blizzard<br>
+- Lovely Kiss<br>
+- Psychic<br>
+- Rest<br>
+<br>
+Exeggutor<br>
+- Sleep Powder<br>
+- Psychic<br>
+- Explosion<br>
+- Hyper Beam<br>
+<br>
+Chansey<br>
+- Reflect<br>
+- Seismic Toss<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+<br>
+Snorlax<br>
+- Body Slam<br>
+- Reflect<br>
+- Rest<br>
+- Self-Destruct<br>
+<br>
+Tauros<br>
+- Blizzard<br>
+- Body Slam<br>
+- Earthquake<br>
+- Hyper Beam<br>
+<br>
+Starmie<br>
+- Blizzard<br>
+- Thunderbolt<br>
+- Recover<br>
+- Thunder Wave</div>
+		</div>
+	</div>
+</div></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+								
+
+	
+
+							
+
+							
+						</div>
+						<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-8531736" data-lb-caption-desc="Shellnuts · Jul 9, 2020 at 12:47 AM">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><b>Eggyless Teams</b><br>
+<br>
+When building teams without Exeggutor, it isn’t hard to fill most roles Exeggutor fills with other Pokemon, there are other sleep spreaders, other Psychic-types, and other exploders, but there is one role which no other Pokemon in the tier can fill anywhere near as well as Exeggutor, checking Rhydon, this makes these teams more reliant on heads up play to keep Rhydon out which requires a more in-depth understanding of the metagame which is why I chose to cover these team structures second, with that said, let’s continue building.<br>
+<br>
+<b>Team 6: Jolteon + Cloyster + Sing Chansey</b><br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-33-1596318842" data-lb-id="_xfUid-33-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-33-1596318842" data-src="//lh3.googleusercontent.com/n_K4KPNqpeTMo4rIpnJWAMNfFVhHZn3H7VcD7drqvc78n47NoTLwC-PyGTN8_Tt2HicwWbTS41SW3JY4zyuRoy4nNRkL6q840cDvBH18Q34-UxT5G-BvqtWY3jt8MJvJgMGi3K8j" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/n_K4KPNqpeTMo4rIpnJWAMNfFVhHZn3H7VcD7drqvc78n47NoTLwC-PyGTN8_Tt2HicwWbTS41SW3JY4zyuRoy4nNRkL6q840cDvBH18Q34-UxT5G-BvqtWY3jt8MJvJgMGi3K8j" data-url="https://lh3.googleusercontent.com/n_K4KPNqpeTMo4rIpnJWAMNfFVhHZn3H7VcD7drqvc78n47NoTLwC-PyGTN8_Tt2HicwWbTS41SW3JY4zyuRoy4nNRkL6q840cDvBH18Q34-UxT5G-BvqtWY3jt8MJvJgMGi3K8j" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Jolteon<br>
+- Thunder Wave<br>
+- Thunderbolt<br>
+- Double Kick<br>
+- Rest<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-34-1596318842" data-lb-id="_xfUid-34-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-34-1596318842" data-src="//lh4.googleusercontent.com/dIupg4zrdnMW1fsbrCR0ZlefGkER3a8vfNsYA3dB0yjOLiL8htWJkMCWkuzoUue2N7hfkXMcWD0RMUXI_uzfyXw5uOUsugcbmmZZ0jlmNb8slC2q1fhEIwr2xE0AlUd0cvF4hDSR" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/dIupg4zrdnMW1fsbrCR0ZlefGkER3a8vfNsYA3dB0yjOLiL8htWJkMCWkuzoUue2N7hfkXMcWD0RMUXI_uzfyXw5uOUsugcbmmZZ0jlmNb8slC2q1fhEIwr2xE0AlUd0cvF4hDSR" data-url="https://lh4.googleusercontent.com/dIupg4zrdnMW1fsbrCR0ZlefGkER3a8vfNsYA3dB0yjOLiL8htWJkMCWkuzoUue2N7hfkXMcWD0RMUXI_uzfyXw5uOUsugcbmmZZ0jlmNb8slC2q1fhEIwr2xE0AlUd0cvF4hDSR" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Cloyster<br>
+- Blizzard<br>
+- Clamp<br>
+- Explosion<br>
+- Rest<br>
+<br>
+For this next team, we will be utilizing 2 different but fairly common 'mons in OU which I have not talked about up until now but have a very powerful synergy with each other, Jolteon and Cloyster. Jolteon is the second Electric-type resident of OU along with Zapdos which trades some physical bulk, a lower Special stat, and a worse matchup against Chansey, Exeggutor—barring the less common Pin Missile—and Snorlax, for a better defensive typing which allows it to resist both of Zapdos’s STAB’s and take Ice attacks better than Zapdos ever could, and, Jolteon’s defining trait, the highest speed stat of any relevant Pokemon in OU, second in the game only behind Electrode and tied with Mewtwo and Aerodactyl. Jolteon is a valuable piece as it allows it to function as an endgame sweeper and makes it one of the few Pokemon that can revenge kill a weakened Tauros in the first place. Like Zapdos, it threatens opposing Water-types such as Lapras, Slowbro, and especially Starmie, while paralyzing switch-ins such as Exeggutor, Chansey, and Alakazam, who are among the few Pokemon not named Rhydon which can take Jolteon’s Thunderbolt well. However, outside of Thunderbolt, Jolteon does not have very many good coverage options, the best it has is Double Kick which, with Rest and Thunder Wave, gives it a chance to beat Chansey in a 1v1. But even with all these upsides, its low physical defences make Snorlax a very difficult matchup for Jolteon as it can tank a few Thunderbolts while hitting back with Body Slam and Earthquake, the former cleanly 3HKO’ing Jolteon and also threatening to cripple it with paralysis, and the latter 2HKO’ing Jolteon outright. This is where Cloyster comes in who—at the time of writing this—is rising in popularity as an answer to Snorlax while threatening it back with Blizzards and Clamp to slowly chip away at Snorlax, and bringing an emergency Explosion to the table when things go south, however it does struggle with Electric-types such as Zapdos, or special attackers whose attacks it does not quadruple resist (ie: everything but Ice Beam and Blizzard) such as Starmie, these targets are checked by Jolteon which gives Cloyster some safety to use Rest in order to continue to check Snorlax for Jolteon, these two have a very potent synergy with each other and will be the cornerstones for this team.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-35-1596318842" data-lb-id="_xfUid-35-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-35-1596318842" data-src="//lh3.googleusercontent.com/2jNZHYjR8zgl8bgcSswAb64vgvaBOxSUdXdEQBobI8JcU9DBb8iZKmvPNjk3Fd58SGD0mkhfoVSuojjarBFo0WczIUV8i0DPARsp3_JBu9CnKjXRmwNFwJ27I8P1puXy95eWG2xn" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/2jNZHYjR8zgl8bgcSswAb64vgvaBOxSUdXdEQBobI8JcU9DBb8iZKmvPNjk3Fd58SGD0mkhfoVSuojjarBFo0WczIUV8i0DPARsp3_JBu9CnKjXRmwNFwJ27I8P1puXy95eWG2xn" data-url="https://lh3.googleusercontent.com/2jNZHYjR8zgl8bgcSswAb64vgvaBOxSUdXdEQBobI8JcU9DBb8iZKmvPNjk3Fd58SGD0mkhfoVSuojjarBFo0WczIUV8i0DPARsp3_JBu9CnKjXRmwNFwJ27I8P1puXy95eWG2xn" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Starmie<br>
+- Thunder Wave<br>
+- Blizzard<br>
+- Thunderbolt<br>
+- Recover<br>
+<br>
+As you may have noticed, both of these Pokemon do not like dealing with Rhydon, Cloyster can outspeed and chip it down with Clamp but it does not enjoy switching in on a Rock Slide—it can if it needs to but it does not like it—and Jolteon gets hard countered by Rhydon, so we need an answer to Rhydon, in addition, also we need a lead which is reasonably sturdy, and while Exeggutor does fill those traits, it's a very bad lead in my opinion, so in this case we are going to be using Starmie. Recover and Thunder Wave are staples of any Starmie set and using Blizzard and Thunderbolt as our attacking moves gives some nice coverage against most targets. When using Starmie as an answer to Rhydon, you need to be playing proactively, you cannot just use it to take some chip and scare it out while recovering because they will eventually paralyze with Body Slam and there goes your Rhydon check, again, teams without Exeggutor cannot play idle, it needs to be proactively playing to win against better players, but if you do play proactively, you can make plays that teams with Exeggutor wish they could do.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-36-1596318842" data-lb-id="_xfUid-36-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-36-1596318842" data-src="//lh3.googleusercontent.com/OIqoCrmxcKwLXPDhyJ_iSrftNxZgMZ7CPJS5wn8RVYixTA6cSF3QpbKJpsgcsQkgLkIhMAJUUV3pwRXWnAuhgqnyGPbZhjKkxDTZ68kL-CYW5mdWJikYwN52sfEkSsSdCFvvN-cB" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/OIqoCrmxcKwLXPDhyJ_iSrftNxZgMZ7CPJS5wn8RVYixTA6cSF3QpbKJpsgcsQkgLkIhMAJUUV3pwRXWnAuhgqnyGPbZhjKkxDTZ68kL-CYW5mdWJikYwN52sfEkSsSdCFvvN-cB" data-url="https://lh3.googleusercontent.com/OIqoCrmxcKwLXPDhyJ_iSrftNxZgMZ7CPJS5wn8RVYixTA6cSF3QpbKJpsgcsQkgLkIhMAJUUV3pwRXWnAuhgqnyGPbZhjKkxDTZ68kL-CYW5mdWJikYwN52sfEkSsSdCFvvN-cB" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Chansey<br>
+- Sing<br>
+- Ice Beam<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+<br>
+As you may have noticed, our team lacks a sleeper, and as stated at the beginning, a sleeper is a role you should have on your team, yet our team also lacks a good special wall since Starmie is likely to take sleep, so rather than dedicate 2 slots to fill those roles, let’s add some role compression and run a Sing Chansey variant, who switches into lead Paralysis users while they use Thunder Wave before sleeping something while also filling out the role of a special check. This is important as both of the main sleep targets you are likely to hit, the enemy Snorlax or the enemy sleep fodder, can be capitalized on and exploited by your team since sleeping the enemy Snorlax both preserves your Cloyster’s health for other threats like Tauros and removes one of the main answers to your Jolteon, and sleeping the enemy sleep fodder puts more pressure on the opposing Chansey as a special wall which allows it to be more easily removed which can help Jolteon and if you blow it up with Cloyster then you now have another roadblock to Jolteon’s success removed. Outside of Sing and the mandatory Soft-Boiled, we will be using Thunder Wave as a means of spreading paralysis. The one thing our Chansey set lacks is an attacking move, which—due to its better matchup against Rhydon, Exeggutor, and most importantly, Chansey, should be Ice Beam as a means of threatening freezes and hitting with super-effective damage on Rhydon and Exeggutor. This Chansey set relies on the element of surprise to do it’s best but when played well, it can turn the tides of a game immediately.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-37-1596318842" data-lb-id="_xfUid-37-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-37-1596318842" data-src="//lh3.googleusercontent.com/YiDHiX6n_hVbEEHvjPsv_MZ4gcAzY1WjRZ7s_H8wkdtQdC4Xv7mt4zwvzF9IY44A0zjJWuvk9PSvHwmFRzQ9AlFcBRqqtE73zXxyxGxKhAQvMiLuq13SU8fWmQhfzuQUy-Z5Lnex" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/YiDHiX6n_hVbEEHvjPsv_MZ4gcAzY1WjRZ7s_H8wkdtQdC4Xv7mt4zwvzF9IY44A0zjJWuvk9PSvHwmFRzQ9AlFcBRqqtE73zXxyxGxKhAQvMiLuq13SU8fWmQhfzuQUy-Z5Lnex" data-url="https://lh3.googleusercontent.com/YiDHiX6n_hVbEEHvjPsv_MZ4gcAzY1WjRZ7s_H8wkdtQdC4Xv7mt4zwvzF9IY44A0zjJWuvk9PSvHwmFRzQ9AlFcBRqqtE73zXxyxGxKhAQvMiLuq13SU8fWmQhfzuQUy-Z5Lnex" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Next on our team, Tauros, it helps confirm KO’s which can be especially nice to knock out a weakened Rhydon or Exeggutor, allowing Jolteon to really get work done, offers a potential win condition, especially appreciates the paralysis spread by Jolteon—and its ability to remove opposing Starmie who is a possible answer to Tauros since it has access to Recover and can live a Body Slam followed up by a Hyper Beam, and outspeeds Tauros while threatening paralysis—as a means of further accentuating its role as a universal revenge killer, while also appreciating the benefits provided by Cloyster as a check to Snorlax coming into Tauros as a switch-in before setting up Reflect and forcing out Tauros with Body Slam and Resting off any chip, and the switches that Clamp forces can give more opportunities for Tauros to come in and threaten the opposing team.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-38-1596318842" data-lb-id="_xfUid-38-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-38-1596318842" data-src="//lh6.googleusercontent.com/JFrdM5hmlyi4kI9oz1dCuWkzLyOaaeZ8W4QNFsXtFjCEQ1-BK79aCT-jtzwsM-2j1BWJnEpyZkneGlswOzK-jjKvZYEeIcwtmKDCFl0yBGbo_F7KSGFfDzuY97zfYjF0VSPMoX80" aria-label="Zoom"></div>
+		
+		<img src="//lh6.googleusercontent.com/JFrdM5hmlyi4kI9oz1dCuWkzLyOaaeZ8W4QNFsXtFjCEQ1-BK79aCT-jtzwsM-2j1BWJnEpyZkneGlswOzK-jjKvZYEeIcwtmKDCFl0yBGbo_F7KSGFfDzuY97zfYjF0VSPMoX80" data-url="https://lh6.googleusercontent.com/JFrdM5hmlyi4kI9oz1dCuWkzLyOaaeZ8W4QNFsXtFjCEQ1-BK79aCT-jtzwsM-2j1BWJnEpyZkneGlswOzK-jjKvZYEeIcwtmKDCFl0yBGbo_F7KSGFfDzuY97zfYjF0VSPMoX80" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Snorlax<br>
+- Body Slam<br>
+- Reflect<br>
+- Rest<br>
+- Earthquake<br>
+<br>
+Our team is quite solid thus far, and it does have a Tauros and Snorlax check in the form of Cloyster, but giving it the job of checking both can allow it to be overwhelmed, and its lack of a Normal typing leaves it susceptible to Body Slam paralyzing, so the final slot on this team goes to Snorlax. Reflect, Rest, and Body Slam are needed to fulfill this role, and while Ice Beam is nice for opposing Reflect Normal-types and for Rhydon as well, our team’s matchup against Gengar is a bit shaky to say the least, which is a hole Earthquake covers while also providing reasonable chip against Rhydon and enabling Snorlax to deal with Chansey variants running Counter, overall a good way to end off this team.<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Starmie<br>
+- Thunder Wave<br>
+- Blizzard<br>
+- Thunderbolt<br>
+- Recover<br>
+<br>
+Chansey<br>
+- Sing<br>
+- Thunder Wave<br>
+- Ice Beam<br>
+- Soft-Boiled<br>
+<br>
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Earthquake<br>
+- Rest<br>
+<br>
+Cloyster<br>
+- Blizzard<br>
+- Clamp<br>
+- Explosion<br>
+- Rest<br>
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Earthquake<br>
+- Blizzard<br>
+<br>
+Jolteon<br>
+- Thunder Wave<br>
+- Thunderbolt<br>
+- Double Kick<br>
+- Rest</div>
+		</div>
+	</div>
+</div><br>
+<b>Team 7: Starmie + Alakazam + Cloyster + Sing Chansey</b><br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-39-1596318842" data-lb-id="_xfUid-39-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-39-1596318842" data-src="//lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" data-url="https://lh4.googleusercontent.com/EsY4j_eRO6V0DFXfoAo317a8PKwCzygtn2klrHSCxjHGbdvTdNctMzmDCyJPHkq1zBwMKbcci30lUNeCkd2NL0QaairMWsv9anjKJXX2P6VuDna_2hUgPuL3p3-KeH8hKmLnyDZw" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Starmie<br>
+- Recover<br>
+- Thunder Wave<br>
+- Blizzard<br>
+- Thunderbolt<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-40-1596318842" data-lb-id="_xfUid-40-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-40-1596318842" data-src="//lh3.googleusercontent.com/pZ8ii9dc1Gq8c9w5YiigqhXZz1Q7Ai0rl459IrUikK1fUHCSvYjZ1X0DbSnhyNVlGAutbieo7On7K13DaYmq-OZPLc6HSU8kam-f5fCVrjVONcSLtrlLTzzbRXaaldXn4uCb0OrL" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/pZ8ii9dc1Gq8c9w5YiigqhXZz1Q7Ai0rl459IrUikK1fUHCSvYjZ1X0DbSnhyNVlGAutbieo7On7K13DaYmq-OZPLc6HSU8kam-f5fCVrjVONcSLtrlLTzzbRXaaldXn4uCb0OrL" data-url="https://lh3.googleusercontent.com/pZ8ii9dc1Gq8c9w5YiigqhXZz1Q7Ai0rl459IrUikK1fUHCSvYjZ1X0DbSnhyNVlGAutbieo7On7K13DaYmq-OZPLc6HSU8kam-f5fCVrjVONcSLtrlLTzzbRXaaldXn4uCb0OrL" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Alakazam<br>
+- Recover<br>
+- Thunder Wave<br>
+- Psychic<br>
+- Seismic Toss<br>
+<br>
+For this next team, let’s take a strategy we already covered previously and let’s see how it works without running Exeggutor, specifically, Starmie and Alakazam to form a special attacking core. Alakazam will be running the same set as before of Psychic, Seismic Toss, Recover, and Thunder Wave for the same reasons as before. Starmie, on the other hand, will be running a slightly different set with Blizzard over Surf since the better matchup against opposing Exeggutor will be worth only being able to paralyze opposing Jynx, and just like the previous Starmie + Alakazam team we ran, it will be the lead for this team due to its consistency.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-41-1596318842" data-lb-id="_xfUid-41-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-41-1596318842" data-src="//lh3.googleusercontent.com/OIqoCrmxcKwLXPDhyJ_iSrftNxZgMZ7CPJS5wn8RVYixTA6cSF3QpbKJpsgcsQkgLkIhMAJUUV3pwRXWnAuhgqnyGPbZhjKkxDTZ68kL-CYW5mdWJikYwN52sfEkSsSdCFvvN-cB" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/OIqoCrmxcKwLXPDhyJ_iSrftNxZgMZ7CPJS5wn8RVYixTA6cSF3QpbKJpsgcsQkgLkIhMAJUUV3pwRXWnAuhgqnyGPbZhjKkxDTZ68kL-CYW5mdWJikYwN52sfEkSsSdCFvvN-cB" data-url="https://lh3.googleusercontent.com/OIqoCrmxcKwLXPDhyJ_iSrftNxZgMZ7CPJS5wn8RVYixTA6cSF3QpbKJpsgcsQkgLkIhMAJUUV3pwRXWnAuhgqnyGPbZhjKkxDTZ68kL-CYW5mdWJikYwN52sfEkSsSdCFvvN-cB" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Chansey<br>
+- Sing<br>
+- Ice Beam<br>
+- Soft-Boiled<br>
+- Counter<br>
+<br>
+Similar to the prior team the two aforementioned Psychics were on in this guide, our team will need a sleeper, however since we would like to add on a Chansey as a means of further reducing the effectiveness of special attackers, let’s combine the two and run Sing on Chansey for some nice role compression, with Sing either catching the enemy sleep fodder which removes a check to your special attackers, or Snorlax which gives opportunities for your special attackers to come in. Soft-Boiled is a must-use on Chansey, however rather than Thunder Wave like the prior Sing Chansey set used, let’s use Counter as a way to punish opposing Snorlax which don’t scout properly, and just like the last Sing Chansey set, the main attacking move for this Chansey will be Ice Beam to fish for freezes while also hitting Rhydon and Exeggutor for fair amount of damage. This Chansey can functionally KO 3 of your opponent’s Pokemon with sleep lasting up to 7 turns, Freeze being practically an OHKO, and Counter KO’ing Snorlax off of Body Slam.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-42-1596318842" data-lb-id="_xfUid-42-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-42-1596318842" data-src="//lh5.googleusercontent.com/Gp1zvZ4CmV_MyojCRdKAJU_NN-rjb6HaeMHOoJ1DAz2PkalOCfLVzhODA-Qp3S3L_V2r9x-yBFf1p3mVB3FYjBuuF0mNyyo0GmOVbhd3u-bXjEWsw6dpcKyvwM9Y0G3dixxYmwhr" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/Gp1zvZ4CmV_MyojCRdKAJU_NN-rjb6HaeMHOoJ1DAz2PkalOCfLVzhODA-Qp3S3L_V2r9x-yBFf1p3mVB3FYjBuuF0mNyyo0GmOVbhd3u-bXjEWsw6dpcKyvwM9Y0G3dixxYmwhr" data-url="https://lh5.googleusercontent.com/Gp1zvZ4CmV_MyojCRdKAJU_NN-rjb6HaeMHOoJ1DAz2PkalOCfLVzhODA-Qp3S3L_V2r9x-yBFf1p3mVB3FYjBuuF0mNyyo0GmOVbhd3u-bXjEWsw6dpcKyvwM9Y0G3dixxYmwhr" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Self Destruct<br>
+- Rest<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-43-1596318842" data-lb-id="_xfUid-43-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-43-1596318842" data-src="//lh5.googleusercontent.com/4wGWfz2adfcEidszJEctp2l7lOFxXUno89ZKt3d2OY_8Y0ctIuGmn3rtWoUmgiBLRX-svj2g_FaTy86-heCvXr_ktXiRsCW2T7xQQTteccOGl_AruOnv4peEjSKoUvq-I6SQyv0E" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/4wGWfz2adfcEidszJEctp2l7lOFxXUno89ZKt3d2OY_8Y0ctIuGmn3rtWoUmgiBLRX-svj2g_FaTy86-heCvXr_ktXiRsCW2T7xQQTteccOGl_AruOnv4peEjSKoUvq-I6SQyv0E" data-url="https://lh5.googleusercontent.com/4wGWfz2adfcEidszJEctp2l7lOFxXUno89ZKt3d2OY_8Y0ctIuGmn3rtWoUmgiBLRX-svj2g_FaTy86-heCvXr_ktXiRsCW2T7xQQTteccOGl_AruOnv4peEjSKoUvq-I6SQyv0E" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Cloyster<br>
+- Blizzard<br>
+- Clamp<br>
+- Explosion<br>
+- Rest<br>
+<br>
+Our team is good but we do need to have better answers to the physical attackers of the tier like Snorlax and Tauros, Counter can work once but it’s unlikely to work again afterwards, so why not use the tried and true Reflect Snorlax set which is on literally every Snorlax in this guide, and as I explained in the prior team with Alakazam and Starmie, Self Destruct is the best way to bypass Pokemon like Chansey which gives Alakazam and Starmie trouble. However, we will also run Cloyster alongside Snorlax as another physically defensive Pokemon, utilizing Rest to keep it healthy in case Snorlax explodes, Clamp to stuff anything slower than it, Blizzard for a high damage STAB with an added freeze chance, and Explosion as another way to remove Chansey if we need to keep Snorlax healthy, or in case we need an emergency detonation to keep us in the game. These two also facilitate Chansey to go for Counter off of Snorlax Body Slam since it is put in Tauros Hyper Beam range 100% of the time so the insulation against Tauros these two provide help mitigate the downsides of using Counter and force switches which Chansey can heal up on.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-44-1596318842" data-lb-id="_xfUid-44-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-44-1596318842" data-src="//lh3.googleusercontent.com/g1aSRKyY_2ccvBffZRR5y1Bvw6veDSV-i9fH3AD2S9Qq_4hulPWe6mXAINAs1kKaaz0pjHbHssxRWezl-3Z1vDbrBwmZ9xK4gQcCLEX_dTvtMTtpjpX0IBxx-4OJkjxPyHOMqlCi" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/g1aSRKyY_2ccvBffZRR5y1Bvw6veDSV-i9fH3AD2S9Qq_4hulPWe6mXAINAs1kKaaz0pjHbHssxRWezl-3Z1vDbrBwmZ9xK4gQcCLEX_dTvtMTtpjpX0IBxx-4OJkjxPyHOMqlCi" data-url="https://lh3.googleusercontent.com/g1aSRKyY_2ccvBffZRR5y1Bvw6veDSV-i9fH3AD2S9Qq_4hulPWe6mXAINAs1kKaaz0pjHbHssxRWezl-3Z1vDbrBwmZ9xK4gQcCLEX_dTvtMTtpjpX0IBxx-4OJkjxPyHOMqlCi" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Once again we return to the final slot of our team and find we only have 1 good physical attacker and difficulty confirming kills, and once again we run Tauros in this slot. At this point, most of the synergies Tauros has with members of this team have been covered, Cloyster comes in the common Snorlax switching in to set up Reflect and forces it out with Clamp while taking minimal chip from Body Slam, with the sequences following Cloyster using Clamp presenting opportunities for Tauros to come in, Starmie, Alakazam, and Chansey spread paralysis and Sleep which Tauros abuses, however another synergy it has in this team is with Counter on Chansey. Since Snorlax is by far the most common and best Tauros answer, Chansey can Counter it and catch a surprise KO which removes one of the largest obstacles to your own Tauros revenge killing a target or winning the game outright.<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Starmie<br>
+- Thunder Wave<br>
+- Blizzard<br>
+- Thunderbolt<br>
+- Recover<br>
+<br>
+Chansey<br>
+- Sing<br>
+- Counter<br>
+- Ice Beam<br>
+- Soft-Boiled<br>
+<br>
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Self-Destruct<br>
+- Rest<br>
+<br>
+Cloyster<br>
+- Blizzard<br>
+- Clamp<br>
+- Explosion<br>
+- Rest<br>
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Earthquake<br>
+- Blizzard<br>
+<br>
+Alakazam<br>
+- Psychic<br>
+- Thunder Wave<br>
+- Recover<br>
+- Seismic Toss</div>
+		</div>
+	</div>
+</div><b>Team 8: Jynx Lead + Cloyster + Alakazam</b><br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-45-1596318842" data-lb-id="_xfUid-45-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-45-1596318842" data-src="//lh4.googleusercontent.com/51TRgn543peWSIvK_k6bJpUKGf4QBLMBdtONah1V6QKsid8X2xmBGwGiSUeUNgPdRg_8bOCA9Cf6ChLmCmaAlzHaCJFQEYBz54SIhLE6ZhwhtbrmGc6bsv5iQCYNU4PyCciXIa95" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/51TRgn543peWSIvK_k6bJpUKGf4QBLMBdtONah1V6QKsid8X2xmBGwGiSUeUNgPdRg_8bOCA9Cf6ChLmCmaAlzHaCJFQEYBz54SIhLE6ZhwhtbrmGc6bsv5iQCYNU4PyCciXIa95" data-url="https://lh4.googleusercontent.com/51TRgn543peWSIvK_k6bJpUKGf4QBLMBdtONah1V6QKsid8X2xmBGwGiSUeUNgPdRg_8bOCA9Cf6ChLmCmaAlzHaCJFQEYBz54SIhLE6ZhwhtbrmGc6bsv5iQCYNU4PyCciXIa95" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Alakazam<br>
+- Psychic<br>
+- Recover<br>
+- Thunder Wave<br>
+- Reflect<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-46-1596318842" data-lb-id="_xfUid-46-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-46-1596318842" data-src="//lh3.googleusercontent.com/g1aSRKyY_2ccvBffZRR5y1Bvw6veDSV-i9fH3AD2S9Qq_4hulPWe6mXAINAs1kKaaz0pjHbHssxRWezl-3Z1vDbrBwmZ9xK4gQcCLEX_dTvtMTtpjpX0IBxx-4OJkjxPyHOMqlCi" aria-label="Zoom"></div>
+		
+		<img src="//lh3.googleusercontent.com/g1aSRKyY_2ccvBffZRR5y1Bvw6veDSV-i9fH3AD2S9Qq_4hulPWe6mXAINAs1kKaaz0pjHbHssxRWezl-3Z1vDbrBwmZ9xK4gQcCLEX_dTvtMTtpjpX0IBxx-4OJkjxPyHOMqlCi" data-url="https://lh3.googleusercontent.com/g1aSRKyY_2ccvBffZRR5y1Bvw6veDSV-i9fH3AD2S9Qq_4hulPWe6mXAINAs1kKaaz0pjHbHssxRWezl-3Z1vDbrBwmZ9xK4gQcCLEX_dTvtMTtpjpX0IBxx-4OJkjxPyHOMqlCi" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+For the final team of this guide, let’s try something fun, let’s choose the Pokemon who is going to shape how our team wants to play which normally is standard but will be utilized in a different way than usual, Alakazam, however unlike most Alakazam this one is going to be using one of its underutilized strengths, it’s prowess as an endgame duelist. In a lot of endgame matchups it has the edge in a 1v1 such as Tauros and Snorlax, which is furthered by running a different move in its fourth moveslot, Reflect, as a means of shoring up its lacklustre physical bulk. This Alakazam will be one of the main win conditions—alongside Tauros—which our team plans on building around. Speaking of Tauros, we are going to be adding on the team here as well (yes I know, what a shocking idea, using Tauros in RBY OU, who would have ever thought of that idea) running a standard set of Body Slam, Hyper Beam, Blizzard, and Earthquake, letting it function as a win condition, especially abusing any paralysis Alakazam spreads while also helping confirm kills on targets such as Chansey which cause trouble for Alakazam.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-47-1596318842" data-lb-id="_xfUid-47-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-47-1596318842" data-src="//lh5.googleusercontent.com/RfWA5R2s2gE0jgNbA_1Fq60JubjvYRcwl_OiXMPkoUiy7KezyhwR3sUY4lDF-ieB4aKl-fiLVQepOxnTI5a5jgl3v4PkrKIxo8bNssbGZD6As4p-VB4YQHFELvUVc0CEp-Aw3JuO" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/RfWA5R2s2gE0jgNbA_1Fq60JubjvYRcwl_OiXMPkoUiy7KezyhwR3sUY4lDF-ieB4aKl-fiLVQepOxnTI5a5jgl3v4PkrKIxo8bNssbGZD6As4p-VB4YQHFELvUVc0CEp-Aw3JuO" data-url="https://lh5.googleusercontent.com/RfWA5R2s2gE0jgNbA_1Fq60JubjvYRcwl_OiXMPkoUiy7KezyhwR3sUY4lDF-ieB4aKl-fiLVQepOxnTI5a5jgl3v4PkrKIxo8bNssbGZD6As4p-VB4YQHFELvUVc0CEp-Aw3JuO" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Jynx<br>
+- Blizzard<br>
+- Lovely Kiss<br>
+- Psychic<br>
+- Rest<br>
+<br>
+For a lead, since our Alakazam wants anything which tanks its Psychic’s out of its way, of which many are leads such as opposing Alakazam and Starmie, running a lead Jynx allows us to force them to absorb sleep which effectively removes that special wall from the game which helps pave the way for Alakazam. The Jynx set is going to be standard, just Lovely Kiss, Blizzard, Psychic, and Rest. However, something of note is that our team wants to keep our Jynx healthy as an answer to the opponent’s Exeggutor, utilizing its defensive utilities of resisting Psychic and Ice-type attacks to burn sleep turns off of Rest so it can remain a defensive piece for this team.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-48-1596318842" data-lb-id="_xfUid-48-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-48-1596318842" data-src="//lh5.googleusercontent.com/Gp1zvZ4CmV_MyojCRdKAJU_NN-rjb6HaeMHOoJ1DAz2PkalOCfLVzhODA-Qp3S3L_V2r9x-yBFf1p3mVB3FYjBuuF0mNyyo0GmOVbhd3u-bXjEWsw6dpcKyvwM9Y0G3dixxYmwhr" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/Gp1zvZ4CmV_MyojCRdKAJU_NN-rjb6HaeMHOoJ1DAz2PkalOCfLVzhODA-Qp3S3L_V2r9x-yBFf1p3mVB3FYjBuuF0mNyyo0GmOVbhd3u-bXjEWsw6dpcKyvwM9Y0G3dixxYmwhr" data-url="https://lh5.googleusercontent.com/Gp1zvZ4CmV_MyojCRdKAJU_NN-rjb6HaeMHOoJ1DAz2PkalOCfLVzhODA-Qp3S3L_V2r9x-yBFf1p3mVB3FYjBuuF0mNyyo0GmOVbhd3u-bXjEWsw6dpcKyvwM9Y0G3dixxYmwhr" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Self Destruct<br>
+- Rest<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-49-1596318842" data-lb-id="_xfUid-49-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-49-1596318842" data-src="//lh5.googleusercontent.com/4wGWfz2adfcEidszJEctp2l7lOFxXUno89ZKt3d2OY_8Y0ctIuGmn3rtWoUmgiBLRX-svj2g_FaTy86-heCvXr_ktXiRsCW2T7xQQTteccOGl_AruOnv4peEjSKoUvq-I6SQyv0E" aria-label="Zoom"></div>
+		
+		<img src="//lh5.googleusercontent.com/4wGWfz2adfcEidszJEctp2l7lOFxXUno89ZKt3d2OY_8Y0ctIuGmn3rtWoUmgiBLRX-svj2g_FaTy86-heCvXr_ktXiRsCW2T7xQQTteccOGl_AruOnv4peEjSKoUvq-I6SQyv0E" data-url="https://lh5.googleusercontent.com/4wGWfz2adfcEidszJEctp2l7lOFxXUno89ZKt3d2OY_8Y0ctIuGmn3rtWoUmgiBLRX-svj2g_FaTy86-heCvXr_ktXiRsCW2T7xQQTteccOGl_AruOnv4peEjSKoUvq-I6SQyv0E" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Cloyster<br>
+- Blizzard<br>
+- Clamp<br>
+- Explosion<br>
+- Rest<br>
+<br>
+Alakazam is a potent win condition when played right, but it does have its issues, and one of the main ones for it is dealing with Chansey, thankfully there are multiple Pokemon which are good at removing Chansey, namely through Explosion, in addition, another thing this team would appreciate is an answer to Snorlax, so this team would appreciate something which covers those matchups, from the 'mons available which fulfill that role we have 3 ones which stand out, Snorlax, Gengar, and Cloyster. Now we are going to be obviously running Snorlax because dropping it is not an option in my opinion, and Gengar is off the table since running it makes us way too weak to Rhydon, so the question is if we are going to run Cloyster or not. Now the other main issues Alakazam faces are other Psychics however since a Psychic-type is usually a lead, our Jynx removes one of them, and we are going to have a way of removing their Chansey so that eliminates another Alakazam check, and against some teams that can be enough, however some teams do run another Psychic in the back which needs to be removed for Alakazam to work, and if we are running just one exploder then against those teams we may have some issues, so running both Cloyster and Snorlax as exploders is a wise idea to deal with that potential scenario while also providing a sturdy backbone against physical attackers such as enemy Snorlax and Tauros. Snorlax is going to be running a Rest, Body Slam, Reflect set as well as Self Destruct (in case it is needed) while Cloyster runs a standard Rest, Explosion, Clamp, and Blizzard set which is the most common Cloyster variant you see nowadays. Also, running Cloyster dissuades your opponent from bringing in Snorlax until the endgame which your Alakazam beats in a 1v1 with Reflect (or at least brings Snorlax into Tauros range), while Alakazam helps cover the bad matchup against Zapdos in return.<br>
+<br>
+
+
+	
+	
+		
+		
+	
+
+
+	<!--div class="lbContainer lbContainer--inline" title="" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-_xfUid-50-1596318842" data-lb-id="_xfUid-50-1596318842">
+		
+			<div class="lbContainer-zoomer js-lbImage-_xfUid-50-1596318842" data-src="//lh4.googleusercontent.com/IG3lQEEY8WYCRH5TOv9LEQ4Ue0QIC_a3rtDcAqEiLlyHGJ36J_QDsVToEgWvILi7mWAUercq7JH68qZ0ehToctlaE1-oBHpFkXnwJc_rRGbn1vhvTeW_SDa4QK9ZtbjNA7gV0mJh" aria-label="Zoom"></div>
+		
+		<img src="//lh4.googleusercontent.com/IG3lQEEY8WYCRH5TOv9LEQ4Ue0QIC_a3rtDcAqEiLlyHGJ36J_QDsVToEgWvILi7mWAUercq7JH68qZ0ehToctlaE1-oBHpFkXnwJc_rRGbn1vhvTeW_SDa4QK9ZtbjNA7gV0mJh" data-url="https://lh4.googleusercontent.com/IG3lQEEY8WYCRH5TOv9LEQ4Ue0QIC_a3rtDcAqEiLlyHGJ36J_QDsVToEgWvILi7mWAUercq7JH68qZ0ehToctlaE1-oBHpFkXnwJc_rRGbn1vhvTeW_SDa4QK9ZtbjNA7gV0mJh" class="bbImage" data-zoom-target="1" style="">
+	</div-->
+
+<br>
+Chansey<br>
+- Reflect<br>
+- Ice Beam<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+<br>
+Once again, we arrive at a team which has one slot remaining and multiple roles that whoever we choose needs to fill, in this case we want our final Pokemon to bring some special bulk to the team, act as a status absorber because we want to keep Alakazam unparalyzed, and we want it to be able to have some physical bulk in case Snorlax and Cloyster have both exploded, leaving us with the annoying pink blob which frustrates every special attacker in the tier, Chansey. Reflect, Soft-Boiled, and Thunder Wave are needed to enable the spread of paralysis, allow it to heal, and shore up its physical defence to help against targets like Snorlax or Zapdos which is otherwise not a great matchup for this team even with Alakazam (Zapdos still is an issue however so don't get lazy playing against it), so the only question arises with the attacking move, and while Seismic Toss is nice for dealing with targets like Starmie, the threat of freeze on key targets such as Chansey, and higher damage potential against targets such as Exeggutor, Zapdos, and Rhydon (and the fact that very few Lapras are seen nowadays), makes Ice Beam the better choice, capping off the final team in this guide.<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Jynx<br>
+- Blizzard<br>
+- Lovely Kiss<br>
+- Psychic<br>
+- Rest<br>
+<br>
+Cloyster<br>
+- Blizzard<br>
+- Clamp<br>
+- Explosion<br>
+- Rest<br>
+<br>
+Chansey<br>
+- Reflect<br>
+- Ice Beam<br>
+- Soft-Boiled<br>
+- Thunder Wave<br>
+<br>
+Snorlax<br>
+- Reflect<br>
+- Body Slam<br>
+- Self Destruct<br>
+- Rest<br>
+<br>
+Tauros<br>
+- Body Slam<br>
+- Hyper Beam<br>
+- Blizzard<br>
+- Earthquake<br>
+<br>
+Alakazam<br>
+- Psychic<br>
+- Recover<br>
+- Thunder Wave<br>
+- Reflect</div>
+		</div>
+	</div>
+</div><br>
+As a side note: Just like the first team on this guide, the last team on this guide also does have an analysis video of it being used in a high-level tournament match, this time by Amaranth narrating his set vs MetalGro$$ in SPL X. So, once again, I have left a link to the analysis video down below to show how it is used at a high level from the perspective of a top player.<br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content"><div class="bbMediaWrapper">
+	<div class="bbMediaWrapper-inner">
+		<iframe src="https://www.youtube.com/embed/tWRWqlyZknA?wmode=opaque&amp;start=0" width="560" height="315" frameborder="0" allowfullscreen="true"></iframe>
+	</div>
+</div></div>
+		</div>
+	</div>
+</div><b>Conclusion:</b><br>
+<br>
+At the beginning, I said that, in order to truly understand and appreciate a format, you need to be able to build your own teams and not just follow the success of others, and that message is one I kept in mind the entire time while writing this. If your goal while reading this was to nab some teams then go right ahead, most of these are sample teams and will only get you so far. However, if you truly want to learn RBY OU, then the general teambuilding process demonstrated in all of these sample teams can suit you well. To recap the teambuilding process:<br>
+<br>
+<ol>
+<li data-xf-list-type="ol">Start with a central idea, whether it be a general gameplan, maybe an underused set, or a specific Pokemon, this should be the basis for your team.</li>
+<li data-xf-list-type="ol">Add on other Pokemon to help cover the roles which your team currently does not have filled while also covering the weaknesses of your other Pokemon on your team to build synergy. After you add every new Pokemon, you should reassess your team to ensure each Pokemon and its moveset always compliments the rest of your team. For the convenience of the reader, the mandatory roles on any RBY team will be directly below for the reader's convenience.</li>
+<li data-xf-list-type="ol">Once you are done building your team, look over it once again. Are there any Glaring weaknesses? Any hard walls for your team? If you see any, do something about it, if it causes more problems for your team no matter how you try to fix it, then assess how much of an issue it is, Is the problem a common metagame threat? Can it be reasoned with through the tools at your disposal without compromising your options against other threats? If the issue is too common and not able to be played around then sometimes you need to start from scratch.</li>
+<li data-xf-list-type="ol">If you don’t find any weaknesses once you look it over, playtest it, see if it works in practice. Do any new problems arise? If so, ask yourself, were those problems caused by your own play or are they inherent issues for your team. If so, return to step 3.</li>
+</ol><br>
+
+
+<div class="bbCodeSpoiler">
+	
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content"><ul>
+<li data-xf-list-type="ul">A revenge killer</li>
+<li data-xf-list-type="ul">At least 2 Pokemon at or above base 100 speed</li>
+<li data-xf-list-type="ul">A Pokemon which has a move which puts the opponent to sleep</li>
+<li data-xf-list-type="ul">A Pokemon which can take sleep for its more important teammates</li>
+<li data-xf-list-type="ul">A Pokemon that takes low damage from STAB Psychics.</li>
+<li data-xf-list-type="ul">A Pokemon that takes low damage from Thunderbolt</li>
+<li data-xf-list-type="ul">A Pokemon that takes low damage from STAB Blizzard.</li>
+<li data-xf-list-type="ul">A status absorber</li>
+<li data-xf-list-type="ul">At least one physically bulky 'mon</li>
+<li data-xf-list-type="ul">At least 1 Thunder Wave user.</li>
+<li data-xf-list-type="ul">A mon which deals with Chansey</li>
+<li data-xf-list-type="ul">A lead</li>
+</ul></div>
+		</div>
+	</div>
+</div><br>
+All metagames change. If you were to tell an RBY player in 2013 that the standard set for Snorlax would be running Reflect and Rest, they would assume you were joking, likewise if you were to tell a player in SPL IX that Exeggutor usage would drop as low as 70% and that Starmie would be more commonly used than Exeggutor then your claims would be treated similarly. Yet both predictions became reality, and what we might call a weird strategy today may become commonplace tomorrow, we do not know the future. This guide has given you the knowledge on how to teambuild. Now it is up to you to build your own team and discover your own strategies, and who knows, maybe what you will discover could change the course of the metagame.<br>
+<br>
+To those who have gotten this far, thank you for taking the time to read this guide. I would like to thank everyone who reviewed this and gave feedback while I was writing and put up with me asking for feedback many, many times. Any and all appropriate feedback on how this guide could be improved are welcomed. Feel free to comment your feedback or send a PM, I appreciate it, thanks.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>				
+
+<p><span class="italics"> <a href="https://www.smogon.com/forums/threads/an-introduction-to-teambuilding-in-rby-ou.3667061/">This guide was originally posted on Smogon</a>, and was reproduced here with the express permission of the author. </span></p>
+
+<p>
+   Written by Shellnuts
+</p>
+<div class="returntop"></div>
+
+							</article>
+
+							
+
+							
+						</div>
+
+						
+							
+						
+
+						
+	
+
+					</div>
