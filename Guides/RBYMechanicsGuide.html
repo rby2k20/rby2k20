@@ -339,7 +339,7 @@ Since all of these moves have maximum 255 accuracy, their accuracy cannot be inc
 <p>
   If the opponent's last used move was a Normal- or Fighting-type <span class="tooltp">attack<span class="tooltptext">i.e. a damage-dealing move</span></span> other than Counter, then it will deal damage equal to double the damage on the damage address. Note that:
   <ul>
-  <li>The damage address is the last amount of damage dealt. Some status moves set the damage address to zero, other moves don't affect it. Switching, and spending turns frozen, asleep, or fully paralyzed do not update the damage address.</li>
+  <li>The damage address is the last amount of damage dealt. Switching, and spending turns frozen, asleep, or fully paralyzed do not update the damage address, nor do most status moves. Only Bide, Disable, and moves which can send the opponent to sleep, raise or lower either Pokemon's stats set the damage address to zero.</li>
   <li>Damage done to substitutes does go on the damage address.</li>
   <li>For multi-hit moves such as Fury Swipes, only the damage dealt from the last hit is stored on the damage address.</li>
   <li>The damage dealt by using Counter goes on the damage address. A consequence of this is that if you successfully get off a Counter against a sleeping or frozen Pokémon, you can use Counter again safely on the next turn and "counter your own counter", doubling the damage dealt by the previous counter.</li>
