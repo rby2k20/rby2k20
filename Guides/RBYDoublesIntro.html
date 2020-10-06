@@ -1,0 +1,319 @@
+<title>An Introduction to RBY Doubles</title>
+ 
+<author>Plague von Karma</author>
+ 
+<pubday>6</pubday>
+ 
+<pubmonth>10</pubmonth> <!--Use a number (example 4 for april)-->
+ 
+<pubyear>2020</pubyear>
+ 
+<category>Other</category>
+ 
+<sticky>false</sticky> <!-- Use 'true' without quotes for sticky article-->
+ 
+ 
+ 
+<article>
+ 
+ 
+ 
+<h1 class="title">An Introduction to RBY Doubles</h1>
+<div id="toc"></div>
+<h1 id="intro">Introduction</h1>
+<p>
+As a personal project born out of simple curiosity, I began developing a PS mod that allows Generation I to have a Doubles format. This has been an interesting thing to look at, as it creates a lot of unique dynamics that would otherwise not be seen in standard play. However, given there was never an RBY Doubles format in the main series games, many factors had to be considered in the development of this mod. To keep things simple while being faithful to how Doubles has evolved mechanically, I decided to keep it to Generation III's Doubles mechanics, while not changing anything else in regards to RBY mechanics. So we have things like Hyper Beam not recharging upon a KO and stat drop stacking, but we also have Generation III's fainting mechanics and spread moves. This is important, so keep it in mind. Standard rules are being employed as well; for example, Fly and Dig remain banned due to the semi-invulnerability glitch. 
+</p>
+ 
+<h1 id="head2">Spread Moves</h1>
+ 
+<p>
+One big topic that came to mind when making the mod was how to handle spread moves. Many of these are already extremely powerful in RBY; Earthquake, Blizzard, and Explosion are particular outliers. However, something came to the rescue immediately; in Generation III, spread moves have their damage halved, not reduced by a quarter like in later generations. This is a significant difference; essentially, it is like the opponent is temporarily activating Light Screen or Reflect whenever they're getting hit. For instance, Starmie's Surf will deal around 20% to Tauros, rather than the typical ~38%. Rhydon isn't even OHKOed by Starmie's Surf. While significantly less powerful as a result of this, their utility is still there; picking off weakened opponents while damaging another Pokémon is valuable. However, they are weak overall. This also forces some Pokémon to find alternatives for good damage output; for instance, BubbleBeam is Snorlax's only way to 2HKO Rhydon now.
+</p>
+ 
+<p>
+Here's a list of moves given the ability to act as spread moves in the mod. Poison Gas has not been changed, as it wasn't a spread move in Generation III. Reflect and Light Screen, due to their effects targeting the user in Gen 1, have not been made spread moves. 
+</p>
+<style type="text/css">
+ 
+.tg {border-collapse:collapse;border-spacing:0;}
+ 
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+ 
+overflow:hidden;padding:10px 5px;word-break:normal;}
+ 
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+ 
+font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+ 
+.tg .tg-0lax{text-align:left;vertical-align:top}
+ 
+</style>
+ 
+<table class="tg">
+ 
+<thead>
+ 
+<tr>
+ 
+<th class="tg-0lax">Move</th>
+ 
+<th class="tg-0lax">Targeting</th>
+ 
+<th class="tg-0lax">Notes</th>
+ 
+</tr>
+ 
+</thead>
+ 
+<tbody>
+ 
+<tr>
+ 
+<td class="tg-0lax">Surf</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax">Uses Generation III spread move mechanics.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Blizzard</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax">Can potentially freeze two opponents at once!</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Rock Slide</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax">No flinch chance in Generation I, which slightly lowers viability.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Acid</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax"></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Razor Leaf</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax">The high critical hit rate can potentially make this interesting.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Bubble</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax"></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Swift</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax"></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Growl</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax">Triggers stat drop stacking.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Leer</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax">Triggers stat drop stacking.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Tail Whip</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax">Triggers stat drop stacking.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">String Shot</td>
+ 
+<td class="tg-0lax">Both foes</td>
+ 
+<td class="tg-0lax">Triggers stat drop stacking.</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Earthquake</td>
+ 
+<td class="tg-0lax">All except user</td>
+ 
+<td class="tg-0lax"></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Explosion</td>
+ 
+<td class="tg-0lax">All except user</td>
+ 
+<td class="tg-0lax"></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Self-Destruct</td>
+ 
+<td class="tg-0lax">All except user</td>
+ 
+<td class="tg-0lax"></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Haze</td>
+ 
+<td class="tg-0lax">All participants</td>
+ 
+<td class="tg-0lax">Can heal an ally's status!</td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="tg-0lax">Mist</td>
+ 
+<td class="tg-0lax">User and ally</td>
+ 
+<td class="tg-0lax">Sort of like a weather condition, though it doesn't affect opponents. Could be interesting.</td>
+ 
+</tr>
+ 
+</tbody>
+ 
+</table>
+ 
+<div style="text-align: margin-left;">
+<img style="display: inline-block;" src="images/sprites/ninetales.png">
+<img style="display: inline-block;" src="images/sprites/slowbro.png">
+<img style="display: inline-block;" src="images/sprites/butterfree.png">
+</div>
+<p>
+However, spread moves aren't just damaging. For instance, Growl, String Shot, Leer, and Tail Whip all become spread moves, which can be used to abuse stat drop stacking against participating Pokémon. Thus, paralysis and burn will become much more powerful when used in these scenarios. I think this makes a lot of Pokémon more viable, especially slow physical Attackers like Snorlax, given the presence of Leer and Tail Whip. Haze emerges as potential counterplay here, with Haze removing your ally's status as well as resetting stat modifiers. Mist also becomes an interesting topic, protecting from stat drops and acting as something of a psuedo-weather condition. Haze and Mist's bolstered viability should add to the utility of Vaporeon and Articuno, in my opinion, as they both get these moves. Lapras can also use Mist, which gives three setters overall. 
+</p>
+ 
+<h1 id="head2">On the Radar</h1>
+<div style="text-align: margin-left;">
+<img style="display: inline-block;" src="images/sprites/gengar.png">
+<img style="display: inline-block;" src="images/sprites/golem.png">
+<img style="display: inline-block;" src="images/sprites/snorlax.png">
+</div>
+<p>
+There are some potentially broken aspects of spread moves, though. Explosion and Selfdestruct have become particularly questionable additions, as hitting an ally's Substitute will allow them to survive using it, as is normal Generation I mechanics. Since hitting allies with your spread moves doesn't trigger the halving of damage, these will be hitting for full damage, so constantly firing these off can be considered a bit of a lame strategy. Should self-KO offense become too much of an overbearing force, I wouldn't be opposed to Suspect Testing this. Earthquake can be seen as a problem too given that will be hitting for max damage too; however, I personally believe that powerful spread moves are necessary to keep it a "Doubles" metagame. We'll see. 
+</p>
+ 
+<div style="text-align: margin-left;">
+ 
+<img style="display: inline-block;" src="images/sprites/dragonite.png">
+ 
+<img style="display: inline-block;" src="images/sprites/charizard.png">
+ 
+<img style="display: inline-block;" src="images/sprites/victreebel.png">
+ 
+</div>
+ 
+<p>
+ 
+Partial trapping seems initially powerful, but does have some downsides. While stopping an opponent's Pokémon from moving is effective, it also opens up the user to abuse from the partner. Paralyzing or attacking the Wrap user allows for ample interruption, and the length of time it takes for it to be meaningful gives plenty of time for it to be stopped. However, it still has plenty of utility in pivoting, and stopping a Pokémon from performing a potentially vital play is still useful. Overall, partial trapping seems to have taken a hit in viability, but remains useful for teams designed to accommodate it.
+ 
+</p>
+ 
+<p>
+ 
+However, due to the way PS has implemented partial trapping, it doesn't autotarget after use. As such, in a Doubles setting, it's actually possible to Wrap two opponents at once.
+As a result, I ended up quickbanning partial trapping until its implementation is improved. Once it is, however, I would definitely "retest" this. 
+</p>
+ 
+ 
+<h1 id="head2">Interesting Changes</h1>
+ 
+<div style="text-align: margin-left;">
+<img style="display: inline-block;" src="images/sprites/raticate.png">
+</div>
+<p>
+I think Raticate's viability is significantly boosted here. Super Fang has historically been an excellent support move in Doubles, halving an opponent's HP to allow for a partner to follow up. This makes bulkier threats, such as Snorlax, much easier to take down. In addition, the weakening of spread moves could effectively increase its bulk. However, Raticate itself isn't that amazing a Pokémon, so it's debatable as to whether using this tool is worth it. It really depends on how the format plays out, but Raticate's presence will be crucial should the metagame become bulkier. 
+</p>
+ 
+<div style="text-align: margin-left;">
+<img style="display: inline-block;" src="images/sprites/flareon.png">
+<img style="display: inline-block;" src="images/sprites/vaporeon.png">
+</div>
+<p>
+Freezing is nerfed a small bit, as it's possible to hit your own Pokémon with a Fire-type move or Haze to cure it. This makes it less of an OHKO overall, though it's still an extremely powerful status. Sleep is also slightly nerfed, as Haze can be used to wake up your ally Pokémon without them requiring a turn to recuperate. This can allow teams designed to accommodate these options to be much less vulnerable to status. 
+</p>
+ 
+<div style="text-align: margin-left;">
+<img style="display: inline-block;" src="images/sprites/articuno.png">
+<img style="display: inline-block;" src="images/sprites/vaporeon.png">
+<img style="display: inline-block;" src="images/sprites/lapras.png">
+</div>
+<p>
+Mist seems very interesting, given its ability to block moves like Growl that could abuse stat drop stacking. It also makes Psychic's Special drops a non-issue, which can help in some fringe scenarios. Since it's not as committal to use, it seems as though it could be a viable tech choice on some teams. It seems niche overall though, as whether stat drops will become a defining aspect of the metagame remains to be seen. 
+</p>
+ 
+<h1 id="head2">Conclusion</h1>
+ 
+<p>
+This is a new, emerging metagame produced by myself, so everyone is still scrambling to figure out how to apply all the new potential tech options. Currently, there doesn't seem to be any "Big 4", nor does anything seem to stand out as broken. Speed control, as in other Doubles metagames, appears to be very important, and it seems as if it'll be quite bulky too. I hope this article helps people figure out what's good and what isn't, anyway. The format can be played on the 2k20 PS Server, so go check it out!
+</p>
+ 
+<p>
+I'm currently considering the idea of Suspect Testing a few parts of the metagame once the spread move processing script is finished. The first is likely going to be Explosion and Selfdestruct, as the strategy of using it alongside Substitute seems problematic. There'll likely be more at some point, though, such as partial trapping.
+</p>
+
+<p>
+Author: <span style="font-style: italic;">Plague von Karma</span><br>
+Quality checked by: <span style="font-style: italic;">Disaster Area</span><br>
+Grammar checked by: <span style="font-style: italic;">Eseque</span><br>
+</p>
+ 
+</article>
