@@ -447,8 +447,10 @@ Prior to its release internationally, Pokémon Red and Green had some minor diff
 In Japan, Pokémon Stadium Zero updated RBY's mechanics. This added many changes to the game, albeit with the removal of many Pokémon. In addition to the typical RBY mechanics, the following applies;
 </p>
 <ul>
+  <li>Both Pokémon's current and max HP are displayed to the viewers.</li>
   <li>Stadium games run Sleep Clause natively, but count Rest. This can be taken as a mechanic change. This is often referred to as Stadium Sleep Clause.</li>
   <li>Sleep Duration was reduced to 0-3 turns, like in Yellow's Colosseum 2 mode.</li>
+  <li>Self-KO Clause is run innately to prevent ties, causing the user of Self-Destruct or Explosion to lose if both final Pokémon are KOed.</li>
   <li>Desyncs can no longer occur due to using a single console.</li>
   <li>Stat rollovers no longer occur.</li>
   <li>The 1/256 uncertainty was removed.</li>
@@ -486,7 +488,7 @@ When Pokémon Stadium was released, more changes were made, essentially creating
   <li>Aurora Beam, BubbleBeam and Acid's added effects have had their chances reduced from 33.2% to 30%.</li>
   <li>Swift bypasses accuracy checks normally.</li>
   <li>Transform fails against Ditto.</li>
-  <li>Haze now recovers the user's status condition</li>
+  <li>Haze now recovers the user's status condition, and removes stat drops from Paralysis and Burn.</li>
 </ul>
 
 <h1 id="PSbugs">Pokémon Showdown Bugs</h1>
@@ -526,6 +528,26 @@ When Pokémon Stadium was released, more changes were made, essentially creating
   <li>When Conversion is used against a dual-typed Pokémon, it incorrectly copies both types, rather than only the Pokémon's first type.</li>
 </ul>
 </p>
+
+<h2 id="OtherPSBugs">Stadium Glitches</h2>
+<p>
+  In addition to the regular RBY simulator, there are many glitches in Pokémon Showdown's Stadium simulator as well. All of the following are unintended interactions;
+</p>
+<ul>
+  <li>Rollovers still occur.</li>
+  <li>Exact HP is not shown.</li>
+  <li>Counter still remembers damage from multiple turns ago.</li>
+  <li>Toxic doesn't stack damage, nor does it compound Leech Seed health restoration.</li>
+  <li>Haze doesn't remove the major status of the user, nor does it restore the stat drops from Burn and Paralysis.</li>
+  <li>Rest doesn't remove the stat drops from Burn and Paralysis.</li>
+  <li>Bide doesn't provide move choice during use, and hits Pokémon during the semi-invulnerable states of Dig and Fly.</li>
+  <li>Mimic displays Max PP wrongly, though this is an aesthetic issue, like Bide's move choice.</li>
+  <li>Thrashing about moves, such as Petal Dance, do not give information as to whether the user has become confused once it's over.</li>
+  <li>Players are given a message when Partial Trapping ends, when this doesn't happen in Stadium.</li>
+  <li>Wrap doesn't end when either player switches out.</li>
+  <li>Haze delays charge moves for some reason...</li>
+  <li>If a move that's the same as another is called by Mimic, the PP of the first moveslot will be deducted infinitely, providing infinite PP.</li>
+</ul>
 
 <p>
    <i>Written by Disaster Area</i>
