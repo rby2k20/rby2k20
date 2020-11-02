@@ -136,6 +136,14 @@ Critical Hit % = Base Speed * 100 / 512.
 In addition, when moves critical hit, they will ignore any stat changes the attacking and defending Pokémon have, beneficial or otherwise. For example, if the attacker uses Amnesia 3 times to maximize its Special stat and then scores a critical hit, it will actually do less damage than if it didn't critical hit, only doing twice the damage of a normal attack without the boosts. Critical hits also ignore Reflect and Light Screen.
 </p>
 
+<p>The increased damage dealt by a critical hit can be approximated by the formula:</p>
+
+<p style="text-align:center">
+Damage Multiplier = (2L + 5) / (L + 5),
+</p>
+
+<p>where L is the Pokémon's level. This formula does not hold for Pokémon over level 100 (which are permitted in hackmons formats) due to a level overflow in the critical hit formula at level 128. The overflow is not currently implemented on PS and is an area of active research.</p>
+
 <h2 id="HighCritRate">High Critical Hit Rate Moves</h2>
 
 <p>
@@ -528,6 +536,10 @@ When Pokémon Stadium was released, more changes were made, essentially creating
   <li>The user interface shows incorrect values for the amount of damage Pokémon will take from being badly poisoned.</li>
   <li>The badly poisoned counter only increments on PS while a Pokémon is badly poisoned or leech seeded. It should continue to increment after a Pokémon is badly poisoned even when a Pokémon has cleared its status condition using Rest.</li>
   <li>When Conversion is used against a dual-typed Pokémon, it incorrectly copies both types, rather than only the Pokémon's first type.</li>
+  <li>Substitute should not influence how Counter works, but on PS using Counter on damage taken while behind a Substitute fails.</li>
+  <li>If a Pokémon has two copies of the same move in its moveset (either through Mimic or when playing a hackmons format), on PS only one moveslot's PP will decrement - in effect, that move has infinite PP. On cartridge, when a Pokémon has two copies of a move in its moveset, the moves decrement normally.</li>
+  <li><a href="https://www.smogon.com/forums/threads/gen-1-and-tradebacks-dev-post-bugs-here.3524844/post-8622471">There are issues with the interaction between partial trapping moves and substitute. This is an area of active research.</a></li>
+  <li><a href="https://www.smogon.com/forums/threads/gen-1-and-tradebacks-dev-post-bugs-here.3524844/post-8636000">The patch to Counter (and other desyncs) following a vote on Smogon have not yet been implemented.</a></li>
 </ul>
 </p>
 
