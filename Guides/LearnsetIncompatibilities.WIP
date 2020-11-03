@@ -22,9 +22,10 @@ So with the typical cases of learnset incompatibility being Egg Move additions a
 </p>
 
 <h1 id="kakuna">Kakuna and Beedrill: Poison Sting or String Shot + Harden</h1>
+<div style="text-align: center;">
 <img style="margin-left: initial; margin-right: initial;" src="images/sprites/kakuna.png">
 <img style="margin-left: initial; margin-right: initial;" src="images/sprites/beedrill.png">
-
+</div>
 <p>
 This one is quite humorous. Due to an oversight in Pokemon Red and Green, Metapod and Kakuna couldn't learn Harden upon evolution. As a result, you could only get them with Harden if you caught them as they are, which can make grinding a bit of a hassle. Yellow fixed this for Metapod by having it learn Harden if you evolve Caterpie right away, at L7. However, this was never fixed for Kakuna. As a result, Kakuna can never have its full learnset on its own, and Beedrill can't use Poison Sting or String Shot alongside Harden. 
 </p>
@@ -33,9 +34,9 @@ Due to the incompatibility on Metapod's end only being solved by Yellow, it stil
 </p>
 
 <h1 id="nido">Nidoking: Thrash + Fury Attack</h1>
-
+<div style="text-align: center;">
 <img style="margin-left: initial; margin-right: initial;" src="images/sprites/nidoking.png">
-
+</div>
 <p>
 
 Nidoking and Nidoqueen are stone evolutions, which makes Pokemon learn few moves upon evolving. Some Pokemon, such as Clefable, learn no moves at all. Nidoking and Nidoqueen can learn new moves, but Nidoking is the only one to get an exclusive move: Thrash, at L23. Nidorino can learn Horn Drill and Double Kick down the line in Red and Blue, but these are solved through TMs and Yellow, respectively. As a result though, Fury Attack is completely incompatible with Thrash. 
@@ -45,18 +46,18 @@ Due to the Double Kick case only being solved through Yellow, Thrash and Double 
 </p>
 
 <h1 id="egg">Exeggutor: Stomp + Powders</h1>
-
+<div style="text-align: center;">
 <img style="margin-left: initial; margin-right: initial;" src="images/sprites/exeggutor.png">
-
+</div>
 <p>
 
 Exeggutor, one of The Big 4, has quite a well-known incompatibility for a similar reason to Nidoking. Due to it learning Stomp exclusively through evolving from Exeggcute early, it can't learn any of its Powders: that's Poison Powder, Sleep Powder and Stun Spore. As a result, it loses the potential to have a nifty ParaFlinch combo with Stomp and Stun Spore. As an indirect result, Exeggutor is never seen using Stomp, as virtually its utility pales in comparison to the "Double Powder" moveset that it's run with for decades.
 </p>
 
 <h1 id="eevee">Eevee: Tackle + Growl</h1>
-
+<div style="text-align: center;">
 <img style="margin-left: initial; margin-right: initial;" src="images/sprites/eevee.png">
-
+</div>
 <p>
 
 Eevee has a good few potential starting movesets depending on where you get it: Red and Green, Yellow, or as a Stadium event. Due to a learnset change in Yellow, Eevee was provided with Tackle and Growl as its starting moveset. However, only the rival can ever get an Eevee at a low enough level to use it. The only time Eevee can learn Growl in RBY is when you get it from Celadon City, in which it's at L25, knowing; Tail Whip, Sand-Attack, Growl and Quick Attack. Overall, it's impossible for Eevee to know Tackle and Growl at once.
@@ -66,10 +67,10 @@ By extension, all of the above also applies to Eevee's evolutions.
 </p>
 
 <h1 id="jolteonflareon">Jolteon and Flareon: Focus Energy + Thundershock and Ember</h1>
-
+<div style="text-align: center;">
 <img style="margin-left: initial; margin-right: initial;" src="images/sprites/jolteon.png">
 <img style="margin-left: initial; margin-right: initial;" src="images/sprites/flareon.png">
-
+</div>
 <p>
 
 When Eevee evolves, its learnset pretty much completely changes. It's a complete non-issue, except when it comes to Thundershock and Ember with Focus Energy. Due to Focus Energy being learned at L36 with Eevee exclusively, Jolteon and Flareon lose access to their weakest STABs. As such, they need leveling up to the mid-50s for them to learn their strongest ones without TMs. Luckily, Focus Energy is only good in Stadium, so this is a non-issue in in-game runs, which is the only case where it's really relevant. 
@@ -85,11 +86,9 @@ When Eevee evolves, its learnset pretty much completely changes. It's a complete
 Due to Tradebacks introducing Egg Moves, it's possible for many Pokemon to get incompatible moves. This is usually due to issues trading them back to Gen 1, Event Moves disallowing Egg Moves, and problems with move relearning. Here is a full list from <a href="https://www.smogon.com/forums/threads/rby-and-gsc-illegal-movesets.78638/">Wild Eep on Smogon</a>. There's a pretty significant amount!
 
 <button onclick="ShowTB()">Click here to view!</button>
-
 <div id="ShowTB">
-
 Bulbasaur:
-
+<br>
 Light Screen + Razor Wind
 <br>
 Petal Dance + Razor Wind
