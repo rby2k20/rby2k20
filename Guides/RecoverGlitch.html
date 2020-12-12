@@ -2,7 +2,7 @@
 
 <author>Plague von Karma</author>
 
-<pubday>--</pubday>
+<pubday>12</pubday>
 
 <pubmonth>12</pubmonth> <!--Use a number (example 4 for april)-->
 
@@ -23,15 +23,15 @@
 <h1 id="intro">Introduction</h1>
 
 <p>
-In RBY, it's possible for recovery moves (Soft-Boiled, Recover and Rest) to fail if your Max HP - Current HP leaves a difference of 255 or 511. Let's call these values "Failure Numbers". This glitch is a rarebut extremely notable problem when it occurs, as it could lead to you losing a Pokemon for making what would usually look like a good play. As a result, you have to take damage in some way just to get the chance to recover again, which can be pretty difficult. So, how does this happen? Why have the RBY Gods smited you with such a horrible glitch? For the sake of simplicity, we will be considering exclusively L100 Pokemon. 
+In RBY, it's possible for recovery moves (Softboiled, Recover, and Rest) to fail if your max HP - current HP leaves a difference of 255 or 511. Let's call these values "Failure Numbers". This glitch is rare, but an extremely notable problem when it occurs, as it could lead to you losing a Pokémon for making what would usually look like a good play. As a result, you have to take damage in some way just to get the chance to recover again, which can be pretty difficult. So, how does this happen? Why have the RBY gods smited you with such a horrible glitch? For the sake of simplicity, we will be considering exclusively L100 Pokémon.
 </p>
 
 <p>
-If you want to know what the Failure Numbers are like for Pokemon of different levels, simply take their Max HP and take away 255 or 511. Generally, the lower-levelled the Pokemon, the less likely it is to have one of these numbers. In hacked formats like Balanced Hackmons, however, you're more likely to have two Failure Numbers to consider, due to the sheer amount of HP these Pokemon have.
+If you want to know what the Failure Numbers are like for Pokémon of different levels, simply take their max HP and take away 255 or 511. Generally, the lower-levelled the Pokémon, the less likely it is to have one of these numbers. In hacked formats like Balanced Hackmons, however, you're more likely to have two Failure Numbers to consider, due to the sheer amount of HP some Pokémon have.
 </p>
 
 <p>
-The glitch happens because the game only checks the second byte of HP, which causes some unintended issues when checking to see if recovery moves fail. You see, recovery moves are meant fail if Max HP - Current HP = 0. This seems simple, but when you only check the second byte, this can be problematic, especially considering 255 is the highest you can store in one byte. As a result, in the event of an overflow, a carry flag is set to take away 1 when calculating whether the recovery move should fail. Due to only checking one byte, Chansey's Max HP, in the eyes of recovery moves, is 191. So when taking away the current HP and considering the carry flag raised, if it's 192, it will equal 0. Thus, the recovery move fails. Due to the way recovery moves work in the Stadium games, this glitch does not occur there.
+The glitch happens because the game only checks the second byte of HP, which causes some unintended issues when checking to see if recovery moves fail. You see, recovery moves are meant fail if Max HP - Current HP = 0. This seems simple, but when you only check the second byte, this can be problematic, especially considering 255 is the highest you can store in one byte. As a result, in the event of an overflow, a carry flag is set to take away 1 when calculating whether the recovery move should fail. Due to only checking one byte, Chansey's max HP, in the eyes of recovery moves, is 191. So when taking away the current HP and considering the carry flag raised, if it's 192, it will equal 0. Thus, the recovery move fails. Due to the way recovery moves work in the Stadium games, this glitch does not occur there.
 </p>
 
 
@@ -44,11 +44,11 @@ The glitch happens because the game only checks the second byte of HP, which cau
 
 </div>
 <p>
-Pokemon at L100 will have one singular Failure Number where this happens, as the required amount of HP for two to occur is quite large. However, there are two exceptions - Chansey and Snorlax - due to the sheer amount of HP they have. Chansey can fail at 448 or 192 HP, which can be represented as 63.7% or 27.3%. For Snorlax, this is 268 or 12 HP, which can be represented as 51.2% or 2.3%. 
+Pokémon at L100 will have one singular Failure Number where this happens, as the required amount of HP for two to occur is quite large. However, there are two exceptions—Chansey and Snorlax—due to the sheer amount of HP they have. Chansey can fail at 448 or 192 HP, which can be represented as 63.7% or 27.3% respectively. For Snorlax, this is 268 or 12 HP, which can be represented as 51.2% or 2.3% respectively.
 </p>
-
+  
 <p>
-Here's a table featuring every Pokemon's Failure Numbers at L100. Funnily enough, some Pokemon are completely unaffected due to how low their HP is: Diglett, Abra, Magnemite and Magikarp. Magikarp can't learn any recovery at all though, so it doesn't really matter for it. Snorlax and Chansey's second Failure Numbers have not been written in, since it's not really good for presentation.
+Here's a table featuring every Pokémon's Failure Numbers at L100. Funnily enough, some Pokémon are completely unaffected due to how low their HP is: Diglett, Abra, Magnemite, and Magikarp. Magikarp can't learn any recovery at all though, so it doesn't really matter for it. Snorlax and Chansey's second Failure Numbers have not been written in, since it's not really good for presentation.
 </p>
 <style type="text/css">
 
@@ -490,7 +490,7 @@ font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 
 <tr>
 
-<td class="tg-t9gt"><span style="font-weight:bold">Nidoranf</span></td>
+<td class="tg-t9gt"><span style="font-weight:bold">Nidoran-F</span></td>
 
 <td class="tg-oo9c"><span style="font-weight:normal">55</span></td>
 
@@ -532,7 +532,7 @@ font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 
 <tr>
 
-<td class="tg-t9gt"><span style="font-weight:bold">Nidoranm</span></td>
+<td class="tg-t9gt"><span style="font-weight:bold">Nidoran-M</span></td>
 
 <td class="tg-oo9c"><span style="font-weight:normal">46</span></td>
 
@@ -1246,7 +1246,7 @@ font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 
 <tr>
 
-<td class="tg-t9gt"><span style="font-weight:bold">Farfetchd</span></td>
+<td class="tg-t9gt"><span style="font-weight:bold">Farfetch'd</span></td>
 
 <td class="tg-oo9c"><span style="font-weight:normal">52</span></td>
 
@@ -1792,7 +1792,7 @@ font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 
 <tr>
 
-<td class="tg-t9gt"><span style="font-weight:bold">Mrmime</span></td>
+<td class="tg-t9gt"><span style="font-weight:bold">Mr. Mime</span></td>
 
 <td class="tg-oo9c"><span style="font-weight:normal">40</span></td>
 
@@ -2220,9 +2220,9 @@ font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 
 Author: <span style="font-style: italic;">Plague von Karma</span><br>
 
-Quality Checked by: <span style="font-style: italic;">--</span><br>
+Quality Checked by: <span style="font-style: italic;">Disaster Area</span><br>
 
-Grammar Checked by: <span style="font-style: italic;">--</span><br>
+Grammar Checked by: <span style="font-style: italic;">Eseque</span><br>
 
 HTML by: <span style="font-style: italic;">Plague von Karma</span><br>
 
