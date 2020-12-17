@@ -1,0 +1,2275 @@
+<title>Everything about RBY Confusion</title>
+
+<author>Plague von Karma</author>
+
+<pubday>--</pubday>
+
+<pubmonth>12</pubmonth> <!--Use a number (example 4 for april)-->
+
+<pubyear>2020</pubyear>
+
+<category>All</category>
+
+<sticky>false</sticky> <!-- Use 'true' without quotes for sticky article-->
+
+
+
+<article>
+
+
+
+<h1 class="title">Everything about RBY Confusion</h1>
+
+
+
+<div id="toc"></div>
+
+
+
+<h1 id="intro">Introduction & Odds</h1>
+
+
+<div style="text-align: center;">
+
+<img style="display: inline-block;" src="images/sprites/rg/lapras.png">
+
+</div>
+<p>
+Confusion is a rather uncommonly-used status in RBY, though this isn't to say it's completely unused by some Pokemon, such as Magmar and Gengar. When afflicted, Confusion will last for 1-4 turns, each turn having a 50% chance of causing your Pokemon to attack itself. This damage is typeless and physical, lacks damage variance and is equivalent to a 40 base power attack. Furthermore, it ignores your Reflect and cannot inflict a critical hit. Due to a lack of damage variance, confusion damage will always deal the maximum amount of damage to your Pokemon possible. Confusion is affected by your Attack and Defense boosts though, so if your Pokemon is a Swords Dance user, it will deal significantly more damage to your Pokemon. In addition to this, Burns halve the Attack stat in RBY, meaning that these halve confusion damage as well. However, if you're using something like Barrier or Acid Armor, Confusion damage will be significantly reduced. As it's a volatile status, confusion removes itself if the afflicted Pokemon switches, and Haze can remove it outright.
+</p>
+
+
+<p>
+Considering the odds, a Pokemon afflicted with Confusion will hit itself at least once 76.6% of the time, a 35.9% chance of damaging itself twice, and a 10.9% chance of damaging itself three times. Should the Pokemon be particularly unlucky, there's a 1.6% chance of the Pokemon damaging itself four times. Naturally, considering the 76.6% chance, this means that there's a 23.4% chance of the Pokemon not damaging itself at all. While these odds seem favourable, they are subject to accuracy, which we can apply to these chances for a better picture of what to expect.
+</p>
+
+<p>
+We'll do this considering the 1/256 uncertainty, for accurate numbers. There are four moves capable of causing Confusion: Confuse Ray, Supersonic, Psybeam and Confusion. For Confuse Ray, the chance of a Pokemon hitting itself at least once, plus Confuse Ray connecting, is 76.2936%, or if we round this to one decimal place rounding up, 76.3%. If we want the opponent to hit themselves immediately, the chance would be 49.8%. Unfortunately for Supersonic, the odds are significantly less favourable: 54.7% accuracy, and just a 41.9% chance of them hitting themselves at least once considering this, and a 27.3% chance of the foe hitting itself outright. 
+</p>
+
+<p>
+Considering this, we can see that confusion is a pretty obnoxious status ailment. Should a Pokemon go first, it's very possible to get a free turn while potentially getting more mileage off of it. However, sometimes, it will give you nothing at all, wasting you a turn and likely taking damage in the process. Considering the odds though, only Confuse Ray can be seen as a reliable source of it, limiting its potential to just a few Pokemon. Considering the potency of paralysis in its speed-dropping nature and capability of making Pokemon skip turns, as well as persisting through switches, confusion's viability is debatable on its own. In tandem with paralysis though, there's a ~75% chance the opponent can't attack, so it has ample utility in these scenarios for gaining an advantageous game state. 
+</p>
+
+<h1 id="countermeasures">Countermeasures</h1>
+
+<div style="text-align: center;">
+
+<img style="display: inline-block;" src="images/sprites/ninetales.png">
+
+</div>
+<p>
+Naturally, the best countermeasure to confusion is to switch out: the odds are not in the user's favour, though taking the dice roll is always possible. It really depends on the Pokemon afflicted though, as physically weaker Pokemon will normally take less damage overall. This can be taken advantage of; considering that confusion takes advantage of a Pokemon's Attack stat, it's good to reduce your Stat Exp and DVs as much as possible if you're using a Special-exclusive Attacker, such as Alakazam. In Alakazam's case, its damage taken will reduce from 37 (11.8%) to 21 (6.8%), a significant decrease. This is considering an Attack DV of 1 and Defense DV of 15, the latter of which is the minimum possible to allow a HP DV of 15. This is automated on Pokemon Showdown, making it largely commonplace in any generation, but it's good to make sure it's reduced as much as possible: it doesn't set that 1 Attack DV for you! For physical attackers though, they're pretty much out of luck, especially if their physical defensiveness is poor. Flareon will take 57 damage, 17.1%! 
+</p>
+
+<h1 id="glitches">Glitches</h1>
+
+<div style="text-align: center;">
+
+<img style="display: inline-block;" src="images/sprites/rb/magmar.png">
+
+</div>
+<p>
+However, confusion does have some glitches. For example, user Crystal_ discovered that <a href="https://www.youtube.com/watch?v=jw24URgBi5o&ab_channel=Crystal_">found that confused Pokemon hit opposing substitutes with their confusion hits<a>. This is because while there's two subroutines handling whether a Pokemon targets itself or an enemy, but only one for Substitute, which only handles the enemy. Confusion calls the opposite subroutine when it triggers, but if a Substitute is in play on either side, it will always try to hit the opposing Pokemon's Substitute, whether it has one or not. 
+</p>
+
+<p>
+Confusion can play apart in some separate glitches too. Like paralysis, it's possible for confusion to cause a <a href="https://www.youtube.com/watch?v=ftTalHMjPRY">Counter desync</a> in certain circumstances, and it can trigger <a href="https://www.youtube.com/watch?v=bNzDmXbZ7kY&ab_channel=ChickasaurusGLEvie">Dig and Fly's semi-invulnerability glitch</a>. 
+</p>
+
+<h1 id="table">Damage Numbers</h1>
+
+<div style="text-align: center;">
+
+<img style="display: inline-block;" src="images/sprites/golbat.png">
+
+</div>
+
+<p>
+
+
+Originally, Azure Heights had an equation to determine "average" confusion damage. However, it's inaccurate: it assumes the self-hit has a base power of 50, and that confusion damage varies. Both of these are incorrect, and the formula itself doesn't scale well with certain Pokemon. The numbers here are calculated using in-game formulas, making them accurate.
+</p>
+<style type="text/css">
+
+.tg {border-collapse:collapse;border-spacing:0;}
+
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+
+overflow:hidden;padding:10px 5px;word-break:normal;}
+
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+
+font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+
+.tg .tg-haiz{background-color:#ffffff;font-weight:bold;text-align:center;vertical-align:middle}
+
+.tg .tg-t9gt{background-color:#ffffff;font-weight:bold;text-align:left;vertical-align:bottom}
+
+.tg .tg-oo9c{background-color:#ffffff;text-align:center;vertical-align:bottom}
+
+</style>
+
+<table class="tg">
+
+<thead>
+
+<tr>
+
+<th class="tg-haiz" rowspan="2">Pokemon</th>
+
+<th class="tg-haiz" colspan="4"><span style="font-weight:bold">Confusion Damage</span></th>
+
+</tr>
+
+<tr>
+
+<td class="tg-haiz"><span style="font-weight:bold">Max Dmg</span></td>
+
+<td class="tg-haiz"><span style="font-weight:bold">Min Dmg</span></td>
+
+<td class="tg-haiz"><span style="font-weight:bold">Max %</span></td>
+
+<td class="tg-haiz"><span style="font-weight:bold">Min %</span></td>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Bulbasaur</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">20</td>
+
+<td class="tg-oo9c">11.9%</td>
+
+<td class="tg-oo9c">6.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Ivysaur</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">10.8%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Venusaur</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">9.6%</td>
+
+<td class="tg-oo9c">6.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Charmander</span></td>
+
+<td class="tg-oo9c">38</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">13.5%</td>
+
+<td class="tg-oo9c">7.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Charmeleon</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">11.6%</td>
+
+<td class="tg-oo9c">7.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Charizard</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">10.3%</td>
+
+<td class="tg-oo9c">7.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Squirtle</span></td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">10.3%</td>
+
+<td class="tg-oo9c">5.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Wartortle</span></td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">19</td>
+
+<td class="tg-oo9c">9.7%</td>
+
+<td class="tg-oo9c">5.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Blastoise</span></td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">8.6%</td>
+
+<td class="tg-oo9c">5.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Caterpie</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">15</td>
+
+<td class="tg-oo9c">11.3%</td>
+
+<td class="tg-oo9c">5.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Metapod</span></td>
+
+<td class="tg-oo9c">24</td>
+
+<td class="tg-oo9c">9</td>
+
+<td class="tg-oo9c">7.9%</td>
+
+<td class="tg-oo9c">3.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Butterfree</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">18</td>
+
+<td class="tg-oo9c">10.2%</td>
+
+<td class="tg-oo9c">5.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Weedle</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">18</td>
+
+<td class="tg-oo9c">13.1%</td>
+
+<td class="tg-oo9c">6.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Kakuna</span></td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">11</td>
+
+<td class="tg-oo9c">9.2%</td>
+
+<td class="tg-oo9c">3.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Beedrill</span></td>
+
+<td class="tg-oo9c">50</td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">15.0%</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Pidgey</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">20</td>
+
+<td class="tg-oo9c">13.1%</td>
+
+<td class="tg-oo9c">7.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Pidgeotto</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">11.2%</td>
+
+<td class="tg-oo9c">6.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Pidgeot</span></td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">24</td>
+
+<td class="tg-oo9c">9.8%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Rattata</span></td>
+
+<td class="tg-oo9c">44</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">16.7%</td>
+
+<td class="tg-oo9c">9.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Raticate</span></td>
+
+<td class="tg-oo9c">42</td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">13.4%</td>
+
+<td class="tg-oo9c">8.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Spearow</span></td>
+
+<td class="tg-oo9c">48</td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">17.0%</td>
+
+<td class="tg-oo9c">10.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Fearow</span></td>
+
+<td class="tg-oo9c">42</td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">12.6%</td>
+
+<td class="tg-oo9c">8.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Ekans</span></td>
+
+<td class="tg-oo9c">41</td>
+
+<td class="tg-oo9c">24</td>
+
+<td class="tg-oo9c">15.0%</td>
+
+<td class="tg-oo9c">8.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Arbok</span></td>
+
+<td class="tg-oo9c">40</td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">12.4%</td>
+
+<td class="tg-oo9c">8.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Pikachu</span></td>
+
+<td class="tg-oo9c">46</td>
+
+<td class="tg-oo9c">26</td>
+
+<td class="tg-oo9c">16.8%</td>
+
+<td class="tg-oo9c">9.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Raichu</span></td>
+
+<td class="tg-oo9c">46</td>
+
+<td class="tg-oo9c">32</td>
+
+<td class="tg-oo9c">14.2%</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Sandshrew</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">10.9%</td>
+
+<td class="tg-oo9c">6.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Sandslash</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">9.3%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Nidoran-F</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">18</td>
+
+<td class="tg-oo9c">10.5%</td>
+
+<td class="tg-oo9c">5.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Nidorina</span></td>
+
+<td class="tg-oo9c">34</td>
+
+<td class="tg-oo9c">20</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+<td class="tg-oo9c">5.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Nidoqueen</span></td>
+
+<td class="tg-oo9c">34</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">8.9%</td>
+
+<td class="tg-oo9c">6.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Nidoran-M</span></td>
+
+<td class="tg-oo9c">42</td>
+
+<td class="tg-oo9c">24</td>
+
+<td class="tg-oo9c">14.2%</td>
+
+<td class="tg-oo9c">8.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Nidorino</span></td>
+
+<td class="tg-oo9c">40</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">12.3%</td>
+
+<td class="tg-oo9c">7.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Nidoking</span></td>
+
+<td class="tg-oo9c">39</td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">10.7%</td>
+
+<td class="tg-oo9c">7.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Clefairy</span></td>
+
+<td class="tg-oo9c">34</td>
+
+<td class="tg-oo9c">18</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+<td class="tg-oo9c">5.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Clefable</span></td>
+
+<td class="tg-oo9c">34</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">8.7%</td>
+
+<td class="tg-oo9c">5.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Vulpix</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">18</td>
+
+<td class="tg-oo9c">12.5%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Ninetales</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">10.0%</td>
+
+<td class="tg-oo9c">6.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Jigglypuff</span></td>
+
+<td class="tg-oo9c">47</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">10.9%</td>
+
+<td class="tg-oo9c">5.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Wigglytuff</span></td>
+
+<td class="tg-oo9c">44</td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">9.1%</td>
+
+<td class="tg-oo9c">5.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Zubat</span></td>
+
+<td class="tg-oo9c">39</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">13.8%</td>
+
+<td class="tg-oo9c">7.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Golbat</span></td>
+
+<td class="tg-oo9c">38</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">10.8%</td>
+
+<td class="tg-oo9c">7.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Oddish</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">19</td>
+
+<td class="tg-oo9c">11.3%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Gloom</span></td>
+
+<td class="tg-oo9c">34</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">10.5%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Vileplume</span></td>
+
+<td class="tg-oo9c">34</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">9.6%</td>
+
+<td class="tg-oo9c">6.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Paras</span></td>
+
+<td class="tg-oo9c">40</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">14.7%</td>
+
+<td class="tg-oo9c">9.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Parasect</span></td>
+
+<td class="tg-oo9c">39</td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">12.1%</td>
+
+<td class="tg-oo9c">8.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Venonat</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">11.5%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Venomoth</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">10.8%</td>
+
+<td class="tg-oo9c">6.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Diglett</span></td>
+
+<td class="tg-oo9c">49</td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">22.0%</td>
+
+<td class="tg-oo9c">12.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Dugtrio</span></td>
+
+<td class="tg-oo9c">45</td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">16.5%</td>
+
+<td class="tg-oo9c">11.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Meowth</span></td>
+
+<td class="tg-oo9c">39</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">13.8%</td>
+
+<td class="tg-oo9c">7.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Persian</span></td>
+
+<td class="tg-oo9c">38</td>
+
+<td class="tg-oo9c">24</td>
+
+<td class="tg-oo9c">11.4%</td>
+
+<td class="tg-oo9c">7.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Psyduck</span></td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">11.9%</td>
+
+<td class="tg-oo9c">6.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Golduck</span></td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">24</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+<td class="tg-oo9c">6.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Mankey</span></td>
+
+<td class="tg-oo9c">53</td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">18.7%</td>
+
+<td class="tg-oo9c">12.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Primeape</span></td>
+
+<td class="tg-oo9c">49</td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">14.7%</td>
+
+<td class="tg-oo9c">10.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Growlithe</span></td>
+
+<td class="tg-oo9c">44</td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">14.1%</td>
+
+<td class="tg-oo9c">8.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Arcanine</span></td>
+
+<td class="tg-oo9c">43</td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">11.2%</td>
+
+<td class="tg-oo9c">8.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Poliwag</span></td>
+
+<td class="tg-oo9c">39</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">13.8%</td>
+
+<td class="tg-oo9c">7.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Poliwhirl</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">10.5%</td>
+
+<td class="tg-oo9c">6.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Poliwrath</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">8.6%</td>
+
+<td class="tg-oo9c">5.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Abra</span></td>
+
+<td class="tg-oo9c">38</td>
+
+<td class="tg-oo9c">14</td>
+
+<td class="tg-oo9c">15.0%</td>
+
+<td class="tg-oo9c">5.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Kadabra</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">18</td>
+
+<td class="tg-oo9c">13.1%</td>
+
+<td class="tg-oo9c">6.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Alakazam</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">11.8%</td>
+
+<td class="tg-oo9c">6.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Machop</span></td>
+
+<td class="tg-oo9c">45</td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">13.1%</td>
+
+<td class="tg-oo9c">8.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Machoke</span></td>
+
+<td class="tg-oo9c">44</td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">12.1%</td>
+
+<td class="tg-oo9c">8.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Machamp</span></td>
+
+<td class="tg-oo9c">48</td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">12.5%</td>
+
+<td class="tg-oo9c">9.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Bellsprout</span></td>
+
+<td class="tg-oo9c">51</td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">16.8%</td>
+
+<td class="tg-oo9c">10.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Weepinbell</span></td>
+
+<td class="tg-oo9c">49</td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">14.7%</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Victreebel</span></td>
+
+<td class="tg-oo9c">47</td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">12.9%</td>
+
+<td class="tg-oo9c">9.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Tentacool</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">19</td>
+
+<td class="tg-oo9c">13.1%</td>
+
+<td class="tg-oo9c">6.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Tentacruel</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">10.2%</td>
+
+<td class="tg-oo9c">6.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Geodude</span></td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">20</td>
+
+<td class="tg-oo9c">11.0%</td>
+
+<td class="tg-oo9c">7.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Graveler</span></td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+<td class="tg-oo9c">7.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Golem</span></td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">8.5%</td>
+
+<td class="tg-oo9c">6.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Ponyta</span></td>
+
+<td class="tg-oo9c">45</td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">14.9%</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Rapidash</span></td>
+
+<td class="tg-oo9c">44</td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">13.2%</td>
+
+<td class="tg-oo9c">9.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Slowpoke</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">9.1%</td>
+
+<td class="tg-oo9c">5.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Slowbro</span></td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">18</td>
+
+<td class="tg-oo9c">7.1%</td>
+
+<td class="tg-oo9c">4.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Magnemite</span></td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">12</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+<td class="tg-oo9c">4.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Magneton</span></td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">16</td>
+
+<td class="tg-oo9c">8.9%</td>
+
+<td class="tg-oo9c">5.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Farfetch'd</span></td>
+
+<td class="tg-oo9c">38</td>
+
+<td class="tg-oo9c">24</td>
+
+<td class="tg-oo9c">12.4%</td>
+
+<td class="tg-oo9c">7.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Doduo</span></td>
+
+<td class="tg-oo9c">49</td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">17.9%</td>
+
+<td class="tg-oo9c">12.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Dodrio</span></td>
+
+<td class="tg-oo9c">46</td>
+
+<td class="tg-oo9c">34</td>
+
+<td class="tg-oo9c">14.2%</td>
+
+<td class="tg-oo9c">10.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Seel</span></td>
+
+<td class="tg-oo9c">32</td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">9.6%</td>
+
+<td class="tg-oo9c">5.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Dewgong</span></td>
+
+<td class="tg-oo9c">32</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">8.4%</td>
+
+<td class="tg-oo9c">5.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Grimer</span></td>
+
+<td class="tg-oo9c">45</td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">12.4%</td>
+
+<td class="tg-oo9c">8.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Muk</span></td>
+
+<td class="tg-oo9c">43</td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">10.4%</td>
+
+<td class="tg-oo9c">7.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Shellder</span></td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">10.3%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Cloyster</span></td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">16</td>
+
+<td class="tg-oo9c">7.6%</td>
+
+<td class="tg-oo9c">5.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Gastly</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">18</td>
+
+<td class="tg-oo9c">14.1%</td>
+
+<td class="tg-oo9c">6.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Haunter</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">12.6%</td>
+
+<td class="tg-oo9c">7.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Gengar</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">11.5%</td>
+
+<td class="tg-oo9c">7.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Onix</span></td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">9</td>
+
+<td class="tg-oo9c">6.2%</td>
+
+<td class="tg-oo9c">3.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Drowzee</span></td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">20</td>
+
+<td class="tg-oo9c">11.1%</td>
+
+<td class="tg-oo9c">6.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Hypno</span></td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">9.7%</td>
+
+<td class="tg-oo9c">6.2%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Krabby</span></td>
+
+<td class="tg-oo9c">39</td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">14.8%</td>
+
+<td class="tg-oo9c">10.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Kingler</span></td>
+
+<td class="tg-oo9c">38</td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">12.1%</td>
+
+<td class="tg-oo9c">9.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Voltorb</span></td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">13</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+<td class="tg-oo9c">4.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Electrode</span></td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">9.0%</td>
+
+<td class="tg-oo9c">5.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Exeggcute</span></td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">13</td>
+
+<td class="tg-oo9c">7.7%</td>
+
+<td class="tg-oo9c">4.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Exeggutor</span></td>
+
+<td class="tg-oo9c">38</td>
+
+<td class="tg-oo9c">26</td>
+
+<td class="tg-oo9c">9.7%</td>
+
+<td class="tg-oo9c">6.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Cubone</span></td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">14</td>
+
+<td class="tg-oo9c">8.3%</td>
+
+<td class="tg-oo9c">4.6%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Marowak</span></td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">19</td>
+
+<td class="tg-oo9c">9.0%</td>
+
+<td class="tg-oo9c">5.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Hitmonlee</span></td>
+
+<td class="tg-oo9c">57</td>
+
+<td class="tg-oo9c">42</td>
+
+<td class="tg-oo9c">18.8%</td>
+
+<td class="tg-oo9c">13.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Hitmonchan</span></td>
+
+<td class="tg-oo9c">42</td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">13.9%</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Lickitung</span></td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">7.8%</td>
+
+<td class="tg-oo9c">4.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Koffing</span></td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+<td class="tg-oo9c">6.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Weezing</span></td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">20</td>
+
+<td class="tg-oo9c">8.7%</td>
+
+<td class="tg-oo9c">6.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Rhyhorn</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">9.1%</td>
+
+<td class="tg-oo9c">6.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Rhydon</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">9.0%</td>
+
+<td class="tg-oo9c">6.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Chansey</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">7</td>
+
+<td class="tg-oo9c">5.0%</td>
+
+<td class="tg-oo9c">1.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Tangela</span></td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">13</td>
+
+<td class="tg-oo9c">6.9%</td>
+
+<td class="tg-oo9c">3.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Kangaskhan</span></td>
+
+<td class="tg-oo9c">39</td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">9.4%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Horsea</span></td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">14</td>
+
+<td class="tg-oo9c">10.3%</td>
+
+<td class="tg-oo9c">5.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Seadra</span></td>
+
+<td class="tg-oo9c">28</td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">8.9%</td>
+
+<td class="tg-oo9c">5.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Goldeen</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">12.6%</td>
+
+<td class="tg-oo9c">7.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Seaking</span></td>
+
+<td class="tg-oo9c">43</td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">11.8%</td>
+
+<td class="tg-oo9c">8.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Staryu</span></td>
+
+<td class="tg-oo9c">32</td>
+
+<td class="tg-oo9c">17</td>
+
+<td class="tg-oo9c">12.2%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Starmie</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">10.2%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Mr. Mime</span></td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">16</td>
+
+<td class="tg-oo9c">10.2%</td>
+
+<td class="tg-oo9c">5.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Scyther</span></td>
+
+<td class="tg-oo9c">43</td>
+
+<td class="tg-oo9c">31</td>
+
+<td class="tg-oo9c">12.5%</td>
+
+<td class="tg-oo9c">9.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Jynx</span></td>
+
+<td class="tg-oo9c">41</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">12.3%</td>
+
+<td class="tg-oo9c">6.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Electabuzz</span></td>
+
+<td class="tg-oo9c">43</td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">12.9%</td>
+
+<td class="tg-oo9c">8.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Magmar</span></td>
+
+<td class="tg-oo9c">47</td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">14.1%</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Pinsir</span></td>
+
+<td class="tg-oo9c">41</td>
+
+<td class="tg-oo9c">30</td>
+
+<td class="tg-oo9c">12.3%</td>
+
+<td class="tg-oo9c">9.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Tauros</span></td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">26</td>
+
+<td class="tg-oo9c">10.2%</td>
+
+<td class="tg-oo9c">7.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Magikarp</span></td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">6</td>
+
+<td class="tg-oo9c">8.6%</td>
+
+<td class="tg-oo9c">2.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Gyarados</span></td>
+
+<td class="tg-oo9c">47</td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">12.0%</td>
+
+<td class="tg-oo9c">8.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Lapras</span></td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">7.8%</td>
+
+<td class="tg-oo9c">5.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Ditto</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">19</td>
+
+<td class="tg-oo9c">11.7%</td>
+
+<td class="tg-oo9c">6.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Eevee</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">11.8%</td>
+
+<td class="tg-oo9c">6.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Vaporeon</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">8.0%</td>
+
+<td class="tg-oo9c">5.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Jolteon</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">11.1%</td>
+
+<td class="tg-oo9c">6.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Flareon</span></td>
+
+<td class="tg-oo9c">57</td>
+
+<td class="tg-oo9c">43</td>
+
+<td class="tg-oo9c">17.1%</td>
+
+<td class="tg-oo9c">12.9%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Porygon</span></td>
+
+<td class="tg-oo9c">32</td>
+
+<td class="tg-oo9c">19</td>
+
+<td class="tg-oo9c">9.6%</td>
+
+<td class="tg-oo9c">5.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Omanyte</span></td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">11</td>
+
+<td class="tg-oo9c">8.1%</td>
+
+<td class="tg-oo9c">4.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Omastar</span></td>
+
+<td class="tg-oo9c">23</td>
+
+<td class="tg-oo9c">14</td>
+
+<td class="tg-oo9c">6.7%</td>
+
+<td class="tg-oo9c">4.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Kabuto</span></td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">22</td>
+
+<td class="tg-oo9c">12.5%</td>
+
+<td class="tg-oo9c">8.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Kabutops</span></td>
+
+<td class="tg-oo9c">37</td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">11.5%</td>
+
+<td class="tg-oo9c">8.4%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Aerodactyl</span></td>
+
+<td class="tg-oo9c">47</td>
+
+<td class="tg-oo9c">33</td>
+
+<td class="tg-oo9c">12.9%</td>
+
+<td class="tg-oo9c">9.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Snorlax</span></td>
+
+<td class="tg-oo9c">48</td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">9.2%</td>
+
+<td class="tg-oo9c">6.7%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Articuno</span></td>
+
+<td class="tg-oo9c">32</td>
+
+<td class="tg-oo9c">21</td>
+
+<td class="tg-oo9c">8.4%</td>
+
+<td class="tg-oo9c">5.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Zapdos</span></td>
+
+<td class="tg-oo9c">36</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">9.4%</td>
+
+<td class="tg-oo9c">6.5%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Moltres</span></td>
+
+<td class="tg-oo9c">38</td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">9.9%</td>
+
+<td class="tg-oo9c">7.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Dratini</span></td>
+
+<td class="tg-oo9c">42</td>
+
+<td class="tg-oo9c">26</td>
+
+<td class="tg-oo9c">14.7%</td>
+
+<td class="tg-oo9c">9.1%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Dragonair</span></td>
+
+<td class="tg-oo9c">41</td>
+
+<td class="tg-oo9c">27</td>
+
+<td class="tg-oo9c">12.6%</td>
+
+<td class="tg-oo9c">8.3%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Dragonite</span></td>
+
+<td class="tg-oo9c">44</td>
+
+<td class="tg-oo9c">34</td>
+
+<td class="tg-oo9c">11.4%</td>
+
+<td class="tg-oo9c">8.8%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Mewtwo</span></td>
+
+<td class="tg-oo9c">40</td>
+
+<td class="tg-oo9c">29</td>
+
+<td class="tg-oo9c">9.6%</td>
+
+<td class="tg-oo9c">7.0%</td>
+
+</tr>
+
+<tr>
+
+<td class="tg-t9gt"><span style="font-weight:bold">Mew</span></td>
+
+<td class="tg-oo9c">35</td>
+
+<td class="tg-oo9c">25</td>
+
+<td class="tg-oo9c">8.7%</td>
+
+<td class="tg-oo9c">6.2%</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p>
+
+Author: <span style="font-style: italic;">Plague von Karma</span><br>
+
+Quality Checked by: <span style="font-style: italic;">QC's Nickname</span><br>
+
+Grammar Checked by: <span style="font-style: italic;">GP's Nickname</span><br>
+
+HTML by: <span style="font-style: italic;">Plague von Karma</span><br>
+
+Publish Date: <span style="font-style: italic;">The Date (e.g. 7th June 2020)</span>
+
+Data Sources: <span style="font-style: italic;"><a href="https://www.math.miami.edu/~jam/azure/attacks/comp/confuse.htm">Azure Heights Confusion Article</a>, <a href="https://bulbapedia.bulbagarden.net/wiki/Confusion_(status_condition)#Generation_I">Bulbapedia's Confusion Page</a>, <a href="https://bulbapedia.bulbagarden.net/wiki/Damage">Bulbapedia's Damage Calculation Page</a></span><br>
+
+</p>
+
+</article>
